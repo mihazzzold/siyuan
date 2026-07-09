@@ -1,0 +1,471 @@
+{
+	"ID": "20200924101106-vr80s1b",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20200924101106-vr80s1b",
+		"title": "Что такое блок контента",
+		"type": "doc",
+		"updated": "20260426180016"
+	},
+	"Children": [
+		{
+			"ID": "20210118101709-iflwmak",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210118101709-iflwmak"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Определение блока контента"
+				}
+			]
+		},
+		{
+			"ID": "20210118101709-5ecvze4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210118101709-5ecvze4",
+				"updated": "20220623201341"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "«"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Блок контента"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "» — это фрагмент содержимого, и каждый такой фрагмент идентифицируется глобально уникальным ID. ID генерируется программой автоматически и имеет вид: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "202008250000-a1b2c3d"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " — время и 7 случайных символов."
+				}
+			]
+		},
+		{
+			"ID": "20210104091535-vgr0g1w",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091535-vgr0g1w",
+				"updated": "20210415203134"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Типы блоков контента"
+				}
+			]
+		},
+		{
+			"ID": "20210104091535-vwiz034",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091535-vwiz034"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Самый распространённый блок контента — привычный абзац (Paragraph). В традиционной китайской вёрстке абзацы обычно обозначаются отступом (два пробела) в начале абзаца. С развитием интернета представление абзацев постепенно менялось: чаще всего теперь увеличивают межабзацный интервал или разделяют абзацы пустыми строками."
+				}
+			]
+		},
+		{
+			"ID": "20210104091535-638sahk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091535-638sahk"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "На практике одной только вёрстки абзацами недостаточно. Часто нужны заголовок (Heading), список (List), таблица (Table), цитата (Blockquote) и т. д., обогащающие вёрстку. Эти типографские стили различаются не только визуально — важнее, что они в определённой мере выражают семантику содержимого. Например, увидев маркированный список, мы понимаем, что его пункты равнозначны, а нумерованный список говорит об обратном."
+				}
+			]
+		},
+		{
+			"ID": "20210104091535-v6g9s4w",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091535-v6g9s4w",
+				"updated": "20220623201559"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Поэтому существует много "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20200924101225-9qg8o1m",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "типов"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " блоков контента, и разные типы блоков определяются форматированием. "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Блок контента/Тип"
+				}
+			]
+		},
+		{
+			"ID": "20210104091535-km3l0i7",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091535-km3l0i7"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Комбинирование блоков контента"
+				}
+			]
+		},
+		{
+			"ID": "20210104091535-ak3c3m1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091535-ak3c3m1",
+				"updated": "20220623201418"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Документ — это комбинация блоков контента, где блок — базовая единица. Это как кубики Lego, из базовых модулей собираются разные конструкции. "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ": сам документ — тоже разновидность блока контента. Точнее, три блока — блок документа, блок списка и блок цитаты — являются контейнерными и могут содержать блоки любых других типов. "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Блок контента/Комбинация"
+				}
+			]
+		},
+		{
+			"ID": "20210104091535-hi5mqx9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091535-hi5mqx9"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Теперь мы можем описывать любое содержимое блоками контента и единообразно "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20200924101256-gx3uui4",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "связывать блоки контента"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". Логически понятие страницы отсутствует, что снимает лишнюю нагрузку и позволяет пользователю сосредоточиться на блоке контента."
+				}
+			]
+		},
+		{
+			"ID": "20210118104710-yux4kle",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210118104710-yux4kle",
+				"updated": "20260426180016"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Имя и заметка"
+				}
+			]
+		},
+		{
+			"ID": "20210118104710-q6q1ab2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210118104710-q6q1ab2",
+				"memo": "The memo is usually a short sentence."
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Каждому блоку контента можно дать имя, псевдонимы и заметку. Имя и псевдонимы в основном используются для поиска "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20210106204950-87iagek",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "упоминаний"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " в обратных ссылках, а заметки — для записи информации, которую неудобно держать в области содержимого."
+				}
+			]
+		},
+		{
+			"ID": "20210118104710-ddug1rb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210118104710-ddug1rb",
+				"updated": "20260426180016"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После включения опций отображения закладок, имён и псевдонимов в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Редактор"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ именованный блок контента выделяется рамкой в редакторе. Если задать имя и заметку блоку документа, при наведении мыши на документ в панели документов появятся его имя и заметка."
+				}
+			]
+		},
+		{
+			"ID": "20210118104710-asowgz1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210118104710-asowgz1",
+				"updated": "20210512154814"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "С помощью "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20201117112518-j1fz6bw",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "встраивания блоков контента"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " можно искать и сводить имена и заметки — например, перечислить блоки контента, чья заметка содержит ключевое слово "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "short"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ":"
+				}
+			]
+		},
+		{
+			"ID": "20210118104710-zufe695",
+			"Type": "NodeBlockQueryEmbed",
+			"Data": "{{SELECT * FROM blocks WHERE memo LIKE '%short%'}}\n",
+			"Properties": {
+				"id": "20210118104710-zufe695"
+			},
+			"Children": [
+				{
+					"Type": "NodeOpenBrace"
+				},
+				{
+					"Type": "NodeOpenBrace"
+				},
+				{
+					"Type": "NodeBlockQueryEmbedScript",
+					"Data": "SELECT * FROM blocks WHERE memo LIKE '%short%'"
+				},
+				{
+					"Type": "NodeCloseBrace"
+				},
+				{
+					"Type": "NodeCloseBrace"
+				}
+			]
+		},
+		{
+			"ID": "20230419153621-dplvrby",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230419153621-dplvrby",
+				"updated": "20230419153625"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​:"
+				}
+			]
+		},
+		{
+			"ID": "20230419153621-9311o4c",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230419153621-9311o4c",
+				"updated": "20230419153642"
+			},
+			"Children": [
+				{
+					"ID": "20230419153621-fbleegk",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230419153621-fbleegk",
+						"updated": "20230419153621"
+					},
+					"Children": [
+						{
+							"ID": "20230419153621-k5un17r",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230419153621-k5un17r",
+								"updated": "20230419153621"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Имя уникально, блоку можно задать только одно имя"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230419153621-5agjzc8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230419153621-5agjzc8",
+						"updated": "20230419153621"
+					},
+					"Children": [
+						{
+							"ID": "20230419153621-or7btt9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230419153621-or7btt9",
+								"updated": "20230419153621"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Псевдонимов может быть несколько, разделяйте их английскими запятыми ("
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ","
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230419153621-8qlox4f",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230419153621-8qlox4f",
+						"updated": "20230419153642"
+					},
+					"Children": [
+						{
+							"ID": "20230419153621-srcvxtt",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230419153621-srcvxtt",
+								"updated": "20230419153642"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Заметки поддерживают только обычный текст"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

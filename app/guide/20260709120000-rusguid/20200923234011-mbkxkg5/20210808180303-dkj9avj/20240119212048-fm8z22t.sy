@@ -1,0 +1,332 @@
+{
+	"ID": "20240119212048-fm8z22t",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20240119212048-fm8z22t",
+		"title": "Игнорирование в поиске",
+		"type": "doc",
+		"updated": "20241001011905"
+	},
+	"Children": [
+		{
+			"ID": "20240119212104-eb8qs04",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240119212104-eb8qs04",
+				"updated": "20240119212104"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20240119212104-q25d2ui",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240119212104-q25d2ui",
+				"updated": "20240119212104"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Игнорирование в поиске — это отфильтровывание нежелательных результатов при поиске."
+				}
+			]
+		},
+		{
+			"ID": "20240119212104-f5f911a",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240119212104-f5f911a",
+				"updated": "20241001011905"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20240119212104-cchc0uq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240119212104-cchc0uq",
+				"updated": "20240119212108"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Игнорирование глобального поиска и игнорирование поиска ссылок настраиваются отдельно:"
+				}
+			]
+		},
+		{
+			"ID": "20240119212104-mzzha6m",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20240119212104-mzzha6m",
+				"updated": "20240119212145"
+			},
+			"Children": [
+				{
+					"ID": "20240119212104-tlb4k80",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240119212104-tlb4k80",
+						"updated": "20240119212104"
+					},
+					"Children": [
+						{
+							"ID": "20240119212104-wls4i63",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240119212104-wls4i63",
+								"updated": "20240119212104"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Игнорировать глобальный поиск: вручную создайте или отредактируйте текстовый файл "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "workspace/data/.siyuan/searchignore"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в файловой системе"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240119212104-vehosc9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240119212104-vehosc9",
+						"updated": "20240119212145"
+					},
+					"Children": [
+						{
+							"ID": "20240119212104-4a90b5p",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240119212104-4a90b5p",
+								"updated": "20240119212145"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Игнорировать поиск ссылок: вручную создайте или отредактируйте текстовый файл "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "workspace/data/.siyuan/refsearchignore"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в файловой системе"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20240119212104-7fe6izt",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240119212104-7fe6izt",
+				"updated": "20240119212108"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Каждая строка в этих файлах игнорирования используется как условие SQL path NOT LIKE, например:"
+				}
+			]
+		},
+		{
+			"ID": "20240119212104-si6natm",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20240119212104-si6natm",
+				"updated": "20241001011008"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "path NOT LIKE '/20260709120000-rusguid%'\nbox != '20210808180117-pg2r5yy'\nid != '20200923234011-mbkxkg5'"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20241001011027-tbr35wz",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20241001011027-tbr35wz",
+				"updated": "20241001011905"
+			},
+			"Children": [
+				{
+					"ID": "20241001011027-allprp6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20241001011027-allprp6",
+						"updated": "20241001011838"
+					},
+					"Children": [
+						{
+							"ID": "20241001011027-o3sabx8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20241001011027-o3sabx8",
+								"updated": "20241001011838"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "path NOT LIKE '/20260709120000-rusguid%'"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​: игнорировать поиск блоков контента, у которых путь документа начинается с ​/20260709120000-rusguid"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20241001011027-600jdak",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20241001011027-600jdak",
+						"updated": "20241001011854"
+					},
+					"Children": [
+						{
+							"ID": "20241001011027-91am1rg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20241001011027-91am1rg",
+								"updated": "20241001011854"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "box != '20210808180117-pg2r5yy'"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​: игнорировать поиск блоков контента в блокноте data/20210808180117-pg2r5yy"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20241001011027-3e7q5vr",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20241001011027-3e7q5vr",
+						"updated": "20241001011905"
+					},
+					"Children": [
+						{
+							"ID": "20241001011027-f60bdlc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20241001011027-f60bdlc",
+								"updated": "20241001011905"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "id != '20200923234011-mbkxkg5'"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​: игнорировать поиск блоков контента с id ​20200923234011-mbkxkg5"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20240202105459-hsjacrz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240202105459-hsjacrz",
+				"updated": "20240202105500"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Изменения файла конфигурации вступают в силу через 30 секунд."
+				}
+			]
+		}
+	]
+}

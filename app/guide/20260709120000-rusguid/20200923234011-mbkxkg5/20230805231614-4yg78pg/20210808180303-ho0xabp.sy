@@ -1,0 +1,312 @@
+{
+	"ID": "20210808180303-ho0xabp",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f308",
+		"id": "20210808180303-ho0xabp",
+		"title": "Облачные сервисы",
+		"type": "doc",
+		"updated": "20240508004725"
+	},
+	"Children": [
+		{
+			"ID": "20230627215131-jz6nr8y",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230627215131-jz6nr8y",
+				"updated": "20230805231707"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Облачные сервисы подписки включают:"
+				}
+			]
+		},
+		{
+			"ID": "20230627215141-ohwurfz",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230627215141-ohwurfz",
+				"updated": "20240508004725"
+			},
+			"Children": [
+				{
+					"ID": "20240508004643-r5wj3gn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240508004643-r5wj3gn",
+						"updated": "20240508004644"
+					},
+					"Children": [
+						{
+							"ID": "20240508004643-5a928em",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004643-5a928em",
+								"updated": "20240508004644"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210721112159-0eksaeo",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Хранилище"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230627215143-cu2pd5y",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230627215143-cu2pd5y",
+						"updated": "20230627215143"
+					},
+					"Children": [
+						{
+							"ID": "20230627215143-q2plyld",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230627215143-q2plyld",
+								"updated": "20230627215203"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210721112206-m1l721d",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Синхронизация данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230627215152-164ty0w",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230627215152-164ty0w"
+					},
+					"Children": [
+						{
+							"ID": "20230627215152-fq8ooub",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230627215152-fq8ooub",
+								"updated": "20230627215201"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20220708103401-1j057eg",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Резервное копирование данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230627215154-2tvf4bd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230627215154-2tvf4bd",
+						"updated": "20240508004725"
+					},
+					"Children": [
+						{
+							"ID": "20230627215154-5uo2246",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230627215154-5uo2246",
+								"updated": "20230627215159"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210721160238-cgwzk6t",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Хостинг ресурсов"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230802131114-42swfvo",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230802131114-42swfvo",
+						"updated": "20230802131124"
+					},
+					"Children": [
+						{
+							"ID": "20230802131114-g9vaxjq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230802131114-g9vaxjq",
+								"updated": "20230802131124"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20230802114825-4610ist",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Инбокс"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230627215213-hv7lpe3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230627215213-hv7lpe3",
+				"updated": "20230627215230"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220105101227-c8zcpst",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "ограничения"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", связанные с облачными сервисами."
+				}
+			]
+		},
+		{
+			"ID": "20230627215126-m93tkvg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230627215126-m93tkvg",
+				"updated": "20230805231703"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Облачные сервисы подписки требуют платной подписки:"
+				}
+			]
+		},
+		{
+			"ID": "20230627215126-haphntl",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230627215126-haphntl",
+				"updated": "20230627215126"
+			},
+			"Children": [
+				{
+					"ID": "20230627215126-j83z0kt",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230627215126-j83z0kt",
+						"updated": "20230627215126"
+					},
+					"Children": [
+						{
+							"ID": "20230627215126-r7mygc3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230627215126-r7mygc3",
+								"updated": "20230627215126"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://ld246.com/subscribe/siyuan",
+									"TextMarkTextContent": "Материковый Китай"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230627215126-542u91p",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230627215126-542u91p",
+						"updated": "20230627215126"
+					},
+					"Children": [
+						{
+							"ID": "20230627215126-ky0nxz3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230627215126-ky0nxz3",
+								"updated": "20230627215126"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://liuyun.io/subscribe/siyuan",
+									"TextMarkTextContent": "Вне материкового Китая"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,164 @@
+{
+	"spec": 1,
+	"id": "20240208172719-u0lw6c4",
+	"name": "Authors",
+	"keyValues": [
+		{
+			"key": {
+				"id": "20240208172719-gtf5spk",
+				"name": "Author",
+				"type": "block",
+				"icon": "",
+				"desc": "",
+				"numberFormat": "",
+				"template": ""
+			},
+			"values": [
+				{
+					"id": "20240208173142-ql7tp5e",
+					"keyID": "20240208172719-gtf5spk",
+					"blockID": "20240208173141-pt4s215",
+					"type": "block",
+					"isDetached": true,
+					"createdAt": 1707384702000,
+					"updatedAt": 1707384702000,
+					"block": {
+						"id": "20240208173141-pt4s215",
+						"icon": "",
+						"content": "Jules Verne",
+						"created": 1707384702050,
+						"updated": 1707384750725
+					}
+				},
+				{
+					"id": "20240208173214-91gww0r",
+					"keyID": "20240208172719-gtf5spk",
+					"blockID": "20240208173214-pkal871",
+					"type": "block",
+					"isDetached": true,
+					"createdAt": 1707384734000,
+					"updatedAt": 1707384734000,
+					"block": {
+						"id": "20240208173214-pkal871",
+						"icon": "",
+						"content": "Liu Cixin",
+						"created": 1707384734844,
+						"updated": 1707384755489
+					}
+				}
+			]
+		},
+		{
+			"key": {
+				"id": "20240208173132-j9zo753",
+				"name": "Works",
+				"type": "relation",
+				"icon": "",
+				"desc": "",
+				"numberFormat": "",
+				"template": "",
+				"relation": {
+					"avID": "20240208172742-cegt8pq",
+					"isTwoWay": true,
+					"backKeyID": "20240208173226-l1mknao"
+				}
+			},
+			"values": [
+				{
+					"id": "20240208173227-v131g0v",
+					"keyID": "20240208173132-j9zo753",
+					"blockID": "20240208173141-pt4s215",
+					"type": "relation",
+					"createdAt": 1707384747000,
+					"updatedAt": 1707384747000,
+					"relation": {
+						"blockIDs": [
+							"20240208172930-2de0yrm"
+						],
+						"contents": null
+					}
+				},
+				{
+					"id": "20240208173230-q3x2o6d",
+					"keyID": "20240208173132-j9zo753",
+					"blockID": "20240208173214-pkal871",
+					"type": "relation",
+					"createdAt": 1707384750000,
+					"updatedAt": 1707384750000,
+					"relation": {
+						"blockIDs": [
+							"20240208173054-ijspbjq",
+							"20240208173041-rz05pne"
+						],
+						"contents": null
+					}
+				}
+			]
+		},
+		{
+			"key": {
+				"id": "20240208173309-y850hrp",
+				"name": "Works count",
+				"type": "rollup",
+				"icon": "",
+				"desc": "",
+				"numberFormat": "",
+				"template": "",
+				"rollup": {
+					"relationKeyID": "20240208173132-j9zo753",
+					"keyID": "20240208172742-dnobrs3",
+					"calc": {
+						"operator": "Count all",
+						"result": null
+					}
+				}
+			}
+		}
+	],
+	"keyIDs": null,
+	"viewID": "20240208172719-9cta8sz",
+	"views": [
+		{
+			"id": "20240208172719-9cta8sz",
+			"icon": "",
+			"name": "Table",
+			"hideAttrViewName": false,
+			"desc": "",
+			"type": "table",
+			"table": {
+				"spec": 0,
+				"id": "20240208172719-by3n7tu",
+				"columns": [
+					{
+						"id": "20240208172719-gtf5spk",
+						"wrap": false,
+						"hidden": false,
+						"pin": false,
+						"width": ""
+					},
+					{
+						"id": "20240208173132-j9zo753",
+						"wrap": false,
+						"hidden": false,
+						"pin": false,
+						"width": "364px"
+					},
+					{
+						"id": "20240208173309-y850hrp",
+						"wrap": false,
+						"hidden": false,
+						"pin": false,
+						"width": ""
+					}
+				],
+				"rowIds": [
+					"20240208173141-pt4s215",
+					"20240208173214-pkal871"
+				],
+				"filters": [],
+				"sorts": [],
+				"pageSize": 50
+			}
+		}
+	]
+}

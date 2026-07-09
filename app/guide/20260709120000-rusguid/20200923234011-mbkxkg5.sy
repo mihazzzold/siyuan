@@ -1,0 +1,2207 @@
+{
+	"ID": "20200923234011-mbkxkg5",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f389",
+		"id": "20200923234011-mbkxkg5",
+		"title": "Начните отсюда",
+		"type": "doc",
+		"updated": "20260614115123"
+	},
+	"Children": [
+		{
+			"ID": "20251209212043-3qxvfz2",
+			"Type": "NodeCallout",
+			"Properties": {
+				"id": "20251209212043-3qxvfz2",
+				"updated": "20260315155722"
+			},
+			"CalloutType": "TIP",
+			"CalloutTitle": "Tip",
+			"CalloutIcon": "💡",
+			"Children": [
+				{
+					"ID": "20251209212048-z32by6x",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20251209212048-z32by6x",
+						"updated": "20260315155722"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Когда вы закроете SiYuan, руководство пользователя будет автоматически удалено. Чтобы открыть его снова, нажмите "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "kbd",
+							"TextMarkTextContent": "Главное меню"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​ - "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "kbd",
+							"TextMarkTextContent": "Руководство пользователя"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210528120135-2e25rih",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20210528120135-2e25rih",
+				"updated": "20260426175923"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20210528120142-sbss999",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20210528120142-sbss999",
+						"updated": "20260426175923"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20201225220954-6uheh9o",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20201225220954-6uheh9o",
+								"updated": "20260426175923"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "🍔 Приступаем к еде"
+								}
+							]
+						},
+						{
+							"ID": "20201225220954-xpp43mm",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20201225220954-xpp43mm",
+								"updated": "20260426175923"
+							},
+							"Children": [
+								{
+									"ID": "20201225220954-elj14wq",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20201225220954-elj14wq",
+										"updated": "20260426175923"
+									},
+									"Children": [
+										{
+											"ID": "20210131161940-2ahlw3a",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210131161940-2ahlw3a",
+												"updated": "20260426175923"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Создайте новый блокнот в меню "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "kbd",
+													"TextMarkTextContent": "Ещё"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ панели документов и создайте в блокноте новый документ"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20201225220954-vn1d6hv",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20201225220954-vn1d6hv",
+										"updated": "20230428165320"
+									},
+									"Children": [
+										{
+											"ID": "20210131161940-v4lfd95",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210131161940-v4lfd95",
+												"updated": "20230428165320"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Введите "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "kbd",
+													"TextMarkTextContent": "/"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​​ в редакторе, чтобы вызвать меню функций"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20201225220954-hi8z2ga",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20201225220954-hi8z2ga",
+										"updated": "20210502233931"
+									},
+									"Children": [
+										{
+											"ID": "20210131161940-7tjun4q",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210131161940-7tjun4q",
+												"updated": "20210502233931"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200924101200-38hnex5",
+													"TextMarkBlockRefSubtype": "s",
+													"TextMarkTextContent": "Навигация по блокам контента"
+												},
+												{
+													"Type": "NodeText",
+													"Data": " и "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200924100906-1pb6vj0",
+													"TextMarkBlockRefSubtype": "s",
+													"TextMarkTextContent": "Окна и вкладки"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"ID": "20210528120140-xc9n6lz",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20210528120140-xc9n6lz",
+						"updated": "20230816170602"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20201225220954-letxjm1",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20201225220954-letxjm1",
+								"updated": "20210622215847"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "🍹 Рекомендуем к напиткам"
+								}
+							]
+						},
+						{
+							"ID": "20201225220954-szfg4ik",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20201225220954-szfg4ik",
+								"updated": "20230816170602"
+							},
+							"Children": [
+								{
+									"ID": "20201225220954-2u7kvnq",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20201225220954-2u7kvnq",
+										"updated": "20211223213241"
+									},
+									"Children": [
+										{
+											"ID": "20210131161940-zs2kduz",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210131161940-zs2kduz",
+												"updated": "20211223213241"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200923234731-k2vie6o",
+													"TextMarkBlockRefSubtype": "s",
+													"TextMarkTextContent": "Часто задаваемые вопросы"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210528120207-mx0emie",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210528120207-mx0emie",
+										"updated": "20230816170602"
+									},
+									"Children": [
+										{
+											"ID": "20210528120207-9hdfg7m",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210528120207-9hdfg7m",
+												"updated": "20230816170602"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "https://ld246.com/article/1619868273581",
+													"TextMarkTextContent": "История создания"
+												},
+												{
+													"Type": "NodeText",
+													"Data": " (на китайском)"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20210528120236-oc780ub",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20210528120236-oc780ub",
+				"updated": "20240508004007"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20210528120311-v2y0ucj",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20210528120311-v2y0ucj",
+						"updated": "20230621112336"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20201225220954-yp3ep6n",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20201225220954-yp3ep6n",
+								"name": "Community",
+								"updated": "20210601233839"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "🏘️ Наш дом"
+								}
+							]
+						},
+						{
+							"ID": "20200923234102-rj11r79",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20200923234102-rj11r79",
+								"updated": "20230621112336"
+							},
+							"Children": [
+								{
+									"ID": "20201225220954-mzdha2k",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20201225220954-mzdha2k",
+										"updated": "20230621112336"
+									},
+									"Children": [
+										{
+											"ID": "20210131161940-r148ua9",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210131161940-r148ua9",
+												"updated": "20230621112336"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "https://liuyun.io/",
+													"TextMarkTextContent": "LiuYun"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230621112110-x5kajux",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230621112110-x5kajux",
+										"updated": "20230621112121"
+									},
+									"Children": [
+										{
+											"ID": "20230621112110-q5poqun",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230621112110-q5poqun",
+												"updated": "20230621112121"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "https://twitter.com/b3logos",
+													"TextMarkTextContent": "Twitter"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"ID": "20210528120308-pqdeahr",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20210528120308-pqdeahr",
+						"updated": "20230816170456"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20210131161629-w2mjmt6",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20210131161629-w2mjmt6",
+								"updated": "20210623001017"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "💌 Вклад"
+								}
+							]
+						},
+						{
+							"ID": "20210317214434-z8jjboy",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20210317214434-z8jjboy",
+								"updated": "20230816170456"
+							},
+							"Children": [
+								{
+									"ID": "20210528120300-h8yzejl",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210528120300-h8yzejl",
+										"updated": "20221114173245"
+									},
+									"Children": [
+										{
+											"ID": "20210528120300-k5waypf",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210528120300-k5waypf",
+												"updated": "20221114173245"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20211129190925-tdk93dn",
+													"TextMarkBlockRefSubtype": "s",
+													"TextMarkTextContent": "Открытый исходный код"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221114173201-2ppqhf9",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221114173201-2ppqhf9",
+										"updated": "20230816170456"
+									},
+									"Children": [
+										{
+											"ID": "20221114173201-bnyhow1",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221114173201-bnyhow1",
+												"updated": "20230816170456"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "https://b3log.org/siyuan/en/pricing.html",
+													"TextMarkTextContent": "Поддержать разработку финансово"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20230428162634-fralncq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230428162634-fralncq",
+				"updated": "20230428162646"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Мы надеемся, что со временем SiYuan станет эффективным инструментом вашей жизни и учёбы и поможет вам достигать больше целей и планов🙏"
+				}
+			]
+		},
+		{
+			"ID": "20240508004009-ndeskzw",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20240508004009-ndeskzw"
+			}
+		},
+		{
+			"ID": "20240508004352-ok9ehr3",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20240508004352-ok9ehr3",
+				"updated": "20240508004348"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20240508004116-ujzyi24",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20240508004116-ujzyi24",
+						"updated": "20240508004353"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20210428222013-a2a0chx",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"bookmark": "✨",
+								"id": "20210428222013-a2a0chx",
+								"style": "background-color: var(--b3-font-background5);",
+								"updated": "20210714093108"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "🍫 Блок контента"
+								}
+							]
+						},
+						{
+							"ID": "20210428222033-lo06109",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210428222033-lo06109",
+								"updated": "20210714093108"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "В "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20230415111951-cdlpkfi",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "SiYuan"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " единственная важная ключевая концепция — это "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924101106-vr80s1b",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "блок контента"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ". Блоки контента складываются из форматируемого содержимого, позволяя организовывать мысли и знания с точностью до блока, а также удобно читать и создавать длинные тексты."
+								}
+							]
+						},
+						{
+							"ID": "20240508004053-f4rtmg2",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004053-f4rtmg2",
+								"updated": "20210714093108"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924101106-vr80s1b",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Что такое блок контента"
+								}
+							]
+						},
+						{
+							"ID": "20240508004057-lx3wqlx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004057-lx3wqlx",
+								"updated": "20210714093108"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924101225-9qg8o1m",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Типы блоков контента"
+								}
+							]
+						},
+						{
+							"ID": "20240508004100-t0m83e4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004100-t0m83e4",
+								"updated": "20210714093108"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924101256-gx3uui4",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Ссылки на блоки контента"
+								}
+							]
+						},
+						{
+							"ID": "20240508004103-m37ktj7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004103-m37ktj7",
+								"updated": "20210714093108"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924101200-38hnex5",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Навигация по блокам контента"
+								}
+							]
+						},
+						{
+							"ID": "20240508004106-bx8l6tt",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004106-bx8l6tt",
+								"updated": "20210714093108"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20201210233038-nqdpmiv",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Преобразование документа и заголовка"
+								}
+							]
+						},
+						{
+							"ID": "20240508004109-tl5q9fy",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004109-tl5q9fy",
+								"updated": "20210714093108"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20201117112518-j1fz6bw",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Встраивание блоков контента"
+								}
+							]
+						},
+						{
+							"ID": "20240508004112-scdcvqu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004112-scdcvqu",
+								"updated": "20210714093108"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210613191509-6gwl4rn",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Атрибуты блока контента"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker",
+							"Properties": {
+								"updated": "20210714093108"
+							}
+						}
+					]
+				},
+				{
+					"ID": "20240508004222-ip1wxv6",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20240508004222-ip1wxv6",
+						"updated": "20240508004353"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20240508004114-b9c1y04",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20240508004114-b9c1y04",
+								"style": "background-color: var(--b3-font-background5);",
+								"updated": "20240508004223"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "🍱 Редактор"
+								}
+							]
+						},
+						{
+							"ID": "20240508004204-kw863qh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004204-kw863qh",
+								"updated": "20240508004223"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924093441-bej3j3s",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Элементы форматирования"
+								}
+							]
+						},
+						{
+							"ID": "20240508004207-nitya2a",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004207-nitya2a",
+								"updated": "20240508004223"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20220628204454-l45no4x",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Оптимизация типографики"
+								}
+							]
+						},
+						{
+							"ID": "20240508004210-1ofit2s",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004210-1ofit2s",
+								"updated": "20240508004223"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20221016204105-i1amohf",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Структура из заголовков и списков"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker",
+							"Properties": {
+								"updated": "20240508004223"
+							}
+						}
+					]
+				},
+				{
+					"ID": "20240508004309-zn6ap4n",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20240508004309-zn6ap4n",
+						"updated": "20240508004353"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20240508004228-81tghwy",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20240508004228-81tghwy",
+								"style": "background-color: var(--b3-font-background5);",
+								"updated": "20240508004310"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "🔍 Расширенный поиск"
+								}
+							]
+						},
+						{
+							"ID": "20240508004244-egzbqhd",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004244-egzbqhd",
+								"updated": "20240508004310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20220415232231-5p4zeib",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Синтаксис запросов"
+								}
+							]
+						},
+						{
+							"ID": "20240508004249-6s9n21o",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004249-6s9n21o",
+								"updated": "20240508004310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20201222100339-zwz4qcr",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Таблица базы данных"
+								}
+							]
+						},
+						{
+							"ID": "20240508004252-3mrc6nt",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004252-3mrc6nt",
+								"updated": "20240508004310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20201222100222-zafg9xo",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Фильтрация по типу"
+								}
+							]
+						},
+						{
+							"ID": "20240508004255-aktsfks",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004255-aktsfks",
+								"updated": "20240508004310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20240119211017-lycrcmk",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Игнорирование при индексации"
+								}
+							]
+						},
+						{
+							"ID": "20240508004258-06d3bh9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004258-06d3bh9",
+								"updated": "20240508004310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20240119212048-fm8z22t",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Игнорирование в поиске"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker",
+							"Properties": {
+								"updated": "20240508004310"
+							}
+						}
+					]
+				},
+				{
+					"ID": "20240508004347-az8c9cl",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20240508004347-az8c9cl",
+						"updated": "20240508004348"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20240508004300-fbp5rp4",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20240508004300-fbp5rp4",
+								"style": "background-color: var(--b3-font-background5);",
+								"updated": "20240508004348"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "🎨 Настройка внешнего вида"
+								}
+							]
+						},
+						{
+							"ID": "20240508004328-qenxc56",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004328-qenxc56",
+								"updated": "20240508004348"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924100110-wt6gcft",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Значки"
+								}
+							]
+						},
+						{
+							"ID": "20240508004331-n5vw5uh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240508004331-n5vw5uh",
+								"updated": "20240508004348"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924095938-j2xo9vi",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "Темы"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker",
+							"Properties": {
+								"updated": "20240508004348"
+							}
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20240508005305-dbtf4ac",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20240508005305-dbtf4ac",
+				"updated": "20260614115123"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20240508004608-uyb7idc",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20240508004608-uyb7idc",
+						"updated": "20260614115123"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20240508004417-r1i9cvh",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20240508004417-r1i9cvh",
+								"style": "background-color: var(--b3-font-background5);",
+								"updated": "20260614115123"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "🚌 Основные операции"
+								}
+							]
+						},
+						{
+							"ID": "20240508004559-i9uj61h",
+							"Type": "NodeSuperBlock",
+							"Properties": {
+								"id": "20240508004559-i9uj61h",
+								"updated": "20260614115123"
+							},
+							"Children": [
+								{
+									"Type": "NodeSuperBlockOpenMarker"
+								},
+								{
+									"Type": "NodeSuperBlockLayoutMarker",
+									"Data": "col"
+								},
+								{
+									"ID": "20240508004552-uouxoms",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20240508004552-uouxoms",
+										"updated": "20260614115123"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20240508004543-lp9d8lv",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-lp9d8lv",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20230106104821-rc1g5lo",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Рабочее пространство"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-zr355kk",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-zr355kk",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200924100808-p7jivbq",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Импорт и экспорт"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-7yy699q",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-7yy699q",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210505164949-66ay67x",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Веб-клиппер"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-1mn380c",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-1mn380c",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200924100906-1pb6vj0",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Окна и вкладки"
+												}
+											]
+										},
+										{
+											"ID": "20260614115122-iggkhbz",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260614115122-iggkhbz",
+												"updated": "20260614115123"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20260613212028-zikhw3y",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Статистика контента"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-35958bv",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-35958bv",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210110181011-ypvnht6",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Ежедневные заметки"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-3ib3li4",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-3ib3li4",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200924100635-946ik8r",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Закладки и теги"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-2qrqbb7",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-2qrqbb7",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20240208172514-wn102ri",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "База данных"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-zdwiasz",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-zdwiasz",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210824202056-q8vrxuc",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Виджеты"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-atvb1ti",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-atvb1ti",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20230506205948-vxtrh8a",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Плагины"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-52tp948",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-52tp948",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200924100744-dsuftlg",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Ресурсы"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-gyt9b99",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-gyt9b99",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20201204184532-682s1du",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Шаблоны-сниппеты"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-c5b6il9",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-c5b6il9",
+												"updated": "20240508004552"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210127203829-0pltwx6",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Аннотирование PDF"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-4l7930o",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-4l7930o",
+												"updated": "20260614115109"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20211010212318-ih2ah6d",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Виртуальные ссылки"
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
+										}
+									]
+								},
+								{
+									"ID": "20240508004556-gj9zhj4",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20240508004556-gj9zhj4",
+										"updated": "20260614115057"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20240508004543-pwooskw",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-pwooskw",
+												"updated": "20240508004556"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210331201142-yts0pyu",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Гиперссылки"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-k5l3gvs",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-k5l3gvs",
+												"updated": "20240508004556"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210615213222-z4j45ib",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "История данных"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-v5liqxu",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-v5liqxu",
+												"updated": "20240508004556"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20221223221636-8fgn6gc",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Флеш-карточки"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-vrp9cku",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-vrp9cku",
+												"updated": "20240508004556"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20230304000547-2p78z5f",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Искусственный интеллект"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-5wx4b5f",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-5wx4b5f",
+												"updated": "20240508004556"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200924100950-b5fjbsh",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Горячие клавиши"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-99uk3ct",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-99uk3ct",
+												"updated": "20240508004556"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20201004194026-kgmmdoc",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Использование в браузере"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-3ybh24i",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-3ybh24i",
+												"updated": "20240508004556"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20201227201128-hrb675j",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Размещение в Docker"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-zhudc7h",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-zhudc7h",
+												"updated": "20240508004556"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200924100717-avwh4do",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Параметры ядра"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-r1l39bk",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-r1l39bk",
+												"updated": "20240508004556"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20201227201751-bkuzcq2",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "API ядра"
+												}
+											]
+										},
+										{
+											"ID": "20240508004543-ukvxz7b",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508004543-ukvxz7b",
+												"updated": "20240508004556"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20230104152135-iiadp1z",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Поделиться документом"
+												}
+											]
+										},
+										{
+											"ID": "20240612234732-hbgx8qr",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240612234732-hbgx8qr",
+												"updated": "20240612234733"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20240517031132-ukyidvq",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Сервис публикации"
+												}
+											]
+										},
+										{
+											"ID": "20260614115057-gulpzew",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260614115057-gulpzew",
+												"updated": "20260614115057"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20260612192252-mxnl7ke",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Интерфейс командной строки"
+												}
+											]
+										},
+										{
+											"ID": "20260614115052-j1fh1ug",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260614115052-j1fh1ug",
+												"updated": "20260614115052"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20260614104204-n967tu3",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Сетевой прокси"
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
+										}
+									]
+								},
+								{
+									"Type": "NodeSuperBlockCloseMarker"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker",
+							"Properties": {
+								"updated": "20240508004609"
+							}
+						}
+					]
+				},
+				{
+					"ID": "20240508005131-oq8x7el",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20240508005131-oq8x7el",
+						"updated": "20240508005306"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20240508004554-xsgps2v",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20240508004554-xsgps2v",
+								"style": "background-color: var(--b3-font-background5);",
+								"updated": "20240508005132"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "👑 Привилегии подписчика"
+								}
+							]
+						},
+						{
+							"ID": "20240508005128-4jpuinb",
+							"Type": "NodeSuperBlock",
+							"Properties": {
+								"id": "20240508005128-4jpuinb",
+								"updated": "20240508005132"
+							},
+							"Children": [
+								{
+									"Type": "NodeSuperBlockOpenMarker"
+								},
+								{
+									"Type": "NodeSuperBlockLayoutMarker",
+									"Data": "col"
+								},
+								{
+									"ID": "20240508005122-u5tb37a",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20240508005122-u5tb37a",
+										"updated": "20240508005129"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20240508004633-8s9flpe",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20240508004633-8s9flpe",
+												"updated": "20240508005122"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210808180303-ho0xabp",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Облачные сервисы"
+												}
+											]
+										},
+										{
+											"ID": "20240508005045-05dxfh8",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005045-05dxfh8",
+												"updated": "20240508005122"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210721112159-0eksaeo",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Хранилище"
+												}
+											]
+										},
+										{
+											"ID": "20240508005049-vu15zld",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005049-vu15zld",
+												"updated": "20240508005122"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210721112206-m1l721d",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Синхронизация данных"
+												}
+											]
+										},
+										{
+											"ID": "20240508005052-ay7q53h",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005052-ay7q53h",
+												"updated": "20240508005122"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20220708103401-1j057eg",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Резервное копирование данных"
+												}
+											]
+										},
+										{
+											"ID": "20240508005055-u60wji6",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005055-u60wji6",
+												"updated": "20240508005122"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210721160238-cgwzk6t",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Хостинг ресурсов"
+												}
+											]
+										},
+										{
+											"ID": "20240508005058-fvjvmxr",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005058-fvjvmxr",
+												"updated": "20240508005122"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20230802114825-4610ist",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Инбокс"
+												}
+											]
+										},
+										{
+											"ID": "20240508005101-8na7gih",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005101-8na7gih",
+												"updated": "20240508005122"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20220105101227-c8zcpst",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Ограничения"
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker",
+											"Properties": {
+												"updated": "20240508005122"
+											}
+										}
+									]
+								},
+								{
+									"ID": "20240508005126-s7c2p8r",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20240508005126-s7c2p8r",
+										"updated": "20240508005129"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20240508005104-cju95ad",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20240508005104-cju95ad",
+												"updated": "20240508005126"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20230805231816-tp79xoc",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Функциональные возможности"
+												}
+											]
+										},
+										{
+											"ID": "20240508005111-swmah9n",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005111-swmah9n",
+												"updated": "20240508005126"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20230805232018-vnaj01d",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Подключение к стороннему облачному хранилищу"
+												}
+											]
+										},
+										{
+											"ID": "20240508005115-aka31tm",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005115-aka31tm",
+												"updated": "20240508005126"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20230805232134-4yeq7jm",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Поиск по содержимому ресурсов"
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker",
+											"Properties": {
+												"updated": "20240508005126"
+											}
+										}
+									]
+								},
+								{
+									"Type": "NodeSuperBlockCloseMarker"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker",
+							"Properties": {
+								"updated": "20240508005132"
+							}
+						}
+					]
+				},
+				{
+					"ID": "20240508005256-khzeznt",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20240508005256-khzeznt",
+						"updated": "20240508005306"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20240508005156-kqw0cde",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20240508005156-kqw0cde",
+								"style": "background-color: var(--b3-font-background5);",
+								"updated": "20240508005257"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Прочее"
+								}
+							]
+						},
+						{
+							"ID": "20240508005251-69hp49g",
+							"Type": "NodeSuperBlock",
+							"Properties": {
+								"id": "20240508005251-69hp49g",
+								"updated": "20240508005257"
+							},
+							"Children": [
+								{
+									"Type": "NodeSuperBlockOpenMarker"
+								},
+								{
+									"Type": "NodeSuperBlockLayoutMarker",
+									"Data": "col"
+								},
+								{
+									"ID": "20240508005246-p384onr",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20240508005246-p384onr",
+										"updated": "20240508005252"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20240508005217-dn1a82a",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005217-dn1a82a",
+												"updated": "20240508005246"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20240113110040-z2n28gw",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Мобильное приложение"
+												}
+											]
+										},
+										{
+											"ID": "20240508005224-w75cg2g",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005224-w75cg2g",
+												"updated": "20240508005246"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200923234731-k2vie6o",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Часто задаваемые вопросы"
+												}
+											]
+										},
+										{
+											"ID": "20240508005227-8iwnmqv",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005227-8iwnmqv",
+												"updated": "20240508005246"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20210117215840-pcbrzmm",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Безопасность данных"
+												}
+											]
+										},
+										{
+											"ID": "20240508005230-hkwxa11",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005230-hkwxa11",
+												"updated": "20240508005246"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20230429115711-ojkg7yx",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Глоссарий"
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
+										}
+									]
+								},
+								{
+									"ID": "20240508005249-tzl15lp",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20240508005249-tzl15lp",
+										"updated": "20240508005252"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20240508005233-33xs3ss",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005233-33xs3ss",
+												"updated": "20240508005250"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20230405172236-75ul37u",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Оптимизация производительности"
+												}
+											]
+										},
+										{
+											"ID": "20240508005236-on1h59w",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005236-on1h59w",
+												"updated": "20240508005250"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20240317202444-5dij67m",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Разработка расширений"
+												}
+											]
+										},
+										{
+											"ID": "20240508005239-k6dztzy",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005239-k6dztzy",
+												"updated": "20240508005250"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20200923234602-o16asxu",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Политика конфиденциальности и пользовательское соглашение"
+												}
+											]
+										},
+										{
+											"ID": "20240508005241-uer6yu6",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20240508005241-uer6yu6",
+												"updated": "20240508005250"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20201121224345-zinbz84",
+													"TextMarkBlockRefSubtype": "d",
+													"TextMarkTextContent": "Благодарности"
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
+										}
+									]
+								},
+								{
+									"Type": "NodeSuperBlockCloseMarker"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker",
+							"Properties": {
+								"updated": "20240508005257"
+							}
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20260614115050-4rq8xx7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614115050-4rq8xx7",
+				"updated": "20260614115050"
+			}
+		}
+	]
+}

@@ -1,6 +1,7 @@
 **English**
 | [中文](API.zh-CN.md)
 | [日本語](API.ja.md)
+| [Русский](API.ru.md)
 
 * [Specification](#Specification)
     * [Parameters and return values](#Parameters-and-return-values)

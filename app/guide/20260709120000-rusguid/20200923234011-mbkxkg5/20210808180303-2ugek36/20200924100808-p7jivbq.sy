@@ -1,0 +1,795 @@
+{
+	"ID": "20200924100808-p7jivbq",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20200924100808-p7jivbq",
+		"title": "Импорт и экспорт",
+		"type": "doc",
+		"updated": "20220317224017"
+	},
+	"Children": [
+		{
+			"ID": "20220317223639-mfrorjw",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220317223639-mfrorjw",
+				"updated": "20220317223642"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Импорт"
+				}
+			]
+		},
+		{
+			"ID": "20220511185728-vimzxxi",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220511185728-vimzxxi",
+				"updated": "20220511185730"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Markdown"
+				}
+			]
+		},
+		{
+			"ID": "20220317223639-erkjm5e",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220317223639-erkjm5e",
+				"updated": "20220511190015"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "SiYuan поддерживает импорт Markdown-файлов. Поэтому, если нужно импортировать данные из другой программы для заметок, сначала преобразуйте их в Markdown-файлы."
+				}
+			]
+		},
+		{
+			"ID": "20220317223639-413lq4c",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220317223639-413lq4c",
+				"updated": "20220317223836"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если при импорте встречается синтаксис изображения (локальный относительный путь) вида "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "![foo](images/bar.png)"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, SiYuan преобразует "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "images/bar.png"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20200924100744-dsuftlg",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "assets"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". Но если это "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": ".images/bar.png"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, преобразования не будет, потому что пути, начинающиеся с "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "."
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, — скрытые файлы, и SiYuan их не обрабатывает."
+				}
+			]
+		},
+		{
+			"ID": "20240426184519-2sz9vdh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240426184519-2sz9vdh",
+				"updated": "20240426184519"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если нужно распознавать расширенный синтаксис (например, верхний индекс "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "^foo^"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, нижний индекс "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "~foo~"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, теги "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "#foo"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и формулы "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "$foo$"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и т. д.), включите соответствующие переключатели в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Редактор"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Синтаксис Markdown"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		},
+		{
+			"ID": "20220511185726-ntfstug",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220511185726-ntfstug",
+				"updated": "20260614201131"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Данные"
+				}
+			]
+		},
+		{
+			"ID": "20220511185726-bno5gvn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220511185726-bno5gvn",
+				"updated": "20220511185757"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Импортировать и экспортировать данные можно в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Приложение"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " на настольной версии и в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Приложение"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " в правой панели на мобильной. Экспорт здесь полностью копирует и упаковывает папку "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace/data/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " в zip-архив."
+				}
+			]
+		},
+		{
+			"ID": "20220511185726-621fxrc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220511185726-621fxrc",
+				"updated": "20220511185841"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Функция "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Импорт данных"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " обрабатывает только архив данных, экспортированный на шагах выше. Импорт копируется в текущую папку "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace/data/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " согласно путям файлов в архиве:"
+				}
+			]
+		},
+		{
+			"ID": "20220511185726-eh3ogic",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220511185726-eh3ogic",
+				"updated": "20220511185920"
+			},
+			"Children": [
+				{
+					"ID": "20220511185726-74k875y",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220511185726-74k875y",
+						"updated": "20220511185726"
+					},
+					"Children": [
+						{
+							"ID": "20220511185726-1rcqbfc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220511185726-1rcqbfc",
+								"updated": "20220511185726"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Совпадающие файлы перезаписываются"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220511185726-292vk96",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220511185726-292vk96",
+						"updated": "20220511185726"
+					},
+					"Children": [
+						{
+							"ID": "20220511185726-h1tjyit",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220511185726-h1tjyit",
+								"updated": "20220511185726"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Несуществующие файлы добавляются"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220511185726-phjx186",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220511185726-phjx186",
+						"updated": "20220511185920"
+					},
+					"Children": [
+						{
+							"ID": "20220511185726-l0r57zn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220511185726-l0r57zn",
+								"updated": "20220511185920"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Существующие файлы никак не обрабатываются"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220511185726-afhx2x0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220511185726-afhx2x0",
+				"updated": "20220511185726"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​: будьте внимательны перед использованием, чтобы существующие данные не были перезаписаны безвозвратно."
+				}
+			]
+		},
+		{
+			"ID": "20260614201131-o3j7npn",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614201131-o3j7npn",
+				"updated": "20260614201131"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": ".sy.zip"
+				}
+			]
+		},
+		{
+			"ID": "20260614201131-vkz4lsh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614201131-vkz4lsh",
+				"updated": "20260614201131"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": ".sy.zip — родной формат документов SiYuan для импорта отдельных документов, экспортированных из других рабочих пространств SiYuan. Файлы .sy.zip можно просто перетащить в дерево документов, чтобы завершить импорт. Импортированный документ включает полное содержимое, дочерние документы, файлы ресурсов и атрибуты блоков."
+				}
+			]
+		},
+		{
+			"ID": "20220317223639-nm0nbos",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220317223639-nm0nbos",
+				"updated": "20250115151427"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Экспорт"
+				}
+			]
+		},
+		{
+			"ID": "20220317223639-q9wpt0n",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220317223639-q9wpt0n",
+				"updated": "20250115151427"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Копирование редактируемого содержимого"
+				}
+			]
+		},
+		{
+			"ID": "20220317223639-0cejyci",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220317223639-0cejyci",
+				"updated": "20250115151031"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Выделив содержимое, используйте сочетание копирования "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Ctrl"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​+"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "C"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ — в буфере обмена будет стандартный Markdown-текст."
+				}
+			]
+		},
+		{
+			"ID": "20220317223639-gh06ppf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220317223639-gh06ppf",
+				"updated": "20250115151427"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если нужно скопировать HTML-содержимое, перед копированием переключитесь на "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Предпросмотр экспорта"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Переключение режима"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в меню "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "︙"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в правом верхнем углу вкладки редактора."
+				}
+			]
+		},
+		{
+			"ID": "20220317223639-yw04r9h",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220317223639-yw04r9h",
+				"updated": "20220317224017"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Полнотекстовый экспорт"
+				}
+			]
+		},
+		{
+			"ID": "20220317223639-2dynfu1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220317223639-2dynfu1",
+				"updated": "20260426175834"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Выбрав документ в панели документов, щёлкните правой кнопкой и выберите "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Экспорт"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ или выберите "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Экспорт"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в меню "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "︙"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в правом верхнем углу вкладки редактора:"
+				}
+			]
+		},
+		{
+			"ID": "20220317223639-z4wettv",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220317223639-z4wettv",
+				"updated": "20220317224017"
+			},
+			"Children": [
+				{
+					"ID": "20220317223639-9u19mgi",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220317223639-9u19mgi",
+						"updated": "20220317223639"
+					},
+					"Children": [
+						{
+							"ID": "20220317223639-aqlwjtx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220317223639-aqlwjtx",
+								"updated": "20220317224009"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Markdown"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220317224009-1x67pg6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220317224009-1x67pg6",
+						"updated": "20220317224009"
+					},
+					"Children": [
+						{
+							"ID": "20220317224009-fots61m",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220317224009-fots61m",
+								"updated": "20220317224009"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "PDF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220317223639-qvhjf11",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220317223639-qvhjf11",
+						"updated": "20220317223639"
+					},
+					"Children": [
+						{
+							"ID": "20220317223639-gulft9q",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220317223639-gulft9q",
+								"updated": "20220317224015"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "HTML"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220317224015-qj1cunc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220317224015-qj1cunc",
+						"updated": "20220317224017"
+					},
+					"Children": [
+						{
+							"ID": "20220317224015-j3795l6",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220317224015-j3795l6",
+								"updated": "20220317224017"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Word .docx"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614201147-omxbs3h",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614201147-omxbs3h",
+						"updated": "20260614201147"
+					},
+					"Children": [
+						{
+							"ID": "20260614201147-1ponkce",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614201147-1ponkce",
+								"updated": "20260614201147"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": ".sy.zip"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614201156-nlaard6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614201156-nlaard6",
+				"updated": "20260614201157"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": ".sy.zip — родной формат SiYuan. Экспортированный файл содержит полное содержимое, дочерние документы, файлы ресурсов и атрибуты блоков документа — подходит для переноса документов между рабочими пространствами или обмена с другими пользователями SiYuan."
+				}
+			]
+		},
+		{
+			"ID": "20220317225021-t285u6f",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220317225021-t285u6f",
+				"updated": "20220317225021"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Экспорт"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " есть параметры обработки экспорта, подробности см. в подсказках на этом экране."
+				}
+			]
+		}
+	]
+}

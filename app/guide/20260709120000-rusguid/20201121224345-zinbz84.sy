@@ -1,0 +1,42 @@
+{
+	"ID": "20201121224345-zinbz84",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f64f",
+		"id": "20201121224345-zinbz84",
+		"title": "Благодарности",
+		"type": "doc",
+		"updated": "20230821234713"
+	},
+	"Children": [
+		{
+			"ID": "20230820175825-aoi034d",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230820175825-aoi034d",
+				"updated": "20230821234713"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Появление SiYuan было бы невозможно без множества проектов с открытым исходным кодом и их участников; см. исходный код проекта: kernel/go.mod, app/package.json и домашние страницы проектов."
+				}
+			]
+		},
+		{
+			"ID": "20230820175825-nrqpebl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230820175825-nrqpebl",
+				"updated": "20230820180114"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Рост SiYuan неотделим от отзывов и поддержки пользователей. Спасибо всем за помощь SiYuan ❤️"
+				}
+			]
+		}
+	]
+}

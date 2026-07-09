@@ -309,7 +309,7 @@ func Mount(boxID string) (alreadyMount bool, err error) {
 }
 
 func IsUserGuide(boxID string) bool {
-	return "20210808180117-czj9bvb" == boxID || "20210808180117-6v0mkxr" == boxID || "20211226090932-5lcq56f" == boxID || "20240530133126-axarxgx" == boxID
+	return "20210808180117-czj9bvb" == boxID || "20210808180117-6v0mkxr" == boxID || "20211226090932-5lcq56f" == boxID || "20240530133126-axarxgx" == boxID || "20260709120000-rusguid" == boxID
 }
 
 func getUserGuideAVJSONFiles(boxID string) (ret []string, err error) {

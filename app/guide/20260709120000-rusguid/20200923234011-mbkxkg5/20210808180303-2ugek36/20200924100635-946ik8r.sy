@@ -1,0 +1,405 @@
+{
+	"ID": "20200924100635-946ik8r",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20200924100635-946ik8r",
+		"title": "Закладки и теги",
+		"type": "doc",
+		"updated": "20250115152004"
+	},
+	"Children": [
+		{
+			"ID": "20210104091414-lag6tnc",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091414-lag6tnc",
+				"updated": "20250115152001"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Закладки"
+				}
+			]
+		},
+		{
+			"ID": "20210104091414-q6r1z1m",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091414-q6r1z1m",
+				"updated": "20210702231509"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если нужно добавить блоки контента в «избранное», откройте панель атрибутов через меню значка блока — там можно установить закладки."
+				}
+			]
+		},
+		{
+			"ID": "20210104091414-tp5ba1e",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091414-tp5ba1e",
+				"updated": "20250115152001"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Все избранные блоки контента перечислены на вкладке закладок ("
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Alt"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​+"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "3"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ / "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "⌃3"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​). Чтобы убрать из избранного, выберите «Удалить» в выпадающем меню ID блока контента."
+				}
+			]
+		},
+		{
+			"ID": "20210104091414-mk0vwxu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091414-mk0vwxu",
+				"updated": "20250115152004"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Теги"
+				}
+			]
+		},
+		{
+			"ID": "20210104091414-p4xynms",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091414-p4xynms"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Тег используется для пометки блока внутри блока контента. Синтаксис: идентификатор тега оборачивается двумя "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "#"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " — один до и один после, вот так: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "#Tag#"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210104091414-7tjcpct",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091414-7tjcpct"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Теги поддерживают иерархию, что облегчает сортировку блоков контента. Разделяйте уровни с помощью "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", вот так: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "#A/B/C#"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210104091414-6eia3qf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091414-6eia3qf",
+				"updated": "20250115152004"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Все помеченные тегами блоки контента перечислены на вкладке тегов ("
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Alt"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​+"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "4"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ / "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "⌃4"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​). Чтобы снять тег, просто удалите его в блоке контента."
+				}
+			]
+		},
+		{
+			"ID": "20230928113947-yn9tx52",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230928113947-yn9tx52",
+				"updated": "20230928113958"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20230928113959-1ov0ka0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230928113959-1ov0ka0",
+				"updated": "20231205225745"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Не используйте специальные символы в закладках и тегах, иначе глобальный поиск не будет работать, а переименование и удаление в панели закладок/тегов станет невозможным. Под «специальными символами» имеются в виду: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "*"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "_"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "["
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "]"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "!"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "\\"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "`"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ , "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "&lt;"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "&gt;"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "&amp;"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "~ "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "$"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "("
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": ")"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "{"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "="
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "#"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		}
+	]
+}

@@ -29,6 +29,7 @@
 | <b>中文</b>
 | <a href="README.ja.md">日本語</a>
 | <a href="README.tr.md">Türkçe</a>
+| <a href="README.ru.md">Русский</a>
 </p>
 
 ---

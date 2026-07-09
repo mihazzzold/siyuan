@@ -1,0 +1,1434 @@
+{
+	"ID": "20210721112206-m1l721d",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20210721112206-m1l721d",
+		"title": "Синхронизация данных",
+		"type": "doc",
+		"updated": "20260614203414"
+	},
+	"Children": [
+		{
+			"ID": "20210721112403-al7b3eo",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210721112403-al7b3eo",
+				"updated": "20250218121000"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20210721112403-bn98ds1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210721112403-bn98ds1",
+				"updated": "20250218121000"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синхронизация данных — это поддержание согласованности данных папки "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace/data/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ на нескольких устройствах; она включает ресурсы, пользовательские значки, плагины, сниппеты кода, шаблоны, виджеты и данные документов."
+				}
+			]
+		},
+		{
+			"ID": "20210721112403-36ckg1c",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210721112403-36ckg1c",
+				"updated": "20250115162705"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20220703231817-1vexlxp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220703231817-1vexlxp",
+				"updated": "20220821170709"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220615120602-niddqzo",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "инициализации ключа репозитория данных"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", если всё прошло успешно, синхронизация уже настроена. Если вы не знакомы с настройкой синхронизации, рекомендуется открыть мастер настройки, нажав кнопку синхронизации — через мастер настраивать проще."
+				}
+			]
+		},
+		{
+			"ID": "20220708103812-q4fcal7",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220708103812-q4fcal7",
+				"updated": "20230713213257"
+			},
+			"Children": [
+				{
+					"ID": "20220708103814-a23ebou",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220708103814-a23ebou",
+						"updated": "20220708103814"
+					},
+					"Children": [
+						{
+							"ID": "20220708103814-jqjtasm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220708103814-jqjtasm",
+								"updated": "20220708103815"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если нужно приостановить синхронизацию, выключите опцию "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Аккаунт и синхронизация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Включить облачную синхронизацию"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220708103815-zigfwux",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220708103815-zigfwux",
+						"updated": "20230713213257"
+					},
+					"Children": [
+						{
+							"ID": "20220708103815-8hfqbtj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220708103815-8hfqbtj",
+								"updated": "20230713213257"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210928101257-y3mfjs8",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Игнорируемые файлы"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220831004158-mb4e9fp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220831004158-mb4e9fp",
+				"updated": "20220831004508"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​: "
+				}
+			]
+		},
+		{
+			"ID": "20230220103708-jo99vuc",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230220103708-jo99vuc",
+				"updated": "20250115162705"
+			},
+			"Children": [
+				{
+					"ID": "20230220103711-f5ac9r5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230220103711-f5ac9r5",
+						"updated": "20230220103712"
+					},
+					"Children": [
+						{
+							"ID": "20230220103711-is47gul",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230220103711-is47gul",
+								"updated": "20230220103712"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Перед включением синхронизации убедитесь, что системное время всех участвующих устройств согласовано"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230220103708-plfj478",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230220103708-plfj478",
+						"updated": "20250115162705"
+					},
+					"Children": [
+						{
+							"ID": "20230220103708-tgo0uu9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230220103708-tgo0uu9",
+								"updated": "20250115162705"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если объём данных велик, рекомендуется экспортировать пакет данных через "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Экспорт данных"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в настройках, затем передать пакет на новое устройство копированием или иным способом, выполнить на новом устройстве "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Импорт данных"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ и только после этого настроить синхронизацию"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230219121305-py2bn36",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230219121305-py2bn36",
+				"updated": "20230219121305"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Режимы синхронизации"
+				}
+			]
+		},
+		{
+			"ID": "20230219121305-pq98b20",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230219121305-pq98b20",
+				"updated": "20230219121334"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Аккаунт и синхронизация"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Режим облачной синхронизации"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ поддерживаются три режима:"
+				}
+			]
+		},
+		{
+			"ID": "20230219121305-8ngq89s",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230219121305-8ngq89s",
+				"updated": "20230219121414"
+			},
+			"Children": [
+				{
+					"ID": "20230219121305-shhsa2p",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230219121305-shhsa2p",
+						"updated": "20230219121414"
+					},
+					"Children": [
+						{
+							"ID": "20230219121305-ud8k9rn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230219121305-ud8k9rn",
+								"updated": "20230219121414"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Автоматический"
+								}
+							]
+						},
+						{
+							"ID": "20230219121305-k6dnms4",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20230219121305-k6dnms4",
+								"updated": "20230219121305"
+							},
+							"Children": [
+								{
+									"ID": "20230219121305-ghkgs5w",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230219121305-ghkgs5w",
+										"updated": "20230219121305"
+									},
+									"Children": [
+										{
+											"ID": "20230219121305-fnf00vl",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230219121305-fnf00vl",
+												"updated": "20230219121305"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Синхронизация выполняется при запуске и выходе, а также через 30 секунд после того, как используемые данные перестали меняться"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230219121305-81vkcdd",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230219121305-81vkcdd",
+										"updated": "20230219121305"
+									},
+									"Children": [
+										{
+											"ID": "20230219121305-siqs0di",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230219121305-siqs0di",
+												"updated": "20230219121305"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Слияние и перезапись данных определяются алгоритмом синхронизации, см. описание принципа работы ниже"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230219121305-b00ap2h",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230219121305-b00ap2h",
+						"updated": "20230219121408"
+					},
+					"Children": [
+						{
+							"ID": "20230219121305-6gr3153",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230219121305-6gr3153",
+								"updated": "20230219121408"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Ручной"
+								}
+							]
+						},
+						{
+							"ID": "20230219121305-ralsgzm",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20230219121305-ralsgzm",
+								"updated": "20230219121305"
+							},
+							"Children": [
+								{
+									"ID": "20230219121305-na6c99j",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230219121305-na6c99j",
+										"updated": "20230219121305"
+									},
+									"Children": [
+										{
+											"ID": "20230219121305-wniw66c",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230219121305-wniw66c",
+												"updated": "20230219121305"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Синхронизация выполняется по одному разу при запуске и выходе, во время работы её нужно запускать вручную"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230219121305-vqeri0y",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230219121305-vqeri0y",
+										"updated": "20230219121305"
+									},
+									"Children": [
+										{
+											"ID": "20230219121305-k9gts2f",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230219121305-k9gts2f",
+												"updated": "20230219121305"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Слияние и перезапись данных определяются алгоритмом синхронизации, см. описание принципа работы ниже"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230219121305-s059ryw",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230219121305-s059ryw",
+						"updated": "20230219121305"
+					},
+					"Children": [
+						{
+							"ID": "20230219121305-rb121lk",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230219121305-rb121lk",
+								"updated": "20230219121305"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Полностью ручная синхронизация: без синхронизации при запуске и выходе, полный ручной контроль времени и направления синхронизации"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230219121305-fbsu0ia",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230219121305-fbsu0ia",
+				"updated": "20230219121539"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как работает автоматический/ручной режим"
+				}
+			]
+		},
+		{
+			"ID": "20220703232248-qni66qu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220703232248-qni66qu",
+				"updated": "20220703232251"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "SiYuan выполняет операции, сравнивая облачный и локальный снимки данных:"
+				}
+			]
+		},
+		{
+			"ID": "20220703232248-rbgd9v9",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220703232248-rbgd9v9",
+				"updated": "20220703232358"
+			},
+			"Children": [
+				{
+					"ID": "20220703232248-0fa9iio",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220703232248-0fa9iio",
+						"updated": "20220703232248"
+					},
+					"Children": [
+						{
+							"ID": "20220703232248-fckhbqp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220703232248-fckhbqp",
+								"updated": "20220703232248"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если снимки совпадают, синхронизация пропускается"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220703232248-8xir0fb",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220703232248-8xir0fb",
+						"updated": "20220703232358"
+					},
+					"Children": [
+						{
+							"ID": "20220703232248-stdrvgq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220703232248-stdrvgq",
+								"updated": "20220703232248"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если снимки различаются, локальные изменения с прошлой синхронизации загружаются в облако, а свежие изменения из облака сливаются в локальные данные"
+								}
+							]
+						},
+						{
+							"ID": "20220703232248-7hcs39x",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220703232248-7hcs39x",
+								"updated": "20220703232358"
+							},
+							"Children": [
+								{
+									"ID": "20220703232248-j03oxpb",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220703232248-j03oxpb",
+										"updated": "20220703232248"
+									},
+									"Children": [
+										{
+											"ID": "20220703232248-nmp6n7j",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220703232248-nmp6n7j",
+												"updated": "20220703232248"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Если изменения на обеих сторонах не конфликтуют, слияние выполняется напрямую"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220703232248-je5kcqr",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220703232248-je5kcqr",
+										"updated": "20220703232358"
+									},
+									"Children": [
+										{
+											"ID": "20220703232248-dh87w48",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220703232248-dh87w48",
+												"updated": "20220703232358"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Если возник конфликт файлов, локальная версия перезапишет облачную, а конфликтующие файлы из облака будут сохранены в историю данных."
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220703232248-f68edd8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220703232248-f68edd8",
+				"updated": "20230219121759"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Алгоритм интервалов автоматической синхронизации описывается так:"
+				}
+			]
+		},
+		{
+			"ID": "20220510105000-ch4eba9",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220510105000-ch4eba9",
+				"updated": "20220510105000"
+			},
+			"Children": [
+				{
+					"ID": "20220510105000-qgq4kzv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220510105000-qgq4kzv",
+						"updated": "20220510105000"
+					},
+					"Children": [
+						{
+							"ID": "20220510105000-b5t73zs",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220510105000-b5t73zs",
+								"updated": "20220510105000"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Через 30 секунд после изменения данных, если изменений больше нет, выполняется сравнение; если изменения продолжаются, ожидание продлевается ещё на 30 секунд"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220510105000-zwj8s5g",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220510105000-zwj8s5g",
+						"updated": "20220510105000"
+					},
+					"Children": [
+						{
+							"ID": "20220510105000-qtt8m12",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220510105000-qtt8m12",
+								"updated": "20220510105000"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если данных не меняются, интервал растёт: 5 минут, 8 минут, 16 минут, 32 минуты..."
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220307095105-mwcj2m1",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220307095105-mwcj2m1",
+				"updated": "20220307095105"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Пример сценария"
+				}
+			]
+		},
+		{
+			"ID": "20220307095105-ch6menj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220307095105-ch6menj",
+				"updated": "20220307095118"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Из принципа работы выше следует, что SiYuan поддерживает только поочерёдную синхронизацию данных на нескольких устройствах: после завершения синхронизации на устройстве A выполняется синхронизация на устройстве B. Одновременная синхронизация нескольких устройств не поддерживается — она приведёт к неожиданной перезаписи данных."
+				}
+			]
+		},
+		{
+			"ID": "20220307095105-sjw6ap6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220307095105-sjw6ap6",
+				"updated": "20220703232432"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Штатный сценарий"
+				}
+			]
+		},
+		{
+			"ID": "20220307095105-xdmd05k",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20220307095105-xdmd05k",
+				"updated": "20220307095105"
+			},
+			"Children": [
+				{
+					"ID": "20220307095105-5qbjqzu",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20220307095105-5qbjqzu"
+					},
+					"Children": [
+						{
+							"ID": "20220307095105-rgem32w",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220307095105-rgem32w"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "После редактирования на устройстве A выполните синхронизацию (автоматически или вручную) — облачные данные будут перезаписаны данными устройства A, то есть облако и устройство A хранят одинаковые данные"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220307095105-2comvg4",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20220307095105-2comvg4"
+					},
+					"Children": [
+						{
+							"ID": "20220307095105-8u8ip3w",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220307095105-8u8ip3w"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выполните синхронизацию на устройстве B — данные устройства B будут перезаписаны облачными, то есть облако и устройства A и B хранят одинаковые данные"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220307095105-vdssxqu",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20220307095105-vdssxqu"
+					},
+					"Children": [
+						{
+							"ID": "20220307095105-jue034e",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220307095105-jue034e"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "После редактирования на устройстве B снова выполните синхронизацию — облачные данные будут перезаписаны данными устройства B, то есть облако и устройство B хранят одинаковые данные."
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220307095105-d1hc0ou",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20220307095105-d1hc0ou"
+					},
+					"Children": [
+						{
+							"ID": "20220307095105-aasffs7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220307095105-aasffs7"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выполните синхронизацию на устройстве A — данные устройства A будут перезаписаны облачными, то есть облако и устройства A и B хранят одинаковые данные"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220307095105-xar9zu2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220307095105-xar9zu2",
+				"updated": "20220307095105"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В этом сценарии синхронизация выполняется на устройствах A и B поочерёдно, что гарантирует нормальное её завершение, как и ожидается."
+				}
+			]
+		},
+		{
+			"ID": "20220703232421-wmydh4d",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220703232421-wmydh4d",
+				"updated": "20220703232435"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сценарий конфликта"
+				}
+			]
+		},
+		{
+			"ID": "20220703232421-m7bkm62",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20220703232421-m7bkm62",
+				"updated": "20221009104451"
+			},
+			"Children": [
+				{
+					"ID": "20220703232421-eoevglk",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20220703232421-eoevglk",
+						"updated": "20220703232625"
+					},
+					"Children": [
+						{
+							"ID": "20220703232421-paf97m5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220703232421-paf97m5",
+								"updated": "20220703232625"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Синхронизация после редактирования файла a на устройстве A"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220703232421-p7p0s54",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20220703232421-p7p0s54",
+						"updated": "20220703232627"
+					},
+					"Children": [
+						{
+							"ID": "20220703232421-cvnsmhi",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220703232421-cvnsmhi",
+								"updated": "20220703232627"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Синхронизация после редактирования файла a на устройстве B"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220703232421-ikzdcip",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20220703232421-ikzdcip",
+						"updated": "20221009104451"
+					},
+					"Children": [
+						{
+							"ID": "20220703232421-yuodbnj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220703232421-yuodbnj",
+								"updated": "20221009104451"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "В этот момент облачный файл a будет перезаписан файлом a устройства B, а на устройстве B будет создана история прежнего файла a устройства A"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210721112403-3vgv0bb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210721112403-3vgv0bb",
+				"updated": "20260614203414"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				}
+			]
+		},
+		{
+			"ID": "20210721112403-fxyjdi2",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210721112403-fxyjdi2",
+				"updated": "20260614203414"
+			},
+			"Children": [
+				{
+					"ID": "20220420100320-m60vqu7",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220420100320-m60vqu7",
+						"updated": "20220420100331"
+					},
+					"Children": [
+						{
+							"ID": "20220420100320-ohn36si",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220420100320-ohn36si",
+								"updated": "20220420100331"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "При внезапном отключении — например, сне или выключении — синхронизация не запускается; нажмите кнопку синхронизации вручную"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210721160159-zdci0e7",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210721160159-zdci0e7",
+						"updated": "20210721160206"
+					},
+					"Children": [
+						{
+							"ID": "20210721160159-4p3zn1z",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721160159-4p3zn1z",
+								"updated": "20210721160206"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Не используйте сторонний диск синхронизации одновременно с синхронизацией SiYuan — это может повредить данные"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614203414-1l189bl",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614203414-1l189bl",
+						"updated": "20260614203414"
+					},
+					"Children": [
+						{
+							"ID": "20260614203414-e29ddqx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614203414-e29ddqx",
+								"updated": "20260614203414"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "SiYuan автоматически определяет, находится ли рабочее пространство в каталоге сторонней синхронизации. При обнаружении программа принудительно завершится, чтобы предотвратить повреждение данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210930212724-qlvorjf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210930212724-qlvorjf",
+						"updated": "20220807180100"
+					},
+					"Children": [
+						{
+							"ID": "20210930212724-irw4vfw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210930212724-irw4vfw",
+								"updated": "20220807180100"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Символические ссылки и скрытые файлы не синхронизируются"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20231120213145-g3bpjy9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20231120213145-g3bpjy9",
+						"updated": "20231120213145"
+					},
+					"Children": [
+						{
+							"ID": "20231120213145-1d9mh06",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20231120213145-1d9mh06",
+								"updated": "20231120213148"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "В режиме автоматической синхронизации при выходе используйте штатный способ (например, не смахивайте мобильное приложение, не завершайте процесс принудительно на настольном компьютере), чтобы синхронизация данных выполнилась"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20231120213153-sllwlr2",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20231120213153-sllwlr2",
+						"updated": "20231120213154"
+					},
+					"Children": [
+						{
+							"ID": "20231120213154-c9d6lah",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20231120213154-c9d6lah",
+								"updated": "20231120213154"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если создание снимка данных перед синхронизацией занимает больше 12 секунд, появится предложение очистить репозиторий данных. Изменить время по умолчанию можно двумя способами."
+								}
+							]
+						},
+						{
+							"ID": "20231120213154-s4ighmr",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20231120213154-s4ighmr",
+								"updated": "20231120213154"
+							},
+							"Children": [
+								{
+									"ID": "20231120213154-rs0qmid",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20231120213154-rs0qmid",
+										"updated": "20231120213154"
+									},
+									"Children": [
+										{
+											"ID": "20231120213154-3j4evvv",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20231120213154-3j4evvv",
+												"updated": "20231120213154"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Переменная окружения "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "SIYUAN_SYNC_INDEX_TIMING"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​, например "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "SIYUAN_SYNC_INDEX_TIMING=30000"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​, значение в миллисекундах"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20231120213154-tn55c6a",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20231120213154-tn55c6a",
+										"updated": "20231120213154"
+									},
+									"Children": [
+										{
+											"ID": "20231120213154-mhdqu06",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20231120213154-mhdqu06",
+												"updated": "20231120213154"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Прямое изменение "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "repo.syncIndexTiming"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ в workspace/conf/conf.json"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20231120213154-pdhynwz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20231120213154-pdhynwz",
+								"updated": "20231120213154"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Минимальное значение — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "12000"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ (12 секунд), максимум не ограничен; при запуске переменные окружения читаются первыми и перекрывают значения из conf-файла."
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

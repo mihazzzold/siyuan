@@ -1,0 +1,205 @@
+{
+	"ID": "20240119211017-lycrcmk",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20240119211017-lycrcmk",
+		"title": "Игнорирование при индексации",
+		"type": "doc",
+		"updated": "20241001011235"
+	},
+	"Children": [
+		{
+			"ID": "20240119211037-98oluqi",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240119211037-98oluqi",
+				"updated": "20240119211037"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20240119211037-b8gv063",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240119211037-b8gv063",
+				"updated": "20240119211045"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Игнорирование при индексации означает, что данные документа не индексируются в базу данных: данные становятся полностью недоступными для поиска, а размер базы данных уменьшается."
+				}
+			]
+		},
+		{
+			"ID": "20240119211037-jkd0qiv",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240119211037-jkd0qiv",
+				"updated": "20241001011235"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20240119211037-i1f2r6g",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240119211037-i1f2r6g",
+				"updated": "20240119211121"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вручную создайте или отредактируйте текстовый файл "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace/data/.siyuan/indexignore"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в файловой системе; каждая строка задаёт игнорируемый путь и поддерживает синтаксис gitignore. Например:"
+				}
+			]
+		},
+		{
+			"ID": "20241001010953-ogja6su",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20241001010953-ogja6su",
+				"updated": "20241001010953"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "20260709120000-rusguid/20200923234011-mbkxkg5.sy\n20260709120000-rusguid/**/*\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20240119211037-a855mzl",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20240119211037-a855mzl",
+				"updated": "20240119211442"
+			},
+			"Children": [
+				{
+					"ID": "20240119211037-mc15zu9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240119211037-mc15zu9",
+						"updated": "20240119211416"
+					},
+					"Children": [
+						{
+							"ID": "20240119211037-iz124nc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240119211037-iz124nc",
+								"updated": "20240119211416"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "20260709120000-rusguid/20200923234011-mbkxkg5.sy"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​: не индексировать документ 20200923234011-mbkxkg5.sy в блокноте data/20260709120000-rusguid"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240119211037-0q3rrj1",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240119211037-0q3rrj1",
+						"updated": "20240119211442"
+					},
+					"Children": [
+						{
+							"ID": "20240119211037-k9pnu18",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240119211037-k9pnu18",
+								"updated": "20240119211442"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "20260709120000-rusguid/**/*"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​: не индексировать все документы в блокноте data/20260709120000-rusguid"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20240202105425-ic2iroj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240202105425-ic2iroj",
+				"updated": "20241001011235"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После изменения файла конфигурации нужно вручную перестроить индекс."
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,684 @@
+{
+	"ID": "20230805232018-vnaj01d",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230805232018-vnaj01d",
+		"title": "Подключение к стороннему облачному хранилищу",
+		"type": "doc",
+		"updated": "20260614133336"
+	},
+	"Children": [
+		{
+			"ID": "20260614133312-nebz269",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260614133312-nebz269",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-fjuu5ss",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614133312-fjuu5ss",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Помимо официальной облачной синхронизации SiYuan, можно подключить сторонние облачные хранилища для синхронизации данных. Такой подход подходит, если вы:"
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-0k1qwdl",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260614133312-0k1qwdl",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"ID": "20260614133312-vxi20hm",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614133312-vxi20hm",
+						"updated": "20260614133312"
+					},
+					"Children": [
+						{
+							"ID": "20260614133312-250jifa",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614133312-250jifa",
+								"updated": "20260614133312"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Хотите использовать уже имеющиеся облачные хранилища"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614133312-p39h1db",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614133312-p39h1db",
+						"updated": "20260614133312"
+					},
+					"Children": [
+						{
+							"ID": "20260614133312-bmpwnjf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614133312-bmpwnjf",
+								"updated": "20260614133312"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Имеете особые требования к месту хранения данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614133312-bauusmv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614133312-bauusmv",
+						"updated": "20260614133312"
+					},
+					"Children": [
+						{
+							"ID": "20260614133312-swx1i0x",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614133312-swx1i0x",
+								"updated": "20260614133312"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нуждаетесь в большей ёмкости, чем предоставляет официальное облако"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-lc3qmhh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614133312-lc3qmhh",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сейчас поддерживаются три варианта стороннего хранилища:"
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-6m0b3ok",
+			"Type": "NodeTable",
+			"TableAligns": [
+				0,
+				0,
+				0
+			],
+			"Properties": {
+				"colgroup": "||",
+				"id": "20260614133312-6m0b3ok",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"Type": "NodeTableHead",
+					"Data": "thead",
+					"Children": [
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Вариант"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Особенности"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Кому рекомендуется"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "S3-совместимое объектное хранилище"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Хорошая производительность, поддержка больших объёмов"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Большие объёмы данных, более быстрая синхронизация"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "WebDAV"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Простая настройка, широкая совместимость"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Небольшие объёмы данных, существующие WebDAV-сервисы"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Локальная файловая система"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Сеть не нужна, синхронизация напрямую в локальный каталог"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Использование с локальным NAS или съёмными носителями"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-j0iftmw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614133312-j0iftmw",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Из-за ограничений протокола WebDAV большие объёмы данных могут приводить к медленному запуску, медленной синхронизации и высокому потреблению ресурсов. В качестве предпочтительного варианта рекомендуется объектное хранилище S3."
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-oufdy19",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260614133312-oufdy19",
+				"updated": "20260614133336"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Использование"
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-15gkm2v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614133312-15gkm2v",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Выберите и настройте в [Настройки - Аккаунт и синхронизация - Провайдер облачного хранилища]. Сейчас поддерживаются:"
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-fm232rn",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260614133312-fm232rn",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"ID": "20260614133312-yzsyc1j",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614133312-yzsyc1j",
+						"updated": "20260614133312"
+					},
+					"Children": [
+						{
+							"ID": "20260614133312-jmi6yvn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614133312-jmi6yvn",
+								"updated": "20260614133312"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "S3-совместимые объектные хранилища"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://s.qiniu.com/VbQfeu",
+									"TextMarkTextContent": "Qiniu Cloud"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://www.aliyun.com/product/oss?userCode=yqovuas2",
+									"TextMarkTextContent": "Alibaba Cloud OSS"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://www.cloudflare.com/developer-platform/r2/",
+									"TextMarkTextContent": "Cloudflare R2"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " и др."
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614133312-9eurhlb",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614133312-9eurhlb",
+						"updated": "20260614133312"
+					},
+					"Children": [
+						{
+							"ID": "20260614133312-vpcr3y1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614133312-vpcr3y1",
+								"updated": "20260614133312"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Протокол WebDAV"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://infini-cloud.net/",
+									"TextMarkTextContent": "InfiniCLOUD"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614133312-hqj6oym",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614133312-hqj6oym",
+						"updated": "20260614133312"
+					},
+					"Children": [
+						{
+							"ID": "20260614133312-m1fdrjd",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614133312-m1fdrjd",
+								"updated": "20260614133312"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Локальная файловая система"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": синхронизация в указанный локальный каталог"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-3jqe4cs",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614133312-3jqe4cs",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Nutstore WebDAV не поддерживается из-за "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://help.jianguoyun.com/?p=2064",
+					"TextMarkTextContent": "ограничений его API"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-1mc7vg5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614133312-1mc7vg5",
+				"updated": "20260614133336"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Данные, синхронизируемые через сторонние облачные хранилища, также защищены "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20210721112229-hb09weh",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "сквозным шифрованием"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". Сторонние провайдеры хранилищ не могут получить доступ к данным в открытом виде."
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-af70xdc",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260614133312-af70xdc",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-izhgpu5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614133312-izhgpu5",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Чтобы обеспечить работоспособность синхронизации данных, убедитесь, что:"
+				}
+			]
+		},
+		{
+			"ID": "20260614133312-phrhl2k",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260614133312-phrhl2k",
+				"updated": "20260614133312"
+			},
+			"Children": [
+				{
+					"ID": "20260614133312-t5nceui",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614133312-t5nceui",
+						"updated": "20260614133312"
+					},
+					"Children": [
+						{
+							"ID": "20260614133312-by2vhl3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614133312-by2vhl3",
+								"updated": "20260614133312"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Системное время на всех устройствах согласовано, погрешность в пределах минуты"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614133312-gvgbweb",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614133312-gvgbweb",
+						"updated": "20260614133312"
+					},
+					"Children": [
+						{
+							"ID": "20260614133312-lsijbrl",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614133312-lsijbrl",
+								"updated": "20260614133312"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Сеть стабильна (например, в материковом Китае не используйте сервисы за его пределами)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614133312-5vi4bnu",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614133312-5vi4bnu",
+						"updated": "20260614133312"
+					},
+					"Children": [
+						{
+							"ID": "20260614133312-0yw163o",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614133312-0yw163o",
+								"updated": "20260614133312"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "CDN не включён"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

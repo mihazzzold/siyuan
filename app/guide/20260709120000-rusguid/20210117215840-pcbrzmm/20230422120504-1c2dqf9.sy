@@ -1,0 +1,534 @@
+{
+	"ID": "20230422120504-1c2dqf9",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230422120504-1c2dqf9",
+		"title": "Гарантии доступности данных",
+		"type": "doc",
+		"updated": "20230422122821"
+	},
+	"Children": [
+		{
+			"ID": "20230422120505-0gilag5",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230422120505-0gilag5",
+				"updated": "20230422120520"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Локальное устройство"
+				}
+			]
+		},
+		{
+			"ID": "20230422120505-dwd4213",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230422120505-dwd4213",
+				"updated": "20230422120505"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Мы приложили много усилий для повышения доступности данных на локальных устройствах:"
+				}
+			]
+		},
+		{
+			"ID": "20230422120505-nzo00g7",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230422120505-nzo00g7",
+				"updated": "20230422122458"
+			},
+			"Children": [
+				{
+					"ID": "20230422120505-2evzb5z",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230422120505-2evzb5z",
+						"updated": "20230422120505"
+					},
+					"Children": [
+						{
+							"ID": "20230422120505-ganklww",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230422120505-ganklww",
+								"updated": "20230422120505"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Изменения содержимого в редакторе автоматически сохраняются на диск; фактическое время записи на диск зависит от размера документа, обычно окончательное сохранение завершается в пределах 1 секунды"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230422120505-ickat6b",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230422120505-ickat6b",
+						"updated": "20230422122447"
+					},
+					"Children": [
+						{
+							"ID": "20230422120505-kstwmtg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230422120505-kstwmtg",
+								"updated": "20230422122447"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Поддерживается "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20220615120326-poep4m4",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "история файлов"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230422120505-oz1adok",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230422120505-oz1adok",
+						"updated": "20230422122458"
+					},
+					"Children": [
+						{
+							"ID": "20230422120505-rupar3x",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230422120505-rupar3x",
+								"updated": "20230422122458"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Поддерживаются "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20220615120602-ok10k0f",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "снимки данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230422120505-hyrx3cq",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230422120505-hyrx3cq",
+						"updated": "20230422120505"
+					},
+					"Children": [
+						{
+							"ID": "20230422120505-fubd5f8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230422120505-fubd5f8",
+								"updated": "20230422120505"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Поддерживается полный экспорт и импорт архива Data"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230422120505-sjmgid2",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230422120505-sjmgid2",
+						"updated": "20230422120505"
+					},
+					"Children": [
+						{
+							"ID": "20230422120505-qzwy6cy",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230422120505-qzwy6cy",
+								"updated": "20230422120505"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Запрещена синхронизация данных через сторонние диски синхронизации во избежание повреждения файлов"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230422120505-9rwf67o",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230422120505-9rwf67o",
+				"updated": "20230422120505"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Этими мерами мы постарались максимально обеспечить доступность данных на локальном устройстве. Но учтите: эти гарантии действуют при условии, что диск устройства свободен от сбоев и аварий."
+				}
+			]
+		},
+		{
+			"ID": "20230422120505-equlxaa",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230422120505-equlxaa",
+				"updated": "20230422120505"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Облачная синхронизация"
+				}
+			]
+		},
+		{
+			"ID": "20230422120505-jbfmpbo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230422120505-jbfmpbo",
+				"updated": "20230422122519"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Повышать доступность данных только на локальном устройстве недостаточно, ведь облачная "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20210721112206-m1l721d",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "синхронизация данных"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " — одно из жёстких требований. Синхронизация влияет на данные локального устройства, поэтому мы должны максимально обеспечить доступность данных после синхронизации:"
+				}
+			]
+		},
+		{
+			"ID": "20230422120505-lfnmxbx",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230422120505-lfnmxbx",
+				"updated": "20230422122724"
+			},
+			"Children": [
+				{
+					"ID": "20230422120505-gat2xil",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230422120505-gat2xil",
+						"updated": "20230422120505"
+					},
+					"Children": [
+						{
+							"ID": "20230422120505-smwldgi",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230422120505-smwldgi",
+								"updated": "20230422120505"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Перед синхронизацией создаётся снимок данных; если результат синхронизации окажется неожиданным, можно откатиться через снимок"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230422120505-dy55ayf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230422120505-dy55ayf",
+						"updated": "20230422122629"
+					},
+					"Children": [
+						{
+							"ID": "20230422120505-48ndzi9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230422120505-48ndzi9",
+								"updated": "20230422120505"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если при синхронизации возник конфликт файлов"
+								}
+							]
+						},
+						{
+							"ID": "20230422120505-jtkwwwv",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20230422120505-jtkwwwv",
+								"updated": "20230422122629"
+							},
+							"Children": [
+								{
+									"ID": "20230422120505-wo5qy5e",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230422120505-wo5qy5e",
+										"updated": "20230422120505"
+									},
+									"Children": [
+										{
+											"ID": "20230422120505-g35ic8x",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230422120505-g35ic8x",
+												"updated": "20230422120505"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Автоматически создаётся история файлов, через неё можно откатиться"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230422120505-5rh4qkr",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230422120505-5rh4qkr",
+										"updated": "20230422122629"
+									},
+									"Children": [
+										{
+											"ID": "20230422120505-9y7ejqk",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230422120505-9y7ejqk",
+												"updated": "20230422122629"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Также можно включить "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "kbd",
+													"TextMarkTextContent": "Настройки"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ - "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "kbd",
+													"TextMarkTextContent": "Облако"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ - "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "kbd",
+													"TextMarkTextContent": "Создавать документ конфликта при конфликтах синхронизации"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230422120505-j1d7fy0",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230422120505-j1d7fy0",
+						"updated": "20230422122724"
+					},
+					"Children": [
+						{
+							"ID": "20230422120505-ych3dl1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230422120505-ych3dl1",
+								"updated": "20230422122724"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Поддерживается просмотр и скачивание облачных снимков в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "История данных"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Аккаунт и синхронизация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Облачный снимок"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230422120505-fneldco",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230422120505-fneldco",
+				"updated": "20230422120505"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Итог"
+				}
+			]
+		},
+		{
+			"ID": "20230422120505-6c4ckee",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230422120505-6c4ckee",
+				"updated": "20230422122731"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Благодаря перечисленным мерам защиты, надеемся, у вас больше не будет особых опасений по поводу доступности данных — пользуйтесь спокойно."
+				}
+			]
+		},
+		{
+			"ID": "20230422120505-puykxi8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230422120505-puykxi8",
+				"updated": "20230422122821"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Тем не менее мы всё же рекомендуем следовать правилу резервного копирования «3-2-1» (минимум 3 копии, 2 носителя и 1 автономное хранилище)."
+				}
+			]
+		},
+		{
+			"ID": "20230422120505-eqbl8ap",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230422120505-eqbl8ap",
+				"updated": "20230422120505"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Будем рады вашим отзывам и предложениям: доступность данных — высший приоритет, и мы рассчитываем постоянно улучшать её общими усилиями."
+				}
+			]
+		}
+	]
+}

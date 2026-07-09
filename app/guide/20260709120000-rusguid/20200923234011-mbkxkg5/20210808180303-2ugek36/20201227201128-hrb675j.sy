@@ -1,0 +1,870 @@
+{
+	"ID": "20201227201128-hrb675j",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20201227201128-hrb675j",
+		"title": "Размещение в Docker",
+		"type": "doc",
+		"updated": "20250926110627"
+	},
+	"Children": [
+		{
+			"ID": "20220518213259-32l6lrq",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220518213259-32l6lrq",
+				"updated": "20220518213301"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20220521230127-9ijkcwi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220521230127-9ijkcwi",
+				"updated": "20220521230134"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Самый простой способ развернуть SiYuan на сервере — через Docker."
+				}
+			]
+		},
+		{
+			"ID": "20220521230127-c6rd3li",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220521230127-c6rd3li",
+				"updated": "20220521230148"
+			},
+			"Children": [
+				{
+					"ID": "20220521230127-l49lbqe",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220521230127-l49lbqe",
+						"updated": "20220521230127"
+					},
+					"Children": [
+						{
+							"ID": "20220521230127-7l8en12",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220521230127-7l8en12",
+								"updated": "20220521230127"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Имя образа "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "b3log/siyuan"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220521230127-nzqn4gp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220521230127-nzqn4gp",
+						"updated": "20220521230148"
+					},
+					"Children": [
+						{
+							"ID": "20220521230127-pgaxca1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220521230127-pgaxca1",
+								"updated": "20220521230148"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://hub.docker.com/r/b3log/siyuan",
+									"TextMarkTextContent": "Страница образа"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20201227201751-pwo8mpi",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20201227201751-pwo8mpi"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Структура файлов"
+				}
+			]
+		},
+		{
+			"ID": "20201227201751-l7hrvhm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20201227201751-l7hrvhm"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Программа целиком расположена в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "/opt/siyuan/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " — по сути это структура папки resources установочного пакета Electron:"
+				}
+			]
+		},
+		{
+			"ID": "20201227201751-7q6rbk3",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 42,
+				"Padding": 2,
+				"Marker": "Kg==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20201227201751-7q6rbk3"
+			},
+			"Children": [
+				{
+					"ID": "20201227201751-3ucbvj2",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20201227201751-3ucbvj2"
+					},
+					"Children": [
+						{
+							"ID": "20210208152449-wcnnbx1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210208152449-wcnnbx1"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "appearance: значки, темы, языки"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201227201751-4uirpxf",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20201227201751-4uirpxf"
+					},
+					"Children": [
+						{
+							"ID": "20210208152449-5ppkk0b",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210208152449-5ppkk0b"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "guide: документы руководства пользователя"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201227201751-2p3uxiz",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20201227201751-2p3uxiz"
+					},
+					"Children": [
+						{
+							"ID": "20210208152449-y1r8v7u",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210208152449-y1r8v7u"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "stage: интерфейс и статические ресурсы"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201227201751-fw36lo4",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20201227201751-fw36lo4"
+					},
+					"Children": [
+						{
+							"ID": "20210208152449-1o6vj3t",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210208152449-1o6vj3t"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "kernel: программа ядра"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20201227201751-6uttm7l",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20201227201751-6uttm7l"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Точка входа"
+				}
+			]
+		},
+		{
+			"ID": "20201227201751-12j8lnb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20201227201751-12j8lnb",
+				"updated": "20210301202831"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Точка входа задаётся при сборке Docker-образа: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "ENTRYPOINT [\"/opt/siyuan/kernel\" ]"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", для запуска используйте "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "docker run b3log/siyuan"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " с параметрами:"
+				}
+			]
+		},
+		{
+			"ID": "20201227201751-don7yal",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20201227201751-don7yal",
+				"updated": "20210502171445"
+			},
+			"Children": [
+				{
+					"ID": "20201227201751-pjpmng2",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20201227201751-pjpmng2",
+						"updated": "20210502171445"
+					},
+					"Children": [
+						{
+							"ID": "20210208152449-7h4d1vc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210208152449-7h4d1vc",
+								"updated": "20210502171445"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "--workspace"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " задаёт путь к папке рабочего пространства, монтируется в контейнер через "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "-v"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " на хосте"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210301202938-cn7ubeh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210301202938-cn7ubeh",
+				"updated": "20231108220518"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Дополнительные параметры см. "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20200924100717-avwh4do",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "здесь"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". Пример команды запуска: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "docker run -d -v workspace_dir_host:workspace_dir_container -p 6806:6806 b3log/siyuan --workspace=workspace_dir_container"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20201227201751-ibtbq4j",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 42,
+				"Padding": 2,
+				"Marker": "Kg==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20201227201751-ibtbq4j"
+			},
+			"Children": [
+				{
+					"ID": "20201227201751-fjb4dmz",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20201227201751-fjb4dmz"
+					},
+					"Children": [
+						{
+							"ID": "20210208152449-lhuhs59",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210208152449-lhuhs59",
+								"updated": "20210502171530"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "workspace_dir_host"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": путь к папке рабочего пространства на хосте"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201227201751-267xq3t",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20201227201751-267xq3t"
+					},
+					"Children": [
+						{
+							"ID": "20210208152449-tp87gsv",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210208152449-tp87gsv",
+								"updated": "20210502171606"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "workspace_dir_container"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": путь к папке рабочего пространства в контейнере, тот же, что указан в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "--workspace"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20201227201751-5ljz7jl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20201227201751-5ljz7jl",
+				"updated": "20231108220523"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Для простоты рекомендуется сделать пути к папке рабочего пространства одинаковыми на хосте и в контейнере, например: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace_dir_host"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace_dir_container"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ задать как "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "/siyuan/workspace"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​; соответствующая команда запуска: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "docker run -d -v /siyuan/workspace:/siyuan/workspace -p 6806:6806 -u 1000:1000 b3log/siyuan --workspace=/siyuan/workspace/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		},
+		{
+			"ID": "20211112103107-mksbev9",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20211112103107-mksbev9",
+				"updated": "20211112103113"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Права пользователя"
+				}
+			]
+		},
+		{
+			"ID": "20211112103104-wdqcjke",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211112103104-wdqcjke",
+				"updated": "20220521231639"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В образе для запуска процесса ядра используется создаваемый по умолчанию обычный пользователь "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "siyuan"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " (uid 1000/gid 1000). Поэтому при создании папки рабочего пространства на хосте обратите внимание на группу и владельца папки: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "chown -R 1000:1000 /siyuan/workspace"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". При запуске контейнера требуется параметр "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "-u 1000:1000"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210930092059-qvxbjky",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210930092059-qvxbjky",
+				"updated": "20210930092059"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Скрытие порта"
+				}
+			]
+		},
+		{
+			"ID": "20210930092059-e26wbx6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210930092059-e26wbx6",
+				"updated": "20210930092059"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Используйте обратный прокси NGINX, чтобы скрыть порт 6806; обратите внимание:"
+				}
+			]
+		},
+		{
+			"ID": "20210930092059-90196uc",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210930092059-90196uc",
+				"updated": "20211112103356"
+			},
+			"Children": [
+				{
+					"ID": "20210930092059-ivjak1y",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210930092059-ivjak1y",
+						"updated": "20211112103356"
+					},
+					"Children": [
+						{
+							"ID": "20210930092059-w0j24mo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210930092059-w0j24mo",
+								"updated": "20211112103356"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Настройте обратное проксирование WebSocket "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "/ws"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230406105311-0rn27ne",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230406105311-0rn27ne",
+				"updated": "20230406105313"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20230406105311-g2n0qbe",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230406105311-g2n0qbe",
+				"updated": "20230406105311"
+			},
+			"Children": [
+				{
+					"ID": "20230406105311-1zfiwnk",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230406105311-1zfiwnk",
+						"updated": "20230406105311"
+					},
+					"Children": [
+						{
+							"ID": "20230406105311-4loo2zw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230406105311-4loo2zw",
+								"updated": "20230406105311"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Обязательно проверьте корректность смонтированного тома, иначе данные будут потеряны после удаления контейнера"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230406105311-ml1963v",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230406105311-ml1963v",
+						"updated": "20230406105311"
+					},
+					"Children": [
+						{
+							"ID": "20230406105311-3u00n36",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230406105311-3u00n36",
+								"updated": "20230406105311"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Не используйте переписывание URL для перенаправления, иначе возможны проблемы с аутентификацией; рекомендуется настроить обратный прокси"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230406105311-ouu2dpu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230406105311-ouu2dpu",
+				"updated": "20250926110627"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ограничения"
+				}
+			]
+		},
+		{
+			"ID": "20230406105311-0xx7mc0",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230406105311-0xx7mc0",
+				"updated": "20250926110627"
+			},
+			"Children": [
+				{
+					"ID": "20230406105311-lv8j0wt",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230406105311-lv8j0wt",
+						"updated": "20230406105311"
+					},
+					"Children": [
+						{
+							"ID": "20230406105311-qggckkf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230406105311-qggckkf",
+								"updated": "20230406105311"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Не поддерживается подключение настольных и мобильных приложений, работа возможна только через браузер"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230406105311-ytm3mwq",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230406105311-ytm3mwq",
+						"updated": "20250926110627"
+					},
+					"Children": [
+						{
+							"ID": "20230406105311-p30xhoz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230406105311-p30xhoz",
+								"updated": "20250926110627"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Не поддерживается экспорт в форматы вроде PDF и Word"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

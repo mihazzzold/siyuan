@@ -1,0 +1,303 @@
+{
+	"ID": "20230802114825-4610ist",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230802114825-4610ist",
+		"title": "Инбокс",
+		"type": "doc",
+		"updated": "20240508010253"
+	},
+	"Children": [
+		{
+			"ID": "20230802114900-7hahx76",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230802114900-7hahx76",
+				"updated": "20230802115327"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20230802114900-r99sr92",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230802114900-r99sr92",
+				"updated": "20230802115024"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Через облачный инбокс можно собирать внешние данные, а затем получать их из облака через панель инбокса в SiYuan и отправлять в блокнот для дальнейшей сортировки."
+				}
+			]
+		},
+		{
+			"ID": "20230802115337-kuxtfa4",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230802115337-kuxtfa4",
+				"updated": "20230802115337"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20230802114928-aofa284",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230802114928-aofa284",
+				"updated": "20240508010253"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сейчас доступен следующий способ приёма данных."
+				}
+			]
+		},
+		{
+			"ID": "20230802114913-sht6jy6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230802114913-sht6jy6",
+				"updated": "20230802114914"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "API"
+				}
+			]
+		},
+		{
+			"ID": "20230802114940-hvncxtr",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230802114940-hvncxtr",
+				"updated": "20230802114940"
+			},
+			"Children": [
+				{
+					"ID": "20230802114940-twqnuu5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230802114940-twqnuu5",
+						"updated": "20230802114940"
+					},
+					"Children": [
+						{
+							"ID": "20230802114940-cow4jg5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230802114940-cow4jg5",
+								"updated": "20230802115054"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "POST "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "https://liuyun.io/apis/siyuan/inbox/addCloudShorthand"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230802114940-pku8hs7",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230802114940-pku8hs7",
+						"updated": "20230802114940"
+					},
+					"Children": [
+						{
+							"ID": "20230802114940-y4q00uy",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230802114940-y4q00uy",
+								"updated": "20230802114940"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Body"
+								}
+							]
+						},
+						{
+							"ID": "20230802114940-cq2h0hh",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20230802114940-cq2h0hh",
+								"updated": "20230802114940"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "anNvbg=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "{\n    \"title\": \"A simple text title\",\n    \"content\": \"Content with **Markdown**.\"\n}\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230802114940-iboexfn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230802114940-iboexfn",
+						"updated": "20230802114940"
+					},
+					"Children": [
+						{
+							"ID": "20230802114940-0tby5in",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230802114940-0tby5in",
+								"updated": "20230802115200"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Способ аутентификации — HTTP-заголовок "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Authorization"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ со значением "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "token {Your API Token}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ (учитывайте регистр и пробелы), API-токен можно найти в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://liuyun.io/settings/account",
+									"TextMarkTextContent": "LiuYun - Настройки - Аккаунт"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230802115301-9gg6pbz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230802115301-9gg6pbz",
+				"updated": "20230802115307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​:"
+				}
+			]
+		},
+		{
+			"ID": "20230802115301-bpx1atc",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230802115301-bpx1atc",
+				"updated": "20230802115314"
+			},
+			"Children": [
+				{
+					"ID": "20230802115301-lnrm6qx",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230802115301-lnrm6qx",
+						"updated": "20230802115314"
+					},
+					"Children": [
+						{
+							"ID": "20230802115301-e4j4o6v",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230802115301-e4j4o6v",
+								"updated": "20230802115314"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Ограничение частоты: не более 128 вставок за 24 часа"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

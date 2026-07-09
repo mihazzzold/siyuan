@@ -1,0 +1,232 @@
+{
+	"ID": "20211010212318-ih2ah6d",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20211010212318-ih2ah6d",
+		"title": "Виртуальные ссылки",
+		"type": "doc",
+		"updated": "20240228164101"
+	},
+	"Children": [
+		{
+			"ID": "20211010212319-r49ls10",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20211010212319-r49ls10",
+				"updated": "20211010212319"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20211010212319-vmn01s2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211010212319-vmn01s2",
+				"updated": "20211010212551"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Виртуальная ссылка — это разновидность «ссылки на блок», которая определяется автоматически на основе текста якоря существующих ссылок на блоки или имени блока; она не связывается с блоком по-настоящему, а лишь помечается в редакторе и поддерживает предпросмотр во всплывающем окне."
+				}
+			]
+		},
+		{
+			"ID": "20211010212319-8c501rm",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20211010212319-8c501rm",
+				"updated": "20211010212319"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20211010212319-9efv2un",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211010212319-9efv2un",
+				"updated": "20211010212456"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Включите переключатель "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Редактор"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Виртуальная ссылка"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20211010212319-km7zoz6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20211010212319-km7zoz6",
+				"updated": "20211010212319"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Правила обнаружения"
+				}
+			]
+		},
+		{
+			"ID": "20211010212319-r7xkf3v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211010212319-r7xkf3v",
+				"updated": "20211010212537"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Поиск ведётся по тексту якоря/тексту блока-определения существующих ссылок на блоки, а также по имени и псевдониму блока как по ключевым словам. Если эти ключевые слова найдены в простом текстовом элементе текущего блока контента, он будет считаться виртуальной ссылкой."
+				}
+			]
+		},
+		{
+			"ID": "20240228164044-zobsssy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240228164044-zobsssy",
+				"updated": "20240228164101"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Область поиска ключевых слов можно настроить в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Поиск"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Виртуальная ссылка"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		},
+		{
+			"ID": "20221003214846-3f852j4",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221003214846-3f852j4",
+				"updated": "20221003214853"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				}
+			]
+		},
+		{
+			"ID": "20221003214937-t608srb",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221003214937-t608srb",
+				"updated": "20221003214948"
+			},
+			"Children": [
+				{
+					"ID": "20221003214937-forempg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221003214937-forempg",
+						"updated": "20221003214948"
+					},
+					"Children": [
+						{
+							"ID": "20221003214937-cp0doym",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221003214937-cp0doym",
+								"updated": "20221003214948"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Из соображений производительности виртуальные ссылки вступают в силу не сразу. Если они не отображаются, попробуйте обновить текущий документ клавишей "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "F5"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

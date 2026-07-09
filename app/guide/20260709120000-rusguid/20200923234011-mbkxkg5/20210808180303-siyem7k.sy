@@ -1,0 +1,232 @@
+{
+	"ID": "20210808180303-siyem7k",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f371",
+		"id": "20210808180303-siyem7k",
+		"title": "Редактор",
+		"type": "doc",
+		"updated": "20240508004216"
+	},
+	"Children": [
+		{
+			"ID": "20210419175558-wttxj5f",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 42,
+				"Padding": 2,
+				"Marker": "Kg==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20210419175558-wttxj5f"
+			},
+			"Children": [
+				{
+					"ID": "20210419175558-iqnrg2p",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210419175558-iqnrg2p"
+					},
+					"Children": [
+						{
+							"ID": "20210419175558-ulengjp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210419175558-ulengjp"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Редактирование и вёрстка на основе блоков контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210419175558-1l0c6gq",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210419175558-1l0c6gq"
+					},
+					"Children": [
+						{
+							"ID": "20210419175558-83ujis7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210419175558-83ujis7"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Структура списков, с отступом подуровней или без него"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210419175558-74czpul",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210419175558-74czpul"
+					},
+					"Children": [
+						{
+							"ID": "20210419175558-wkouw2f",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210419175558-wkouw2f"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Фокусировка на блоке контента — в любой блок можно «погрузиться»"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210419175558-u6twoyz",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210419175558-u6twoyz"
+					},
+					"Children": [
+						{
+							"ID": "20210419175558-v9nebvn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210419175558-v9nebvn"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Динамическая загрузка, устраняющая подтормаживания на больших документах"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210419175558-8vu2pxy",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210419175558-8vu2pxy"
+					},
+					"Children": [
+						{
+							"ID": "20210419175558-qmz1q2i",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210419175558-qmz1q2i",
+								"updated": "20210512153240"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Горизонтальная компоновка перетаскиванием значка блока"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20240508004216-nehxyqj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240508004216-nehxyqj",
+				"updated": "20240508004216"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20200924093441-bej3j3s",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Элементы форматирования"
+				}
+			]
+		},
+		{
+			"ID": "20240508004216-o27m6mg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240508004216-o27m6mg",
+				"updated": "20240508004216"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220628204454-l45no4x",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Оптимизация типографики"
+				}
+			]
+		},
+		{
+			"ID": "20240508004216-fnoarjq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240508004216-fnoarjq",
+				"updated": "20240508004216"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221016204105-i1amohf",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Структура из заголовков и списков"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,610 @@
+{
+	"ID": "20200924100717-avwh4do",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20200924100717-avwh4do",
+		"title": "Параметры ядра",
+		"type": "doc",
+		"updated": "20260302173748"
+	},
+	"Children": [
+		{
+			"ID": "20201225172241-pu2v8bm",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20201225172241-pu2v8bm",
+				"updated": "20210502162639"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "### "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--workspace"
+				}
+			]
+		},
+		{
+			"ID": "20201225172241-684epw3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20201225172241-684epw3",
+				"updated": "20210502164218"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Задаёт путь к папке рабочего пространства; значение по умолчанию, если не указано, — "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "~/SiYuan/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20201225172241-txig5b4",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20201225172241-txig5b4"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "### "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--wd"
+				}
+			]
+		},
+		{
+			"ID": "20201225172241-9s8rjna",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20201225172241-9s8rjna"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Путь к рабочему каталогу ядра; если не указан, определяется автоматически по расположению исполняемого файла ядра."
+				}
+			]
+		},
+		{
+			"ID": "20201225172241-0jk51cb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20201225172241-0jk51cb"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "### "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--readonly"
+				}
+			]
+		},
+		{
+			"ID": "20201225172241-mx8pszp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20201225172241-mx8pszp"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После указания "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--readonly=true"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " ядро работает в режиме «только чтение», все операции записи запрещены."
+				}
+			]
+		},
+		{
+			"ID": "20210117224305-8ftmvo8",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210117224305-8ftmvo8",
+				"updated": "20210728171255"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--accessAuthCode"
+				}
+			]
+		},
+		{
+			"ID": "20210117224305-6sieg33",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210117224305-6sieg33"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Задаёт "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20210104091447-csfwwjc",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "пароль экрана блокировки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " для доступа из браузера; после установки перезаписывает authCode в conf.json."
+				}
+			]
+		},
+		{
+			"ID": "20201225172550-x1vqtzo",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20201225172550-x1vqtzo"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "### "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--ssl"
+				}
+			]
+		},
+		{
+			"ID": "20201225172550-6pqrg1g",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20201225172550-6pqrg1g"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После использования "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--ssl=true"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " обслуживание будет вестись по протоколам https и wss."
+				}
+			]
+		},
+		{
+			"ID": "20220517144139-myg1tk3",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220517144139-myg1tk3",
+				"updated": "20260302173748"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--lang"
+				}
+			]
+		},
+		{
+			"ID": "20220517144139-gm77o4t",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220517144139-gm77o4t",
+				"updated": "20260302173748"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Использование "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--lang=zh_CN"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ инициализирует язык интерфейса упрощённым китайским, по умолчанию "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "en_US"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​. Доступные значения: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "ar_SA"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "de_DE"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "en_US"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "es_ES"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "fr_FR"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "he_IL"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "it_IT"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "ja_JP"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "ko_KR"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "pl_PL"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "pt_BR"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "ru_RU"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "sk_SK"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "tr_TR"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "uk_UA"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "zh_CHT"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "zh_CN"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		},
+		{
+			"ID": "20220601091217-0zv3ptp",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220601091217-0zv3ptp",
+				"updated": "20220601091217"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--mode"
+				}
+			]
+		},
+		{
+			"ID": "20220601091217-hrpv74i",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220601091217-hrpv74i",
+				"updated": "20220601091217"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Используйте "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--mode=dev"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " для запуска в режиме разработки, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--mode=prod"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " — в производственном режиме, по умолчанию "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "prod"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20220601091217-hkg1qw2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220601091217-hkg1qw2",
+				"updated": "20220601091217"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Главное различие между режимом разработки и производственным режимом в том, что режим разработки использует папку внешнего вида "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "working directory/appearance/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", а производственный — "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace/conf/appearance/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20221025095658-b55uzjn",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221025095658-b55uzjn",
+				"updated": "20221025095658"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "--port"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221025095658-1lykc2g",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221025095658-1lykc2g",
+				"updated": "20221025095658"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Задаёт порт прослушивания; если не указан:"
+				}
+			]
+		},
+		{
+			"ID": "20221025095658-ievtrvp",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221025095658-ievtrvp",
+				"updated": "20221025095725"
+			},
+			"Children": [
+				{
+					"ID": "20221025095658-bmirj5z",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221025095658-bmirj5z",
+						"updated": "20221025095658"
+					},
+					"Children": [
+						{
+							"ID": "20221025095658-ld23iqm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221025095658-ld23iqm",
+								"updated": "20221025095658"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "На настольной версии используется случайный порт"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221025095658-uq1v3e3",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221025095658-uq1v3e3",
+						"updated": "20221025095725"
+					},
+					"Children": [
+						{
+							"ID": "20221025095658-sg7sijc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221025095658-sg7sijc",
+								"updated": "20221025095725"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Docker/мобильные используют "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "6806"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

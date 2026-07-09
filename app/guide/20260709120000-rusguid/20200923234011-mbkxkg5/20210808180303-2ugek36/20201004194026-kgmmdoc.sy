@@ -1,0 +1,250 @@
+{
+	"ID": "20201004194026-kgmmdoc",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20201004194026-kgmmdoc",
+		"title": "Использование в браузере",
+		"type": "doc",
+		"updated": "20231022211844"
+	},
+	"Children": [
+		{
+			"ID": "20210104091447-7zo6uxc",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091447-7zo6uxc"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Работа через браузер"
+				}
+			]
+		},
+		{
+			"ID": "20221025092947-fcdg9jr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221025092947-fcdg9jr",
+				"updated": "20221025093054"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Аутентификация"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Использование в браузере"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Открыть браузер"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ можно использовать SiYuan прямо в браузере; если нужно работать в локальной сети, замените "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "127.0.0.1"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ на IP-адрес в локальной сети."
+				}
+			]
+		},
+		{
+			"ID": "20221025092947-qapds4m",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221025092947-qapds4m",
+				"updated": "20231022211844"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Помимо работы в локальной сети, доступ через публичную сеть можно организовать двумя способами:"
+				}
+			]
+		},
+		{
+			"ID": "20210104091447-81c0otu",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 42,
+				"Padding": 2,
+				"Marker": "Kg==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20210104091447-81c0otu",
+				"updated": "20221025093157"
+			},
+			"Children": [
+				{
+					"ID": "20210104091447-ztsnzu0",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210104091447-ztsnzu0"
+					},
+					"Children": [
+						{
+							"ID": "20210302223802-25r0u1v",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210302223802-25r0u1v"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Опубликовать локальные сервисы ядра в публичной сети с помощью технологии «проброса из внутренней сети» (сложнее и нестабильнее, не рекомендуется)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091447-it8t4kw",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210104091447-it8t4kw",
+						"updated": "20221025093157"
+					},
+					"Children": [
+						{
+							"ID": "20210302223802-d0voch5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210302223802-d0voch5",
+								"updated": "20221025093157"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Развернуть собственный сервер SiYuan (рекомендуется)"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210104091447-bmbf574",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091447-bmbf574",
+				"updated": "20230820191236"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Прежде чем браться за эти два решения, начните с изучения технической архитектуры SiYuan (репозиторий GitHub: siyuan-note/siyuan)."
+				}
+			]
+		},
+		{
+			"ID": "20210104091447-4xpuo11",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210104091447-4xpuo11"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "### "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Пароль экрана блокировки"
+				}
+			]
+		},
+		{
+			"ID": "20210104091447-csfwwjc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091447-csfwwjc",
+				"updated": "20210522214406"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Аутентификация"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " можно настроить пароль экрана блокировки браузера. Пустое значение означает, что пароль не включён. Это особенно полезно в открытых сетях (офисные помещения, публичные сети): попасть в рабочее пространство можно будет только после проверки пароля."
+				}
+			]
+		},
+		{
+			"ID": "20210117211053-7lr8dam",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210117211053-7lr8dam"
+			}
+		}
+	]
+}

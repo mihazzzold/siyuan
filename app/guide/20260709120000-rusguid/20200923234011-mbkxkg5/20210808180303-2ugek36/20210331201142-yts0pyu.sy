@@ -1,0 +1,478 @@
+{
+	"ID": "20210331201142-yts0pyu",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20210331201142-yts0pyu",
+		"title": "Гиперссылки",
+		"type": "doc",
+		"updated": "20250115153437"
+	},
+	"Children": [
+		{
+			"ID": "20210331201142-dtxxtrn",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210331201142-dtxxtrn",
+				"updated": "20210331201208"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20210331201206-inf38hk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210331201206-inf38hk",
+				"updated": "20210331201214"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если нужно вызывать настольное приложение SiYuan из других мест (например, из браузера или программ с поддержкой гиперссылок), используйте гиперссылку "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "siyuan://"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210331201206-xdsqzmw",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210331201206-xdsqzmw"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Формат ссылки"
+				}
+			]
+		},
+		{
+			"ID": "20210331201206-1mlm3no",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210331201206-1mlm3no",
+				"updated": "20210502203113"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "siyuan://blocks/{id}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ": открывает блок контента напрямую, если блокнот с этим блоком уже открыт."
+				}
+			]
+		},
+		{
+			"ID": "20220312232923-igfpexg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220312232923-igfpexg",
+				"updated": "20220312232923"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Добавьте параметр строки запроса "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "focus=1"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " ("
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "siyuan://blocks/{id}?focus=1"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "), чтобы включить фокусировку."
+				}
+			]
+		},
+		{
+			"ID": "20210331201206-66t16cy",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210331201206-66t16cy",
+				"updated": "20250115153437"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20210331201206-brteelo",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210331201206-brteelo",
+				"updated": "20250115153437"
+			},
+			"Children": [
+				{
+					"ID": "20210331201206-wni59nj",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210331201206-wni59nj"
+					},
+					"Children": [
+						{
+							"ID": "20210331201206-bojjk3y",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210331201206-bojjk3y",
+								"updated": "20220407101343"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "На Windows и macOS после запуска приложение автоматически регистрирует в системе протокол "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "siyuan://"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220407101343-07olbza",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220407101343-07olbza",
+						"updated": "20220407101410"
+					},
+					"Children": [
+						{
+							"ID": "20220407101344-zl4o8q7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220407101344-zl4o8q7",
+								"updated": "20220407101344"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "На Linux попробуйте следующие шаги"
+								}
+							]
+						},
+						{
+							"ID": "20220407101344-u3hortv",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220407101344-u3hortv",
+								"updated": "20220407101410"
+							},
+							"Children": [
+								{
+									"ID": "20220407101344-mcqot4l",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220407101344-mcqot4l"
+									},
+									"Children": [
+										{
+											"ID": "20220407101344-9rpomqm",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220407101344-9rpomqm"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Создайте или найдите файл "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "siyuan.desktop"
+												},
+												{
+													"Type": "NodeText",
+													"Data": " и откройте его для редактирования"
+												}
+											]
+										},
+										{
+											"ID": "20220407101344-enmrmwk",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220407101344-enmrmwk"
+											},
+											"Children": [
+												{
+													"ID": "20220407101344-22g79jf",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220407101344-22g79jf"
+													},
+													"Children": [
+														{
+															"ID": "20220407101344-tzeo8ca",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220407101344-tzeo8ca"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "code",
+																	"TextMarkTextContent": "MimeType=MimeType=x-scheme-handler/siyuan;"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220407101344-decbvqe",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220407101344-decbvqe"
+													},
+													"Children": [
+														{
+															"ID": "20220407101344-5uckhdr",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220407101344-5uckhdr"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Добавьте "
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "code",
+																	"TextMarkTextContent": "%u"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": " в конец "
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "code",
+																	"TextMarkTextContent": "Exec"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": ", то есть "
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "code",
+																	"TextMarkTextContent": "Exec=executable file path %u"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220407101344-5e74q90",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220407101344-5e74q90",
+										"updated": "20220407101410"
+									},
+									"Children": [
+										{
+											"ID": "20220407101344-zvy85xc",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220407101344-zvy85xc",
+												"updated": "20220407101410"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Выполните следующие команды"
+												}
+											]
+										},
+										{
+											"ID": "20220407101344-d36gmcf",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20220407101344-d36gmcf"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "amF2YQ=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "sudo update-desktop-database\nxdg-mime default siyuan.desktop x-scheme-handler/siyuan\nxdg-settings set default-url-scheme-handler siyuan siyuan.desktop\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										},
+										{
+											"ID": "20220407101344-7kthg2r",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220407101344-7kthg2r"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Подробнее см. "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "https://www.freedesktop.org/wiki/Software/xdg-utils/",
+													"TextMarkTextContent": "xdg-utils"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "."
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210331201206-fet4m3q",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210331201206-fet4m3q",
+						"updated": "20250115153437"
+					},
+					"Children": [
+						{
+							"ID": "20210331201206-uv4tciu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210331201206-uv4tciu",
+								"updated": "20250115153437"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Меню значка блока"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Копировать"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Копировать гиперссылку блока"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

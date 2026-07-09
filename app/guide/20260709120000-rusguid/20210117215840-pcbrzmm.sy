@@ -1,0 +1,1123 @@
+{
+	"ID": "20210117215840-pcbrzmm",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f50f",
+		"id": "20210117215840-pcbrzmm",
+		"title": "Безопасность данных",
+		"type": "doc",
+		"updated": "20230422123335"
+	},
+	"Children": [
+		{
+			"ID": "20210721113914-xbr5sof",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210721113914-xbr5sof",
+				"updated": "20210721113914"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20210721113914-y340a05",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210721113914-y340a05",
+				"updated": "20210721113914"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Безопасность данных делится на два основных аспекта:"
+				}
+			]
+		},
+		{
+			"ID": "20210721113914-zyf5loc",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210721113914-zyf5loc",
+				"updated": "20230422123335"
+			},
+			"Children": [
+				{
+					"ID": "20210721113914-8zd3seq",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210721113914-8zd3seq",
+						"updated": "20230422123335"
+					},
+					"Children": [
+						{
+							"ID": "20210721113914-y89zzz5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721113914-y89zzz5",
+								"updated": "20230422123335"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20230422120504-1c2dqf9",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Доступность"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": данные не теряются, остаются полными и согласованными"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210721113914-cest7gr",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210721113914-cest7gr"
+					},
+					"Children": [
+						{
+							"ID": "20210721113914-mbf1sch",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721113914-mbf1sch"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Конфиденциальность: данные не будут раскрыты или подделаны"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210721113914-if39a6j",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210721113914-if39a6j",
+				"updated": "20210721114140"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "SiYuan обеспечивает оба аспекта. Ниже — пояснения о безопасности данных."
+				}
+			]
+		},
+		{
+			"ID": "20210721113914-81rj4w0",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210721113914-81rj4w0",
+				"updated": "20210721113914"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Хранение в открытом виде"
+				}
+			]
+		},
+		{
+			"ID": "20210721113914-6wnq75f",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210721113914-6wnq75f",
+				"updated": "20210721114144"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "SiYuan хранит данные в локальной файловой системе в открытом виде, что означает:"
+				}
+			]
+		},
+		{
+			"ID": "20210721113914-pzglml2",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210721113914-pzglml2",
+				"updated": "20210721113914"
+			},
+			"Children": [
+				{
+					"ID": "20210721113914-m9p21v2",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210721113914-m9p21v2"
+					},
+					"Children": [
+						{
+							"ID": "20210721113914-oh328af",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721113914-oh328af"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Любой человек или программа с доступом к операционной системе может прочитать эти данные"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210721113914-v1e7y1f",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210721113914-v1e7y1f"
+					},
+					"Children": [
+						{
+							"ID": "20210721113914-ehji77v",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721113914-ehji77v"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Доступность данных зависит от исправности дисков и операционной системы"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210721113914-6eo8gvi",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210721113914-6eo8gvi",
+				"updated": "20210721113914"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сквозное шифрование"
+				}
+			]
+		},
+		{
+			"ID": "20210721113914-yuvq1za",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210721113914-yuvq1za",
+				"updated": "20220703223247"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Облачная синхронизация SiYuan использует "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20210721112229-hb09weh",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "сквозное шифрование"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "; пароль хранится локально, зашифрованный встроенным ключом, и никакая третья сторона, кроме пользователя, не может получить открытый текст облачных данных."
+				}
+			]
+		},
+		{
+			"ID": "20210721113914-932jzii",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210721113914-932jzii",
+				"updated": "20210721113914"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Рекомендации"
+				}
+			]
+		},
+		{
+			"ID": "20210721113914-ost3z4m",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210721113914-ost3z4m",
+				"updated": "20230422122808"
+			},
+			"Children": [
+				{
+					"ID": "20210721113914-esomclb",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210721113914-esomclb",
+						"updated": "20230422122808"
+					},
+					"Children": [
+						{
+							"ID": "20210721113914-3tmld22",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721113914-3tmld22",
+								"updated": "20230422122808"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Регулярно делайте резервные копии данных по правилу «3-2-1» (минимум 3 копии, 2 носителя и 1 автономное хранилище)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210721113914-kuyhw0m",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210721113914-kuyhw0m"
+					},
+					"Children": [
+						{
+							"ID": "20210721113914-e8u23hj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721113914-e8u23hj"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Для важных паролей, ключей и главных секретов рекомендуется использовать специальные программы, устройства или автономные хранилища"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-636dwk9",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220626214041-636dwk9",
+				"updated": "20220626214041"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Модель угроз"
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-8q341ot",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220626214041-8q341ot",
+				"updated": "20220626214048"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Оценивается главным образом безопасность локальных данных и безопасность облачного хранилища SiYuan."
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-w5whowp",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220626214041-w5whowp",
+				"updated": "20220626214041"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Предпосылки"
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-1m4gei4",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220626214041-1m4gei4",
+				"updated": "20220626214653"
+			},
+			"Children": [
+				{
+					"ID": "20220626214041-08emwfp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-08emwfp",
+						"updated": "20220626214653"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-17718kk",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-17718kk",
+								"updated": "20220626214131"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Операционная система локального хоста — полностью доверенная среда. Это базовая предпосылка безопасности данных; только при её соблюдении можно гарантировать:"
+								}
+							]
+						},
+						{
+							"ID": "20220626214041-sw7c48v",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220626214041-sw7c48v",
+								"updated": "20220626214653"
+							},
+							"Children": [
+								{
+									"ID": "20220626214041-6ifojtc",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220626214041-6ifojtc",
+										"updated": "20220626214653"
+									},
+									"Children": [
+										{
+											"ID": "20220626214041-kjtcs8c",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220626214041-kjtcs8c",
+												"updated": "20220626214653"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Доступность исходных данных"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220626214041-aiajup4",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220626214041-aiajup4",
+										"updated": "20220626214649"
+									},
+									"Children": [
+										{
+											"ID": "20220626214041-yhza2cr",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220626214041-yhza2cr",
+												"updated": "20220626214649"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Отсутствие утечки исходных данных"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220626214041-ekwqoes",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220626214041-ekwqoes",
+										"updated": "20220626214041"
+									},
+									"Children": [
+										{
+											"ID": "20220626214041-av25eyd",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220626214041-av25eyd",
+												"updated": "20220626214041"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Безопасность ключа"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220626214041-x84byzu",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-x84byzu",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-91k5du8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-91k5du8",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Пользователи не передают ключи злоумышленникам"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220626214041-iko01en",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-iko01en",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-zxp7uau",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-zxp7uau",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Данные в облачном хранилище не будут удалены"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220626214041-j0pfusm",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-j0pfusm",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-e6970s8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-e6970s8",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Алгоритм шифрования AES-GCM не взломан"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220626214041-zoj0xgc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-zoj0xgc",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-agjvdgw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-agjvdgw",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Злоумышленник не располагает вычислительной мощностью для перебора"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-6kgl63s",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220626214041-6kgl63s",
+				"updated": "20220626214041"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Облачное хранилище может гарантировать"
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-nx67ljb",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220626214041-nx67ljb",
+				"updated": "20220626214041"
+			},
+			"Children": [
+				{
+					"ID": "20220626214041-nnolfj3",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-nnolfj3",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-lke1eld",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-lke1eld",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Данные можно расшифровать только правильным ключом"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220626214041-vkpuolz",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-vkpuolz",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-gqheibc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-gqheibc",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Подделанные данные расшифровать невозможно"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-i85dpau",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220626214041-i85dpau",
+				"updated": "20220626214041"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Штатные примеры"
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-2ouktvy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220626214041-2ouktvy",
+				"updated": "20220626214555"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Исходя из перечисленных предпосылок и гарантий, вот примеры того, чего может добиться злоумышленник."
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-1nnmho9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220626214041-1nnmho9",
+				"updated": "20220626214434"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если у злоумышленника есть доступ к облачному хранилищу только на чтение, он может:"
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-8jozd7q",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220626214041-8jozd7q",
+				"updated": "20220626214041"
+			},
+			"Children": [
+				{
+					"ID": "20220626214041-9p6gcaj",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-9p6gcaj",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-vtztkqr",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-vtztkqr",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Получить зашифрованные данные и попытаться взломать их перебором"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220626214041-5ackm1r",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-5ackm1r",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-j4z4ni4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-j4z4ni4",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Определить размер данных по информации индекса"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-byfb2dh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220626214041-byfb2dh",
+				"updated": "20220626214041"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если злоумышленник способен перехватывать сеть, он может:"
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-2yaucs2",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220626214041-2yaucs2",
+				"updated": "20220626214041"
+			},
+			"Children": [
+				{
+					"ID": "20220626214041-agmisjj",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-agmisjj",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-luvm86l",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-luvm86l",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Подделать данные, сделав их недоступными"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220626214041-3abx18b",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-3abx18b",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-cm4hvyy",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-cm4hvyy",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Получить информацию об ID пользователя"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220626214041-6j8e49j",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-6j8e49j",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-91nhrv0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-91nhrv0",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Определить размер данных по трафику"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-pisrpwv",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220626214041-pisrpwv",
+				"updated": "20220626214222"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Нештатные примеры"
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-das19p9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220626214041-das19p9",
+				"updated": "20220626214558"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если перечисленные предпосылки или гарантии нарушены, вот примеры того, чего может добиться злоумышленник."
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-cssnavi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220626214041-cssnavi",
+				"updated": "20220626214626"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если злоумышленник способен скомпрометировать операционную систему локального хоста, он может:"
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-k71o3xc",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220626214041-k71o3xc",
+				"updated": "20220626214644"
+			},
+			"Children": [
+				{
+					"ID": "20220626214041-y5x2n97",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-y5x2n97",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-02lj78w",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-02lj78w",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Изменить или удалить исходные данные, сделав их недоступными"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220626214041-zwydyfn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-zwydyfn",
+						"updated": "20220626214642"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-0qtru6m",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-0qtru6m",
+								"updated": "20220626214642"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Получить исходные данные"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220626214041-0ywnvhz",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-0ywnvhz",
+						"updated": "20220626214644"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-aogkd72",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-aogkd72",
+								"updated": "20220626214644"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Получить ключ"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-izewn76",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220626214041-izewn76",
+				"updated": "20220626214710"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если у злоумышленника есть доступ к облачному хранилищу на запись, он может:"
+				}
+			]
+		},
+		{
+			"ID": "20220626214041-0tlrtgz",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220626214041-0tlrtgz",
+				"updated": "20220626214041"
+			},
+			"Children": [
+				{
+					"ID": "20220626214041-161kmhb",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220626214041-161kmhb",
+						"updated": "20220626214041"
+					},
+					"Children": [
+						{
+							"ID": "20220626214041-5ry2srm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220626214041-5ry2srm",
+								"updated": "20220626214041"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Изменить или удалить облачное хранилище, сделав облачные данные недоступными"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

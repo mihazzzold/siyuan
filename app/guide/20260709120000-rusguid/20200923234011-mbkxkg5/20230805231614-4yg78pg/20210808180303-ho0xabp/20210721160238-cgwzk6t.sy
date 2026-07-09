@@ -1,0 +1,335 @@
+{
+	"ID": "20210721160238-cgwzk6t",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20210721160238-cgwzk6t",
+		"title": "Хостинг ресурсов",
+		"type": "doc",
+		"updated": "20250115151337"
+	},
+	"Children": [
+		{
+			"ID": "20210721160254-rj8lt2x",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210721160254-rj8lt2x",
+				"updated": "20220708103429"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "SiYuan предоставляет облачный хостинг ресурсов — в основном для копирования документов и файлов ресурсов на платформы вроде WeChat MP, Zhihu и Yuque. Редакторы этих платформ при вставке автоматически перетягивают файлы ресурсов к себе."
+				}
+			]
+		},
+		{
+			"ID": "20210721160254-ri2t50f",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210721160254-ri2t50f",
+				"updated": "20250115151337"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20210721160254-innqssi",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20210721160254-innqssi",
+				"updated": "20250115151337"
+			},
+			"Children": [
+				{
+					"ID": "20210721160254-rm69egx",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20210721160254-rm69egx",
+						"updated": "20250115151337"
+					},
+					"Children": [
+						{
+							"ID": "20210721160254-nicslcc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721160254-nicslcc",
+								"updated": "20250115151337"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "В правом верхнем углу документа выберите "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "︙"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в меню «Ещё» и выберите "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Загрузить файлы ресурсов в облако"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210721160254-1fso5hv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20210721160254-1fso5hv",
+						"updated": "20210721160432"
+					},
+					"Children": [
+						{
+							"ID": "20210721160254-k4bdhqe",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721160254-k4bdhqe",
+								"updated": "20210721160432"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выберите "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Предпросмотр экспорта"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Переключении режима"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210721160254-laf2rv1",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20210721160254-laf2rv1",
+						"updated": "20210721160517"
+					},
+					"Children": [
+						{
+							"ID": "20210721160254-y4twy52",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721160254-y4twy52",
+								"updated": "20210721160517"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нажмите "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Копировать в WeChat MP"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Копировать в Zhihu"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " или "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Копировать в Yuque"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210721160254-bnf4qex",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20210721160254-bnf4qex"
+					},
+					"Children": [
+						{
+							"ID": "20210721160254-zo8gtjl",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721160254-zo8gtjl"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Вставьте в редактор целевой платформы"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220407085720-fplg9ha",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220407085720-fplg9ha",
+				"updated": "20230621111510"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если нужно удалить файлы из облачного хостинга ресурсов, перейдите в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://liuyun.io/settings/file?type=3",
+					"TextMarkTextContent": "LiuYun - Настройки - Файлы - Заметка"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". После удаления занятое файлом место в облачном хранилище освобождается сразу, но очистка кэша CDN может сработать не мгновенно: URL файла останется доступным, пока кэш CDN не истечёт автоматически через 30 дней."
+				}
+			]
+		},
+		{
+			"ID": "20210721160254-sldu6zx",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210721160254-sldu6zx",
+				"updated": "20211127233000"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				}
+			]
+		},
+		{
+			"ID": "20211127232925-axyt4my",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20211127232925-axyt4my",
+				"updated": "20211127233055"
+			},
+			"Children": [
+				{
+					"ID": "20211127232925-1y7kw6h",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20211127232925-1y7kw6h",
+						"updated": "20211127233016"
+					},
+					"Children": [
+						{
+							"ID": "20211127232925-1d61pk8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20211127232925-1d61pk8",
+								"updated": "20211127233016"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Не используйте внешние адреса облачных ресурсов напрямую на других платформах: адрес нестабилен, и смена доменного имени может повлиять на доступность"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20211127232925-5kng5c4",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20211127232925-5kng5c4",
+						"updated": "20211127233055"
+					},
+					"Children": [
+						{
+							"ID": "20211127232925-orvgt70",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20211127232925-orvgt70",
+								"updated": "20211127233055"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Не загружайте незаконные или чувствительные файлы. Загруженные файлы проверяются сторонними сервисами (порнография, терроризм, чувствительные персоны и т. д.). Если обнаружится загрузка незаконных файлов, аккаунт пользователя будет навсегда заблокирован с соответствующей юридической ответственностью"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

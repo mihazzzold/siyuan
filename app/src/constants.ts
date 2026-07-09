@@ -327,7 +327,7 @@ export abstract class Constants {
         ko: "20210808180117-6v0mkxr",
         pl: "20210808180117-6v0mkxr",
         "pt-BR": "20210808180117-6v0mkxr",
-        ru: "20210808180117-6v0mkxr",
+        ru: "20260709120000-rusguid",
         th: "20210808180117-6v0mkxr",
         nl: "20210808180117-6v0mkxr",
         sk: "20210808180117-6v0mkxr",

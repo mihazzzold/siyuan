@@ -1,0 +1,556 @@
+{
+	"ID": "20230106104821-rc1g5lo",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230106104821-rc1g5lo",
+		"title": "Рабочее пространство",
+		"type": "doc",
+		"updated": "20250306083914"
+	},
+	"Children": [
+		{
+			"ID": "20230106105213-4m4m7cv",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230106105213-4m4m7cv",
+				"updated": "20230106105213"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20230106105213-fv73pzh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230106105213-fv73pzh",
+				"updated": "20230106105213"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Рабочее пространство используется для хранения данных, истории, конфигурации и файлов, нужных во время работы."
+				}
+			]
+		},
+		{
+			"ID": "20230106105213-onvk511",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230106105213-onvk511",
+				"updated": "20230106105213"
+			},
+			"Children": [
+				{
+					"ID": "20230106105213-kksj7c9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230106105213-kksj7c9",
+						"updated": "20230106105213"
+					},
+					"Children": [
+						{
+							"ID": "20230106105213-7rylcc5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230106105213-7rylcc5",
+								"updated": "20230106105213"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Разные рабочие пространства изолированы друг от друга папками файловой системы"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230106105213-u8pqybt",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230106105213-u8pqybt",
+						"updated": "20230106105213"
+					},
+					"Children": [
+						{
+							"ID": "20230106105213-afvg9pr",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230106105213-afvg9pr",
+								"updated": "20230106105213"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Рабочее пространство может обслуживаться только одним процессом ядра"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230109113955-x1euosn",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230109113955-x1euosn",
+				"updated": "20250306083914"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Переключение рабочего пространства"
+				}
+			]
+		},
+		{
+			"ID": "20230109113955-k0oxpxj",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230109113955-k0oxpxj",
+				"updated": "20250306083914"
+			},
+			"Children": [
+				{
+					"ID": "20230109113955-fn6tth9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230109113955-fn6tth9",
+						"updated": "20250306083853"
+					},
+					"Children": [
+						{
+							"ID": "20230109113955-n1alusc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230109113955-n1alusc",
+								"updated": "20230109114014"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "На настольной версии несколько рабочих пространств можно открывать через выпадающее меню слева на верхней панели"
+								}
+							]
+						},
+						{
+							"ID": "20230109113955-2x7jexe",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230109113955-2x7jexe",
+								"updated": "20250306083853"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если ваши рабочие пространства нужно часто запускать, создайте отдельную точку запуска для каждого и укажите параметр запуска "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "--workspace=&quot;Absolute-path-of-the-workspace&quot;"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​(заключайте путь в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "&quot;"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​). Например, в Windows можно скопировать несколько ярлыков и в каждом дописать параметр пути рабочего пространства в «Ярлык - Свойства - Объект», например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "--workspace=&quot;F:\\SiYuan&quot;"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​. Кроме того, можно передать "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "--port=12345"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​, чтобы указать порт, который слушает ядро."
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230109113955-nt2763j",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230109113955-nt2763j",
+						"updated": "20250306083914"
+					},
+					"Children": [
+						{
+							"ID": "20230109113955-5ejwv5c",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230109113955-5ejwv5c",
+								"updated": "20250306083914"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "На мобильной версии переключаться между рабочими пространствами можно в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "О программе"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в правой панели"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230106105213-58japm5",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230106105213-58japm5",
+				"updated": "20230106105213"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Структура в файловой системе"
+				}
+			]
+		},
+		{
+			"ID": "20230106105213-6rvsxxg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230106105213-6rvsxxg",
+				"updated": "20230106105213"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Структура рабочего пространства в файловой системе:"
+				}
+			]
+		},
+		{
+			"ID": "20230106105213-beoffqh",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230106105213-beoffqh",
+				"updated": "20230106105328"
+			},
+			"Children": [
+				{
+					"ID": "20230106105213-b9cmf4e",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230106105213-b9cmf4e",
+						"updated": "20230106105213"
+					},
+					"Children": [
+						{
+							"ID": "20230106105213-446s63o",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230106105213-446s63o",
+								"updated": "20230106105213"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "conf"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ хранит конфигурацию рабочего пространства"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230106105213-qz0luim",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230106105213-qz0luim",
+						"updated": "20230106105213"
+					},
+					"Children": [
+						{
+							"ID": "20230106105213-15894z5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230106105213-15894z5",
+								"updated": "20230106105213"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "corrupted"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ хранит повреждённые файлы данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230106105213-p53hlqu",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230106105213-p53hlqu",
+						"updated": "20230106105328"
+					},
+					"Children": [
+						{
+							"ID": "20230106105213-y4et96y",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230106105213-y4et96y",
+								"updated": "20230106105328"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "data"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ хранит данные, конкретную структуру см. "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210428222603-2wp8fj1",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "здесь"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230106105213-p09yn5y",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230106105213-p09yn5y",
+						"updated": "20230106105213"
+					},
+					"Children": [
+						{
+							"ID": "20230106105213-4ct1mfb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230106105213-4ct1mfb",
+								"updated": "20230106105213"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "history"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ хранит историю файлов"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230106105213-jd93cy9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230106105213-jd93cy9",
+						"updated": "20230106105213"
+					},
+					"Children": [
+						{
+							"ID": "20230106105213-om70kot",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230106105213-om70kot",
+								"updated": "20230106105213"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "repo"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ хранит данные репозитория данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230106105213-clp0cqg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230106105213-clp0cqg",
+						"updated": "20230106105213"
+					},
+					"Children": [
+						{
+							"ID": "20230106105213-6ktodmd",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230106105213-6ktodmd",
+								"updated": "20230106105213"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "temp"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ хранит временные файлы, нужные во время работы"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230106105213-9em31dd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230106105213-9em31dd",
+						"updated": "20230106105213"
+					},
+					"Children": [
+						{
+							"ID": "20230106105213-5ix609v",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230106105213-5ix609v",
+								"updated": "20230106105213"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".lock"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ этот файл создаётся после запуска процесса ядра для блокировки рабочего пространства"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

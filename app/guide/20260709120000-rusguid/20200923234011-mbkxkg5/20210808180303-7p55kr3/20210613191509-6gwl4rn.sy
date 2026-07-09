@@ -1,0 +1,364 @@
+{
+	"ID": "20210613191509-6gwl4rn",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20210613191509-6gwl4rn",
+		"title": "Атрибуты блока контента",
+		"type": "doc",
+		"updated": "20251201102407"
+	},
+	"Children": [
+		{
+			"ID": "20210613191548-4agffup",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210613191548-4agffup",
+				"updated": "20210613191548"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20210613191548-wcn68ly",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210613191548-wcn68ly",
+				"updated": "20210613191548"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Атрибуты существуют в виде пар «ключ — значение». Устанавливая атрибуты блоку контента, мы можем обогатить его смысл. Атрибуты делятся на встроенные и пользовательские."
+				}
+			]
+		},
+		{
+			"ID": "20210613191548-lqlvtdr",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210613191548-lqlvtdr",
+				"updated": "20210613191548"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Встроенные атрибуты"
+				}
+			]
+		},
+		{
+			"ID": "20210613191548-nirkpbn",
+			"Type": "NodeTable",
+			"TableAligns": [
+				2,
+				0
+			],
+			"Properties": {
+				"id": "20210613191548-nirkpbn",
+				"updated": "20210613191633"
+			},
+			"Children": [
+				{
+					"Type": "NodeTableHead",
+					"Data": "thead",
+					"Children": [
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"TableCellAlign": 2,
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Имя атрибута"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Описание"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 2,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "name"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Имя блока контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 2,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "alias"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Псевдоним блока контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 2,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "memo"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Заметка блока контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 2,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "bookmark"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Закладка блока контента"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210613191548-5hb2jtn",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210613191548-5hb2jtn",
+				"updated": "20251201102407"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Пользовательские атрибуты"
+				}
+			]
+		},
+		{
+			"ID": "20251201102224-aolwy47",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20251201102224-aolwy47",
+				"updated": "20251201102407"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Пользовательские атрибуты задаются через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code kbd",
+					"TextMarkTextContent": "Block icon menu"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ -"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code kbd",
+					"TextMarkTextContent": "Attribute"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​; имена атрибутов могут содержать только строчные латинские буквы и арабские цифры и должны начинаться с буквы (например, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "doing"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "day1"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​). После установки SiYuan автоматически добавит к имени атрибута префикс "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "custom-"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, чтобы отличать его от встроенных атрибутов."
+				}
+			]
+		},
+		{
+			"ID": "20210613191548-r8vmh8a",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210613191548-r8vmh8a",
+				"updated": "20210613191548"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Запрос блоков контента по атрибутам"
+				}
+			]
+		},
+		{
+			"ID": "20210613191548-pkh5wrm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210613191548-pkh5wrm",
+				"updated": "20210613191548"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Например, если задать блоку контента атрибуты "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "progress=30"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "priority=2"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", можно запросить все блоки контента с прогрессом 30 и приоритетом 2 через SQL:"
+				}
+			]
+		},
+		{
+			"ID": "20210613191548-auqf590",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20210613191548-auqf590",
+				"updated": "20210613191548"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "c3Fs"
+				},
+				{
+					"ID": "20220307092214-33jgyyc",
+					"Type": "NodeCodeBlockCode",
+					"Data": "SELECT *\nFROM blocks\nWHERE id IN (\n    SELECT block_id\n    FROM attributes AS a\n    WHERE (a.name ='custom-progress' AND a.value = '30')\n       OR (a.name ='custom-priority' AND a.value = '2')\n    GROUP BY block_id\n    HAVING count(block_id) = 2\n);\n",
+					"Properties": {
+						"id": "20220307092214-33jgyyc"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		}
+	]
+}

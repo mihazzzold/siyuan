@@ -1,0 +1,1448 @@
+{
+	"ID": "20200924100110-wt6gcft",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20200924100110-wt6gcft",
+		"title": "Значки",
+		"type": "doc",
+		"updated": "20230821210709"
+	},
+	"Children": [
+		{
+			"ID": "20230418095541-3mloyzj",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230418095541-3mloyzj",
+				"updated": "20230418095541"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20230418095541-a3qkdzl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230418095541-a3qkdzl",
+				"updated": "20230418095541"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Наборы значков можно скачать из маркетплейса сообщества или установить вручную."
+				}
+			]
+		},
+		{
+			"ID": "20230418095541-exkqe5d",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230418095541-exkqe5d",
+				"updated": "20230418095545"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Маркетплейс сообщества"
+				}
+			]
+		},
+		{
+			"ID": "20230418095541-reyh4a3",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230418095541-reyh4a3",
+				"updated": "20230418095622"
+			},
+			"Children": [
+				{
+					"ID": "20230418095541-leslf97",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230418095541-leslf97",
+						"updated": "20230418095622"
+					},
+					"Children": [
+						{
+							"ID": "20230418095541-6us3ndi",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230418095541-6us3ndi",
+								"updated": "20230418095622"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Просматривайте значки от разработчиков сообщества онлайн в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Маркетплейс"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Значки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230418095541-yer71l1",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230418095541-yer71l1",
+						"updated": "20230418095541"
+					},
+					"Children": [
+						{
+							"ID": "20230418095541-mixmpyv",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230418095541-mixmpyv",
+								"updated": "20230418095541"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выберите нужный набор значков для онлайн-установки или обновления"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210104091404-1ibkng9",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210104091404-1ibkng9",
+				"updated": "20230418095635"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ручная установка"
+				}
+			]
+		},
+		{
+			"ID": "20210104091404-dhw35iz",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1,
+				"Tight": true,
+				"Start": 1,
+				"Delimiter": 46,
+				"Padding": 3,
+				"Marker": "MQ==",
+				"Num": 1
+			},
+			"Properties": {
+				"id": "20210104091404-dhw35iz"
+			},
+			"Children": [
+				{
+					"ID": "20210104091404-93oitsn",
+					"Type": "NodeListItem",
+					"Data": "1",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 1,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "MQ==",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20210104091404-93oitsn"
+					},
+					"Children": [
+						{
+							"ID": "20210302223515-by66m0d",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210302223515-by66m0d"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Получите набор значков и распакуйте"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091404-qia1le3",
+					"Type": "NodeListItem",
+					"Data": "2",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 2,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "Mg==",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20210104091404-qia1le3"
+					},
+					"Children": [
+						{
+							"ID": "20210302223515-ye6watn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210302223515-ye6watn"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Значки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Открыть папку значков"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091404-s0k9jxa",
+					"Type": "NodeListItem",
+					"Data": "3",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 3,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "Mw==",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20210104091404-s0k9jxa"
+					},
+					"Children": [
+						{
+							"ID": "20210302223515-jnqf6w4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210302223515-jnqf6w4"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Скопируйте набор значков в этот каталог"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091404-nqbonye",
+					"Type": "NodeListItem",
+					"Data": "4",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 4,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "NA==",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20210104091404-nqbonye"
+					},
+					"Children": [
+						{
+							"ID": "20210302223515-7lf68rx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210302223515-7lf68rx"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Перезапустите и выберите установленный набор в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Значки"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210104091404-jfjkmuh",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091404-jfjkmuh"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Разработка"
+				}
+			]
+		},
+		{
+			"ID": "20210104091404-eu5h7po",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210104091404-eu5h7po"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "### "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Шаги"
+				}
+			]
+		},
+		{
+			"ID": "20210104091404-rmy3u31",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1,
+				"Start": 1,
+				"Delimiter": 46,
+				"Padding": 3,
+				"Marker": "MQ==",
+				"Num": 1
+			},
+			"Properties": {
+				"id": "20210104091404-rmy3u31",
+				"updated": "20230821210709"
+			},
+			"Children": [
+				{
+					"ID": "20210104091404-7nn3krx",
+					"Type": "NodeListItem",
+					"Data": "1",
+					"ListData": {
+						"Typ": 1,
+						"Start": 1,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "MQ==",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20210104091404-7nn3krx"
+					},
+					"Children": [
+						{
+							"ID": "20210104091404-q3twm9p",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091404-q3twm9p"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Придумайте своему набору значков хорошее имя, например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "alice"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091404-hezbih8",
+					"Type": "NodeListItem",
+					"Data": "2",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 2,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "Mg==",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20210104091404-hezbih8"
+					},
+					"Children": [
+						{
+							"ID": "20210104091404-no6hvd4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091404-no6hvd4"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Значки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Открыть папку значков"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091404-xb9gftu",
+					"Type": "NodeListItem",
+					"Data": "3",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 3,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "Mw==",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20210104091404-xb9gftu",
+						"updated": "20230821210709"
+					},
+					"Children": [
+						{
+							"ID": "20210104091404-2670ma7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091404-2670ma7",
+								"updated": "20230821210709"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Создайте новую папку "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "alice"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в открывшейся папке и создайте файлы "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "icon.js"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ и "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "icon.json"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "alice"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​; конкретные примеры см. в репозитории GitHub: siyuan-note/icon-sample"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091404-upa4qpf",
+					"Type": "NodeListItem",
+					"Data": "4",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 4,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "NA==",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20210104091404-upa4qpf"
+					},
+					"Children": [
+						{
+							"ID": "20210104091404-5jr5q4j",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091404-5jr5q4j"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Откройте файл "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "icon.js"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " и вставьте готовый значок"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091404-07q5xn2",
+					"Type": "NodeListItem",
+					"Data": "5",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 5,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "NQ==",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20210104091404-07q5xn2"
+					},
+					"Children": [
+						{
+							"ID": "20210104091404-m4yb8l2",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091404-m4yb8l2"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Перезапустите и выберите установленный набор в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Значки"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210104091404-nqzxrp9",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210104091404-nqzxrp9"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "### "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Изготовление значков"
+				}
+			]
+		},
+		{
+			"ID": "20210104091404-vag21hs",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210104091404-vag21hs",
+				"updated": "20230418095355"
+			},
+			"Children": [
+				{
+					"ID": "20210104091404-6qspfat",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210104091404-6qspfat",
+						"updated": "20230418095331"
+					},
+					"Children": [
+						{
+							"ID": "20210104091404-kktanf9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091404-kktanf9",
+								"updated": "20230418095331"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Откройте в браузере файл "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "index.html"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ из папки значков"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091404-63yn4ny",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210104091404-63yn4ny"
+					},
+					"Children": [
+						{
+							"ID": "20210104091404-htaynkz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091404-htaynkz"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Сделайте похожие значки, ориентируясь на имя и форму значка"
+								}
+							]
+						},
+						{
+							"ID": "20210104091404-91d4fzx",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20210104091404-91d4fzx"
+							},
+							"Children": [
+								{
+									"ID": "20210104091404-r8thcbh",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-r8thcbh"
+									},
+									"Children": [
+										{
+											"ID": "20210302223515-9cvx1at",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210302223515-9cvx1at"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Зайдите на "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "https://www.iconfont.cn",
+													"TextMarkTextContent": "Iconfont"
+												},
+												{
+													"Type": "NodeText",
+													"Data": ", найдите понравившийся значок и скачайте в формате SVG"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091404-lxtmuau",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-lxtmuau"
+									},
+									"Children": [
+										{
+											"ID": "20210302223515-837bgmg",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210302223515-837bgmg"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Сделайте собственные значки в формате SVG в векторном редакторе"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091404-dgz1iy3",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-dgz1iy3"
+									},
+									"Children": [
+										{
+											"ID": "20210302223515-5l1vaqw",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210302223515-5l1vaqw"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Зайдите на "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "https://www.pngtosvg.com/",
+													"TextMarkTextContent": "pngtosvg"
+												},
+												{
+													"Type": "NodeText",
+													"Data": ", чтобы конвертировать изображение в формат SVG"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091404-609d6ha",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210104091404-609d6ha",
+						"updated": "20230418095355"
+					},
+					"Children": [
+						{
+							"ID": "20210104091404-6ksbb00",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091404-6ksbb00",
+								"updated": "20230418095329"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Зайдите в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://icomoon.io/app/#/select",
+									"TextMarkTextContent": "IcoMoon App"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", чтобы изготовить "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "icon.js"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"ID": "20210104091404-7svsemy",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20210104091404-7svsemy",
+								"updated": "20230418095355"
+							},
+							"Children": [
+								{
+									"ID": "20210104091404-1nzwacg",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-1nzwacg",
+										"updated": "20230418085705"
+									},
+									"Children": [
+										{
+											"ID": "20210302223515-ox2lcuz",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210302223515-ox2lcuz",
+												"updated": "20230418085705"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Нажмите "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "Import Icons"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ в правом верхнем углу, чтобы импортировать изображения, сделанные на предыдущем шаге"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091404-8d5b1w7",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-8d5b1w7"
+									},
+									"Children": [
+										{
+											"ID": "20210302223515-kgrngaq",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210302223515-kgrngaq",
+												"updated": "20210512172156"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Выберите значок и сгенерируйте SVG\n"
+												},
+												{
+													"Type": "NodeImage",
+													"Data": "span",
+													"Children": [
+														{
+															"Type": "NodeBang"
+														},
+														{
+															"Type": "NodeOpenBracket"
+														},
+														{
+															"Type": "NodeLinkText",
+															"Data": "custom-icon1.png"
+														},
+														{
+															"Type": "NodeCloseBracket"
+														},
+														{
+															"Type": "NodeOpenParen"
+														},
+														{
+															"Type": "NodeLinkDest",
+															"Data": "assets/custom-icon1-20210512172156-jaoyrnz.png"
+														},
+														{
+															"Type": "NodeCloseParen"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091404-aa6vr9g",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-aa6vr9g"
+									},
+									"Children": [
+										{
+											"ID": "20210302223515-nvimisg",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210302223515-nvimisg",
+												"updated": "20210512172204"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Настройте размер и скачайте\n"
+												},
+												{
+													"Type": "NodeImage",
+													"Data": "span",
+													"Children": [
+														{
+															"Type": "NodeBang"
+														},
+														{
+															"Type": "NodeOpenBracket"
+														},
+														{
+															"Type": "NodeLinkText",
+															"Data": "custom-icon2.png"
+														},
+														{
+															"Type": "NodeCloseBracket"
+														},
+														{
+															"Type": "NodeOpenParen"
+														},
+														{
+															"Type": "NodeLinkDest",
+															"Data": "assets/custom-icon2-20210512172204-dphc486.png"
+														},
+														{
+															"Type": "NodeCloseParen"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091404-qeo3orb",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-qeo3orb",
+										"updated": "20230418095355"
+									},
+									"Children": [
+										{
+											"ID": "20210302223515-33k03xq",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210302223515-33k03xq",
+												"updated": "20230418095355"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Измените "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "id"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ в "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "&lt;symbol id=&quot;iconMarkdown&quot; viewBox=&quot;0 0 32 32&quot;&gt;"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ на имя значка, соответствующее "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "index.html"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091404-asi6vtv",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-asi6vtv",
+										"updated": "20230418095308"
+									},
+									"Children": [
+										{
+											"ID": "20210302223515-7rm2yp5",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210302223515-7rm2yp5",
+												"updated": "20230418095308"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Замените содержимое из "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "&lt;defs&gt;...&lt;/defs&gt;"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ в соответствующее место в "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "icon.js"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091404-r0ch7n6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210104091404-r0ch7n6",
+						"updated": "20230418095324"
+					},
+					"Children": [
+						{
+							"ID": "20210104091404-e2gs38a",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091404-e2gs38a"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Тестирование"
+								}
+							]
+						},
+						{
+							"ID": "20210104091404-5szoyh6",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20210104091404-5szoyh6",
+								"updated": "20230418095324"
+							},
+							"Children": [
+								{
+									"ID": "20210104091404-vwefubs",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-vwefubs",
+										"updated": "20230418095320"
+									},
+									"Children": [
+										{
+											"ID": "20210104091404-0ozv0hc",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210104091404-0ozv0hc",
+												"updated": "20230418095320"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Замените "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "litheness"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ в "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "index.html"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ на "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "alice"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										},
+										{
+											"ID": "20210104091404-d80g7pq",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20210104091404-d80g7pq"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "aHRtbA=="
+												},
+												{
+													"ID": "20220307092214-3a33x51",
+													"Type": "NodeCodeBlockCode",
+													"Data": "<script src=\"litheness/icon.js\"></script>\n",
+													"Properties": {
+														"id": "20220307092214-3a33x51"
+													}
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091404-v9z5za7",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-v9z5za7",
+										"updated": "20230418095324"
+									},
+									"Children": [
+										{
+											"ID": "20210104091404-ywkzqkd",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210104091404-ywkzqkd",
+												"updated": "20230418095324"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Обновите "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "index.html"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​, чтобы увидеть итоговый результат"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091404-b3rso99",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210104091404-b3rso99"
+									},
+									"Children": [
+										{
+											"ID": "20210104091404-ov7l6gz",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210104091404-ov7l6gz"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Откройте SiYuan и выберите разработанный набор значков в "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "kbd",
+													"TextMarkTextContent": "Настройки"
+												},
+												{
+													"Type": "NodeText",
+													"Data": " - "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "kbd",
+													"TextMarkTextContent": "Внешний вид"
+												},
+												{
+													"Type": "NodeText",
+													"Data": " - "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "kbd",
+													"TextMarkTextContent": "Значки"
+												},
+												{
+													"Type": "NodeText",
+													"Data": " для просмотра"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210601103837-0usztgx",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210601103837-0usztgx",
+				"updated": "20230418085722"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Публикация в маркетплейсе значков"
+				}
+			]
+		},
+		{
+			"ID": "20221114173333-349nnmh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221114173333-349nnmh",
+				"updated": "20230820184044"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "См. "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://b3log.org/siyuan/en/community.html",
+					"TextMarkTextContent": "репозиторий маркетплейса сообщества"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		}
+	]
+}

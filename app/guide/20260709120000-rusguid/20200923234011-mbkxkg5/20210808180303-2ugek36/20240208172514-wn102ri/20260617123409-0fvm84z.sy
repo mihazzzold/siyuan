@@ -1,0 +1,1077 @@
+{
+	"ID": "20260617123409-0fvm84z",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20260617123409-0fvm84z",
+		"title": "Вычисления в таблице",
+		"type": "doc",
+		"updated": "20260617123642"
+	},
+	"Children": [
+		{
+			"ID": "20260617123606-1qukkdu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260617123606-1qukkdu",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-v8og4wm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260617123606-v8og4wm",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Внизу таблицы базы данных поддерживаются сводные вычисления по каждому столбцу. Нажмите панель вычислений внизу столбца, чтобы выбрать метод вычисления. Все типы полей, кроме номера строки, поддерживают вычисления в таблице."
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-j0f52uo",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260617123606-j0f52uo",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Встроенные вычисления"
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-0qy1jdn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260617123606-0qy1jdn",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Доступные методы вычисления показываются автоматически в зависимости от типа поля:"
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-mi7r3z8",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260617123606-mi7r3z8",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"ID": "20260617123606-netg1yl",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260617123606-netg1yl",
+						"updated": "20260617123606"
+					},
+					"Children": [
+						{
+							"ID": "20260617123606-6kkjefg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260617123606-6kkjefg",
+								"updated": "20260617123606"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Количество"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": всего, непустые, уникальные"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260617123606-s5jh8tg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260617123606-s5jh8tg",
+						"updated": "20260617123606"
+					},
+					"Children": [
+						{
+							"ID": "20260617123606-cfn7syb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260617123606-cfn7syb",
+								"updated": "20260617123606"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Процент"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": процент пустых, процент непустых"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260617123606-uss97hg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260617123606-uss97hg",
+						"updated": "20260617123606"
+					},
+					"Children": [
+						{
+							"ID": "20260617123606-8b87en0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260617123606-8b87en0",
+								"updated": "20260617123606"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Числовая статистика"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": сумма, среднее, медиана, минимум, максимум, размах"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260617123606-s8vxljo",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260617123606-s8vxljo",
+						"updated": "20260617123606"
+					},
+					"Children": [
+						{
+							"ID": "20260617123606-z9q0gmz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260617123606-z9q0gmz",
+								"updated": "20260617123606"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Флажок"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": отмеченные, неотмеченные и их проценты"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260617123606-pjt2orj",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260617123606-pjt2orj",
+						"updated": "20260617123606"
+					},
+					"Children": [
+						{
+							"ID": "20260617123606-92tnqiu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260617123606-92tnqiu",
+								"updated": "20260617123606"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Дата"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": самая ранняя, самая поздняя"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-079u60v",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260617123606-079u60v",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260617123606-c7zfkq9",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260617123606-c7zfkq9",
+						"updated": "20260617123606"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Когда результат свёртки (rollup) на уровне строки числовой (например, вычисление на уровне строки — количество), методы числовой статистики также становятся доступными."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-5kgl0g2",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260617123606-5kgl0g2",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вычисление по шаблону"
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-v4wvz7r",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260617123606-v4wvz7r",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Когда встроенных вычислений недостаточно, выберите «Шаблон» и напишите формулу для собственной статистики по всему столбцу."
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-l2e3qqg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260617123606-l2e3qqg",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Нажмите панель вычислений, выберите «Шаблон» и введите формулу в появившемся диалоге. Если результат можно разобрать как число, он отображается согласно числовому формату столбца; иначе — как обычный текст."
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-83y40ie",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260617123606-83y40ie",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Доступные переменные"
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-ewxd968",
+			"Type": "NodeTable",
+			"TableAligns": [
+				0,
+				0
+			],
+			"Properties": {
+				"colgroup": "|",
+				"id": "20260617123606-ewxd968",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeTableHead",
+					"Data": "thead",
+					"Children": [
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Переменная"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Значение"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".values"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Числовой массив, полученный из всего столбца"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".strings"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Массив текстовых форм каждого значения столбца"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".raw"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Массив исходных значений столбца"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".count"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Общее число значений"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".sum"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Сумма чисел"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".avg"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Среднее чисел"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".min"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Минимальное значение"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".max"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Максимальное значение"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".median"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Медианное значение"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-dw8piqd",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260617123606-dw8piqd",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260617123606-epkdn6m",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260617123606-epkdn6m",
+						"updated": "20260617123606"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Число элементов в "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": ".values"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​ зависит от типа столбца: одно-значные столбцы вроде числа и текста дают одно значение на строку; много-значные столбцы вроде множественного выбора и ресурсов считают каждую опцию отдельно (в соответствии с родной семантикой «Подсчёт значений»)."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-cea5m46",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260617123606-cea5m46",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис"
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-qacu8p2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260617123606-qacu8p2",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вычисление по шаблону использует тот же синтаксис шаблонов Go, что и «Шаблоны-сниппеты», с разделителями "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": ".action{"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и функциями по спецификации "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "http://masterminds.github.io/sprig/",
+					"TextMarkTextContent": "sprig"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". Подробнее см. "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20201204184532-682s1du",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Шаблоны-сниппеты"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-bt3jyqu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260617123606-bt3jyqu",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Примеры"
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-fzqpa9b",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260617123606-fzqpa9b",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ниже — сценарии, которые встроенные вычисления напрямую не покрывают:"
+				}
+			]
+		},
+		{
+			"ID": "20260617123606-v52swyr",
+			"Type": "NodeTable",
+			"TableAligns": [
+				0,
+				0
+			],
+			"Properties": {
+				"colgroup": "|",
+				"id": "20260617123606-v52swyr",
+				"updated": "20260617123606"
+			},
+			"Children": [
+				{
+					"Type": "NodeTableHead",
+					"Data": "thead",
+					"Children": [
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Сценарий"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Шаблон"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Количество значений больше 100"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{countif .values \"gt\" 100}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Процент значений больше 0"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{divf (countif .values \"gt\" 0) (len .values)}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Процент значений, равных 0"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{divf (countif .values \"eq\" 0) (len .values)}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Количество значений выше среднего"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{countif .values \"gt\" .avg}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Доля неуспеха (процент ниже 60)"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{divf (countif .values \"lt\" 60) (len .values)}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Строки, начинающиеся с «TODO»"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "`.action{len"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

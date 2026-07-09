@@ -1,0 +1,1543 @@
+{
+	"ID": "20230429115711-ojkg7yx",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f5c2",
+		"id": "20230429115711-ojkg7yx",
+		"title": "Глоссарий",
+		"type": "doc",
+		"updated": "20260614111257"
+	},
+	"Children": [
+		{
+			"ID": "20230429115740-sefhvkg",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230429115740-sefhvkg",
+				"updated": "20230429115740"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20230429115740-9ex50jz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429115740-9ex50jz",
+				"updated": "20230429120220"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan встречается довольно сложная терминология, которая может сбивать с толку. В этой главе мы поясним термины по порядку — надеемся, это поможет лучше понять и использовать SiYuan."
+				}
+			]
+		},
+		{
+			"ID": "20230429115740-vwvbugz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429115740-vwvbugz",
+				"updated": "20230429120317"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обратите "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "внимание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​: там, где речь идёт о конкретных функциях, изложение ориентировано в основном на настольную версию."
+				}
+			]
+		},
+		{
+			"ID": "20230429115740-co6bkzu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230429115740-co6bkzu",
+				"updated": "20230429115745"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Редактор"
+				}
+			]
+		},
+		{
+			"ID": "20230429115740-w2ckmf3",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429115740-w2ckmf3",
+				"updated": "20230429115801"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Хлебные крошки"
+				}
+			]
+		},
+		{
+			"ID": "20230429115740-wmgu2rn",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20230429115740-wmgu2rn",
+				"updated": "20230429115740"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20230429115740-m0ibijq",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20230429115740-m0ibijq",
+						"updated": "20230429115740"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Обычно хлебные крошки — вспомогательный элемент навигации приложения, как правило горизонтальная последовательность вверху страницы или под верхней частью. Они показывают путь текущего местоположения пользователя, помогая помнить, где он находится, и ориентироваться при навигации. Хлебные крошки облегчают перемещение по структуре, позволяют быстро вернуться на предыдущую или вышестоящую страницу и уменьшают число бесполезных щелчков и «потеряний». Это часть проектирования пользовательского опыта, повышающая удобство и простоту использования приложения."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230429115740-7oi1587",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429115740-7oi1587",
+				"updated": "20230429120405"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan хлебные крошки — это пути блоков, соединённые стрелками вправо вверху редактора; они служат для навигации по структуре блоков. Каждый уровень начинается со значка блока, при наведении мыши открывается всплывающее окно предпросмотра."
+				}
+			]
+		},
+		{
+			"ID": "20230429115740-aj0wiw2",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429115740-aj0wiw2",
+				"updated": "20230429115757"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Якорный текст"
+				}
+			]
+		},
+		{
+			"ID": "20230429115740-wf57838",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20230429115740-wf57838",
+				"updated": "20230429115740"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20230429115740-wspvcle",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20230429115740-wspvcle",
+						"updated": "20230429115740"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Обычно якорный текст — это кликабельная часть текста внутри гиперссылки, как правило синяя. Якорный текст связан с URL-адресом гиперссылки: когда пользователь щёлкает по нему, происходит переход на соответствующую веб-страницу или файл. Якорным текстом может быть любое слово или фраза, но обычно он связан с содержимым, на которое ведёт ссылка, — чаще всего это заголовок целевого содержимого."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230429115740-6mjwvdo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429115740-6mjwvdo",
+				"updated": "20230429120228"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan мы расширили якорный текст в обычном смысле с элементов гиперссылок на ссылки на блоки и элементы ссылок на аннотации PDF. В частности, якорный текст элемента ссылки на блок делится на статический и динамический. Подробнее см. раздел "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220623201008-hyn0ci7",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "Якорный текст ссылок на блоки контента"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20230429115912-z9ejrnf",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429115912-z9ejrnf",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Режимы редактора"
+				}
+			]
+		},
+		{
+			"ID": "20230429115912-pp7zya5",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230429115912-pp7zya5",
+				"updated": "20230429115912"
+			},
+			"Children": [
+				{
+					"ID": "20230429115912-d1s1gol",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230429115912-d1s1gol",
+						"updated": "20230429115912"
+					},
+					"Children": [
+						{
+							"ID": "20230429115912-w6iw4es",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230429115912-w6iw4es",
+								"updated": "20230429115912"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Что видишь, то и получаешь (WYSIWYG): обычный интерфейс редактора"
+								}
+							]
+						},
+						{
+							"ID": "20230429115912-6mdtwkt",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20230429115912-6mdtwkt",
+								"updated": "20230429115912"
+							},
+							"Children": [
+								{
+									"ID": "20230429115912-w2o4vsp",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230429115912-w2o4vsp",
+										"updated": "20230429115912"
+									},
+									"Children": [
+										{
+											"ID": "20230429115912-dlgobuz",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230429115912-dlgobuz",
+												"updated": "20230429115912"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Редактируемый: поддерживает изменение содержимого"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230429115912-yg8xkcn",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230429115912-yg8xkcn",
+										"updated": "20230429115912"
+									},
+									"Children": [
+										{
+											"ID": "20230429115912-e7yimt9",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230429115912-e7yimt9",
+												"updated": "20230429115912"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Только чтение: поддерживает только просмотр содержимого, без изменения"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230429115912-j3c03xt",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230429115912-j3c03xt",
+						"updated": "20230429115912"
+					},
+					"Children": [
+						{
+							"ID": "20230429115912-3ycvy86",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230429115912-3ycvy86",
+								"updated": "20230429115912"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Предпросмотр экспорта: предпросмотр после преобразования в стандартный Markdown"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230429115912-l9kkris",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429115912-l9kkris",
+				"updated": "20250115163213"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Переключатели WYSIWYG и предпросмотра экспорта находятся в меню "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "︙"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в правом верхнем углу редактора; переключатели редактирования WYSIWYG и режима «только чтение» — в правом верхнем углу верхней панели."
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-qohvu9t",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614111229-qohvu9t",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ссылка на блок"
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-46bd7ut",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260614111229-46bd7ut",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260614111229-vswvshc",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260614111229-vswvshc",
+						"updated": "20260614111229"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Ссылка — это указатель на другой фрагмент содержимого, позволяющий читателю перейти к целевому месту."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-mp156i3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614111229-mp156i3",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan ссылка на блок — это связь, создаваемая через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "(("
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и указывающая на другой блок контента. Поддерживаются и статический, и динамический якорный текст. Щелчок по ссылке на блок переходит к целевому блоку; наведение показывает предпросмотр."
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-b5s5bwp",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614111229-b5s5bwp",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обратная ссылка"
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-2c3eux8",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260614111229-2c3eux8",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260614111229-g07cbng",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260614111229-g07cbng",
+						"updated": "20260614111229"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Обратная ссылка — это ссылка с другой страницы, указывающая на текущую; неотъемлемая часть системы двунаправленных связей."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-doozeqd",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614111229-doozeqd",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan панель обратных ссылок показывает все блоки, ссылающиеся на текущий блок. Обратные ссылки делятся на две части: ссылки (прямые связи через ссылки на блоки) и упоминания (потенциальные связи, найденные по тексту)."
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-x74en6j",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614111229-x74en6j",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Упоминание"
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-nhaic9h",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260614111229-nhaic9h",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260614111229-l6i8la8",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260614111229-l6i8la8",
+						"updated": "20260614111229"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Упоминание — это совпадение ключевых слов в тексте, используемое для обнаружения потенциальных связей."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-o24mp88",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614111229-o24mp88",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan упоминания похожи на часть «ссылки» в обратных ссылках, но устанавливаются не через ссылки на блоки, а автоматически находятся поиском по именам блоков контента, псевдонимам и якорному тексту ссылок. Упоминания можно в один щелчок преобразовать в ссылки на блоки."
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-sn5a2c4",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614111229-sn5a2c4",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Виртуальная ссылка"
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-m4ma2ns",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260614111229-m4ma2ns",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260614111229-eivsx3w",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260614111229-eivsx3w",
+						"updated": "20260614111229"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Виртуальная ссылка — техника автоматического обнаружения потенциальных ссылочных связей, определяющая возможно связанные блоки контента без ручного создания ссылок."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614111229-p91aack",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614111229-p91aack",
+				"updated": "20260614111229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan виртуальные ссылки автоматически определяют потенциальные связи по именам блоков контента, псевдонимам и якорному тексту; в редакторе они отображаются пунктирным подчёркиванием. Наведение показывает предпросмотр соответствующего блока; щелчок преобразует связь в настоящую ссылку на блок. Включается в [Настройки - Редактор - Виртуальная ссылка]."
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-yd8jfue",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230429115927-yd8jfue",
+				"updated": "20230429115933"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Репозиторий данных"
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-yfzi0r0",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429115927-yfzi0r0",
+				"updated": "20230429115945"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ключ"
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-fj3u7si",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429115927-fj3u7si",
+				"updated": "20230429120019"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ключ используется для шифрования снимков данных; "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220722002536-yoh91rh",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "есть три способа его создания"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". Обычным пользователям рекомендуется генерация по парольной фразе: одна и та же фраза породит одинаковый ключ на других устройствах, что упрощает первичную синхронизацию данных."
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-nspvond",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429115927-nspvond",
+				"updated": "20230429120027"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Локальный снимок"
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-calf629",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429115927-calf629",
+				"updated": "20230429115927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Снимки данных, сохранённые локально на устройстве."
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-4dhebbh",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429115927-4dhebbh",
+				"updated": "20230429120030"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Локально помеченный снимок"
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-2yesaio",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429115927-2yesaio",
+				"updated": "20230429115927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вручную помеченные снимки среди локальных. Пометка нужна для удобства поиска: осмысленное имя метки послужит достаточным напоминанием при откате снимка."
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-hq8grcm",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429115927-hq8grcm",
+				"updated": "20230429115927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Облачный снимок"
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-9r7az3r",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429115927-9r7az3r",
+				"updated": "20230429115927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Снимки данных, сохранённые в облачном хранилище."
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-iu6x5pz",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429115927-iu6x5pz",
+				"updated": "20230429120032"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Облачный помеченный снимок"
+				}
+			]
+		},
+		{
+			"ID": "20230429115927-gq0aza3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429115927-gq0aza3",
+				"updated": "20230429115927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Снимок данных после загрузки локально помеченного снимка в облако."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-vsqa2ia",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230429120050-vsqa2ia",
+				"updated": "20230429120054"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Интерфейс"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-avdr1uh",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429120050-avdr1uh",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Док"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-8y2p7hh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-8y2p7hh",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Боковые панели слева, справа и снизу главного интерфейса, где размещаются кнопки входа в панели."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-cl15wux",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429120050-cl15wux",
+				"updated": "20260426180041"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Панель"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-8wdueyg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-8wdueyg",
+				"updated": "20260426180041"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Панели — функциональные области, открываемые из дока: панель документов, структура, обратные ссылки и т. д."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-h50wwde",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429120050-h50wwde",
+				"updated": "20230429120110"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вкладка"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-odtusdc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-odtusdc",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вкладки похожи на вкладки браузера; вкладки разных типов имеют разные функции."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-0dl0qbj",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20230429120050-0dl0qbj",
+				"updated": "20230429120125"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вкладка редактора"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-faqkbqf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-faqkbqf",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для загрузки редактора документов."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-3oz9199",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20230429120050-3oz9199",
+				"updated": "20230429120123"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вкладка PDF"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-7jqk4vz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-7jqk4vz",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для загрузки PDF."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-aokydtd",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20230429120050-aokydtd",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вкладка поиска"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-35u5nkl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-35u5nkl",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Открывает интерфейс поиска во вкладке — можно параллельно пользоваться другими вкладками, и окно поиска не мешает другой работе."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-0zu1u75",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20230429120050-0zu1u75",
+				"updated": "20230429120130"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вкладка интервального повторения"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-zbhbfeb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-zbhbfeb",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Открывает интерфейс интервального повторения во вкладке."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-c78v45c",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429120050-c78v45c",
+				"updated": "20230429120134"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Окно"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-ljqjlyy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-ljqjlyy",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вкладки можно превращать в окна, независимые от главного интерфейса; окна можно вытаскивать за пределы главного интерфейса, чтобы он не был перегружен."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-znuq8dx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-znuq8dx",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Закрепив окно, его можно расположить поверх всех приложений, чтобы лучше использовать ограниченное пространство экрана."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-1qo3c1z",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429120050-1qo3c1z",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Раскладка"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-5i8wlbh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-5i8wlbh",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Состояние дока, вкладок и панелей текущего главного интерфейса образует раскладку; раскладки можно сохранять и переключать в меню рабочего пространства в левом верхнем углу."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-0fee106",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429120050-0fee106",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Значок блока"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-wamsns2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-wamsns2",
+				"updated": "20230429120050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Значки перед блоками и метки блоков в панелях в большинстве случаев поддерживают открытие всплывающего окна предпросмотра при наведении мыши — например, метки блоков в панели структуры и панели обратных ссылок."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-i2qmqmw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-i2qmqmw",
+				"updated": "20250115151002"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Помимо всплывающего предпросмотра, метка блока поддерживает "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Ctrl"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​+"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "щелчок"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ для открытия во вкладке — это особенно полезно в сценариях с переходом по контексту, например в панели обратных ссылок."
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-ubu6saq",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614111245-ubu6saq",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Базар"
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-vor0k2m",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260614111245-vor0k2m",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260614111245-t023pzh",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260614111245-t023pzh",
+						"updated": "20260614111245"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Базар — рынок, где торгуют товарами; слово персидского происхождения."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-ydauvlr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614111245-ydauvlr",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan Базар — точка входа для просмотра и установки расширений сообщества пяти типов: темы, значки, плагины, виджеты и шаблоны. Пользователи могут искать, устанавливать и обновлять их прямо в приложении."
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-vc4nv4n",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614111245-vc4nv4n",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Инбокс"
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-od5koat",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260614111245-od5koat",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260614111245-3y8i74n",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260614111245-3y8i74n",
+						"updated": "20260614111245"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Инбокс — контейнер для временного хранения информации, ожидающей обработки."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-nwm93kj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614111245-nwm93kj",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan Инбокс — облачная функция быстрого захвата. Текст временно сохраняется в облаке через WeChat или вызовы API, а затем переносится в документы из панели инбокса. Функция требует подписки."
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-1fvgsms",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614111245-1fvgsms",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Флеш-карточка"
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-44oe0yj",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260614111245-44oe0yj",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260614111245-p5q2483",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260614111245-p5q2483",
+						"updated": "20260614111245"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Флеш-карточка — карточка для тренировки памяти: вопрос на лицевой стороне, ответ на обратной; повторения планируются алгоритмами интервального повторения."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-5u6fy6f",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614111245-5u6fy6f",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan флеш-карточки — функция интервального повторения на основе блоков контента. Блоки контента можно превращать в карточки, и система автоматически планирует следующее повторение по результатам."
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-13jcku5",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614111245-13jcku5",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Палитра команд"
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-oeq29f4",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260614111245-oeq29f4",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260614111245-n10s8v9",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260614111245-n10s8v9",
+						"updated": "20260614111245"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Палитра команд — клавиатурная точка входа для быстрого доступа к функциям приложения: пользователь вводит ключевые слова, чтобы найти и выполнить команду."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614111245-rvkxmxr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614111245-rvkxmxr",
+				"updated": "20260614111245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan палитра команд вызывается через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Ctrl+Shift+P"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и позволяет быстро выполнять операции — открывать панели, переключать функции, переходить по документам — не блуждая по меню."
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-xt6cezu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230429120050-xt6cezu",
+				"updated": "20260614111257"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Прочее"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-umd0hdl",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230429120050-umd0hdl",
+				"updated": "20260614111257"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сервис"
+				}
+			]
+		},
+		{
+			"ID": "20230429120050-a2u8p4w",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230429120050-a2u8p4w",
+				"updated": "20230429120213"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Через сервисные возможности ядра SiYuan реализуется "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20201004194026-kgmmdoc",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "использование в браузере"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20260614111257-e9ys2vz",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614111257-e9ys2vz",
+				"updated": "20260614111257"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ядро"
+				}
+			]
+		},
+		{
+			"ID": "20260614111257-madt5ut",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260614111257-madt5ut",
+				"updated": "20260614111257"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260614111257-91v5p9a",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260614111257-91v5p9a",
+						"updated": "20260614111257"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Ядро — центральный компонент операционной системы, управляющий процессами, памятью, драйверами устройств, файловыми системами и сетью; оно определяет производительность и стабильность системы."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614111257-f0ba8g4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614111257-f0ba8g4",
+				"updated": "20260614111257"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan ядро — фоновый сервисный процесс, запускаемый после старта; он отвечает за ключевые функции: чтение/запись данных, индексный поиск, синхронизацию и резервное копирование. Фронтенд общается с ядром по HTTP/WebSocket. Настольные и мобильные приложения содержат встроенные ядра; в Docker-развёртывании ядро работает отдельно."
+				}
+			]
+		},
+		{
+			"ID": "20260614111257-tiih517",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614111257-tiih517",
+				"updated": "20260614111257"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Рабочее пространство"
+				}
+			]
+		},
+		{
+			"ID": "20260614111257-f87p7yx",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260614111257-f87p7yx",
+				"updated": "20260614111257"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20260614111257-xjeda6d",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260614111257-xjeda6d",
+						"updated": "20260614111257"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Рабочее пространство — это рабочая среда данных пользователя, аналогичная пользовательскому каталогу в операционной системе."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614111257-m8w8u3y",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614111257-m8w8u3y",
+				"updated": "20260614111257"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В SiYuan рабочее пространство — папка, хранящая все данные: блокноты, документы, файлы ресурсов, конфигурацию и историю. Разные рабочие пространства изолированы папками файловой системы, и одно рабочее пространство может обслуживаться только одним процессом ядра."
+				}
+			]
+		}
+	]
+}

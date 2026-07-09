@@ -1,0 +1,153 @@
+{
+	"ID": "20210824202056-q8vrxuc",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20210824202056-q8vrxuc",
+		"title": "Виджеты",
+		"type": "doc",
+		"updated": "20230820184255"
+	},
+	"Children": [
+		{
+			"ID": "20210824202107-5lds66l",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210824202107-5lds66l",
+				"updated": "20210824202107"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20210824202107-nhqn6ob",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210824202107-nhqn6ob",
+				"updated": "20211230224034"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Виджет — это статическая веб-страница, обслуживаемая ядром SiYuan. Она получает данные через API и отображает их через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "&lt;iframe&gt;"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		},
+		{
+			"ID": "20230512195321-h7eu2ec",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230512195321-h7eu2ec",
+				"updated": "20230512195357"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В отличие от "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20230506205948-vxtrh8a",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "плагинов"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", виджет — это разновидность блока контента, подчиняющаяся правилам индексации и отрисовки блоков. Виджеты в основном предназначены для расширения блоков контента, а не для расширения функций программы."
+				}
+			]
+		},
+		{
+			"ID": "20210824202107-1v68z0p",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210824202107-1v68z0p",
+				"updated": "20210824202323"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20210824202107-1ikbpxr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210824202107-1ikbpxr",
+				"updated": "20230506210716"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Виджеты устанавливаются через маркетплейс виджетов. После установки виджеты помещаются в папку "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace/widgets/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​. В редакторе вызовите поиск через меню слеша; после выбора нужного виджета он будет вставлен в документ в виде блока виджета."
+				}
+			]
+		},
+		{
+			"ID": "20211222095842-aa6hsl3",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20211222095842-aa6hsl3",
+				"updated": "20230418085731"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Публикация в маркетплейсе виджетов"
+				}
+			]
+		},
+		{
+			"ID": "20221114173356-5a08om4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221114173356-5a08om4",
+				"updated": "20230820184255"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "См. "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://b3log.org/siyuan/en/community.html",
+					"TextMarkTextContent": "репозиторий маркетплейса сообщества"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		}
+	]
+}

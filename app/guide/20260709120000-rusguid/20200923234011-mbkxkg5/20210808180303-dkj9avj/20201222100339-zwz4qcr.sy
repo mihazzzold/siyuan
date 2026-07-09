@@ -1,0 +1,1319 @@
+{
+	"ID": "20201222100339-zwz4qcr",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20201222100339-zwz4qcr",
+		"title": "Таблица базы данных",
+		"type": "doc",
+		"updated": "20251219205803"
+	},
+	"Children": [
+		{
+			"ID": "20201117103851-tgrnurx",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20201117103851-tgrnurx",
+				"updated": "20210302223506"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Таблица "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "blocks"
+				}
+			]
+		},
+		{
+			"ID": "20201224120448-t357c5v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20201224120448-t357c5v"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Эта таблица используется для хранения данных блоков контента."
+				}
+			]
+		},
+		{
+			"ID": "20210111225813-db0wqj6",
+			"Type": "NodeTable",
+			"TableAligns": [
+				3,
+				0
+			],
+			"Properties": {
+				"colgroup": "|",
+				"id": "20210111225813-db0wqj6",
+				"updated": "20221014133135"
+			},
+			"Children": [
+				{
+					"Type": "NodeTableHead",
+					"Data": "thead",
+					"Children": [
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"TableCellAlign": 3,
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Поле"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Описание"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "id"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ID блока контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "parent_id"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ID родительского блока; если блок контента является блоком документа, поле пустое"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "root_id"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ID корневого блока, то есть ID блока документа"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "hash"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Контрольная сумма содержимого"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "box"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ID блокнота"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "path"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Путь документа, в котором находится блок контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "hpath"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Человекочитаемый путь документа, в котором находится блок контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "name"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Имя блока контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "alias"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Псевдоним блока контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "memo"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Заметка блока контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "content"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Текст с удалёнными маркерами Markdown"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "fcontent"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Текст первого дочернего блока с удалёнными маркерами Markdown"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "markdown"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Текст с полными маркерами Markdown"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "length"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Длина "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "fcontent"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "type"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Тип блока контента, см. "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210210104024-lk1uiua",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "здесь"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "subtype"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Подтип блока контента, см. "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210210104037-ahxup3h",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "здесь"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ial"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Список строчных атрибутов, например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "{: name=&quot;value&quot;}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "sort"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Для сортировки: чем меньше значение, тем выше позиция"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "created"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Время создания, например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "20221013202001"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"TableCellAlign": 3,
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "updated"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Время обновления, например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "20221013202001"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20201224120448-x9iy35f",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20201224120448-x9iy35f",
+				"updated": "20251219205803"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Значения по умолчанию"
+				}
+			]
+		},
+		{
+			"ID": "20210112165011-wkgm3vz",
+			"Type": "NodeList",
+			"ListData": {
+				"BulletChar": 42,
+				"Padding": 2,
+				"Marker": "Kg==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20210112165011-wkgm3vz",
+				"updated": "20251219205803"
+			},
+			"Children": [
+				{
+					"ID": "20210112165011-wuqjm5f",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210112165011-wuqjm5f",
+						"updated": "20220427104543"
+					},
+					"Children": [
+						{
+							"ID": "20210210104251-1rwqfvn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210210104251-1rwqfvn",
+								"updated": "20220427104543"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "LIMIT"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " не указан, возвращаются максимум первые 64 результата; настраивается в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Поиск"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Количество отображаемых результатов поиска"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210112165011-29ac0g4",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210112165011-29ac0g4",
+						"updated": "20251219205803"
+					},
+					"Children": [
+						{
+							"ID": "20210210104251-xgdm57u",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210210104251-xgdm57u",
+								"updated": "20210210104251"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​Поле "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "sort"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"ID": "20210112165011-3kfhjaz",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20210112165011-3kfhjaz",
+								"updated": "20251219205803"
+							},
+							"Children": [
+								{
+									"ID": "20210112165011-jbmpqqy",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210112165011-jbmpqqy",
+										"updated": "20210112165011"
+									},
+									"Children": [
+										{
+											"ID": "20210210104251-79qdnih",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210210104251-79qdnih",
+												"updated": "20210210104251"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок заголовка: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "5"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210112165011-piuxyc3",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210112165011-piuxyc3",
+										"updated": "20220312005907"
+									},
+									"Children": [
+										{
+											"ID": "20210210104251-wvolx4m",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210210104251-wvolx4m",
+												"updated": "20220312005907"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок абзаца: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "10"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210112165011-qvco7y9",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210112165011-qvco7y9",
+										"updated": "20220312005919"
+									},
+									"Children": [
+										{
+											"ID": "20210210104251-ijkiryz",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210210104251-ijkiryz",
+												"updated": "20220312005919"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок кода: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "10"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210112165011-se9iuhv",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210112165011-se9iuhv",
+										"updated": "20220312005927"
+									},
+									"Children": [
+										{
+											"ID": "20210210104251-dt2gpnl",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210210104251-dt2gpnl",
+												"updated": "20220312005927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок математической формулы: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "10"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210112165011-gu6qilm",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210112165011-gu6qilm",
+										"updated": "20220312005932"
+									},
+									"Children": [
+										{
+											"ID": "20210210104251-k9b2x0p",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210210104251-k9b2x0p",
+												"updated": "20220312005932"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок таблицы: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "10"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220312005534-igxkyj3",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220312005534-igxkyj3",
+										"updated": "20220312005538"
+									},
+									"Children": [
+										{
+											"ID": "20220312005534-zl8fj1z",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220312005534-zl8fj1z",
+												"updated": "20220312005538"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок HTML: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "10"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210112165011-8i7j41l",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210112165011-8i7j41l",
+										"updated": "20220312005940"
+									},
+									"Children": [
+										{
+											"ID": "20210210104251-stpysph",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210210104251-stpysph",
+												"updated": "20220312005940"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок списка: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "20"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210112165011-oelbjrl",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210112165011-oelbjrl",
+										"updated": "20220312005946"
+									},
+									"Children": [
+										{
+											"ID": "20210210104251-9sbqp2h",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210210104251-9sbqp2h",
+												"updated": "20220312005946"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок пункта списка: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "20"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210112165011-pcg262r",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210112165011-pcg262r",
+										"updated": "20220312010000"
+									},
+									"Children": [
+										{
+											"ID": "20210210104251-1dvm0ib",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210210104251-1dvm0ib",
+												"updated": "20220312010000"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок цитаты: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "20"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20251219205758-elel6nz",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20251219205758-elel6nz",
+										"updated": "20251219205803"
+									},
+									"Children": [
+										{
+											"ID": "20251219205758-2omgyim",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20251219205758-2omgyim",
+												"updated": "20251219205803"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок выноски: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "20"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210112165011-7d6lsog",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210112165011-7d6lsog",
+										"updated": "20220312010003"
+									},
+									"Children": [
+										{
+											"ID": "20210210104251-rtmpnp9",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210210104251-rtmpnp9",
+												"updated": "20220312010003"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Суперблок: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "30"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20241024001044-blcfrlv",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20241024001044-blcfrlv",
+										"updated": "20241024001049"
+									},
+									"Children": [
+										{
+											"ID": "20241024001044-latrr0e",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20241024001044-latrr0e",
+												"updated": "20241024001049"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок базы данных: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "30"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20241024001039-114cwm7",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20241024001039-114cwm7",
+										"updated": "20241024010556"
+									},
+									"Children": [
+										{
+											"ID": "20241024001039-j4p8qvr",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20241024001039-j4p8qvr",
+												"updated": "20241024010556"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блок документа: "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "0"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

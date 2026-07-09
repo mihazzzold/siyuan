@@ -1,0 +1,970 @@
+{
+	"ID": "20221223221636-8fgn6gc",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f4f8",
+		"id": "20221223221636-8fgn6gc",
+		"title": "Флеш-карточки",
+		"type": "doc",
+		"updated": "20260614194412"
+	},
+	"Children": [
+		{
+			"ID": "20260614194307-unfbwgi",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260614194307-unfbwgi",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-5jddutf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614194307-5jddutf",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Когда блок контента становится флеш-карточкой, система автоматически планирует повторения по алгоритму интервального повторения FSRS (репозиторий GitHub: open-spaced-repetition/free-spaced-repetition-scheduler), напоминая о повторении в момент забывания и помогая превращать краткосрочную память в долгосрочную."
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-zxjk4q6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260614194307-zxjk4q6",
+				"updated": "20260614194412"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Использование"
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-fa76g19",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614194307-fa76g19",
+				"updated": "20260614194412"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Создание флеш-карточек"
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-mnfvpgx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614194307-mnfvpgx",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Прежде чем делать карточки, разберём базовые правила:"
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-ed0yns1",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260614194307-ed0yns1",
+				"updated": "20260614194412"
+			},
+			"Children": [
+				{
+					"ID": "20260614194307-utwqqw3",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-utwqqw3",
+						"updated": "20260614194412"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-0rsamte",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-0rsamte",
+								"updated": "20260614194412"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Элементы "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "mark",
+									"TextMarkTextContent": "выделения"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " внутри блоков контента считаются ответами-пропусками"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614194307-xb3g7ig",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-xb3g7ig",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-8dxj2rw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-8dxj2rw",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если карточкой становится суперблок, первый дочерний блок считается вопросом, а остальные — ответами"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614194307-fk66atl",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-fk66atl",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-nm3csiw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-nm3csiw",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если карточкой становится список или пункт списка, родительский список считается вопросом, а дочерние списки — ответами"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614194307-kzf5pbm",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-kzf5pbm",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-5116iuk",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-5116iuk",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если карточкой становится блок заголовка, заголовок считается вопросом, а блоки под ним — ответами"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-iqn5ad0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614194307-iqn5ad0",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Эти правила настраиваются в [Настройки - Флеш-карточки]."
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-w60usez",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614194307-w60usez",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Чтобы создать карточку: выберите «Быстро создать карточку» в меню значка блока."
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-ll8805a",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260614194307-ll8805a",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Повторение"
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-prxztx4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614194307-prxztx4",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сеанс повторения можно начать из нескольких точек входа, каждая охватывает свою область:"
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-se4rpp6",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260614194307-se4rpp6",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"ID": "20260614194307-9vbzkh4",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-9vbzkh4",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-ast9foo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-ast9foo",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Щёлкните документ в дереве документов правой кнопкой и выберите «Флеш-карточки - Интервальное повторение», чтобы повторять карточки этого документа и его дочерних документов"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614194307-3b05hs8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-3b05hs8",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-hutptjh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-hutptjh",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нажмите «Флеш-карточки - Интервальное повторение» на значке блока документа в редакторе, чтобы повторять карточки текущего документа и его дочерних документов"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614194307-mdkvz25",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-mdkvz25",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-4xmhmm7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-4xmhmm7",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Щёлкните блокнот правой кнопкой и выберите «Флеш-карточки - Интервальное повторение», чтобы повторять карточки всех документов блокнота"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614194307-911kvs8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-911kvs8",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-5d34jap",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-5d34jap",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нажмите «Флеш-карточки» в главном меню сверху, чтобы повторить все карточки с подошедшим сроком по всем блокнотам"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-aj5c2mq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614194307-aj5c2mq",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Во время повторения интерфейс показывает карточки по одной. Сначала показывается сторона вопроса. Нажмите «Показать ответ» или Пробел/Enter, чтобы открыть сторону ответа, затем оцените, как вспомнили:"
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-804b2n5",
+			"Type": "NodeTable",
+			"TableAligns": [
+				0,
+				0,
+				0
+			],
+			"Properties": {
+				"colgroup": "||",
+				"id": "20260614194307-804b2n5",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeTableHead",
+					"Data": "thead",
+					"Children": [
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Оценка"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Сочетание клавиш"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Описание"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Снова"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "1"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ / "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "j"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ / "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "a"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Полностью забыл, нужно учить заново"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Трудно"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "2"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ / "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "k"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ / "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "s"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Вспомнил со значительным усилием"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Хорошо"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "3"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ / "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "l"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ / "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "d"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Вспомнил правильно"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Легко"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "4"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ / "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ";"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ / "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "f"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Вспомнил очень легко"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-i2hr72e",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614194307-i2hr72e",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После открытия ответа Пробел и Enter также ставят оценку «Хорошо». Оценки напрямую влияют на интервал повторения каждой карточки: высокие оценки увеличивают время до следующего повторения, низкие — сокращают. Система использует алгоритм FSRS для автоматической оптимизации расписания повторений каждого пользователя на основе истории его оценок."
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-du8ikbb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260614194307-du8ikbb",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Настройки"
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-b38x7po",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614194307-b38x7po",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В [Настройки - Флеш-карточки] настраиваются глобальные параметры карточек. "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "Лимит новых карточек"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "Лимит старых карточек"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " можно переопределить для отдельного документа пользовательскими атрибутами блока документа:"
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-qhkpyeu",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260614194307-qhkpyeu",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"ID": "20260614194307-w6b0irw",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-w6b0irw",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-g5ca9dw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-g5ca9dw",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "riff-new-card-limit"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614194307-hppgo3k",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-hppgo3k",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-4sjjmgg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-4sjjmgg",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "riff-review-card-limit"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-o2d3thn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614194307-o2d3thn",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Они настраиваются независимо для каждого документа. Например, если у родительского документа задано 5, а у дочернего 10, повторение из родительского документа покажет 5 карточек, не объединяя настройки дочернего."
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-0k238pl",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260614194307-0k238pl",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20260614194307-iwyfaoz",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260614194307-iwyfaoz",
+				"updated": "20260614194307"
+			},
+			"Children": [
+				{
+					"ID": "20260614194307-7kt4cxq",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-7kt4cxq",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-nv49oyb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-nv49oyb",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Флеш-карточки становятся недействительными при удалении блока контента (или изменении его ID)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614194307-69jumlt",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614194307-69jumlt",
+						"updated": "20260614194307"
+					},
+					"Children": [
+						{
+							"ID": "20260614194307-t8osbcz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614194307-t8osbcz",
+								"updated": "20260614194307"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Колоды карточек использовать не рекомендуется; эта функция устарела и может вызывать неустранимые проблемы"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

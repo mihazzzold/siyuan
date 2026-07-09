@@ -1,0 +1,323 @@
+{
+	"ID": "20230304000547-2p78z5f",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230304000547-2p78z5f",
+		"title": "Искусственный интеллект",
+		"type": "doc",
+		"updated": "20250115153814"
+	},
+	"Children": [
+		{
+			"ID": "20230308213723-qq1qin4",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230308213723-qq1qin4",
+				"updated": "20230308213723"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20230308213723-h04vvzb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230308213723-h04vvzb",
+				"updated": "20230324161738"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Поддерживается текстовый диалог через Chat API "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://openai.com/",
+					"TextMarkTextContent": "OpenAI"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20230308213723-v6iof0j",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230308213723-v6iof0j",
+				"updated": "20250115153814"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20230308213723-97y7cjk",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230308213723-97y7cjk",
+				"updated": "20250115153814"
+			},
+			"Children": [
+				{
+					"ID": "20230308213723-0y7fp62",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230308213723-0y7fp62",
+						"updated": "20230308213723"
+					},
+					"Children": [
+						{
+							"ID": "20230308213723-3w5os6t",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230308213723-3w5os6t",
+								"updated": "20230308213723"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Зарегистрируйте аккаунт OpenAI и создайте API-ключ"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230308213723-rlupdlh",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230308213723-rlupdlh",
+						"updated": "20230324161801"
+					},
+					"Children": [
+						{
+							"ID": "20230308213723-udzihx8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230308213723-udzihx8",
+								"updated": "20230324161801"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Настройте в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "ИИ"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230308213723-k0mwj0m",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230308213723-k0mwj0m",
+						"updated": "20250115153814"
+					},
+					"Children": [
+						{
+							"ID": "20230308213723-axu5t3t",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230308213723-axu5t3t",
+								"updated": "20250115153814"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Вызовите диалоговое окно через "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "/AI-написание"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​, введите вопрос или запрос и подтвердите"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230308213723-hv5z78q",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230308213723-hv5z78q",
+						"updated": "20230324161818"
+					},
+					"Children": [
+						{
+							"ID": "20230308213723-zohy2hq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230308213723-zohy2hq",
+								"updated": "20230324161818"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выполняйте больше операций через меню блока "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Искусственный интеллект"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230308213723-kkkc3n1",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230308213723-kkkc3n1",
+				"updated": "20230308213745"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20230308213723-se44ipa",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230308213723-se44ipa",
+				"updated": "20230308213723"
+			},
+			"Children": [
+				{
+					"ID": "20230308213723-zpsjj1y",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230308213723-zpsjj1y",
+						"updated": "20230308213723"
+					},
+					"Children": [
+						{
+							"ID": "20230308213723-5emsdw1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230308213723-5emsdw1",
+								"updated": "20230308213723"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Эта функция отправляет соответствующий текст в OpenAI"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230308213723-kq06708",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230308213723-kq06708",
+						"updated": "20230308213723"
+					},
+					"Children": [
+						{
+							"ID": "20230308213723-8w1l907",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230308213723-8w1l907",
+								"updated": "20230308213723"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Вызовы OpenAI API платные"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

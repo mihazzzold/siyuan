@@ -1,0 +1,1340 @@
+{
+	"ID": "20240113110040-z2n28gw",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f4f1",
+		"id": "20240113110040-z2n28gw",
+		"title": "Мобильное приложение",
+		"type": "doc",
+		"updated": "20260613181402"
+	},
+	"Children": [
+		{
+			"ID": "20240113110114-yp0fl1v",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240113110114-yp0fl1v",
+				"updated": "20250114214300"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20240113110114-0t8ftpn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240113110114-0t8ftpn",
+				"updated": "20250114214300"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "SiYuan предоставляет приложения для Android, iOS и HarmonyOS, размещённые в некоторых мобильных магазинах приложений. Ищите "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "思源笔记"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ или "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "SiYuan"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в магазине приложений."
+				}
+			]
+		},
+		{
+			"ID": "20240113110114-j6ms10m",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240113110114-j6ms10m",
+				"updated": "20250114213934"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Установка и обновления"
+				}
+			]
+		},
+		{
+			"ID": "20240113110114-n0svuyb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240113110114-n0svuyb",
+				"updated": "20240113110114"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сейчас доступно в магазинах приложений:"
+				}
+			]
+		},
+		{
+			"ID": "20240113110114-ytnbrf1",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20240113110114-ytnbrf1",
+				"updated": "20250114213934"
+			},
+			"Children": [
+				{
+					"ID": "20240113110114-hlc7ikn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110114-hlc7ikn",
+						"updated": "20240113110114"
+					},
+					"Children": [
+						{
+							"ID": "20240113110114-u7lqpmz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110114-u7lqpmz",
+								"updated": "20240113110136"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Mi"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240113110114-9jii8t4",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110114-9jii8t4",
+						"updated": "20240113110114"
+					},
+					"Children": [
+						{
+							"ID": "20240113110114-08qwev2",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110114-08qwev2",
+								"updated": "20240113110114"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Huawei"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20250114213931-uqmszac",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20250114213931-uqmszac",
+						"updated": "20250114213934"
+					},
+					"Children": [
+						{
+							"ID": "20250114213931-qhp3bqo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20250114213931-qhp3bqo",
+								"updated": "20250114213934"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Honor"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240113110114-6r00d0i",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110114-6r00d0i",
+						"updated": "20240113110114"
+					},
+					"Children": [
+						{
+							"ID": "20240113110114-7gwwphn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110114-7gwwphn",
+								"updated": "20240113110141"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "OPPO"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240113110141-szi21ue",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110141-szi21ue",
+						"updated": "20240113110141"
+					},
+					"Children": [
+						{
+							"ID": "20240113110141-9pv7k9h",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110141-9pv7k9h",
+								"updated": "20240113110141"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "vivo"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240113110114-nywefo8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110114-nywefo8",
+						"updated": "20240113110144"
+					},
+					"Children": [
+						{
+							"ID": "20240113110114-6ya8kyc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110114-6ya8kyc",
+								"updated": "20240113110144"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Apple"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240113110114-ql38zmf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110114-ql38zmf",
+						"updated": "20240113110151"
+					},
+					"Children": [
+						{
+							"ID": "20240113110114-jotdtbf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110114-jotdtbf",
+								"updated": "20240113110151"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Kuan"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240113110114-uzhom1f",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110114-uzhom1f",
+						"updated": "20240113110114"
+					},
+					"Children": [
+						{
+							"ID": "20240113110114-lbm3jay",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110114-lbm3jay",
+								"updated": "20240113110114"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Google Play"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20240113110114-96vdw4x",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240113110114-96vdw4x",
+				"updated": "20240119205358"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Скачивание APK: "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://b3log.org/siyuan/en/download.html",
+					"TextMarkTextContent": "https://b3log.org/siyuan/en/download.html"
+				}
+			]
+		},
+		{
+			"ID": "20240113110114-2kxj9iz",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240113110114-2kxj9iz",
+				"updated": "20240113110213"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Использование маркетплейса"
+				}
+			]
+		},
+		{
+			"ID": "20240113110114-z6oljyx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240113110114-z6oljyx",
+				"updated": "20240113110224"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Из-за требований модерации App Store маркетплейс пока нельзя предоставить прямо в приложении."
+				}
+			]
+		},
+		{
+			"ID": "20240113110114-x9utg17",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240113110114-x9utg17",
+				"updated": "20240113110322"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Чтобы пользоваться маркетплейсом, включите "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Аутентификация"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Сетевой сервис"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и откройте настройки в браузере на настольном компьютере."
+				}
+			]
+		},
+		{
+			"ID": "20240113110114-nasbh6u",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240113110114-nasbh6u",
+				"updated": "20250114215310"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20240113110114-ohmxolv",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20240113110114-ohmxolv",
+				"updated": "20240113110431"
+			},
+			"Children": [
+				{
+					"ID": "20240113110114-ooom995",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110114-ooom995",
+						"updated": "20240113110114"
+					},
+					"Children": [
+						{
+							"ID": "20240113110114-4fof97s",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110114-4fof97s",
+								"updated": "20240113110114"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Удаление приложения полностью и безвозвратно удалит локальные данные"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240113110114-iubv5w5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110114-iubv5w5",
+						"updated": "20240113110423"
+					},
+					"Children": [
+						{
+							"ID": "20240113110114-ahszju3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110114-ahszju3",
+								"updated": "20240113110423"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Для выхода из приложения используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Выйти из приложения"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в правой панели. Смахивание приложения принудительно завершит его, и синхронизация данных не выполнится"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240113110114-syav8oo",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110114-syav8oo",
+						"updated": "20240113110425"
+					},
+					"Children": [
+						{
+							"ID": "20240113110114-fnwt6sa",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110114-fnwt6sa",
+								"updated": "20240113110425"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Переключение приложений на iOS разрывает соединение. Нажмите кнопку в окне подсказки, чтобы переподключиться вручную"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240113110114-yzbrley",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240113110114-yzbrley",
+						"updated": "20240113110431"
+					},
+					"Children": [
+						{
+							"ID": "20240113110114-0clluc2",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240113110114-0clluc2",
+								"updated": "20240113110431"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Во время синхронизации данных не переключайте приложения и держите экран включённым, иначе синхронизация завершится неудачей"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260317195658-onl0av6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260317195658-onl0av6",
+				"updated": "20260613174243"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Пользовательские keep-alive-уведомления на Android"
+				}
+			]
+		},
+		{
+			"ID": "20260317195658-nlxz1i8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260317195658-nlxz1i8",
+				"updated": "20260317195658"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если вы хотите максимально удерживать SiYuan активным в фоне, выполните следующие шаги:"
+				}
+			]
+		},
+		{
+			"ID": "20260317195658-80fp3ng",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20260317195658-80fp3ng",
+				"updated": "20260317195743"
+			},
+			"Children": [
+				{
+					"ID": "20260317195658-yh1awuh",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20260317195658-yh1awuh",
+						"updated": "20260317195707"
+					},
+					"Children": [
+						{
+							"ID": "20260317195658-s91wsy7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260317195658-s91wsy7",
+								"updated": "20260317195707"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Установите стратегию энергосбережения в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Unrestricted"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260317195658-hg1udhf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20260317195658-hg1udhf",
+						"updated": "20260317195706"
+					},
+					"Children": [
+						{
+							"ID": "20260317195658-yg0iwif",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260317195658-yg0iwif",
+								"updated": "20260317195706"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Включите уведомления"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260317195658-8mbnn5t",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20260317195658-8mbnn5t",
+						"updated": "20260317195705"
+					},
+					"Children": [
+						{
+							"ID": "20260317195658-7gu5500",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260317195658-7gu5500",
+								"updated": "20260317195705"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "На настольном клиенте создайте текстовый файл с именем "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "android-notification-texts.txt"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в папке "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "workspace/data/assets/"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​; каждая строка этого файла станет текстом уведомления"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260317195658-phgrrra",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20260317195658-phgrrra",
+						"updated": "20260317195743"
+					},
+					"Children": [
+						{
+							"ID": "20260317195658-nfsz0e9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260317195658-nfsz0e9",
+								"updated": "20260317195743"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Синхронизируйте этот файл на устройство Android через "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210721112206-m1l721d",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Синхронизацию данных"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260317195658-0a05nue",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260317195658-0a05nue",
+				"updated": "20260317195658"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После выполнения этих шагов SiYuan будет отправлять уведомление каждые 45 секунд, помогая оставаться активным в фоне."
+				}
+			]
+		},
+		{
+			"ID": "20260613174243-13647tt",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613174243-13647tt",
+				"updated": "20260613174243"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Быстрые заметки"
+				}
+			]
+		},
+		{
+			"ID": "20260613174243-ehw3anp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613174243-ehw3anp",
+				"updated": "20260613174243"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Быстрая заметка — это функция быстрого захвата на мобильных. Когда пришло вдохновение или нужно записать временную информацию, можно быстро сохранить текст через системный «Поделиться» или ярлык, не открывая SiYuan и редактор документов. Содержимое быстрых заметок временно хранится локально, а затем автоматически переносится в дерево документов для организации."
+				}
+			]
+		},
+		{
+			"ID": "20260613174243-x2r7iq9",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260613174243-x2r7iq9",
+				"updated": "20260613174243"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Использование"
+				}
+			]
+		},
+		{
+			"ID": "20260613174243-7wkx0hu",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613174243-7wkx0hu",
+				"updated": "20260613174243"
+			},
+			"Children": [
+				{
+					"ID": "20260613174243-xamvo4m",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613174243-xamvo4m",
+						"updated": "20260613174243"
+					},
+					"Children": [
+						{
+							"ID": "20260613174243-037jns3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613174243-037jns3",
+								"updated": "20260613174243"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Создание быстрой заметки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": на мобильном поделитесь текстом/ссылками в SiYuan через системное меню «Поделиться» или добавьте ярлык SiYuan на главный экран для записи в одно касание"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613174243-i4aj3q7",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613174243-i4aj3q7",
+						"updated": "20260613174243"
+					},
+					"Children": [
+						{
+							"ID": "20260613174243-9nqol6x",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613174243-9nqol6x",
+								"updated": "20260613174243"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Автоимпорт"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": после создания быстрой заметки система каждые 7 секунд проверяет локальный каталог быстрых заметок и автоматически переносит новые в настроенное место дерева документов"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613174243-z67yfem",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260613174243-z67yfem",
+				"updated": "20260613174243"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Настройка хранения"
+				}
+			]
+		},
+		{
+			"ID": "20260613174243-qlcsx0o",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613174243-qlcsx0o",
+				"updated": "20260613174243"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Настройте место сохранения быстрых заметок в [Настройки - Документы - Путь сохранения быстрых заметок по умолчанию]:"
+				}
+			]
+		},
+		{
+			"ID": "20260613174243-qqfn5gj",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613174243-qqfn5gj",
+				"updated": "20260613174243"
+			},
+			"Children": [
+				{
+					"ID": "20260613174243-zut0vne",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613174243-zut0vne",
+						"updated": "20260613174243"
+					},
+					"Children": [
+						{
+							"ID": "20260613174243-h6vh1k4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613174243-h6vh1k4",
+								"updated": "20260613174243"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Целевой блокнот"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": выберите блокнот, в который импортируются быстрые заметки"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613174243-gn9o9zc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613174243-gn9o9zc",
+						"updated": "20260613174243"
+					},
+					"Children": [
+						{
+							"ID": "20260613174243-6koa8kf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613174243-6koa8kf",
+								"updated": "20260613174243"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Путь сохранения"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": задайте шаблон пути для содержимого быстрых заметок:"
+								}
+							]
+						},
+						{
+							"ID": "20260613174243-cl13eiw",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20260613174243-cl13eiw",
+								"updated": "20260613174243"
+							},
+							"Children": [
+								{
+									"ID": "20260613174243-1jlrh1q",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613174243-1jlrh1q",
+										"updated": "20260613174243"
+									},
+									"Children": [
+										{
+											"ID": "20260613174243-van19nv",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613174243-van19nv",
+												"updated": "20260613174243"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Без шаблона пути: каждая быстрая заметка создаёт отдельный документ с меткой времени в заголовке"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613174243-aqk9440",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613174243-aqk9440",
+										"updated": "20260613174243"
+									},
+									"Children": [
+										{
+											"ID": "20260613174243-eqra4d8",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613174243-eqra4d8",
+												"updated": "20260613174243"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "С шаблоном пути: все быстрые заметки добавляются в конец указанного документа. Шаблон пути поддерживает синтаксис шаблонов Go, например "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "/shorthand/{{now | date \"20060102150405\"}}"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ создаёт отдельные документы по времени"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613174243-r4kezxf",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260613174243-r4kezxf",
+				"updated": "20260613181402"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Отличие от Инбокса"
+				}
+			]
+		},
+		{
+			"ID": "20260613174243-kmhmmx5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613174243-kmhmmx5",
+				"updated": "20260613174243"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Быстрые заметки и облачный инбокс — два разных способа быстрого захвата:"
+				}
+			]
+		},
+		{
+			"ID": "20260613174243-algtrwt",
+			"Type": "NodeTable",
+			"TableAligns": [
+				0,
+				0,
+				0
+			],
+			"Properties": {
+				"colgroup": "||",
+				"id": "20260613174243-algtrwt",
+				"updated": "20260613174243"
+			},
+			"Children": [
+				{
+					"Type": "NodeTableHead",
+					"Data": "thead",
+					"Children": [
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "th"
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Быстрые заметки"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Облачный инбокс"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Хранение"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Локально"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Облако"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Способ ввода"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Системный «Поделиться» / ярлык"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "WeChat / API"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Способ импорта"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Автоимпорт в дерево документов"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Ручная обработка из панели инбокса"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нужна подписка"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нет"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Да"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Доступно на"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Только мобильные"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Все платформы"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613181402-tvugf7r",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613181402-tvugf7r",
+				"updated": "20260613181402"
+			}
+		}
+	]
+}

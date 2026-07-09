@@ -1,0 +1,265 @@
+{
+	"ID": "20210505164949-66ay67x",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20210505164949-66ay67x",
+		"title": "Веб-клиппер",
+		"type": "doc",
+		"updated": "20230621111806"
+	},
+	"Children": [
+		{
+			"ID": "20210505165011-hgqktqu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210505165011-hgqktqu"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20210505165011-n1a4svw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210505165011-n1a4svw",
+				"updated": "20210505165028"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "«Веб-клиппинг» — это копирование содержимого веб-страницы в SiYuan с максимально возможным сохранением исходного форматирования."
+				}
+			]
+		},
+		{
+			"ID": "20210505165011-5hfpfzy",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210505165011-5hfpfzy"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20210505165011-mlcx1b1",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210505165011-mlcx1b1",
+				"updated": "20230621111806"
+			},
+			"Children": [
+				{
+					"ID": "20210505165011-f5in9g4",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210505165011-f5in9g4"
+					},
+					"Children": [
+						{
+							"ID": "20210505165011-jocxkyg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210505165011-jocxkyg",
+								"updated": "20210505165046"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если скачивать изображения из вырезаемого содержимого на локальное устройство не нужно, просто скопируйте содержимое в браузере и вставьте его в SiYuan"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210505165011-stnt9mv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210505165011-stnt9mv",
+						"updated": "20230621111806"
+					},
+					"Children": [
+						{
+							"ID": "20210505165011-mso6zu5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210505165011-mso6zu5",
+								"updated": "20230621111806"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Если изображения из вырезаемого содержимого нужно скачать на локальное устройство, используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://liuyun.io/article/1692529862454",
+									"TextMarkTextContent": "расширение SiYuan для Chrome"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210531181045-jkcf1v0",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210531181045-jkcf1v0",
+				"updated": "20210531181057"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Расширение SiYuan для Chrome"
+				}
+			]
+		},
+		{
+			"ID": "20210820171625-m55hxfh",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20210820171625-m55hxfh",
+				"updated": "20210820171820"
+			},
+			"Children": [
+				{
+					"ID": "20210820171625-u1s2wm8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20210820171625-u1s2wm8",
+						"updated": "20210820171820"
+					},
+					"Children": [
+						{
+							"ID": "20210820171625-guo7xed",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210820171625-guo7xed",
+								"updated": "20210820171820"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Установите расширение и настройте API-токен в его параметрах (токен можно посмотреть в SiYuan [Настройки - Аутентификация - API-токен])"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210820171625-qrd8hir",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20210820171625-qrd8hir"
+					},
+					"Children": [
+						{
+							"ID": "20210820171625-eggotn4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210820171625-eggotn4"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выделите содержимое на веб-странице, затем выберите «Скопировать в SiYuan» в контекстном меню"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210820171625-b3qxkzc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20210820171625-b3qxkzc",
+						"updated": "20210820171638"
+					},
+					"Children": [
+						{
+							"ID": "20210820171625-8y6bpas",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210820171625-8y6bpas",
+								"updated": "20210820171638"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Вставьте в SiYuan"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20211019235143-aiiap0c",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211019235143-aiiap0c",
+				"updated": "20211019235241"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если нужно вырезать статью целиком, нажмите «Отправить в SiYuan» прямо в расширении."
+				}
+			]
+		}
+	]
+}

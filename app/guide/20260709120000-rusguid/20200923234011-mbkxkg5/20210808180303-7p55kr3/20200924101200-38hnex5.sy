@@ -1,0 +1,510 @@
+{
+	"ID": "20200924101200-38hnex5",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20200924101200-38hnex5",
+		"title": "Навигация по блокам контента",
+		"type": "doc",
+		"updated": "20250115164053"
+	},
+	"Children": [
+		{
+			"ID": "20210104091546-szwav5b",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091546-szwav5b"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Ссылки"
+				}
+			]
+		},
+		{
+			"ID": "20210104091546-8iipokq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091546-8iipokq",
+				"updated": "20210302223903"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В содержимом документа есть два типа ссылок:"
+				}
+			]
+		},
+		{
+			"ID": "20210205173431-espbh71",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210205173431-espbh71",
+				"updated": "20210428224830"
+			}
+		},
+		{
+			"ID": "20210428224834-83hxghf",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 42,
+				"Padding": 2,
+				"Marker": "Kg==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20210428224834-83hxghf",
+				"updated": "20221105220127"
+			},
+			"Children": [
+				{
+					"ID": "20210428224834-cy1ps5y",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210428224834-cy1ps5y"
+					},
+					"Children": [
+						{
+							"ID": "20210428224834-ck55vlc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210428224834-ck55vlc"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Стандартные URL-гиперссылки, открываются браузером, используются для доступа к интернет-ресурсам"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210428224834-eabv1n9",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210428224834-eabv1n9",
+						"updated": "20221105220127"
+					},
+					"Children": [
+						{
+							"ID": "20210428224834-l5nlale",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210428224834-l5nlale",
+								"updated": "20221105220127"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Ссылка на блок контента, созданная через "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924101256-gx3uui4",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "ссылку на блок"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", используется для двунаправленных связей внутри SiYuan"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210428225947-ohxgdam",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210428225947-ohxgdam",
+				"updated": "20210428225952"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Фокусировка"
+				}
+			]
+		},
+		{
+			"ID": "20210428225949-nihugj0",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 42,
+				"Padding": 2,
+				"Marker": "Kg==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20210428225949-nihugj0",
+				"updated": "20220312233028"
+			},
+			"Children": [
+				{
+					"ID": "20210428225949-ebhuhy8",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210428225949-ebhuhy8",
+						"updated": "20220312233028"
+					},
+					"Children": [
+						{
+							"ID": "20210428225949-grbt2il",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210428225949-grbt2il",
+								"updated": "20220312233028"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "После выбора «Фокус» в контекстном меню значка блока редактор сфокусируется на этом блоке контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210428225949-rk983ja",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210428225949-rk983ja"
+					},
+					"Children": [
+						{
+							"ID": "20210428225949-d0x6ya0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210428225949-d0x6ya0"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Перемещайтесь по контексту через хлебные крошки вверху редактора"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20200924101210-ltrcs5q",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20200924101210-ltrcs5q",
+				"updated": "20250115164053"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Граф"
+				}
+			]
+		},
+		{
+			"ID": "20210104091546-qkjvm7e",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091546-qkjvm7e",
+				"updated": "20210428225413"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Граф связей делится на уровень документа и глобальный. Граф документа разворачивается от текущего блока документа и показывает все блоки контента, связанные с документом (прямые и обратные ссылки); глобальный граф — это все блоки и связи во всех блокнотах."
+				}
+			]
+		},
+		{
+			"ID": "20210205173507-y14s7qj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210205173507-y14s7qj"
+			}
+		},
+		{
+			"ID": "20210428225309-7xmy8j5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210428225309-7xmy8j5",
+				"updated": "20250115164053"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Удерживая "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Ctrl"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, щёлкните по узлу — произойдёт переход к узлу."
+				}
+			]
+		},
+		{
+			"ID": "20200924101210-h04kjz2",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20200924101210-h04kjz2"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Обратные ссылки"
+				}
+			]
+		},
+		{
+			"ID": "20210106204930-a8y1h4p",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210106204930-a8y1h4p"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обратные ссылки существуют на уровне документа и перечисляют блоки, в которых блоки контента текущего документа цитируются и упоминаются."
+				}
+			]
+		},
+		{
+			"ID": "20210104091546-ftqe4fu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210104091546-ftqe4fu",
+				"updated": "20210104091546"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ссылки"
+				}
+			]
+		},
+		{
+			"ID": "20210908144725-7v8xsy4",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210908144725-7v8xsy4",
+				"updated": "20210908144757"
+			},
+			"Children": [
+				{
+					"ID": "20210908144725-nv6u6vv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210908144725-nv6u6vv",
+						"updated": "20210908144757"
+					},
+					"Children": [
+						{
+							"ID": "20210908144725-ligaoaw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210908144725-ligaoaw",
+								"updated": "20210908144757"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "При наведении мыши на значок ссылающегося блока появляется всплывающее окно предпросмотра"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210908144725-sx7mkir",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210908144725-sx7mkir",
+						"updated": "20210908144735"
+					},
+					"Children": [
+						{
+							"ID": "20210908144725-gtwxmz9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210908144725-gtwxmz9",
+								"updated": "20210908144735"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Щёлкните по ссылающемуся блоку в списке обратных ссылок для перехода"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210106204950-87iagek",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210106204950-87iagek"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "### "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Упоминания"
+				}
+			]
+		},
+		{
+			"ID": "20210106204954-p8ee7m9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210106204954-p8ee7m9",
+				"updated": "20221026221426"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Упоминания ищутся по имени блока контента, псевдониму, тексту якоря ссылок и имени документа текущего документа как по ключевым словам (область поиска настраивается в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Поиск"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Упоминания в обратных ссылках"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​); результаты поиска — блоки контента, содержащие эти ключевые слова."
+				}
+			]
+		},
+		{
+			"ID": "20221026222024-slj90vv",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221026222024-slj90vv",
+				"updated": "20221026222138"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​: поиск упоминаний ведётся только по обычному тексту — без строчных элементов вроде жирного и курсива и без блочных элементов вроде блоков кода и диаграмм. Правила те же, что и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20211010212319-km7zoz6",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "правила обнаружения виртуальных ссылок"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		}
+	]
+}

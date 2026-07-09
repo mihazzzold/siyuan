@@ -1,0 +1,467 @@
+{
+	"ID": "20230104152135-iiadp1z",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230104152135-iiadp1z",
+		"title": "Поделиться документом",
+		"type": "doc",
+		"updated": "20250115162330"
+	},
+	"Children": [
+		{
+			"ID": "20230104152142-ohplf2d",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230104152142-ohplf2d",
+				"updated": "20230104152142"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20230104152142-dqe82qa",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230104152142-dqe82qa",
+				"updated": "20230104152142"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Публикация отдельного документа в формате Markdown на "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://ld246.com",
+					"TextMarkTextContent": "Liandi"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " в виде поста."
+				}
+			]
+		},
+		{
+			"ID": "20230104152142-7bj3e14",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230104152142-7bj3e14",
+				"updated": "20250115162330"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20230104152142-yh9kew4",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230104152142-yh9kew4",
+				"updated": "20250115162330"
+			},
+			"Children": [
+				{
+					"ID": "20230104152142-kjt85ll",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230104152142-kjt85ll",
+						"updated": "20230104152142"
+					},
+					"Children": [
+						{
+							"ID": "20230104152142-lzrsel9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230104152142-lzrsel9",
+								"updated": "20230104152142"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нужно зарегистрироваться и войти в аккаунт Liandi"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230104152142-qs3830u",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230104152142-qs3830u",
+						"updated": "20250115162330"
+					},
+					"Children": [
+						{
+							"ID": "20230104152142-29ufurx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230104152142-29ufurx",
+								"updated": "20250115162330"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нажмите в редакторе меню "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "︙"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Поделиться в Liandi"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"ID": "20230104152142-4pjhlcx",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20230104152142-4pjhlcx",
+								"updated": "20230104152204"
+							},
+							"Children": [
+								{
+									"ID": "20230104152142-vrxtq82",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230104152142-vrxtq82",
+										"updated": "20230104152204"
+									},
+									"Children": [
+										{
+											"ID": "20230104152142-2qncf51",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230104152142-2qncf51",
+												"updated": "20230104152204"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Заголовок документа становится заголовком поста"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230104152142-4rw7004",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230104152142-4rw7004",
+										"updated": "20230104152142"
+									},
+									"Children": [
+										{
+											"ID": "20230104152142-9s8596t",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230104152142-9s8596t",
+												"updated": "20230104152142"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Теги документа становятся тегами поста"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230104152142-gpt1reu",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230104152142-gpt1reu",
+										"updated": "20230104152142"
+									},
+									"Children": [
+										{
+											"ID": "20230104152142-geq4mnx",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230104152142-geq4mnx",
+												"updated": "20230104152142"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Экспортированный Markdown документа становится содержимым поста, ссылки преобразуются в сноски"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230104152142-u37n6v2",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230104152142-u37n6v2",
+						"updated": "20230104152142"
+					},
+					"Children": [
+						{
+							"ID": "20230104152142-7p5mg7r",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230104152142-7p5mg7r",
+								"updated": "20230104152142"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "После публикации в документ записывается атрибут "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "custom-liandi-articleid"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ (ранее "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "custom-liandi-articleId"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ ), связывающий его с ID поста"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230104152142-3biszvg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230104152142-3biszvg",
+				"updated": "20230104152223"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ресурсы документа автоматически загружаются в облако:"
+				}
+			]
+		},
+		{
+			"ID": "20230104152142-rg9ld7e",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230104152142-rg9ld7e",
+				"updated": "20230104152142"
+			},
+			"Children": [
+				{
+					"ID": "20230104152142-pugh0h8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230104152142-pugh0h8",
+						"updated": "20230104152142"
+					},
+					"Children": [
+						{
+							"ID": "20230104152142-akwo6ga",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230104152142-akwo6ga",
+								"updated": "20230104152142"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Для бесплатных пользователей один файл — до 3 МБ"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230104152142-h9gsfor",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230104152142-h9gsfor",
+						"updated": "20230104152142"
+					},
+					"Children": [
+						{
+							"ID": "20230104152142-udyzjp0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230104152142-udyzjp0",
+								"updated": "20230104152142"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Для подписчиков один файл — до 10 МБ"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230104152142-zrc9rjk",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230104152142-zrc9rjk",
+				"updated": "20230104152234"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20230104152142-gck2bvd",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230104152142-gck2bvd",
+				"updated": "20230621111843"
+			},
+			"Children": [
+				{
+					"ID": "20230104152142-qfjxkvc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230104152142-qfjxkvc",
+						"updated": "20230621111843"
+					},
+					"Children": [
+						{
+							"ID": "20230104152142-s7vakd2",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230104152142-s7vakd2",
+								"updated": "20230621111843"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Для публикации документов на LiuYun требуются баллы, см. "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://liuyun.io/article/1685240430351",
+									"TextMarkTextContent": "правила начисления баллов"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230104152142-obnflys",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230104152142-obnflys",
+						"updated": "20230104152253"
+					},
+					"Children": [
+						{
+							"ID": "20230104152142-bwpebfq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230104152142-bwpebfq",
+								"updated": "20230104152253"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Загруженные в облако опубликованные ресурсы удалить нельзя"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

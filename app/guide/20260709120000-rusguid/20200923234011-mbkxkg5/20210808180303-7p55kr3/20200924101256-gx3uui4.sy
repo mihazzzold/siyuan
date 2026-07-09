@@ -1,0 +1,954 @@
+{
+	"ID": "20200924101256-gx3uui4",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20200924101256-gx3uui4",
+		"title": "Ссылки на блоки контента",
+		"type": "doc",
+		"updated": "20250115145507"
+	},
+	"Children": [
+		{
+			"ID": "20200924101312-08m1lyp",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20200924101312-08m1lyp",
+				"updated": "20210512154431"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20220623200920-lw2xzrc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220623200920-lw2xzrc",
+				"updated": "20220623201408"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После ввода "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "(("
+				},
+				{
+					"Type": "NodeText",
+					"Data": " запускается поиск ссылки на блок контента. Продолжайте вводить текст — он станет ключевым словом поиска. В результатах поиска выберите нужное стрелками вверх/вниз и нажмите Enter, чтобы завершить ссылку на блок контента. После создания ссылки наведите мышь на якорный текст — появится слой предпросмотра с целевым блоком контента (блоком-определением). "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Блок контента/Ссылка"
+				}
+			]
+		},
+		{
+			"ID": "20210104091542-4dnhpgb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091542-4dnhpgb",
+				"updated": "20210512154424"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Направление ссылок"
+				}
+			]
+		},
+		{
+			"ID": "20210104091542-t88r3kb",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 42,
+				"Padding": 2,
+				"Marker": "Kg==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20210104091542-t88r3kb"
+			},
+			"Children": [
+				{
+					"ID": "20210104091542-8z59vis",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210104091542-8z59vis"
+					},
+					"Children": [
+						{
+							"ID": "20210302223856-fg0rnv5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210302223856-fg0rnv5"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Прямая ссылка — какие другие блоки контента используются в текущем блоке"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091542-6vrvsfm",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210104091542-6vrvsfm"
+					},
+					"Children": [
+						{
+							"ID": "20210302223856-0s8710x",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210302223856-0s8710x"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Обратная ссылка — какими другими блоками контента используется текущий блок"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210104091542-abcsqj4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091542-abcsqj4"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Прямая ссылка входит в содержимое текущего блока, и мы видим её непосредственно. Обратные ссылки нужно искать в других документах — и именно эта информация для нас ценнее. Лучше усваивать знания и развивать идеи помогают два инструмента:"
+				}
+			]
+		},
+		{
+			"ID": "20210104091542-xtd5v5o",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 42,
+				"Padding": 2,
+				"Marker": "Kg==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20210104091542-xtd5v5o"
+			},
+			"Children": [
+				{
+					"ID": "20210104091542-0n27kku",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210104091542-0n27kku"
+					},
+					"Children": [
+						{
+							"ID": "20210302223856-dws1td4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210302223856-dws1td4"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924101210-ltrcs5q",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Граф"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": просмотр прямых и обратных связей между блоками контента"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091542-ruly25j",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20210104091542-ruly25j"
+					},
+					"Children": [
+						{
+							"ID": "20210302223856-qswcbtm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210302223856-qswcbtm",
+								"updated": "20210512154524"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924101210-h04kjz2",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Обратные ссылки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": отображение обратных ссылок текущего блока контента текстовым списком"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220623201008-hyn0ci7",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220623201008-hyn0ci7",
+				"updated": "20250115145507"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Якорный текст"
+				}
+			]
+		},
+		{
+			"ID": "20220623201008-gvghik0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220623201008-gvghik0",
+				"updated": "20220623201008"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Якорный текст — это текст, который вы видите при отображении ссылки. Он бывает статическим и динамическим:"
+				}
+			]
+		},
+		{
+			"ID": "20220623201008-lvm8ga7",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220623201008-lvm8ga7",
+				"updated": "20220623201147"
+			},
+			"Children": [
+				{
+					"ID": "20220623201008-yyi7z55",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220623201008-yyi7z55",
+						"updated": "20220623201008"
+					},
+					"Children": [
+						{
+							"ID": "20220623201008-qpc1mvo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220623201008-qpc1mvo",
+								"updated": "20220623201008"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Статический якорный текст: не меняется вместе с содержимым блока-определения, то есть показывает фиксированное содержимое"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220623201008-b4w45sh",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220623201008-b4w45sh",
+						"updated": "20220623201147"
+					},
+					"Children": [
+						{
+							"ID": "20220623201008-v845eak",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220623201008-v845eak",
+								"updated": "20220623201147"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Динамический якорный текст: следует за содержимым блока-определения; максимальную длину можно настроить в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Редактор"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Максимальная длина динамического якорного текста ссылки на блок"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", поддерживается до "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "5120"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " символов"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220623201008-doj5ba6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220623201008-doj5ba6",
+				"updated": "20220623201008"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Изменить якорный текст можно так:"
+				}
+			]
+		},
+		{
+			"ID": "20220623201008-en30c10",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220623201008-en30c10",
+				"updated": "20220623201008"
+			},
+			"Children": [
+				{
+					"ID": "20220623201008-wuvxwiw",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220623201008-wuvxwiw",
+						"updated": "20220623201008"
+					},
+					"Children": [
+						{
+							"ID": "20220623201008-spyscbd",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220623201008-spyscbd",
+								"updated": "20220623201008"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Поместите курсор внутрь элемента ссылки и измените содержимое напрямую — якорный текст ссылки станет статическим"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220623201008-krul83x",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220623201008-krul83x",
+						"updated": "20220623201008"
+					},
+					"Children": [
+						{
+							"ID": "20220623201008-gkmlhhp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220623201008-gkmlhhp",
+								"updated": "20220623201008"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Щёлкните элемент ссылки правой кнопкой и измените якорный текст во всплывающем меню — полученный якорный текст также будет статическим"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220623201008-yvah4bj",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220623201008-yvah4bj",
+						"updated": "20220623201008"
+					},
+					"Children": [
+						{
+							"ID": "20220623201008-ujzrsnq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220623201008-ujzrsnq",
+								"updated": "20220623201008"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Очистите якорный текст во всплывающем меню после щелчка правой кнопкой по элементу ссылки — будет использован динамический якорный текст"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230420185940-8d0aog6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230420185940-8d0aog6",
+				"updated": "20230420185940"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В списке результатов поиска "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "(("
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​:"
+				}
+			]
+		},
+		{
+			"ID": "20230420185940-1bzq9pr",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230420185940-1bzq9pr",
+				"updated": "20250115145507"
+			},
+			"Children": [
+				{
+					"ID": "20230420185940-u92a8ua",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230420185940-u92a8ua",
+						"updated": "20230420190018"
+					},
+					"Children": [
+						{
+							"ID": "20230420185940-a51byhn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230420185940-a51byhn",
+								"updated": "20230420190018"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Просто "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Enter"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ или "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "щелчок"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ — будет использован динамический якорный текст"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230420185940-qdki5ky",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230420185940-qdki5ky",
+						"updated": "20250115145507"
+					},
+					"Children": [
+						{
+							"ID": "20230420185940-nz31vh2",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230420185940-nz31vh2",
+								"updated": "20250115145507"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нажмите "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Ctrl"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​+"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Enter"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ или "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Ctrl"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​+"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "щелчок"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ — будет использован статический якорный текст"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230420123242-y813ikh",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230420123242-y813ikh",
+				"updated": "20230420123245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Фильтр"
+				}
+			]
+		},
+		{
+			"ID": "20230518100549-ec4anlw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230518100549-ec4anlw",
+				"updated": "20230518100627"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После включения "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "[[ ищет только документы"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Редактор"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​: "
+				}
+			]
+		},
+		{
+			"ID": "20230420123242-lc79nu9",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230420123242-lc79nu9",
+				"updated": "20230820102811"
+			},
+			"Children": [
+				{
+					"ID": "20230420123242-n9djvxp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230420123242-n9djvxp",
+						"updated": "20230820102811"
+					},
+					"Children": [
+						{
+							"ID": "20230420123242-zjiqr15",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230420123242-zjiqr15",
+								"updated": "20230820102811"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "(("
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​ для поиска по "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200924101225-9qg8o1m",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "блокам всех типов"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230420123242-ffcbyl0",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230420123242-ffcbyl0",
+						"updated": "20230820102741"
+					},
+					"Children": [
+						{
+							"ID": "20230420123242-vxld05v",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230420123242-vxld05v",
+								"updated": "20230820102741"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "[["
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для поиска только по "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210104091538-19f7ykr",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "блокам документов"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220623201008-adojjdn",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220623201008-adojjdn",
+				"updated": "20220623201232"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис"
+				}
+			]
+		},
+		{
+			"ID": "20220623201008-cy3jkt5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220623201008-cy3jkt5",
+				"updated": "20220623201008"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Помимо вызова поиска ссылки через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "(("
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", можно напрямую использовать синтаксис "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "((id \"anchor text\"))"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20220623201008-dpo372g",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220623201008-dpo372g",
+				"updated": "20220623201008"
+			},
+			"Children": [
+				{
+					"ID": "20220623201008-xsf9jqe",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220623201008-xsf9jqe",
+						"updated": "20220623201008"
+					},
+					"Children": [
+						{
+							"ID": "20220623201008-oyy8q6k",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220623201008-oyy8q6k",
+								"updated": "20220623201008"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Оберните якорный текст в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "\""
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", чтобы сделать его статическим"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220623201008-vrit6ok",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220623201008-vrit6ok",
+						"updated": "20220623201008"
+					},
+					"Children": [
+						{
+							"ID": "20220623201008-u9ybrqi",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220623201008-u9ybrqi",
+								"updated": "20220623201008"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Оберните якорный текст в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "'"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", чтобы сделать его динамическим — он будет автоматически переписан при перестроении индекса"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220623201008-cu5adqw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220623201008-cu5adqw",
+				"updated": "20220623201008"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Основной сценарий прямого использования синтаксиса — создание ссылки внешним инструментом или через API. В большинстве случаев ссылки создаются через поиск, вызываемый "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "(("
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		}
+	]
+}

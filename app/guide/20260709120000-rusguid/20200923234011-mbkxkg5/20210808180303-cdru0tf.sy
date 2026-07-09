@@ -1,0 +1,48 @@
+{
+	"ID": "20210808180303-cdru0tf",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f3a8",
+		"id": "20210808180303-cdru0tf",
+		"title": "Настройка внешнего вида",
+		"type": "doc",
+		"updated": "20240508004341"
+	},
+	"Children": [
+		{
+			"ID": "20240508004341-g8hnwj5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240508004341-g8hnwj5",
+				"updated": "20240508004341"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20200924100110-wt6gcft",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Значки"
+				}
+			]
+		},
+		{
+			"ID": "20240508004341-bze2f1n",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240508004341-bze2f1n",
+				"updated": "20240508004341"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20200924095938-j2xo9vi",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Темы"
+				}
+			]
+		}
+	]
+}

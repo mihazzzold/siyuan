@@ -1,0 +1,332 @@
+{
+	"ID": "20210721112159-0eksaeo",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20210721112159-0eksaeo",
+		"title": "Хранилище",
+		"type": "doc",
+		"updated": "20230912091621"
+	},
+	"Children": [
+		{
+			"ID": "20210721112251-uef2md1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210721112251-uef2md1",
+				"updated": "20220703223420"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Облачное пространство хранения — "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "8G"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", оно делится на следующие разделы:"
+				}
+			]
+		},
+		{
+			"ID": "20210721112251-twlxwna",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210721112251-twlxwna",
+				"updated": "20220708103624"
+			},
+			"Children": [
+				{
+					"ID": "20210721112251-zhjf6hs",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210721112251-zhjf6hs",
+						"updated": "20220708103549"
+					},
+					"Children": [
+						{
+							"ID": "20210721112251-erxga9a",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721112251-erxga9a",
+								"updated": "20220708103549"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Данные синхронизации: используются функцией синхронизации, данные зашифрованы"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220708103542-3lidie9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220708103542-3lidie9",
+						"updated": "20220708103559"
+					},
+					"Children": [
+						{
+							"ID": "20220708103542-bm7kd12",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220708103542-bm7kd12",
+								"updated": "20220708103559"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Данные резервных копий: используются функцией резервного копирования, данные зашифрованы"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210721112251-w4toy24",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210721112251-w4toy24",
+						"updated": "20220708103624"
+					},
+					"Children": [
+						{
+							"ID": "20210721112251-ajmltek",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210721112251-ajmltek",
+								"updated": "20220708103624"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Ресурсы: используются для копирования в WeChat MP, Zhihu, Yuque и т. д., HTTPS CDN"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230912091521-on2hv6q",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230912091521-on2hv6q",
+				"updated": "20230912091601"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Использование можно посмотреть в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Аккаунт и синхронизация"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		},
+		{
+			"ID": "20210721112229-hb09weh",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210721112229-hb09weh",
+				"title": "End-to-end Encryption",
+				"updated": "20220708103533"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сквозное шифрование"
+				}
+			]
+		},
+		{
+			"ID": "20220703223157-vmg52i1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220703223157-vmg52i1",
+				"updated": "20220703223157"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синхронизация данных передаётся со сквозным шифрованием, облако не хранит никаких данных в открытом виде."
+				}
+			]
+		},
+		{
+			"ID": "20220703223157-m6q503z",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220703223157-m6q503z",
+				"updated": "20220703223157"
+			},
+			"Children": [
+				{
+					"ID": "20220703223157-xpso5vg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220703223157-xpso5vg",
+						"updated": "20220703223157"
+					},
+					"Children": [
+						{
+							"ID": "20220703223157-nkgex07",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220703223157-nkgex07",
+								"updated": "20220703223157"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Ключ хранится только локально и не загружается в облако"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220703223157-r9wur3q",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220703223157-r9wur3q",
+						"updated": "20220703223157"
+					},
+					"Children": [
+						{
+							"ID": "20220703223157-7v1sud8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220703223157-7v1sud8",
+								"updated": "20220703223157"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Шифрование и расшифровка выполняются целиком на локальном устройстве"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220703223157-1rhgclu",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220703223157-1rhgclu",
+						"updated": "20220703223157"
+					},
+					"Children": [
+						{
+							"ID": "20220703223157-46qdkm8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220703223157-46qdkm8",
+								"updated": "20220703223157"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Алгоритм шифрования — общепризнанный и безопасный AES GCM"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230912091615-u0fhfju",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230912091615-u0fhfju",
+				"updated": "20230912091621"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Часто задаваемые вопросы"
+				}
+			]
+		},
+		{
+			"ID": "20230912091615-hzncmpk",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230912091615-hzncmpk",
+				"updated": "20230912091615"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Могут ли разработчики расшифровать мои облачные данные?"
+				}
+			]
+		},
+		{
+			"ID": "20230912091615-8sm8bts",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230912091615-8sm8bts",
+				"updated": "20230912091615"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Расшифровать невозможно. Если вы потеряете ключ, никто (включая разработчиков) не сможет помочь вам восстановить данные из облака."
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,335 @@
+{
+	"ID": "20220105101227-c8zcpst",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220105101227-c8zcpst",
+		"title": "Ограничения",
+		"type": "doc",
+		"updated": "20241010011042"
+	},
+	"Children": [
+		{
+			"ID": "20220105101254-wxnwpsq",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220105101254-wxnwpsq",
+				"updated": "20241010011042"
+			},
+			"Children": [
+				{
+					"ID": "20220105101254-iatyjv4",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220105101254-iatyjv4",
+						"updated": "20220722230453"
+					},
+					"Children": [
+						{
+							"ID": "20220105101254-n790pa4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220105101254-n790pa4",
+								"updated": "20220722230453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Поддерживается хранение до 12 снимков данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220105101254-21xmipp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220105101254-21xmipp",
+						"updated": "20220105101254"
+					},
+					"Children": [
+						{
+							"ID": "20220105101254-qlm5x0e",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220105101254-qlm5x0e",
+								"updated": "20220105101254"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Поддерживается создание до 7 облачных каталогов синхронизации"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220105101254-kcqsz3i",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220105101254-kcqsz3i",
+						"updated": "20220105101254"
+					},
+					"Children": [
+						{
+							"ID": "20220105101254-86jry9z",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220105101254-86jry9z",
+								"updated": "20220105101254"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Начальный общий размер облачного хранилища — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "8G"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20241010010954-yumgl68",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20241010010954-yumgl68",
+						"updated": "20241010011042"
+					},
+					"Children": [
+						{
+							"ID": "20241010010955-t8mgmot",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20241010010955-t8mgmot",
+								"updated": "20241010010955"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Снимки данных в облачном хранилище хранятся до 30 дней, то есть неиспользуемые снимки старше 30 дней автоматически удаляются"
+								}
+							]
+						},
+						{
+							"ID": "20241010010955-irea34g",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20241010010955-irea34g",
+								"updated": "20241010011042"
+							},
+							"Children": [
+								{
+									"ID": "20241010010955-g09hmyo",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20241010010955-g09hmyo",
+										"updated": "20241010010955"
+									},
+									"Children": [
+										{
+											"ID": "20241010010955-x8p2jsn",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20241010010955-x8p2jsn",
+												"updated": "20241010010955"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Последний снимок после каждой синхронизации данных не удаляется"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20241010010955-j9502pq",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20241010010955-j9502pq",
+										"updated": "20241010011042"
+									},
+									"Children": [
+										{
+											"ID": "20241010010955-kbk31wl",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20241010010955-kbk31wl",
+												"updated": "20241010011042"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Снимки, вручную помеченные для резервного копирования и загруженные в облако, не удаляются"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20241010010955-35cujix",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20241010010955-35cujix",
+										"updated": "20241010010955"
+									},
+									"Children": [
+										{
+											"ID": "20241010010955-vw0hm16",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20241010010955-vw0hm16",
+												"updated": "20241010010955"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Снимки младше 30 дней не удаляются"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220105101254-rnpahlk",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220105101254-rnpahlk",
+						"updated": "20230526091044"
+					},
+					"Children": [
+						{
+							"ID": "20220105101254-maaznld",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220105101254-maaznld",
+								"updated": "20220325115334"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "После истечения платной подписки облачное хранилище будет полностью удалено"
+								}
+							]
+						},
+						{
+							"ID": "20230526091044-v29mi3b",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20230526091044-v29mi3b",
+								"updated": "20230526091044"
+							},
+							"Children": [
+								{
+									"ID": "20230526091044-zxeei43",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230526091044-zxeei43",
+										"updated": "20230526091044"
+									},
+									"Children": [
+										{
+											"ID": "20230526091044-m2ttwb9",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230526091044-m2ttwb9",
+												"updated": "20230526091044"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Начиная с 15 дней до истечения срока, при каждом открытии программы будет появляться напоминание; напоминания прекратятся через 2 дня после истечения"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230526091044-pnwmsxr",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230526091044-pnwmsxr",
+										"updated": "20230526091133"
+									},
+									"Children": [
+										{
+											"ID": "20230526091044-20xlku7",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230526091044-20xlku7",
+												"updated": "20230526091133"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Удаление облачного хранилища не влияет на локальные данные"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

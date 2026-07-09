@@ -1,0 +1,1135 @@
+{
+	"ID": "20220415232231-5p4zeib",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220415232231-5p4zeib",
+		"title": "Синтаксис запросов",
+		"type": "doc",
+		"updated": "20260613193430"
+	},
+	"Children": [
+		{
+			"ID": "20220415232239-6xjy6rk",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220415232239-6xjy6rk",
+				"updated": "20250115150346"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-wha3rb4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415232239-wha3rb4",
+				"updated": "20250115150346"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Глобальный поиск "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Ctrl"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​+"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "P"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ поддерживает расширенный поиск через синтаксис запросов для логических операций: например, запрос, который содержит ключевое слово "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "foo"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и не содержит ключевое слово "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "bar"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, записывается как "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "foo NOT bar"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-mfdprsw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415232239-mfdprsw",
+				"updated": "20220415232239"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Прежде чем использовать синтаксис запросов, разберёмся в его устройстве:"
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-6p7jlw9",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220415232239-6p7jlw9",
+				"updated": "20220415232402"
+			},
+			"Children": [
+				{
+					"ID": "20220415232239-782ah2b",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220415232239-782ah2b",
+						"updated": "20220415232402"
+					},
+					"Children": [
+						{
+							"ID": "20220415232239-7in8wlm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220415232239-7in8wlm",
+								"updated": "20220415232402"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Строка: состоит из букв, цифр и т. д."
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220415232239-pjk0pij",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220415232239-pjk0pij",
+						"updated": "20220415232239"
+					},
+					"Children": [
+						{
+							"ID": "20220415232239-85eruqs",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220415232239-85eruqs",
+								"updated": "20220415232239"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Фраза: состоит из строк"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220415232239-06zsfei",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220415232239-06zsfei",
+						"updated": "20220415232239"
+					},
+					"Children": [
+						{
+							"ID": "20220415232239-0frm2ty",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220415232239-0frm2ty",
+								"updated": "20220415232239"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Запрос: состоит из фраз; несколько запросов можно объединить в новый через "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "AND"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "OR"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " и "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "NOT"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-c8nxsv5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415232239-c8nxsv5",
+				"updated": "20220415232239"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ниже рассмотрим каждый элемент подробно."
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-csxrg1m",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220415232239-csxrg1m",
+				"updated": "20220415232431"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Строки"
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-j4or3or",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415232239-j4or3or",
+				"updated": "20220415232239"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Строки задаются двумя способами:"
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-cspv723",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220415232239-cspv723",
+				"updated": "20220415232616"
+			},
+			"Children": [
+				{
+					"ID": "20220415232239-22lr1rq",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220415232239-22lr1rq",
+						"updated": "20220415232500"
+					},
+					"Children": [
+						{
+							"ID": "20220415232239-cwl3mc9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220415232239-cwl3mc9",
+								"updated": "20220415232500"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Символы, заключённые в английские двойные кавычки "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "\""
+								},
+								{
+									"Type": "NodeText",
+									"Data": ". Если нужен сам символ "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "\""
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", его можно экранировать в стиле SQL (добавив "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "\""
+								},
+								{
+									"Type": "NodeText",
+									"Data": "), например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "\"foo\"\"bar\"\"\""
+								},
+								{
+									"Type": "NodeText",
+									"Data": " найдёт "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "foo \"bar\""
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220415232239-8m8yvdj",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220415232239-8m8yvdj",
+						"updated": "20220415232616"
+					},
+					"Children": [
+						{
+							"ID": "20220415232239-zjh2i92",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220415232239-zjh2i92",
+								"updated": "20220415232537"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Состоит из символов, отличных от "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "AND"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "OR"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " и "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "NOT"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", причём эти символы должны быть:"
+								}
+							]
+						},
+						{
+							"ID": "20220415232239-vwbu8b1",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220415232239-vwbu8b1",
+								"updated": "20220415232616"
+							},
+							"Children": [
+								{
+									"ID": "20220415232239-3g8nij0",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220415232239-3g8nij0",
+										"updated": "20220415232603"
+									},
+									"Children": [
+										{
+											"ID": "20220415232239-i6s93oi",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220415232239-i6s93oi",
+												"updated": "20220415232603"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Любыми не-ASCII символами, или"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220415232239-7zrbdoj",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220415232239-7zrbdoj",
+										"updated": "20220415232239"
+									},
+									"Children": [
+										{
+											"ID": "20220415232239-s8ehd6v",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220415232239-s8ehd6v",
+												"updated": "20220415232239"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Одной из 52 заглавных и строчных латинских букв ("
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "A-Za-z"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "), или"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220415232239-w3ntlbw",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220415232239-w3ntlbw",
+										"updated": "20220415232239"
+									},
+									"Children": [
+										{
+											"ID": "20220415232239-a1ks7nx",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220415232239-a1ks7nx",
+												"updated": "20220415232239"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Одной из 10 ASCII-цифр ("
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "0-9"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "), или"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220415232239-fe3hpcu",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220415232239-fe3hpcu",
+										"updated": "20220415232615"
+									},
+									"Children": [
+										{
+											"ID": "20220415232239-t113q6j",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220415232239-t113q6j",
+												"updated": "20220415232615"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Подчёркиванием "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "_"
+												},
+												{
+													"Type": "NodeText",
+													"Data": ", или"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220415232239-bip77gl",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220415232239-bip77gl",
+										"updated": "20220415232616"
+									},
+									"Children": [
+										{
+											"ID": "20220415232239-n82pb2t",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220415232239-n82pb2t",
+												"updated": "20220415232616"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Символом замены (ASCII 26)"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-7pbi45i",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415232239-7pbi45i",
+				"updated": "20220415232239"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Строки, содержащие иные символы, обязательно оборачивайте в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "\""
+				},
+				{
+					"Type": "NodeText",
+					"Data": " — например, строки с символами "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "-"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "*"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " и т. п."
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-uj42a65",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220415232239-uj42a65",
+				"updated": "20220415232239"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Фразы"
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-uo0e64o",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415232239-uo0e64o",
+				"updated": "20230820184820"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Фразы состоят из строк, которые можно соединять через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "+"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​. Фраза — это последовательность токенов, получаемых токенизатором из введённого пользователем текста. Токенизатор SiYuan сделан так, чтобы китайский поиск был удобным (поддерживает поиск по одному иероглифу), поэтому реализация основана на сегментации: каждый китайский иероглиф или латинская буква становится отдельным токеном. Это влияет на соединение через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "+"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​, поэтому, если не уверены, не рекомендуется использовать "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "+"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ для объединения нескольких фраз."
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-2wv5jbi",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220415232239-2wv5jbi",
+				"updated": "20220415232435"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Запросы"
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-geop5nw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415232239-geop5nw",
+				"updated": "20220415232239"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Запрос состоит из нескольких фраз, которые объединяются в новый запрос операторами "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "AND"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "OR"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "NOT"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20220415232838-xtnpv6t",
+			"Type": "NodeTable",
+			"TableAligns": [
+				0,
+				0
+			],
+			"Properties": {
+				"colgroup": "|",
+				"id": "20220415232838-xtnpv6t",
+				"updated": "20220415233221"
+			},
+			"Children": [
+				{
+					"Type": "NodeTableHead",
+					"Data": "thead",
+					"Children": [
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Оператор"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Функция"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "<query1> AND <query2>"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Совпадение, если совпадают и query1, и query2"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "<query1> OR <query2>"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Совпадение, если совпадает query1 или query2"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "<query1> NOT <query2>"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Совпадение, если query1 совпадает, а query2 — нет"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-6bpqfhe",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415232239-6bpqfhe",
+				"updated": "20220415232239"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Используйте скобки "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "()"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " для задания приоритетов, например:"
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-jtbmnw4",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20220415232239-jtbmnw4",
+				"updated": "20220502163630"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "c3Fs"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "-- Matches documents that contain at least one instance of either \"one\" or \"two\", but do not contain any instances of token \"three\".\n'one OR two NOT three'\n\n-- Match all documents that contain the token \"two\" but not \"three\", or contain the token \"one\".\n'one OR (two NOT three)'\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-npitjky",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415232239-npitjky",
+				"updated": "20220415232239"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Несколько фраз, разделённых пробелами, по умолчанию объединяются через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "AND"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", например:"
+				}
+			]
+		},
+		{
+			"ID": "20220415232239-shzf2su",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20220415232239-shzf2su",
+				"updated": "20220502163624"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "c3Fs"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "'one two three'         -- 'one AND two AND three'\n'three \"one two\"'       -- 'three AND \"one two\"'\n'NEAR(one two) three'   -- 'NEAR(one two) AND three'\n'one OR two three'      -- 'one OR two AND three'\n\n'(one OR two) three'    -- Syntax error!\n'func(one two)'         -- Syntax error!\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20220415233433-qtgh8a4",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220415233433-qtgh8a4",
+				"updated": "20260613193430"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Техническая реализация"
+				}
+			]
+		},
+		{
+			"ID": "20220415233433-xa67pde",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415233433-xa67pde",
+				"updated": "20220415233433"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Глобальный поиск реализован через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://www.sqlite.org/fts5.html",
+					"TextMarkTextContent": "SQLite FTS5"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20220415233433-tknze2a",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415233433-tknze2a",
+				"updated": "20220415233534"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ключевая часть генерируемого системой запроса выглядит примерно как "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "MATCH '{content name alias memo}:\" + query"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", где "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "query"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " — введённая пользователем часть, а для "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://www.sqlite.org/fts5 .html#fts5_column_filters",
+					"TextMarkTextContent": "фильтра столбцов"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "{content name alias memo}:"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " генерируется настройкой "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Поиск"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Атрибут"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20220415233433-2g095cw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415233433-2g095cw",
+				"updated": "20220415233433"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Зная это, можно реализовать блок встраивания с запросом через синтаксис запросов — производительность будет лучше:"
+				}
+			]
+		},
+		{
+			"ID": "20220415233433-8ysvqqa",
+			"Type": "NodeBlockQueryEmbed",
+			"Properties": {
+				"id": "20220415233433-8ysvqqa",
+				"updated": "20220415234441"
+			},
+			"Children": [
+				{
+					"Type": "NodeOpenBrace"
+				},
+				{
+					"Type": "NodeOpenBrace"
+				},
+				{
+					"Type": "NodeBlockQueryEmbedScript",
+					"Data": "SELECT * FROM blocks_fts WHERE blocks_fts MATCH 'content:query syntax' AND root_id = '20220415232231-5p4zeib' LIMIT 1\n"
+				},
+				{
+					"Type": "NodeCloseBrace"
+				},
+				{
+					"Type": "NodeCloseBrace"
+				}
+			]
+		},
+		{
+			"ID": "20220415233433-92m7w2k",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220415233433-92m7w2k",
+				"updated": "20220415233433"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Помимо этого, API также поддерживает запросы с использованием FTS."
+				}
+			]
+		},
+		{
+			"ID": "20260613193430-df4q9hc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613193430-df4q9hc",
+				"updated": "20260613193430"
+			}
+		}
+	]
+}

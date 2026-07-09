@@ -1,0 +1,2965 @@
+{
+	"ID": "20240208172514-wn102ri",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f5c3-fe0f",
+		"id": "20240208172514-wn102ri",
+		"title": "База данных",
+		"type": "doc",
+		"updated": "20260613194213"
+	},
+	"Children": [
+		{
+			"ID": "20251224101749-fp0wfoq",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20251224101749-fp0wfoq",
+				"updated": "20251224101813"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20251224101749-e5r31gz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20251224101749-e5r31gz",
+				"updated": "20251224101813"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Базы данных состоят из блоков контента или данных вне блоков контента и представляются в разных представлениях: таблица, канбан, карточки."
+				}
+			]
+		},
+		{
+			"ID": "20251224101749-zfytagu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20251224101749-zfytagu",
+				"updated": "20260613162855"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Представления"
+				}
+			]
+		},
+		{
+			"ID": "20251224101749-ieu5v3x",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20251224101749-ieu5v3x",
+				"updated": "20260613160453"
+			},
+			"Children": [
+				{
+					"ID": "20251224101749-0qzl600",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20251224101749-0qzl600",
+						"updated": "20251224102024"
+					},
+					"Children": [
+						{
+							"ID": "20251224101749-8na1f24",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20251224101749-8na1f24",
+								"updated": "20251224102024"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Создаётся через "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "/Database"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​; представление по умолчанию — таблица, его можно переключить в настройках макета"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20251224101749-12fgu71",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20251224101749-12fgu71",
+						"updated": "20260613160453"
+					},
+					"Children": [
+						{
+							"ID": "20251224101749-bjlvhq6",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20251224101749-bjlvhq6",
+								"updated": "20260613160453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Добавьте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20260613155453-k47vjqu",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "поля"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20251224101749-r2gyqxn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20251224101749-r2gyqxn",
+						"updated": "20251224101758"
+					},
+					"Children": [
+						{
+							"ID": "20251224101749-3t0bwoi",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20251224101749-3t0bwoi",
+								"updated": "20251224101749"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Добавьте записи"
+								}
+							]
+						},
+						{
+							"ID": "20251224101752-uy23upo",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20251224101752-uy23upo",
+								"updated": "20251224101758"
+							},
+							"Children": [
+								{
+									"ID": "20251224101749-lno3nt3",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20251224101749-lno3nt3",
+										"updated": "20251224101757"
+									},
+									"Children": [
+										{
+											"ID": "20251224101749-gsueupp",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20251224101749-gsueupp",
+												"updated": "20251224101757"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Не-блоки контента: записи, добавленные прямо в представлении и не привязанные ни к какому блоку контента"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20251224101749-outfone",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20251224101749-outfone",
+										"updated": "20251224101758"
+									},
+									"Children": [
+										{
+											"ID": "20251224101749-wbfdcp8",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20251224101749-wbfdcp8",
+												"updated": "20251224101758"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Блоки контента: записи добавляются перетаскиванием в представление или через меню блока "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "kbd",
+													"TextMarkTextContent": "Добавить в базу данных"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20251224101749-niue8ze",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20251224101749-niue8ze",
+						"updated": "20251224101800"
+					},
+					"Children": [
+						{
+							"ID": "20251224101749-2k9ppjx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20251224101749-2k9ppjx",
+								"updated": "20251224101800"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Настройте фильтрацию и сортировку по необходимости"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20251224101749-dpu0uig",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20251224101749-dpu0uig",
+						"updated": "20251224101802"
+					},
+					"Children": [
+						{
+							"ID": "20251224101749-gtsxajx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20251224101749-gtsxajx",
+								"updated": "20251224101802"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "К одной базе данных можно добавить несколько представлений; все представления делят одни данные, но настройки фильтрации и сортировки у каждого свои"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613162855-1kb0qqg",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260613162855-1kb0qqg",
+				"updated": "20260613162855"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Табличное представление"
+				}
+			]
+		},
+		{
+			"ID": "20260613162855-fkem3da",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613162855-fkem3da",
+				"updated": "20260613162855"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Представление базы данных по умолчанию: данные в виде таблицы со строками и столбцами."
+				}
+			]
+		},
+		{
+			"ID": "20260613162855-q7twdfr",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613162855-q7twdfr",
+				"updated": "20260613162855"
+			},
+			"Children": [
+				{
+					"ID": "20260613162855-a57rtvd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-a57rtvd",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-atrc00m",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-atrc00m",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Переключение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при создании база данных открывается в табличном представлении; из других представлений переключайтесь через выпадающее меню, выбрав «Табличное представление»"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-hrdqvaf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-hrdqvaf",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-vlydtbq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-vlydtbq",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Управление столбцами"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": каждый столбец — это поле. Перетаскивайте, чтобы менять ширину и порядок столбцов. Щёлкните заголовок столбца правой кнопкой, чтобы изменить, удалить или скрыть поле"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-crbc3t8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-crbc3t8",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-mlvtokg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-mlvtokg",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Операции со строками"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": щёлкните начало строки, чтобы раскрыть её детали. Перетаскивайте строки для изменения порядка. Щёлкните строку правой кнопкой, чтобы удалить, дублировать или переместить в другую базу данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-og7olta",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-og7olta",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-qiw8a4d",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-qiw8a4d",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Добавление строк"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": щёлкните пустую строку внизу таблицы или используйте кнопку «плюс», чтобы добавить новую запись"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-px9yf3z",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-px9yf3z",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-f23q5iq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-f23q5iq",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Лучше всего для"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": ввода данных, пакетного редактирования, сценариев с разнообразными типами полей, общего управления данными в духе электронных таблиц"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613162855-sf2j3jp",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260613162855-sf2j3jp",
+				"updated": "20260613162855"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Канбан-представление"
+				}
+			]
+		},
+		{
+			"ID": "20260613162855-9x862s5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613162855-9x862s5",
+				"updated": "20260613162855"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Показывает данные карточками в столбцах, где каждый столбец соответствует значению поля группировки."
+				}
+			]
+		},
+		{
+			"ID": "20260613162855-tbczl1a",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613162855-tbczl1a",
+				"updated": "20260613162855"
+			},
+			"Children": [
+				{
+					"ID": "20260613162855-wasmn2o",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-wasmn2o",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-09dja30",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-09dja30",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Переключение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": выберите «Канбан-представление» в выпадающем меню макета представления"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-4p0zpxy",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-4p0zpxy",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-zy5xy35",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-zy5xy35",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Поле группировки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": выберите поле одиночного или множественного выбора как основу группировки. Система автоматически разложит данные по столбцам согласно значениям опций поля"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-yq5blez",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-yq5blez",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-8616crc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-8616crc",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Содержимое карточки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": каждая карточка показывает сводку блока контента, привязанного к первичному ключу, и значения полей, выбранных в этом представлении"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-nhsk9ff",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-nhsk9ff",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-x9pb8p2",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-x9pb8p2",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Перетаскивание"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": перетаскивание карточки из одного столбца в другой автоматически обновляет значение поля группировки записи в соответствии с опцией целевого столбца. Это ключевое взаимодействие канбана — смена статуса выполняется перетаскиванием"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-p5rnwus",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-p5rnwus",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-pd159i7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-pd159i7",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Добавление записей"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": нажмите кнопку «плюс» внизу столбца, чтобы добавить новую карточку прямо в этот столбец. Значение поля новой карточки автоматически устанавливается в опцию этого столбца"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-yuvyy6g",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-yuvyy6g",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-nd50ggc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-nd50ggc",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Независимость представления"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": данные общие с другими представлениями той же базы, но настройки фильтрации, сортировки и группировки у каждого представления свои"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-2wxuu7l",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-2wxuu7l",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-opu8e1m",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-opu8e1m",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Лучше всего для"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": досок управления проектами (К выполнению → В работе → Готово), управления потоками статусов, просмотра по категориям"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613162855-lujxzs5",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260613162855-lujxzs5",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Галерейное представление"
+				}
+			]
+		},
+		{
+			"ID": "20260613162855-y3fesno",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613162855-y3fesno",
+				"updated": "20260613162855"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Показывает данные независимой сеткой карточек — идеально для сценариев с упором на предпросмотр содержимого."
+				}
+			]
+		},
+		{
+			"ID": "20260613162855-p8m8o7t",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613162855-p8m8o7t",
+				"updated": "20260613162855"
+			},
+			"Children": [
+				{
+					"ID": "20260613162855-diflbkf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-diflbkf",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-mq0mwcv",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-mq0mwcv",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Переключение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": выберите «Галерейное представление» в выпадающем меню макета представления"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-wfxzdar",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-wfxzdar",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-qsy08xy",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-qsy08xy",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Отображение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": каждая запись отрисовывается карточкой со сводкой содержимого блока первичного ключа и выбранными значениями полей — удобно для быстрого просмотра с упором на содержимое"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-t5ng899",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-t5ng899",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-9w019cg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-9w019cg",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Операции с карточками"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": щёлкните карточку, чтобы раскрыть детали или открыть привязанный блок контента. Контекстное меню поддерживает удаление, дублирование и другие операции"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-6bpylwn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-6bpylwn",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-977gztt",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-977gztt",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация и сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживаются те же настройки фильтрации и сортировки, что и в других представлениях"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613162855-xa5az26",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613162855-xa5az26",
+						"updated": "20260613162855"
+					},
+					"Children": [
+						{
+							"ID": "20260613162855-yth78lb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613162855-yth78lb",
+								"updated": "20260613162855"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Лучше всего для"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": библиотек изображений/медиа, карточек читательских заметок, управления контентом с упором на визуальный предпросмотр"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-fje03as",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260613171129-fje03as",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Фильтрация и сортировка"
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-irc7295",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613171129-irc7295",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Каждое представление независимо настраивает условия фильтрации и правила сортировки; фильтры и сортировки разных представлений не влияют друг на друга."
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-t7h5ztg",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20260613171129-t7h5ztg",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Фильтр"
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-hptmkdg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613171129-hptmkdg",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для отбора записей, отображаемых в представлении: показываются только данные, удовлетворяющие условиям."
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-42hg0ds",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613171129-42hg0ds",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"ID": "20260613171129-8cxopa0",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-8cxopa0",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-8qf0gqr",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-8qf0gqr",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Вход"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": нажмите кнопку меню на панели инструментов представления, перейдите в «Фильтр», нажмите «Добавить фильтр» в подменю фильтра и выберите поле для фильтрации"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-zrkrrgl",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-zrkrrgl",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-dgxersh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-dgxersh",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Типы условий"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": разные типы полей поддерживают разные условия фильтрации:"
+								}
+							]
+						},
+						{
+							"ID": "20260613171129-czzulgd",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20260613171129-czzulgd",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"ID": "20260613171129-2nvyltp",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-2nvyltp",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-sfiplit",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-sfiplit",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Текст/URL/Email/Телефон: =, ≠, Содержит, Не содержит, Начинается с, Заканчивается на, Пусто, Не пусто"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-jpdpymr",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-jpdpymr",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-vd0pj8e",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-vd0pj8e",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Число: =, ≠, >, ≥, <, ≤, Пусто, Не пусто"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-p78akjp",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-p78akjp",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-lvhv8jr",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-lvhv8jr",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Дата/Время создания/Время обновления: =, После, Не раньше, До, Не позже, Между, Пусто, Не пусто"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-4os02o0",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-4os02o0",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-rkut0qe",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-rkut0qe",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Одиночный выбор: =, ≠, Пусто, Не пусто"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-1vs7f1q",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-1vs7f1q",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-c9s01jv",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-c9s01jv",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Множественный выбор: Содержит, Не содержит, Пусто, Не пусто"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-6qax8ps",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-6qax8ps",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-qnrqldg",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-qnrqldg",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Флажок: Истина, Ложь"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-m2ah9o9",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-m2ah9o9",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-twahotl",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-twahotl",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Связь: Содержит, Не содержит, Пусто, Не пусто"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-h9twc4w",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-h9twc4w",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-wug7jva",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-wug7jva",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Несколько условий"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": условия фильтрации можно задать сразу по нескольким полям. Несколько условий объединяются логикой И (должны выполняться все)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-zziz8pc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-zziz8pc",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-gz8bh7k",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-gz8bh7k",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Удаление фильтров"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": нажмите кнопку удаления справа от условия фильтра, чтобы убрать его по отдельности; через меню фильтра можно очистить все сразу"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-wu4gnn6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-wu4gnn6",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-cp7ejff",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-cp7ejff",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Примечание"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поля номера строки не поддерживают фильтрацию"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-zelqorf",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20260613171129-zelqorf",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сортировка"
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-1eh0nug",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613171129-1eh0nug",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для упорядочивания записей представления по указанному полю."
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-t23b8ch",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613171129-t23b8ch",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"ID": "20260613171129-hagj8le",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-hagj8le",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-cb0dzyf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-cb0dzyf",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Вход"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": нажмите меню панели инструментов представления, перейдите в «Сортировку», добавьте условия сортировки, выберите поле и направление"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-3yy1308",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-3yy1308",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-vgvwb75",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-vgvwb75",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Направление сортировки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": по возрастанию или по убыванию; переключается щелчком"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-jd83cec",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-jd83cec",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-czz79c8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-czz79c8",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Несколько сортировок"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": можно добавить несколько условий сортировки. Система применяет их в порядке добавления. Например, сначала по «Дате» по убыванию, затем по «Заголовку» по возрастанию"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-9h1xa3u",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-9h1xa3u",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-qg14joj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-qg14joj",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Удаление сортировок"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": нажмите кнопку удаления справа от условия сортировки, чтобы убрать его по отдельности; через меню сортировки можно очистить все"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-j6tpzpv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-j6tpzpv",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-tyf8vo3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-tyf8vo3",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Различия типов полей"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ":"
+								}
+							]
+						},
+						{
+							"ID": "20260613171129-4raiemw",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20260613171129-4raiemw",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"ID": "20260613171129-n9uomum",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-n9uomum",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-faigglm",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-faigglm",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Текст: сортируется по пиньиню или кодовым точкам Unicode"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-xbos83x",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-xbos83x",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-oi8x1mx",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-oi8x1mx",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Число: сортируется по числовому значению"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-gom3li8",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-gom3li8",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-6ypdomy",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-6ypdomy",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Дата/Время создания/Время обновления: сортируется хронологически"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-pnhi8go",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-pnhi8go",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-wp8sz7i",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-wp8sz7i",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Одиночный/множественный выбор: сортируется по порядку опций в списке"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-ikvcg6s",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-ikvcg6s",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-fjoaqxm",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-fjoaqxm",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Флажок: сортируется по состоянию отмечен/не отмечен"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-vt0b8kd",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-vt0b8kd",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-5imz4jz",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-5imz4jz",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Свёртка: сортируется по вычисленному результату"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-i40jhcq",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-i40jhcq",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-u77v10l",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-u77v10l",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Примечание"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ":"
+								}
+							]
+						},
+						{
+							"ID": "20260613171129-hfvj575",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20260613171129-hfvj575",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"ID": "20260613171129-e6lyirr",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-e6lyirr",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-hie2p2c",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-hie2p2c",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Поля номера строки не поддерживают сортировку"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-phfqdm1",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-phfqdm1",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-kkn380c",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-kkn380c",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Неизменённые строки помещаются в конец и сортируются по времени создания по возрастанию"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-gluecz9",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20260613171129-gluecz9",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Группировка"
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-8tsgkus",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613171129-8tsgkus",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Использует поле как основу группировки, распределяя записи по значениям групп."
+				}
+			]
+		},
+		{
+			"ID": "20260613171129-d4p7jca",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613171129-d4p7jca",
+				"updated": "20260613171129"
+			},
+			"Children": [
+				{
+					"ID": "20260613171129-nke8zay",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-nke8zay",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-kh0dlcz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-kh0dlcz",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Вход"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": нажмите меню панели инструментов представления, перейдите в «Группировку», выберите поле и метод группировки"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-6pe2yc5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-6pe2yc5",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-l9as2t9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-l9as2t9",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Поддерживаемые поля"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": кроме свёртки, ресурса и номера строки группировку поддерживают почти все типы полей. Разным типам полей соответствуют разные методы группировки:"
+								}
+							]
+						},
+						{
+							"ID": "20260613171129-qhln9zz",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20260613171129-qhln9zz",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"ID": "20260613171129-dh0pi27",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-dh0pi27",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-d5x0q5c",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-d5x0q5c",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Текст/Одиночный выбор/Множественный выбор/URL/Email/Телефон/Флажок/Связь/Шаблон: группировка по значению, каждое уникальное значение образует свою группу"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-7cqwihb",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-7cqwihb",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-pi39wen",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-pi39wen",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Число: группировка по числовому диапазону"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-t63lnmq",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-t63lnmq",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-7zh54p2",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-7zh54p2",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Дата/Время создания/Время обновления: группировка по относительной дате"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-yzzafiw",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-yzzafiw",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-jbtp3d9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-jbtp3d9",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Различия представлений"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ":"
+								}
+							]
+						},
+						{
+							"ID": "20260613171129-lc1axks",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20260613171129-lc1axks",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"ID": "20260613171129-f7kdltt",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-f7kdltt",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-0ia7by0",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-0ia7by0",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Табличное представление: строки распределяются по группам, каждую группу можно свернуть/развернуть"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-u82regu",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-u82regu",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-7sbgt4o",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-7sbgt4o",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Галерейное представление: карточки распределяются по группам"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613171129-md0btc7",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613171129-md0btc7",
+										"updated": "20260613171129"
+									},
+									"Children": [
+										{
+											"ID": "20260613171129-gosvjv9",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613171129-gosvjv9",
+												"updated": "20260613171129"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Канбан-представление: группировка обязательна; каждое значение группы порождает столбец. Группировку убрать нельзя. Когда поле группировки — одиночный или множественный выбор, перетаскивание карточки в другой столбец автоматически обновляет значение поля (кроме полей шаблона, времени создания и времени обновления)"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613171129-6rwelpb",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613171129-6rwelpb",
+						"updated": "20260613171129"
+					},
+					"Children": [
+						{
+							"ID": "20260613171129-vb71wlo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613171129-vb71wlo",
+								"updated": "20260613171129"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Удаление группировки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": в табличном и галерейном представлениях выберите «Нет», чтобы убрать группировку; в канбан-представлении группировку убрать нельзя"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20240208172555-gb6dzyw",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240208172555-gb6dzyw",
+				"updated": "20240208172555"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Зеркальная база данных"
+				}
+			]
+		},
+		{
+			"ID": "20240208172555-gpae6sc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240208172555-gpae6sc",
+				"updated": "20240208172556"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Копирование и вставка блока базы данных создаёт зеркальную базу данных: такие блоки делят одни и те же данные базы. Изменение данных любого блока базы синхронизируется со всеми остальными зеркалами."
+				}
+			]
+		},
+		{
+			"ID": "20240208172555-79p2uj0",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240208172555-79p2uj0",
+				"updated": "20250615172312"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Связь и свёртка"
+				}
+			]
+		},
+		{
+			"ID": "20240208172555-ys4nj51",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240208172555-ys4nj51",
+				"updated": "20240208172713"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Две базы данных можно соединить через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Связь"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ для удобного связанного управления. Например, связь между двумя базами "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Authors"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Books"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​:"
+				}
+			]
+		},
+		{
+			"ID": "20240208172714-8u4pxk0",
+			"Type": "NodeAttributeView",
+			"Properties": {
+				"id": "20240208172714-8u4pxk0",
+				"updated": "20240208173234"
+			},
+			"AttributeViewID": "20240208172719-u0lw6c4",
+			"AttributeViewType": "table"
+		},
+		{
+			"ID": "20240208172736-6nvct76",
+			"Type": "NodeAttributeView",
+			"Properties": {
+				"custom-sy-av-view": "20250615171046-ruh1mlg",
+				"id": "20240208172736-6nvct76",
+				"updated": "20250615172312"
+			},
+			"AttributeViewID": "20240208172742-cegt8pq",
+			"AttributeViewType": "gallery"
+		},
+		{
+			"ID": "20240208172751-4qjsj4r",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240208172751-4qjsj4r",
+				"updated": "20240208173355"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В базе "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Author"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ сводится "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Works count"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и считается статистика по её "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Works"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​; метод статистики — "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Count all"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		},
+		{
+			"ID": "20240208173416-kv874l3",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240208173416-kv874l3",
+				"updated": "20260612204637"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Шаблон"
+				}
+			]
+		},
+		{
+			"ID": "20240208173416-9f7ga9m",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240208173416-9f7ga9m",
+				"updated": "20240208173511"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Шаблоны могут обращаться к значениям других полей той же записи, вычислять и отрисовывать их с помощью синтаксиса, описанного в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20201204184532-682s1du",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "Шаблонах-сниппетах"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ":"
+				}
+			]
+		},
+		{
+			"ID": "20260612204637-qlkpdqb",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260612204637-qlkpdqb",
+				"updated": "20260612204637"
+			},
+			"Children": [
+				{
+					"ID": "20260612204637-b762of3",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260612204637-b762of3",
+						"updated": "20260612204637"
+					},
+					"Children": [
+						{
+							"ID": "20260612204637-rofl0ug",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260612204637-rofl0ug",
+								"updated": "20260612204637"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{.FieldName}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для доступа к полям представления"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260612204637-69ge4wr",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260612204637-69ge4wr",
+						"updated": "20260612204637"
+					},
+					"Children": [
+						{
+							"ID": "20260612204637-4x2x0zi",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260612204637-4x2x0zi",
+								"updated": "20260612204637"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{index . \"custom-xxx\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для доступа к пользовательским атрибутам блока"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260612204637-4e2gq89",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260612204637-4e2gq89",
+						"updated": "20260612204637"
+					},
+					"Children": [
+						{
+							"ID": "20260612204637-h3utz17",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260612204637-h3utz17",
+								"updated": "20260612204637"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{.FieldName_end}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для доступа к конечной дате поля даты; суффикс "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "_end"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ действует только для типов даты"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260612204637-f1g1h35",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260612204637-f1g1h35",
+						"updated": "20260612204637"
+					},
+					"Children": [
+						{
+							"ID": "20260612204637-t9lb1gz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260612204637-t9lb1gz",
+								"updated": "20260612204637"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{.FieldName_str}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для доступа к форматированной строке поля множественного выбора; суффикс "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "_str"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ действует только для типов множественного выбора"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260612204637-fsngglk",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260612204637-fsngglk",
+						"updated": "20260612204637"
+					},
+					"Children": [
+						{
+							"ID": "20260612204637-4lhuqqa",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260612204637-4lhuqqa",
+								"updated": "20260612204637"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{.FieldName_created}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для доступа к времени создания блока, привязанного к блочному полю; суффикс "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "_created"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ действует только для блочных типов"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260612204637-7hvda7x",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260612204637-7hvda7x",
+						"updated": "20260612204637"
+					},
+					"Children": [
+						{
+							"ID": "20260612204637-rk1myhi",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260612204637-rk1myhi",
+								"updated": "20260612204637"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{.FieldName_raw}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для доступа к сырому объекту значения поля; суффикс "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "_raw"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ действует для всех типов полей"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260612204637-yob5g2z",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260612204637-yob5g2z",
+						"updated": "20260612204637"
+					},
+					"Children": [
+						{
+							"ID": "20260612204637-w0gy0pg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260612204637-w0gy0pg",
+								"updated": "20260612204637"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{index .id_mod \"FieldID\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для доступа к форматированному значению по ID поля"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260612204637-ihc9fpg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260612204637-ihc9fpg",
+						"updated": "20260612204637"
+					},
+					"Children": [
+						{
+							"ID": "20260612204637-64fv9we",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260612204637-64fv9we",
+								"updated": "20260612204637"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{index . \"entryCreated\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для доступа к времени создания блока, привязанного к строке"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260612204637-xsa8e1v",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260612204637-xsa8e1v",
+						"updated": "20260612204637"
+					},
+					"Children": [
+						{
+							"ID": "20260612204637-3eenvlu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260612204637-3eenvlu",
+								"updated": "20260612204637"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{index . \"entryUpdated\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для доступа к времени обновления блока, привязанного к строке"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20240208173416-tedbob6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240208173416-tedbob6",
+				"updated": "20240208173710"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Например, следующее поле "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Template"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ базы данных "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Bills"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ демонстрирует сумму "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Food"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Clothing"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​:"
+				}
+			]
+		},
+		{
+			"ID": "20240208173526-1y0dq9v",
+			"Type": "NodeAttributeView",
+			"Properties": {
+				"id": "20240208173526-1y0dq9v",
+				"updated": "20250101093657"
+			},
+			"AttributeViewID": "20240208173528-2ug38i6",
+			"AttributeViewType": "table"
+		},
+		{
+			"ID": "20240818174922-9dhuawk",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20240818174922-9dhuawk",
+				"updated": "20260613194213"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20240818175612-20mlbj5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240818175612-20mlbj5",
+				"updated": "20250115145238"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Для переноса строки в ячейке базы данных используйте "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Shift"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​+"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Enter"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ ."
+				}
+			]
+		},
+		{
+			"ID": "20260613194213-8l8xf9o",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613194213-8l8xf9o",
+				"updated": "20260613194213"
+			}
+		}
+	]
+}

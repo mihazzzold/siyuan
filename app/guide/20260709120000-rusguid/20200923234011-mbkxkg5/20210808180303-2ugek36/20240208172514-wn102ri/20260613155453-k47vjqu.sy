@@ -1,0 +1,5958 @@
+{
+	"ID": "20260613155453-k47vjqu",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20260613155453-k47vjqu",
+		"title": "Типы полей",
+		"type": "doc",
+		"updated": "20260613194210"
+	},
+	"Children": [
+		{
+			"ID": "20260613155453-xr0q2ll",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-xr0q2ll",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-g8n0mmv",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-g8n0mmv",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В таблице ниже перечислены все типы полей и их ключевые характеристики:"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-l3xxfnv",
+			"Type": "NodeTable",
+			"Data": "| Field Type | Use Case | Sortable | Filterable | Aggregatable | Special Template Suffix |\n|---------|---------|--------|--------|--------|------------|\n| Text | Titles, descriptions, arbitrary text | √ | √ | × | — |\n| Number | Amounts, quantities, ratings | √ | √ | √ | — |\n| Date | Deadlines, birthdays, creation dates | √ | √ | × | `_end` |\n| Select | Status, category, priority | √ | √ | × | — |\n| Multi-Select | Tags, multi-category | √ | √ | × | `_str` |\n| URL | External links, references | × | √ | × | — |\n| Email | Contact email | × | √ | × | — |\n| Phone | Contact phone | × | √ | × | — |\n| Checkbox | Completed/not, enabled/disabled | √ | √ | × | — |\n| Primary Key (Block) | Unique record identifier, can bind to a content block | √ | √ | × | `_created` |\n| Asset | Attachments, images, files | × | × | × | — |\n| Relation | Cross-database record relations | × | √ | × | — |\n| Rollup | Statistical calculations based on relation fields | √ | √ | √ | — |\n| Template | Auto-fill default values | × | × | × | — |\n| Created Time | Record creation time (auto) | √ | √ | × | — |\n| Updated Time | Record last modified time (auto) | √ | √ | × | — |\n| Line Number | Auto-increment sequence number | √ | √ | × | — |",
+			"TableAligns": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				0
+			],
+			"Properties": {
+				"id": "20260613155453-l3xxfnv",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeTableHead",
+					"Children": [
+						{
+							"Type": "NodeTableRow",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Тип поля"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Сценарий использования"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Сортировка"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Фильтрация"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Агрегация"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Особый суффикс шаблона"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Текст"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Заголовки, описания, произвольный текст"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Число"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Суммы, количества, оценки"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Дата"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Дедлайны, дни рождения, даты создания"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "_end"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Одиночный выбор"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Статус, категория, приоритет"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Множественный выбор"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Теги, несколько категорий"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "_str"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "URL"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Внешние ссылки, источники"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Email"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Контактная почта"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Телефон"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Контактный телефон"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Флажок"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выполнено/нет, включено/выключено"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Первичный ключ (блок)"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Уникальный идентификатор записи, может привязываться к блоку контента"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "_created"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Ресурс"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Вложения, изображения, файлы"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Связь"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Связи записей между базами данных"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Свёртка"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Статистические вычисления на основе полей связи"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Шаблон"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Автозаполнение значений по умолчанию"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Время создания"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Время создания записи (автоматически)"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Время обновления"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Время последнего изменения записи (автоматически)"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"TableAligns": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Номер строки"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Автоинкрементный порядковый номер"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "√"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "×"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "—"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-plhxe6m",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20260613155453-plhxe6m",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": "> "
+				},
+				{
+					"ID": "20260613155453-8utwcvz",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20260613155453-8utwcvz",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "strong",
+							"TextMarkTextContent": "Справочник синтаксиса шаблонов"
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-smc3udm",
+					"Type": "NodeList",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-smc3udm",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-4nimsyr",
+							"Type": "NodeListItem",
+							"Data": "-",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-4nimsyr",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-medrd74",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20260613155453-medrd74",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": ".action{.fieldName}"
+										},
+										{
+											"Type": "NodeText",
+											"Data": " получает форматированное значение поля, применимо ко всем типам полей"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20260613155453-x34brua",
+							"Type": "NodeListItem",
+							"Data": "-",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-x34brua",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-5zsv62w",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20260613155453-5zsv62w",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": ".action{.fieldName_str}"
+										},
+										{
+											"Type": "NodeText",
+											"Data": " преобразует значения множественного выбора в строку через запятую, "
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "только для множественного выбора"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20260613155453-8ev5eff",
+							"Type": "NodeListItem",
+							"Data": "-",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-8ev5eff",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-4hapgn0",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20260613155453-4hapgn0",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": ".action{.fieldName_end}"
+										},
+										{
+											"Type": "NodeText",
+											"Data": " получает конечную дату поля даты, "
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "только для даты"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20260613155453-p49h3mb",
+							"Type": "NodeListItem",
+							"Data": "-",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-p49h3mb",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-s49vk1c",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20260613155453-s49vk1c",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": ".action{.fieldName_created}"
+										},
+										{
+											"Type": "NodeText",
+											"Data": " получает время создания блока, привязанного к полю первичного ключа, "
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "только для первичного ключа"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20260613155453-fh47qm8",
+							"Type": "NodeListItem",
+							"Data": "-",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-fh47qm8",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-iw10g8i",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20260613155453-iw10g8i",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": ".action{.fieldName_raw}"
+										},
+										{
+											"Type": "NodeText",
+											"Data": " получает сырой объект значения поля, применимо ко всем типам полей"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20260613155453-spcfmpw",
+							"Type": "NodeListItem",
+							"Data": "-",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-spcfmpw",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-lhpmim2",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20260613155453-lhpmim2",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": ".action{index . \"entryCreated\"}"
+										},
+										{
+											"Type": "NodeText",
+											"Data": " и "
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": ".action{index . \"entryUpdated\"}"
+										},
+										{
+											"Type": "NodeText",
+											"Data": " обращаются к времени создания/обновления блока, привязанного к строке"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20260613155453-hhsdlb6",
+							"Type": "NodeListItem",
+							"Data": "-",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-hhsdlb6",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-44lqe7a",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20260613155453-44lqe7a",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": ".action{index .id_mod \"fieldID\"}"
+										},
+										{
+											"Type": "NodeText",
+											"Data": " обращается к форматированному значению по ID поля"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-pz0nxly",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-pz0nxly",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Текст"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-8vvhhus",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-8vvhhus",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для хранения заголовков, описаний и любого текстового содержимого."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-5wd3wj8",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-5wd3wj8",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-3yfsygo",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-3yfsygo",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-n44up2b",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-n44up2b",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Настройка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при создании можно отметить «Многострочный», чтобы использовать многострочное текстовое поле"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-isy4vlh",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-isy4vlh",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-csimdli",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-csimdli",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": вводите текст прямо в ячейке; используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Shift+Enter"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " для переноса строк в многострочном режиме"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-7d3xs7s",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-7d3xs7s",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-423317d",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-423317d",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживается нечёткий поиск"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-rq914ze",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-rq914ze",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-60ykbg0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-60ykbg0",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": по пиньиню или кодовым точкам Unicode"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-m3f46ka",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-m3f46ka",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Число"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-807pmxh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-807pmxh",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для хранения сумм, количеств, оценок и другой числовой информации."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-e8k6az1",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-e8k6az1",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-9uyjtbq",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-9uyjtbq",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-lrqy39e",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-lrqy39e",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Настройка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при создании можно выбрать формат числа — целое, десятичное, процент, валюта"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-tc7y867",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-tc7y867",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-rfe0gty",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-rfe0gty",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": вводите числа прямо в ячейке; формат настраивается в панели настроек"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-rx0cktb",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-rx0cktb",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-z3p1ygp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-z3p1ygp",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживаются условия больше/меньше/равно/диапазон"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-1ny6w8f",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-1ny6w8f",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-fwl989i",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-fwl989i",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": по числовому значению"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-daqfzh3",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-daqfzh3",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-6hmpumm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-6hmpumm",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Поддержка агрегации"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поля свёртки могут вычислять по этому столбцу сумму, среднее, максимум, минимум, количество и т. д."
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-dxp59w8",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-dxp59w8",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Дата"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-khlkceo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-khlkceo",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для хранения дат или даты-времени."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-r5przjc",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-r5przjc",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-fdx3mi3",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-fdx3mi3",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-7lz7vrn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-7lz7vrn",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Настройка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при создании можно отметить «Включать время»; настраивается диапазон дат (начальная и конечная)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-iyrzzry",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-iyrzzry",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-fn0l9kp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-fn0l9kp",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": щёлкните в ячейке, чтобы открыть выбор даты"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-7kl9sap",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-7kl9sap",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-bpyfx9i",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-bpyfx9i",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживаются конкретный день, до/после дня, между двумя датами, есть значение/нет значения и т. д."
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-fxlmz2a",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-fxlmz2a",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-orchius",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-orchius",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": хронологическая"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-26luybd",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-26luybd",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Одиночный выбор"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-2wzfrnc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-2wzfrnc",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Выбор одного значения из заданного списка опций."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-vva99ap",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-vva99ap",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-a3550zm",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-a3550zm",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-a7hzlvb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-a7hzlvb",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Настройка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": после создания можно добавлять, изменять и удалять опции и задавать каждой цветовую метку"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-8wp24w4",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-8wp24w4",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-wvxc93s",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-wvxc93s",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": щёлкните в ячейке, чтобы открыть список опций и выбрать одну"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-q4r2pj8",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-q4r2pj8",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-z7zlvul",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-z7zlvul",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживаются равно/не равно конкретной опции, есть значение/нет значения"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-nhhncrg",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-nhhncrg",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-ikutajs",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-ikutajs",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": по порядку опций в списке"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-9tfr976",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-9tfr976",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Множественный выбор"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-y6rpd82",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-y6rpd82",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Выбор нуля, одного или нескольких значений из заданного списка опций."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-w0tw5b3",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-w0tw5b3",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-6a88f54",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-6a88f54",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-wqqjinn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-wqqjinn",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Настройка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": после создания можно добавлять, изменять, удалять и переупорядочивать опции перетаскиванием, задавать цветовые метки"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-2xhp5x6",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-2xhp5x6",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-ua8mk9h",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-ua8mk9h",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": щёлкните в ячейке, чтобы открыть список опций и отметить несколько"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-jlteyor",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-jlteyor",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-hwr5ubw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-hwr5ubw",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживаются содержит/не содержит конкретную опцию. При «содержит» запись подходит, если включает указанную опцию"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-4xjcd3a",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-4xjcd3a",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-c0ufusm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-c0ufusm",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": по порядку опций в списке"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-pttl4cw",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-pttl4cw",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-uyh04kp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-uyh04kp",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Обращение в шаблоне"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{.fieldName}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " получает значения множественного выбора; суффикс "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "_str"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " преобразует их в строку через запятую"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-rqfei8u",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-rqfei8u",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-qmmq4d8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-qmmq4d8",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Отличие от одиночного выбора"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": позволяет присвоить одному полю несколько значений-меток, подходит для многомерной классификации"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-5a72g85",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-5a72g85",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "URL"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-plwvhaw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-plwvhaw",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для хранения URL-ссылок."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-pw4djbx",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-pw4djbx",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-1dews8g",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-1dews8g",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-rb76t4u",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-rb76t4u",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": введите или вставьте URL в ячейку"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-di0ak16",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-di0ak16",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-u0y15h4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-u0y15h4",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Отображение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": щелчок открывает в браузере"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-hqo7ii5",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-hqo7ii5",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-vb7jry0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-vb7jry0",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживается нечёткий поиск"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-9hc5c07",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-9hc5c07",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Email"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-qrxlgam",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-qrxlgam",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для хранения адресов электронной почты."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-3leielm",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-3leielm",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-43ywdk1",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-43ywdk1",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-kjiaxzc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-kjiaxzc",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": введите адрес почты прямо в ячейку"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-hruy0kc",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-hruy0kc",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-nz2unlm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-nz2unlm",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Отображение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": щелчок вызывает почтовый клиент по умолчанию"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-80c83bl",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-80c83bl",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-llc1gjz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-llc1gjz",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживается нечёткий поиск"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-wsqu1m6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-wsqu1m6",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Телефон"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-41vxej2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-41vxej2",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для хранения телефонных номеров."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-e327d40",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-e327d40",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-f8ww20p",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-f8ww20p",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-ko8fahc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-ko8fahc",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": введите номер телефона прямо в ячейку"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-5p07wny",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-5p07wny",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-xftvb7c",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-xftvb7c",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Отображение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": на мобильном щелчок вызывает набор номера"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-e4rwz5g",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-e4rwz5g",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-yvc62xp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-yvc62xp",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживается нечёткий поиск"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-n1znzdb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-n1znzdb",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Флажок"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-wxhh1z7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-wxhh1z7",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для булевых состояний: да/нет, включено/выключено."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-z7bb27q",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-z7bb27q",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-fm35e0y",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-fm35e0y",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-kynafnf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-kynafnf",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": щёлкните в ячейке, чтобы отметить или снять отметку"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-ekjh0ls",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-ekjh0ls",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-wta7kp6",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-wta7kp6",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживаются условия отмечено/не отмечено"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-9gpmlpw",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-9gpmlpw",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-pjoqkvw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-pjoqkvw",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": отмеченные можно поместить в начало или конец"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-mglxr3h",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-mglxr3h",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Первичный ключ (блок)"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-gpdea21",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-gpdea21",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Уникальный идентификатор каждой записи базы данных. В записях типа «блок контента» первичный ключ привязан к соответствующему блоку контента, соединяя структурированные данные с неструктурированным содержимым. В каждой таблице должно быть ровно одно поле первичного ключа."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-q1o4kie",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-q1o4kie",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-zh0vbcl",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-zh0vbcl",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-bu8zbh3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-bu8zbh3",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Создание"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": генерируется автоматически при создании базы данных; добавлять вручную не нужно"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-httyljz",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-httyljz",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-r35n4fp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-r35n4fp",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Способы привязки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ":"
+								}
+							]
+						},
+						{
+							"ID": "20260613155453-5y7cy9c",
+							"Type": "NodeList",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-5y7cy9c",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-ofeu3a2",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-ofeu3a2",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-mmelen1",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-mmelen1",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Записи-блоки контента: привязка перетаскиванием блока в представление базы или через меню значка блока «Добавить в базу данных»"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613155453-gqgnsw2",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-gqgnsw2",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-nft7747",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-nft7747",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Записи вне блоков контента: добавляйте записи прямо в представлении; первичный ключ генерируется системой автоматически"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-wztfg4m",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-wztfg4m",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-2iog5sp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-2iog5sp",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Отображение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": в записях-блоках контента ячейка показывает сводку содержимого привязанного блока; наведение — предпросмотр, щелчок — переход"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-pfdhygy",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-pfdhygy",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-2hhzgv1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-2hhzgv1",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Примечания"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": привязку нельзя изменить прямо через ячейку; при удалении блока контента соответствующая запись тоже удаляется"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-s6enrzn",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-s6enrzn",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Ресурс"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-fj9u925",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-fj9u925",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Служит для хранения вложений, изображений, файлов и других файлов ресурсов."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-7n0lidz",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-7n0lidz",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-fhg65pw",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-fhg65pw",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-fxjqq1d",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-fxjqq1d",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ":"
+								}
+							]
+						},
+						{
+							"ID": "20260613155453-hv3ktpc",
+							"Type": "NodeList",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-hv3ktpc",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-sbvrnt4",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-sbvrnt4",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-xach68j",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-xach68j",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Перетащите файлы из файлового менеджера в ячейку"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613155453-azmo1cq",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-azmo1cq",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-he7562u",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-he7562u",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Нажмите кнопку загрузки в ячейке и выберите локальные файлы"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613155453-a2xmzbt",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-a2xmzbt",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-4hkoh2j",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-4hkoh2j",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Перетащите изображения из инбокса в ячейку"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-u6jiwo2",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-u6jiwo2",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-tabha0q",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-tabha0q",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Поддерживаемые типы файлов"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": изображения, PDF, документы Office, архивы и любые другие типы файлов"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-961561q",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-961561q",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-fzw4oat",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-fzw4oat",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Отображение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": изображения показываются миниатюрами; остальные файлы — значком типа и именем файла; щелчок открывает или скачивает"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-75ntfdo",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-75ntfdo",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-n19qiee",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-n19qiee",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Примечания"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": мультиресурсные поля поддерживают хранение нескольких файлов; фильтрация и сортировка не поддерживаются"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-g9rhdax",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-g9rhdax",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Связь"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-mxr8zoo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-mxr8zoo",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Устанавливает связи записей между базами данных — ключевой механизм взаимодействия баз."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-fv069j4",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-fv069j4",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-r9czn9a",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-r9czn9a",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-2nttihp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-2nttihp",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Настройка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при создании нужно выбрать «целевую базу данных» связи"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-gg1cd75",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-gg1cd75",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-iz17l2b",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-iz17l2b",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": щёлкните в ячейке, чтобы искать и выбирать одну или несколько записей из списка записей целевой базы"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-mq969dj",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-mq969dj",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-g9et5la",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-g9et5la",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Направление связи"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ":"
+								}
+							]
+						},
+						{
+							"ID": "20260613155453-ytsxw0h",
+							"Type": "NodeList",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-ytsxw0h",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-lviq0tq",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-lviq0tq",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-wyoq0q7",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-wyoq0q7",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "При создании поля связи можно выбрать, создавать ли автоматически поле обратной связи в целевой базе (двунаправленная связь)"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613155453-wjlmheg",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-wjlmheg",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-to3a38i",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-to3a38i",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Однонаправленная связь видна только в текущей базе данных"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-k5by2zi",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-k5by2zi",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-8h4ahps",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-8h4ahps",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживается фильтрация есть значение/нет значения"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-dhsmz0s",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-dhsmz0s",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-4jngfxp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-4jngfxp",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Примечания"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поле связи хранит ссылки на записи целевой базы; при удалении целевой записи связь автоматически очищается"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-mpl2iuc",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-mpl2iuc",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Свёртка"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-x53750m",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-x53750m",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Выполняет статистические вычисления по полю целевой базы данных на основе поля связи."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-6pxkl4w",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-6pxkl4w",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-rj75gs1",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-rj75gs1",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-in7d0vg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-in7d0vg",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Предпосылка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поле связи должно уже существовать"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-rwv1u08",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-rwv1u08",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-idruhw1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-idruhw1",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Настройка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при создании укажите «на каком поле связи основываться», «целевое поле» и «функцию свёртки»"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-zfsjv5p",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-zfsjv5p",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-j3ndtn6",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-j3ndtn6",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Функции свёртки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ":"
+								}
+							]
+						},
+						{
+							"ID": "20260613155453-g9eat1y",
+							"Type": "NodeList",
+							"ListData": {
+								"Tight": true,
+								"BulletChar": 45,
+								"Padding": 2,
+								"Marker": "LQ==",
+								"Num": -1
+							},
+							"Properties": {
+								"id": "20260613155453-g9eat1y",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"ID": "20260613155453-1qo0je0",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-1qo0je0",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-kaqjvy8",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-kaqjvy8",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Сумма (SUM), Среднее (AVG), Максимум (MAX), Минимум (MIN)"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613155453-skoks0z",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-skoks0z",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-uj9strv",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-uj9strv",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Количество (COUNT), Количество уникальных (COUNT DISTINCT)"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613155453-df1v8z7",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-df1v8z7",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-bqhe33f",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-bqhe33f",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Самая ранняя (EARLIEST), Самая поздняя (LATEST) (поля даты)"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613155453-6k7vfp4",
+									"Type": "NodeListItem",
+									"Data": "-",
+									"ListData": {
+										"Tight": true,
+										"BulletChar": 45,
+										"Padding": 2,
+										"Marker": "LQ==",
+										"Num": -1
+									},
+									"Properties": {
+										"id": "20260613155453-6k7vfp4",
+										"updated": "20260613155453"
+									},
+									"Children": [
+										{
+											"ID": "20260613155453-whilton",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613155453-whilton",
+												"updated": "20260613155453"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Размах (RANGE), Медиана (MEDIAN) (числовые поля)"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-fl1j3dm",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-fl1j3dm",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-1ddbp79",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-1ddbp79",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": значения свёртки вычисляются автоматически, вручную их изменить нельзя"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-wn07kaw",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-wn07kaw",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-q9ckz8m",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-q9ckz8m",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": возможна по вычисленному результату"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-dety01c",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-dety01c",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-bqyos34",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-bqyos34",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Примечания"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при удалении поля связи соответствующее поле свёртки тоже удаляется"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-gi1aonx",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-gi1aonx",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Шаблон"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-w76k1hq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-w76k1hq",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Автоматически заполняет значения по умолчанию при создании новой записи."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-e1xhb88",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-e1xhb88",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-ynqho9u",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-ynqho9u",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-yhxxlnc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-yhxxlnc",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Настройка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при создании можно написать текст значения по умолчанию с поддержкой синтаксиса шаблонных переменных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-dngqga8",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-dngqga8",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-a7xt3qy",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-a7xt3qy",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Правило автозаполнения"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при создании новой записи значение шаблонного поля автоматически заполняется заготовленным содержимым"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-g1fdlfd",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-g1fdlfd",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-z82ozlt",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-z82ozlt",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Шаблонные переменные"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": синтаксисом вроде "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".action{.fieldName}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " можно ссылаться на значения других полей той же строки той же базы данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-q9vpcg6",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-q9vpcg6",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-868ogpp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-868ogpp",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Примечания"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": в отличие от «Шаблонов-сниппетов», этот шаблон применяется только к заполнению значений по умолчанию записей базы данных"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-im55q64",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-im55q64",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Время создания"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-ctgiod4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-ctgiod4",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Автоматически фиксирует время создания записи."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-y5rj44y",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-y5rj44y",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-3xiud2e",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-3xiud2e",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-bjuskpu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-bjuskpu",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": заполняется автоматически, вручную не изменяется"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-wupqb9n",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-wupqb9n",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-2n6931h",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-2n6931h",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": как у полей даты, поддерживается фильтрация по диапазону времени"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-s5k6mnu",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-s5k6mnu",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-b4u602j",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-b4u602j",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": хронологическая"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-e2tnhzi",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-e2tnhzi",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-nc0tgaz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-nc0tgaz",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Примечания"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": значение остаётся неизменным после создания записи"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-f8e30i0",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-f8e30i0",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Время обновления"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-t7jy9sx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-t7jy9sx",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Автоматически фиксирует время последнего изменения записи."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-6wh84pw",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-6wh84pw",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-x91xhr1",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-x91xhr1",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-049106o",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-049106o",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": заполняется и обновляется автоматически после любого изменения полей записи"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-c411k9s",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-c411k9s",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-ryvfxwq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-ryvfxwq",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": как у полей даты"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-lo60ldk",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-lo60ldk",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-pvsxjyi",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-pvsxjyi",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": хронологическая"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-5lp3h7r",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-5lp3h7r",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Номер строки"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-88kk9f2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613155453-88kk9f2",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Автоинкрементный порядковый номер."
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-qxy55nc",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-qxy55nc",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-3lzawck",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-3lzawck",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-6nsuvh0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-6nsuvh0",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Редактирование"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": генерируется автоматически, вручную не изменяется"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-fojec42",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-fojec42",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-n2dvspm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-n2dvspm",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Отображение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": начинается с 1 и автоматически увеличивается"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-oxgvs2h",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-oxgvs2h",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-4ybqxx7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-4ybqxx7",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Сортировка"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": по числовому значению"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-4vmklea",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-4vmklea",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-cxttkua",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-cxttkua",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Фильтрация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживаются числовые сравнения больше/меньше/равно"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-00em70d",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-00em70d",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-quoknlk",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-quoknlk",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Примечания"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": номера строк присваиваются при создании записей; удаление записи в середине не перенумеровывает последующие"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-5dcspa2",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613155453-5dcspa2",
+				"updated": "20260613194210"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Советы"
+				}
+			]
+		},
+		{
+			"ID": "20260613155453-iusk500",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 45,
+				"Padding": 2,
+				"Marker": "LQ==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20260613155453-iusk500",
+				"updated": "20260613155453"
+			},
+			"Children": [
+				{
+					"ID": "20260613155453-rxnil0l",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-rxnil0l",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-2mgibvn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-2mgibvn",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нужно привязать блок контента как тело записи → система автоматически создаёт поле "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Первичный ключ"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "; перетащите блоки в базу или привяжите через меню значка блока"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-mxcxudq",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-mxcxudq",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-eqtad88",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-eqtad88",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Учёт сумм/запасов/оценок со статистикой → "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Число"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " в сочетании с полями свёртки для суммы/среднего"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-2r6jf74",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-2r6jf74",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-pl3rpdt",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-pl3rpdt",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Учёт статусных процессов (К выполнению/В работе/Готово) → "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Одиночный выбор"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-s5omrbv",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-s5omrbv",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-srmpxwz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-srmpxwz",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Многометочная классификация (статья в нескольких категориях) → "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Множественный выбор"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-ia02ci5",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-ia02ci5",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-oefy27m",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-oefy27m",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нужно связать данные между базами → "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Связь"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " в сочетании со "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Свёрткой"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " для межтабличной статистики"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-mywxydg",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-mywxydg",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-i6wqlc0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-i6wqlc0",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Автоматический учёт времени записей → "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Время создания"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " + "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Время обновления"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-rhqhj7v",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-rhqhj7v",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-xwg59uk",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-xwg59uk",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нужны упорядоченные номера → "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Номер строки"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-4aeypqj",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-4aeypqj",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-6ol47uv",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-6ol47uv",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нужно загружать снимки экрана/вложения → "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Ресурс"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-d5bgdob",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-d5bgdob",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-a8yqxqx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-a8yqxqx",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нужно предзаполнять значения по умолчанию новых записей → "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Шаблон"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613155453-hguom0l",
+					"Type": "NodeListItem",
+					"Data": "-",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 45,
+						"Padding": 2,
+						"Marker": "LQ==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20260613155453-hguom0l",
+						"updated": "20260613155453"
+					},
+					"Children": [
+						{
+							"ID": "20260613155453-t37bveo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613155453-t37bveo",
+								"updated": "20260613155453"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нужны кликабельные ссылки/почта/телефон → "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "URL"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "/"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Email"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "/"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Телефон"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613194210-06nxuso",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613194210-06nxuso",
+				"updated": "20260613194210"
+			}
+		}
+	]
+}

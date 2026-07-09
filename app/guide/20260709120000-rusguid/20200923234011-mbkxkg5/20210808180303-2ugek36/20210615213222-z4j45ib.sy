@@ -1,0 +1,1910 @@
+{
+	"ID": "20210615213222-z4j45ib",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20210615213222-z4j45ib",
+		"title": "История данных",
+		"type": "doc",
+		"updated": "20250115153528"
+	},
+	"Children": [
+		{
+			"ID": "20220501135308-n9qn1qv",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220501135308-n9qn1qv",
+				"updated": "20220501135308"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20220615120310-ws5l9yi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220615120310-ws5l9yi",
+				"updated": "20220615120310"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "История данных прежде всего обеспечивает безопасность данных: даже при ошибочном действии данные можно откатить через историю. История данных состоит из двух функций:"
+				}
+			]
+		},
+		{
+			"ID": "20220615120310-faivw2c",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220615120310-faivw2c",
+				"updated": "20220615120310"
+			},
+			"Children": [
+				{
+					"ID": "20220615120310-c6tvlam",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220615120310-c6tvlam",
+						"updated": "20220615120310"
+					},
+					"Children": [
+						{
+							"ID": "20220615120310-hwsh3ow",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220615120310-hwsh3ow",
+								"updated": "20220615120310"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "История файлов: сохраняется в папке "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "workspace/history/"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " как исходные файлы; она человекочитаема, и для восстановления файлы можно вручную скопировать в соответствующее место data"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220615120310-xr49xsd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220615120310-xr49xsd",
+						"updated": "20220615120310"
+					},
+					"Children": [
+						{
+							"ID": "20220615120310-umg371c",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220615120310-umg371c",
+								"updated": "20220615120310"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Снимок данных: разбивается по файлам, шифруется, сжимается и сохраняется в папке "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "workspace/repo/"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "; он нечитаем и не восстанавливается вручную"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220615120310-v5vl372",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220615120310-v5vl372",
+				"updated": "20220830225641"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Помимо локальной истории данных, снимки данных также используются для облачной "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20210721112206-m1l721d",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "синхронизации данных"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20220615120326-poep4m4",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220615120326-poep4m4",
+				"updated": "20220615120330"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "История файлов"
+				}
+			]
+		},
+		{
+			"ID": "20220615120326-vqstw2h",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220615120326-vqstw2h",
+				"updated": "20220615120326"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Правила создания истории файлов"
+				}
+			]
+		},
+		{
+			"ID": "20220501135308-1puzhh5",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220501135308-1puzhh5",
+				"updated": "20240402174245"
+			},
+			"Children": [
+				{
+					"ID": "20220501135308-ag5uitc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220501135308-ag5uitc",
+						"updated": "20220831210614"
+					},
+					"Children": [
+						{
+							"ID": "20220501135308-uvt9syt",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501135308-uvt9syt",
+								"updated": "20220831210614"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Каждые 10 минут создаётся история документов, обновлённых за эти 10 минут (интервал настраивается в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Документы"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Интервал создания истории"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​); суффикс папки истории — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "-update"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220501135308-gff6a06",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220501135308-gff6a06",
+						"updated": "20220501135308"
+					},
+					"Children": [
+						{
+							"ID": "20220501135308-92j5tjr",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501135308-92j5tjr",
+								"updated": "20220501135308"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "При облачной синхронизации локальные данные, перекрытые облачными, попадают в историю; суффикс папки истории — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "-sync"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220501135308-2kwspfd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220501135308-2kwspfd",
+						"updated": "20220503122549"
+					},
+					"Children": [
+						{
+							"ID": "20220501135308-442ftk5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501135308-442ftk5",
+								"updated": "20220503122549"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "История создаётся при ручном удалении блокнотов, документов и ресурсов; суффикс папки истории — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "-delete"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220501135308-wu38vtl",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220501135308-wu38vtl",
+						"updated": "20220830230820"
+					},
+					"Children": [
+						{
+							"ID": "20220501135308-kxsc3ru",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501135308-kxsc3ru",
+								"updated": "20220830230820"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "При использовании "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210115224203-k1yu3wx",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "очистки неиспользуемых ресурсов"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " создаётся история; суффикс папки истории — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "-clean"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220501135308-edn9xxz",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220501135308-edn9xxz",
+						"updated": "20230403114455"
+					},
+					"Children": [
+						{
+							"ID": "20220501135308-hc7geh8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501135308-hc7geh8",
+								"updated": "20230403114455"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "При использовании "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20220628204454-l45no4x",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "оптимизации типографики"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " создаётся история; суффикс папки истории — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "-format"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230403114321-i5gx805",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230403114321-i5gx805",
+						"updated": "20240402174245"
+					},
+					"Children": [
+						{
+							"ID": "20230403114321-02zwu2i",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230403114321-02zwu2i",
+								"updated": "20240402174245"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "При использовании "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "замены в поиске"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ создаётся история; суффикс папки истории — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "-replace"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20240402174218-kc39gqh",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20240402174218-kc39gqh",
+						"updated": "20240402174243"
+					},
+					"Children": [
+						{
+							"ID": "20240402174218-r9p56a9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20240402174218-r9p56a9",
+								"updated": "20240402174243"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "При перетаскивании пункта структуры в панели структуры создаётся история; суффикс папки истории — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "-outline"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220501135308-rc9b0zp",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220501135308-rc9b0zp",
+				"updated": "20250115153512"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Просмотр истории файлов"
+				}
+			]
+		},
+		{
+			"ID": "20220501135308-4oq7stk",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220501135308-4oq7stk",
+				"updated": "20250115153512"
+			},
+			"Children": [
+				{
+					"ID": "20220501135308-19t5lzw",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220501135308-19t5lzw",
+						"updated": "20250115153512"
+					},
+					"Children": [
+						{
+							"ID": "20220501135308-wzax0hq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501135308-wzax0hq",
+								"updated": "20250115153512"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нажмите кнопку "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "История данных"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ на верхней панели инструментов или "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Alt"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​+"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "H"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​, чтобы открыть интерфейс истории данных, и переключитесь на вкладку "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "История файлов"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​; если исторические данные не отображаются, попробуйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Переиндексировать"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в этом интерфейсе"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220501135308-6wluoqz",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220501135308-6wluoqz",
+						"updated": "20220501135308"
+					},
+					"Children": [
+						{
+							"ID": "20220501135308-9918hui",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501135308-9918hui",
+								"updated": "20220501135308"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Просматривайте папку "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "workspace/history/"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " в файловой системе"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210104091559-4r2f9xf",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091559-4r2f9xf",
+				"updated": "20220615120446"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Откат через историю файлов"
+				}
+			]
+		},
+		{
+			"ID": "20220501133808-zju0c98",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220501133808-zju0c98",
+				"updated": "20220615120526"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В списке времени слева в интерфейсе истории данных справа от каждой записи есть кнопка отката. После нажатия появится диалог подтверждения; при подтверждении существующий файл будет перезаписан файлом из истории."
+				}
+			]
+		},
+		{
+			"ID": "20220501133808-s15uqle",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220501133808-s15uqle",
+				"updated": "20220501133808"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если файлов для отката очень много, рекомендуется скопировать их вручную в файловой системе. Внутренняя структура папки истории совпадает со структурой data, например:"
+				}
+			]
+		},
+		{
+			"ID": "20220501133808-02hlows",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220501133808-02hlows",
+				"updated": "20220831210527"
+			},
+			"Children": [
+				{
+					"ID": "20220501133808-ldqpx9x",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220501133808-ldqpx9x",
+						"updated": "20220501133808"
+					},
+					"Children": [
+						{
+							"ID": "20220501133808-32jb89k",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501133808-32jb89k",
+								"updated": "20220501133808"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Удаление блокнота: "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "2022-05-01-091021-delete/20210808180117-pg2r5yy/"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", то есть "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "historical generation date-{operation}/{notebook ID}/"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220501133808-2jtdv1b",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220501133808-2jtdv1b",
+						"updated": "20220501134016"
+					},
+					"Children": [
+						{
+							"ID": "20220501133808-584jpge",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501133808-584jpge",
+								"updated": "20220501134016"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Удаление документа: "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "2022-05-01-091209-delete/20210808180117-pg2r5yy/20200812220555-5w1c0rh.sy"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", то есть "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "historical generation date-{operation}/{notebook ID}/{document path}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220501133808-ksvpqtc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220501133808-ksvpqtc",
+						"updated": "20220831210527"
+					},
+					"Children": [
+						{
+							"ID": "20220501133808-vg81nmb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501133808-vg81nmb",
+								"updated": "20220831210527"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Очистка файлов ресурсов: "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "2022-05-01-095621-clean/assets/image-20220501091157-qccp87e.png"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", то есть "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "historical generation date-{operation}/assets/{asset file name}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220501133808-ds777kg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220501133808-ds777kg",
+				"updated": "20220501133808"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Шаги ручного отката:"
+				}
+			]
+		},
+		{
+			"ID": "20220501133808-rgq66ih",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20220501133808-rgq66ih",
+				"updated": "20220615111249"
+			},
+			"Children": [
+				{
+					"ID": "20220501133808-5482qzh",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20220501133808-5482qzh",
+						"updated": "20220501134035"
+					},
+					"Children": [
+						{
+							"ID": "20220501133808-1drrhp0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501133808-1drrhp0",
+								"updated": "20220501134035"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выйдите из SiYuan, затем полностью скопируйте всё рабочее пространство в резервную копию, чтобы избежать потери данных из-за последующих ошибочных действий"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220501133808-4dulf2z",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20220501133808-4dulf2z",
+						"updated": "20220501134101"
+					},
+					"Children": [
+						{
+							"ID": "20220501133808-uwz7p8t",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501133808-uwz7p8t",
+								"updated": "20220501134101"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Перейдите в папку "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "workspace/history/"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " и скопируйте данные из папки "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "historical generation date-{operation}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " прямо в папку data с перезаписью"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220501133808-i5o88ft",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20220501133808-i5o88ft",
+						"updated": "20220615111249"
+					},
+					"Children": [
+						{
+							"ID": "20220501133808-ixeq0k9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220501133808-ixeq0k9",
+								"updated": "20220615111249"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "После запуска SiYuan вручную переиндексируйте"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-j18bsnu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220615120602-j18bsnu",
+				"updated": "20220615120602"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Очистка истории файлов"
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-6ahe3o3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220615120602-6ahe3o3",
+				"updated": "20220615120602"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "По умолчанию автоматически хранится история файлов за последние 30 дней; это настраивается в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Документы"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Срок хранения истории"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". Устаревшая история удаляется автоматически."
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-tiumooi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220615120602-tiumooi",
+				"updated": "20220830230506"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Чтобы удалить все данные истории файлов, нажмите "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Документы"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Очистить всю историю"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " или вручную удалите папку "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace/history/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", затем выполните "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Переиндексировать"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Истории файлов"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-ok10k0f",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220615120602-ok10k0f",
+				"updated": "20220615120658"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Снимок данных"
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-niddqzo",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220615120602-niddqzo",
+				"updated": "20220615120602"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Инициализация ключа"
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-m6p8din",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220615120602-m6p8din",
+				"updated": "20220615120742"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Перед первым использованием снимков данных нужно инициализировать "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "ключ репозитория данных"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Аккаунт и синхронизация"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20220722002536-zj8n9bo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220722002536-zj8n9bo",
+				"updated": "20220722002536"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Инициализировать ключ можно тремя способами:"
+				}
+			]
+		},
+		{
+			"ID": "20220722002536-yoh91rh",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220722002536-yoh91rh",
+				"updated": "20220722002630"
+			},
+			"Children": [
+				{
+					"ID": "20220722002536-cz2f0my",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220722002536-cz2f0my",
+						"updated": "20220722002536"
+					},
+					"Children": [
+						{
+							"ID": "20220722002536-uzttk2w",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220722002536-uzttk2w",
+								"updated": "20220722002536"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Импорт ключа"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": скопируйте строку ключа с другого устройства и импортируйте её здесь"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220722002536-vsj1se0",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220722002536-vsj1se0",
+						"updated": "20220722002630"
+					},
+					"Children": [
+						{
+							"ID": "20220722002536-vlai5ba",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220722002536-vlai5ba",
+								"updated": "20220722002630"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Автогенерация ключа"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": ключ создаётся из случайного текста; этот способ выполняется один раз на одном устройстве, остальные используют "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Импорт ключа"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220722002536-39ecq9x",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220722002536-39ecq9x",
+						"updated": "20220722002536"
+					},
+					"Children": [
+						{
+							"ID": "20220722002536-aoq90h4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220722002536-aoq90h4",
+								"updated": "20220722002536"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Генерация ключа по парольной фразе"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": ключ создаётся из пользовательской парольной фразы; на всех устройствах фраза должна совпадать"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220722002536-ggrbwyo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220722002536-ggrbwyo",
+				"updated": "20220722002536"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Главное — чтобы все устройства использовали один и тот же ключ, иначе снимки данных не будут доступны между устройствами, например при синхронизации снимков через облако."
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-jmw17hw",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220615120602-jmw17hw",
+				"updated": "20250115153528"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Создание снимка данных"
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-p271md5",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20220615120602-p271md5",
+				"updated": "20250115153528"
+			},
+			"Children": [
+				{
+					"ID": "20220615120602-zidzzfg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20220615120602-zidzzfg",
+						"updated": "20250115153528"
+					},
+					"Children": [
+						{
+							"ID": "20220615120602-rl4x8ys",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220615120602-rl4x8ys",
+								"updated": "20250115153528"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нажмите кнопку "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "История данных"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ на верхней панели инструментов или "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Alt"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​+"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "H"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​, чтобы открыть интерфейс истории данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220615120602-84kt2xk",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20220615120602-84kt2xk",
+						"updated": "20220615120602"
+					},
+					"Children": [
+						{
+							"ID": "20220615120602-dwcmqxc",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220615120602-dwcmqxc",
+								"updated": "20220615120602"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Переключитесь на последнюю вкладку "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Снимок данных"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220615120602-gop7x2f",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20220615120602-gop7x2f",
+						"updated": "20220615120840"
+					},
+					"Children": [
+						{
+							"ID": "20220615120602-3ellp6w",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220615120602-3ellp6w",
+								"updated": "20220615120840"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нажмите "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Создать снимок"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", заполните "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Заметку"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " и подтвердите"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-5ih58r6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220615120602-5ih58r6",
+				"updated": "20220615120852"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "При просмотре снимков данных различить их можно только по времени создания и заметке, поэтому пишите заметку как можно подробнее — так в будущем разные снимки данных будет легко точно идентифицировать."
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-e9aixdf",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220615120602-e9aixdf",
+				"updated": "20230422102109"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Просмотр снимков данных"
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-8dugsyb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220615120602-8dugsyb",
+				"updated": "20220615120602"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После создания снимка данных слева появится список снимков по времени; щёлкайте разные снимки, чтобы просматривать их заметки."
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-8i6nb0a",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220615120602-8i6nb0a",
+				"updated": "20220615120602"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Откат к снимку данных"
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-5ptu8tm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220615120602-5ptu8tm",
+				"updated": "20220615120602"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Справа от записи в списке снимков есть кнопка отката. После нажатия появится диалог подтверждения; при подтверждении существующие данные будут полностью заменены данными снимка."
+				}
+			]
+		},
+		{
+			"ID": "20220615120602-u2s0bz0",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220615120602-u2s0bz0",
+				"updated": "20230422102056"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Очистка снимков данных"
+				}
+			]
+		},
+		{
+			"ID": "20230422101614-dz8vswu",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230422101614-dz8vswu",
+				"updated": "20230422102255"
+			},
+			"Children": [
+				{
+					"ID": "20230422101614-ol3ren0",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230422101614-ol3ren0",
+						"updated": "20230422102255"
+					},
+					"Children": [
+						{
+							"ID": "20230422101614-xte296d",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230422101614-xte296d",
+								"updated": "20230422102255"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Аккаунт и синхронизация"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Очистка репозитория данных"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ удалит все неиспользуемые снимки и связанные объекты данных. «Используемые снимки» — те, на которые указывает repo/refs/:"
+								}
+							]
+						},
+						{
+							"ID": "20230422101614-yie7gxo",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20230422101614-yie7gxo",
+								"updated": "20230422102025"
+							},
+							"Children": [
+								{
+									"ID": "20230422101614-yc8c5k8",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230422101614-yc8c5k8",
+										"updated": "20230422102025"
+									},
+									"Children": [
+										{
+											"ID": "20230422101614-9jea1y7",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230422101614-9jea1y7",
+												"updated": "20230422102025"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "latest"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ указывает на последний снимок"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230422101614-cfkjdah",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230422101614-cfkjdah",
+										"updated": "20230422102023"
+									},
+									"Children": [
+										{
+											"ID": "20230422101614-wq6fd7e",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230422101614-wq6fd7e",
+												"updated": "20230422102023"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "tags/*"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​ указывают на вручную помеченные снимки"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230422101614-xxfx88h",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230422101614-xxfx88h",
+						"updated": "20230422101614"
+					},
+					"Children": [
+						{
+							"ID": "20230422101614-ccantot",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230422101614-ccantot",
+								"updated": "20230422101614"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Вручную удалите папку "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "workspace/repo/"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​, чтобы очистить все снимки данных"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210928101257-y3mfjs8",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210928101257-y3mfjs8",
+				"updated": "20210928101257"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Игнорируемые файлы"
+				}
+			]
+		},
+		{
+			"ID": "20210928101257-ud99f02",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210928101257-ud99f02",
+				"updated": "20210928220616"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если при синхронизации нужно игнорировать некоторые файлы, создайте или отредактируйте текстовый файл "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace/data/.siyuan/syncignore"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " в файловой системе; каждая строка задаёт относительный путь внутри папки data — этот файл или папка игнорируются; поддерживаются подстановочные знаки. Например:"
+				}
+			]
+		},
+		{
+			"ID": "20210928101257-abo4ttn",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210928101257-abo4ttn",
+				"updated": "20211222190049"
+			},
+			"Children": [
+				{
+					"ID": "20210928101257-z6tjah9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210928101257-z6tjah9",
+						"updated": "20211222190049"
+					},
+					"Children": [
+						{
+							"ID": "20210928101257-fpzme0r",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210928101257-fpzme0r",
+								"updated": "20211222190049"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "20260709120000-rusguid/**/*"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": игнорировать блокнот data/20260709120000-rusguid"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210928101257-9egobt9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210928101257-9egobt9"
+					},
+					"Children": [
+						{
+							"ID": "20210928101257-mtrh7n4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210928101257-mtrh7n4"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "assets/*.pdf"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": игнорировать PDF-файлы в data/assets/"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220807180431-vcnkhbl",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220807180431-vcnkhbl",
+				"updated": "20220807180440"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				}
+			]
+		},
+		{
+			"ID": "20220807180431-pxss6zf",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220807180431-pxss6zf",
+				"updated": "20220807180431"
+			},
+			"Children": [
+				{
+					"ID": "20220807180431-lzx8lst",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220807180431-lzx8lst",
+						"updated": "20220807180431"
+					},
+					"Children": [
+						{
+							"ID": "20220807180431-k4xhaps",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220807180431-k4xhaps",
+								"updated": "20220807180431"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Символические ссылки и скрытые файлы в снимки не включаются"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

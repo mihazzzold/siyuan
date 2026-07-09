@@ -1,0 +1,574 @@
+{
+	"ID": "20210110181011-ypvnht6",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20210110181011-ypvnht6",
+		"title": "Ежедневные заметки",
+		"type": "doc",
+		"updated": "20260614204928"
+	},
+	"Children": [
+		{
+			"ID": "20260613180619-7ibo9wd",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613180619-7ibo9wd",
+				"updated": "20260613180619"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20260613180619-ggllvng",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613180619-ggllvng",
+				"updated": "20260613180619"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Дневник — это способ быстро создавать и находить документы по дате. Он удобен для ежедневных записей, рабочих журналов, ежедневных списков дел и т. д."
+				}
+			]
+		},
+		{
+			"ID": "20260613180619-lz9lsed",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260613180619-lz9lsed",
+				"updated": "20260613180619"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Создание и открытие"
+				}
+			]
+		},
+		{
+			"ID": "20260613180619-4vbsjmt",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613180619-4vbsjmt",
+				"updated": "20260613180619"
+			},
+			"Children": [
+				{
+					"ID": "20260613180619-k5223bd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613180619-k5223bd",
+						"updated": "20260613180619"
+					},
+					"Children": [
+						{
+							"ID": "20260613180619-gkozc0g",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613180619-gkozc0g",
+								"updated": "20260613180619"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Вход"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": нажмите кнопку «Дневник» в главном меню сверху или используйте сочетание клавиш "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Alt+5"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ ("
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "⌃5"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ на macOS)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613180619-thtnvwm",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613180619-thtnvwm",
+						"updated": "20260613180619"
+					},
+					"Children": [
+						{
+							"ID": "20260613180619-ag4nvhl",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613180619-ag4nvhl",
+								"updated": "20260613180619"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Поведение сочетания клавиш"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при открытии дневника сочетанием клавиш используется последний выбранный блокнот"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613180619-uctbdru",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613180619-uctbdru",
+						"updated": "20260613180619"
+					},
+					"Children": [
+						{
+							"ID": "20260613180619-iujglh9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613180619-iujglh9",
+								"updated": "20260613180619"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Первое открытие"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": при открытии дневника за сегодня, если документа за эту дату ещё нет, система создаёт его по настроенному пути сохранения и шаблону; если документ уже существует, он просто открывается"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613180619-5bf0f4d",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260613180619-5bf0f4d",
+				"updated": "20260614204928"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Настройка"
+				}
+			]
+		},
+		{
+			"ID": "20260613180619-64me1sh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613180619-64me1sh",
+				"updated": "20260613180619"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Щёлкните блокнот правой кнопкой мыши, откройте «Настройки» и настройте в разделе настроек дневника:"
+				}
+			]
+		},
+		{
+			"ID": "20260613180619-4ts45b3",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613180619-4ts45b3",
+				"updated": "20260614204928"
+			},
+			"Children": [
+				{
+					"ID": "20260613180619-yubcn13",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613180619-yubcn13",
+						"updated": "20260614204928"
+					},
+					"Children": [
+						{
+							"ID": "20260613180619-ljh3wfw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613180619-ljh3wfw",
+								"updated": "20260613180631"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Путь сохранения"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": задаёт путь сохранения документов дневника внутри блокнота. Поддерживает "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210104091444-1jwf221",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "переменные шаблона"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "."
+								}
+							]
+						},
+						{
+							"ID": "20260613180619-8r0cd4x",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20260613180619-8r0cd4x",
+								"updated": "20260614204928"
+							},
+							"Children": [
+								{
+									"ID": "20260613180619-d8o1m86",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613180619-d8o1m86",
+										"updated": "20260614204928"
+									},
+									"Children": [
+										{
+											"ID": "20260613180619-8fu3qyu",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613180619-8fu3qyu",
+												"updated": "20260613180619"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Типичные примеры:"
+												}
+											]
+										},
+										{
+											"ID": "20260613180619-qoujh60",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20260613180619-qoujh60",
+												"updated": "20260614204928"
+											},
+											"Children": [
+												{
+													"ID": "20260613180619-rb4dosa",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20260613180619-rb4dosa",
+														"updated": "20260614204928"
+													},
+													"Children": [
+														{
+															"ID": "20260613180619-7cm2u9l",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20260613180619-7cm2u9l",
+																"updated": "20260614204928"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "​"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "code",
+																	"TextMarkTextContent": "/daily note/{{now | date \"2006/01/2006-01-02\"}}"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "​ — группировка по году/месяцу, один файл на день"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20260613180619-nf3wv4u",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20260613180619-nf3wv4u",
+														"updated": "20260613180619"
+													},
+													"Children": [
+														{
+															"ID": "20260613180619-kfc01xa",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20260613180619-kfc01xa",
+																"updated": "20260613180619"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "​"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "code",
+																	"TextMarkTextContent": "/diary/{{now | date \"2006-01-02\"}}"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "​ — все дневники в одной папке"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20260613180619-jah67qu",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20260613180619-jah67qu",
+														"updated": "20260613180619"
+													},
+													"Children": [
+														{
+															"ID": "20260613180619-w7yrsck",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20260613180619-w7yrsck",
+																"updated": "20260613180619"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "​"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "code",
+																	"TextMarkTextContent": "/{{now | date \"2006/01/02\"}}"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "​ — группировка по дням прямо в корне"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613180619-j96i67y",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613180619-j96i67y",
+						"updated": "20260613180619"
+					},
+					"Children": [
+						{
+							"ID": "20260613180619-nznioct",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613180619-nznioct",
+								"updated": "20260613180619"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Путь к шаблону"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " (необязательно): выберите существующий документ в качестве шаблона дневника. При создании нового дневника содержимое шаблона используется как начальное. Обычно применяется для заготовок ежедневных списков дел, шаблонов ежедневных отчётов и т. п."
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613180619-vlq9o3n",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20260613180619-vlq9o3n",
+				"updated": "20260613180724"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Советы"
+				}
+			]
+		},
+		{
+			"ID": "20260613180619-1xuw6iz",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613180619-1xuw6iz",
+				"updated": "20260613180619"
+			},
+			"Children": [
+				{
+					"ID": "20260613180619-chspojp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613180619-chspojp",
+						"updated": "20260613180619"
+					},
+					"Children": [
+						{
+							"ID": "20260613180619-sgplrn1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613180619-sgplrn1",
+								"updated": "20260613180715"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Встроенная сводка дел"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": используйте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20201117112518-j1fz6bw",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "встраивание блоков контента"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в шаблоне дневника, чтобы собирать дела или блоки контента, которые нужно просматривать ежедневно"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613180619-1tmpe8n",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613180619-1tmpe8n",
+						"updated": "20260613180619"
+					},
+					"Children": [
+						{
+							"ID": "20260613180619-v7qjujq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613180619-v7qjujq",
+								"updated": "20260613180619"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Настройка на уровне блокнота"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": каждый блокнот может независимо настраивать путь сохранения дневника и шаблон, блокноты не мешают друг другу"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613180724-uel50ri",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613180724-uel50ri",
+				"updated": "20260613180724"
+			}
+		}
+	]
+}

@@ -1,0 +1,461 @@
+{
+	"ID": "20210808180303-dkj9avj",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f50d",
+		"id": "20210808180303-dkj9avj",
+		"title": "Расширенный поиск",
+		"type": "doc",
+		"updated": "20260613193423"
+	},
+	"Children": [
+		{
+			"ID": "20260613193423-ii7il7j",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613193423-ii7il7j",
+				"updated": "20260613193423"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20260613193423-16jcj00",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613193423-16jcj00",
+				"updated": "20260613193423"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Глобальный поиск поддерживает синтаксис запросов для расширенного поиска, включая логику AND/OR/NOT, фильтрацию по типу и по полям. Также доступны продвинутые возможности: прямые запросы к таблицам базы данных, исключение из индексации и исключение из поиска — от простых ключевых слов до сложных условий. Подробности — в дочерних документах ниже."
+				}
+			]
+		},
+		{
+			"ID": "20260613193423-avid9nl",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613193423-avid9nl",
+				"updated": "20260613193423"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Чувствительность к регистру"
+				}
+			]
+		},
+		{
+			"ID": "20260613193423-gxim5sk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613193423-gxim5sk",
+				"updated": "20260613193423"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Настраивается в Настройки - Поиск - Учитывать регистр. По умолчанию выключено: поиск "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Hello"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "hello"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ даёт одинаковые результаты. При включении поиск строго различает регистр. После переключения этой опции нужно дождаться завершения перестроения индекса."
+				}
+			]
+		},
+		{
+			"ID": "20260613193423-lr4j8gh",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613193423-lr4j8gh",
+				"updated": "20260613193423"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Различение упрощённого/традиционного письма"
+				}
+			]
+		},
+		{
+			"ID": "20260613193423-lzoz2wl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613193423-lzoz2wl",
+				"updated": "20260613193423"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Настраивается в Настройки - Поиск - Различать упрощённое/традиционное письмо. По умолчанию включено: поиск «经济» не найдёт «經濟». При выключении поиск «经济» находит и «经济», и «經濟». После переключения этой опции нужно дождаться завершения перестроения индекса."
+				}
+			]
+		},
+		{
+			"ID": "20260613193423-nwe4jb0",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20260613193423-nwe4jb0",
+				"updated": "20260613193423"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Замена"
+				}
+			]
+		},
+		{
+			"ID": "20260613193423-0dd3k47",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613193423-0dd3k47",
+				"updated": "20260613193423"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Диалог поиска включает функцию замены текста с пакетной заменой результатов поиска."
+				}
+			]
+		},
+		{
+			"ID": "20260613193423-y7dz9ld",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260613193423-y7dz9ld",
+				"updated": "20260613193423"
+			},
+			"Children": [
+				{
+					"ID": "20260613193423-gcwvsf8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613193423-gcwvsf8",
+						"updated": "20260613193423"
+					},
+					"Children": [
+						{
+							"ID": "20260613193423-wccihxv",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613193423-wccihxv",
+								"updated": "20260613193423"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Вход"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": нажмите кнопку со значком замены в диалоге поиска ("
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Ctrl+P"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​), чтобы раскрыть строку ввода замены"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613193423-drya28l",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613193423-drya28l",
+						"updated": "20260613193423"
+					},
+					"Children": [
+						{
+							"ID": "20260613193423-bqhr3ok",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613193423-bqhr3ok",
+								"updated": "20260613193423"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Операции замены"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ":"
+								}
+							]
+						},
+						{
+							"ID": "20260613193423-gpkdzo9",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20260613193423-gpkdzo9",
+								"updated": "20260613193423"
+							},
+							"Children": [
+								{
+									"ID": "20260613193423-wg8bpi8",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613193423-wg8bpi8",
+										"updated": "20260613193423"
+									},
+									"Children": [
+										{
+											"ID": "20260613193423-ug1m2e7",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613193423-ug1m2e7",
+												"updated": "20260613193423"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Выберите запись в списке результатов поиска и нажмите «↵ Заменить», чтобы заменить эту отдельную запись"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20260613193423-b6gh88m",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20260613193423-b6gh88m",
+										"updated": "20260613193423"
+									},
+									"Children": [
+										{
+											"ID": "20260613193423-pdayg0p",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20260613193423-pdayg0p",
+												"updated": "20260613193423"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Нажмите «Заменить всё», чтобы заменить сразу все совпадения в текущих результатах поиска"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613193423-bbgxhds",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613193423-bbgxhds",
+						"updated": "20260613193423"
+					},
+					"Children": [
+						{
+							"ID": "20260613193423-b9mjrhl",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613193423-b9mjrhl",
+								"updated": "20260613193423"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Типы замены"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": нажмите на фильтр замены, чтобы выбрать область замены (текст блока контента, имя, псевдоним, заметка и т. д.)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260613193423-pdmxmf7",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260613193423-pdmxmf7",
+						"updated": "20260613193423"
+					},
+					"Children": [
+						{
+							"ID": "20260613193423-1gap6dg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260613193423-1gap6dg",
+								"updated": "20260613193423"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Примечание"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Ctrl+Z"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ после замены отмена не поддерживается. Перед выполнением система автоматически создаёт историю файлов; при необходимости восстановите данные откатом истории данных"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20240508004303-nkpcjz2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240508004303-nkpcjz2",
+				"updated": "20240508004303"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220415232231-5p4zeib",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Синтаксис запросов"
+				}
+			]
+		},
+		{
+			"ID": "20240508004303-m3v8qha",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240508004303-m3v8qha",
+				"updated": "20240508004303"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20201222100339-zwz4qcr",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Таблица базы данных"
+				}
+			]
+		},
+		{
+			"ID": "20240508004303-nfi2w8z",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240508004303-nfi2w8z",
+				"updated": "20240508004303"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20201222100222-zafg9xo",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Фильтрация по типу"
+				}
+			]
+		},
+		{
+			"ID": "20240508004303-pov7ke8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240508004303-pov7ke8",
+				"updated": "20240508004303"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20240119211017-lycrcmk",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Игнорирование при индексации"
+				}
+			]
+		},
+		{
+			"ID": "20240508004303-l1x0zeu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240508004303-l1x0zeu",
+				"updated": "20240508004303"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20240119212048-fm8z22t",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Игнорирование в поиске"
+				}
+			]
+		}
+	]
+}

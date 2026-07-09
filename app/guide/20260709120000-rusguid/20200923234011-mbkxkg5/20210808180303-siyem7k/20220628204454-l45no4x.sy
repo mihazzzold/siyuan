@@ -1,0 +1,441 @@
+{
+	"ID": "20220628204454-l45no4x",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220628204454-l45no4x",
+		"title": "Оптимизация типографики",
+		"type": "doc",
+		"updated": "20260613191858"
+	},
+	"Children": [
+		{
+			"ID": "20220628215200-vbu3gp5",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220628215200-vbu3gp5",
+				"updated": "20220628215200"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20220628215200-rylx88y",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220628215200-rylx88y",
+				"updated": "20220628215227"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Стремясь записать содержимое быстро, мы часто пренебрегаем типографскими деталями: например, нет пробелов до и после строчного кода или жирного текста, нет пробелов между китайским и западным текстом."
+				}
+			]
+		},
+		{
+			"ID": "20220628215200-g80ucpm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220628215200-g80ucpm",
+				"updated": "20220628215255"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Из-за этого вёрстка содержимого выглядит менее аккуратно, и при последующем чтении возникают визуальные помехи. Конечно, это лишь наше ощущение — возможно, это не проблема, а плотная вёрстка даже была нужна изначально."
+				}
+			]
+		},
+		{
+			"ID": "20220628215200-nsc2ul9",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220628215200-nsc2ul9",
+				"updated": "20260613191858"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Как использовать"
+				}
+			]
+		},
+		{
+			"ID": "20220628215200-tx6je1b",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220628215200-tx6je1b",
+				"updated": "20250115151312"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Выберите "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Оптимизировать типографику"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в меню "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "︙"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в правом верхнем углу редактора. После обработки пробел будет автоматически вставлен до и после следующих элементов документа:"
+				}
+			]
+		},
+		{
+			"ID": "20220628215200-6kklswm",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220628215200-6kklswm",
+				"updated": "20240506230150"
+			},
+			"Children": [
+				{
+					"ID": "20220628215200-42xz40v",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220628215200-42xz40v",
+						"updated": "20240506230145"
+					},
+					"Children": [
+						{
+							"ID": "20220628215200-wi77c8y",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220628215200-wi77c8y",
+								"updated": "20240506230145"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Строчный код: "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Code"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220628215200-le2kups",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220628215200-le2kups",
+						"updated": "20240506230150"
+					},
+					"Children": [
+						{
+							"ID": "20220628215200-8owuflp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220628215200-8owuflp",
+								"updated": "20240506230150"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Строчная формула: "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "inline-math",
+									"TextMarkInlineMathContent": "a^2 + b^2 = \\color{red}c^2"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "\n"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220630211201-51bhp1o",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220630211201-51bhp1o",
+				"updated": "20220630211201"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Кроме того, пробел автоматически вставляется между китайским и западным текстом в следующих элементах:"
+				}
+			]
+		},
+		{
+			"ID": "20220630211201-q7jbs4w",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220630211201-q7jbs4w",
+				"updated": "20240506230917"
+			},
+			"Children": [
+				{
+					"ID": "20220630211201-4vf04b8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220630211201-4vf04b8",
+						"updated": "20240506230917"
+					},
+					"Children": [
+						{
+							"ID": "20220630211201-qci4oxj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220630211201-qci4oxj",
+								"updated": "20240506230917"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "mark",
+									"TextMarkTextContent": "Выделение"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220630211201-oistz9c",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220630211201-oistz9c",
+						"updated": "20240506230054"
+					},
+					"Children": [
+						{
+							"ID": "20220630211201-b4gn4fi",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220630211201-b4gn4fi",
+								"updated": "20240506230054"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "s",
+									"TextMarkTextContent": "Зачёркивание"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220630211201-79mgnvp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220630211201-79mgnvp",
+						"updated": "20240506230115"
+					},
+					"Children": [
+						{
+							"ID": "20220630211201-yc27l3d",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220630211201-yc27l3d",
+								"updated": "20240506230115"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://liuyun.io",
+									"TextMarkTextContent": "Текст якоря гиперссылки"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220630211201-i8xkfps",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220630211201-i8xkfps",
+						"updated": "20220630211216"
+					},
+					"Children": [
+						{
+							"ID": "20220630211201-rhiq96d",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220630211201-rhiq96d",
+								"updated": "20220630211216"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Обычный текст"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220630211201-1ucxnkc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220630211201-1ucxnkc",
+						"updated": "20240506230121"
+					},
+					"Children": [
+						{
+							"ID": "20220630211201-9cpuhhs",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220630211201-9cpuhhs",
+								"updated": "20240506230121"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "em",
+									"TextMarkTextContent": "Курсив"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220630211201-o31lxti",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220630211201-o31lxti",
+						"updated": "20240506230123"
+					},
+					"Children": [
+						{
+							"ID": "20220630211201-ig2jpt3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220630211201-ig2jpt3",
+								"updated": "20240506230123"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Жирный"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260613191857-y32qmm6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260613191857-y32qmm6",
+				"updated": "20260613191858"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Оптимизация типографики обрабатывает только текущий открытый документ и не поддерживает пакетную обработку нескольких документов."
+				}
+			]
+		},
+		{
+			"ID": "20220628215200-fanh5am",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220628215200-fanh5am",
+				"updated": "20220628215200"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Автоматическое резервное копирование"
+				}
+			]
+		},
+		{
+			"ID": "20220628215200-cbx0u64",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220628215200-cbx0u64",
+				"updated": "20220628215421"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Перед фактическим выполнением оптимизации типографики SiYuan автоматически сделает резервную копию исходного документа, поэтому, если результат оптимизации не устроит, его можно откатить через "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20210615213222-z4j45ib",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "Историю данных"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,3770 @@
+{
+	"ID": "20200924093441-bej3j3s",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f4f0",
+		"id": "20200924093441-bej3j3s",
+		"title": "Элементы форматирования",
+		"title-img": "background-color:#269;background-image: linear-gradient(white 2px, transparent 2px),linear-gradient(90deg, white 2px, transparent 2px),linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;",
+		"type": "doc",
+		"updated": "20260616224215"
+	},
+	"Children": [
+		{
+			"ID": "20210104091509-0u12b64",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-0u12b64",
+				"updated": "20240702222031"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Строчные элементы"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-u69rqo9",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210104091509-u69rqo9",
+				"updated": "20240702222031"
+			},
+			"Children": [
+				{
+					"ID": "20210604224351-fxcw5ha",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604224351-fxcw5ha",
+						"updated": "20240416114218"
+					},
+					"Children": [
+						{
+							"ID": "20210604224351-b0ri8pv",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224351-b0ri8pv",
+								"updated": "20240416114218"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20200923234011-mbkxkg5",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Ссылка на блок"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210206215048-znll40k",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210206215048-znll40k",
+						"updated": "20240506230853"
+					},
+					"Children": [
+						{
+							"ID": "20210206215048-a2tkte9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210206215048-a2tkte9",
+								"updated": "20240506230853"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://liuyun.io",
+									"TextMarkTextContent": "Гиперссылка"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220916200111-69oyev7",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220916200111-69oyev7",
+						"updated": "20240702222031"
+					},
+					"Children": [
+						{
+							"ID": "20220916200111-2gi56er",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220916200111-2gi56er",
+								"updated": "20220916200114"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Изображение"
+								}
+							]
+						},
+						{
+							"ID": "20210604225055-kg5jo9c",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604225055-kg5jo9c",
+								"updated": "20210604225153"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Поддерживается прямое копирование-вставка или загрузка перетаскиванием. После загрузки размер можно менять, потянув за боковую границу."
+								}
+							]
+						},
+						{
+							"ID": "20220916200115-y483q1n",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220916200115-y483q1n",
+								"updated": "20240702222031"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeImage",
+									"Data": "span",
+									"Children": [
+										{
+											"Type": "NodeBang"
+										},
+										{
+											"Type": "NodeOpenBracket"
+										},
+										{
+											"Type": "NodeLinkText"
+										},
+										{
+											"Type": "NodeCloseBracket"
+										},
+										{
+											"Type": "NodeOpenParen"
+										},
+										{
+											"Type": "NodeLinkDest",
+											"Data": "assets/siyuan-128-20210604092437-7iqzf90.png"
+										},
+										{
+											"Type": "NodeCloseParen"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210206214931-6i2huph",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210206214931-6i2huph"
+					},
+					"Children": [
+						{
+							"ID": "20210206214931-ot0m3tf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210206214931-ot0m3tf",
+								"updated": "20210604224336"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Жирный"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210206215019-qnvcb71",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210206215019-qnvcb71"
+					},
+					"Children": [
+						{
+							"ID": "20210206215019-fagctvu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210206215019-fagctvu",
+								"updated": "20210604224518"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "em",
+									"TextMarkTextContent": "Курсив"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604224516-3qnn0hm",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604224516-3qnn0hm"
+					},
+					"Children": [
+						{
+							"ID": "20210604224516-rxgbp9t",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224516-rxgbp9t",
+								"updated": "20210604224521"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "u",
+									"TextMarkTextContent": "Подчёркивание"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210206215025-t5obwjf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210206215025-t5obwjf"
+					},
+					"Children": [
+						{
+							"ID": "20210206215025-7db9ew1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210206215025-7db9ew1",
+								"updated": "20210604224444"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "s",
+									"TextMarkTextContent": "Зачёркивание"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604224529-vx55co9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604224529-vx55co9"
+					},
+					"Children": [
+						{
+							"ID": "20210604224529-ai1e3nw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224529-ai1e3nw",
+								"updated": "20210604224531"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "mark",
+									"TextMarkTextContent": "Выделение"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604224538-ykjz5d7",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604224538-ykjz5d7"
+					},
+					"Children": [
+						{
+							"ID": "20210604224538-dq1tnzo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224538-dq1tnzo",
+								"updated": "20210604224554"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "sup",
+									"TextMarkTextContent": "Верхний индекс"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604224541-dgm8kha",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604224541-dgm8kha"
+					},
+					"Children": [
+						{
+							"ID": "20210604224541-i8ym46e",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224541-i8ym46e",
+								"updated": "20210604224558"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "sub",
+									"TextMarkTextContent": "Нижний индекс"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604224629-dkl4352",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604224629-dkl4352"
+					},
+					"Children": [
+						{
+							"ID": "20210604224629-tame96i",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224629-tame96i",
+								"updated": "20210604224641"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Клавиша"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604224645-8b9zv8a",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604224645-8b9zv8a"
+					},
+					"Children": [
+						{
+							"ID": "20210604224645-draevuo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224645-draevuo",
+								"updated": "20210604224648"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "tag",
+									"TextMarkTextContent": "Тег"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210206215033-e6wwbam",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210206215033-e6wwbam"
+					},
+					"Children": [
+						{
+							"ID": "20210206215033-14n44ey",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210206215033-14n44ey",
+								"updated": "20210604224707"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Inline Code"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604224617-huid479",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604224617-huid479"
+					},
+					"Children": [
+						{
+							"ID": "20210604224617-4udhl9s",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224617-4udhl9s",
+								"updated": "20210604224719"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "inline-math",
+									"TextMarkInlineMathContent": "a^2 + b^2 = \\color{red}c^2"
+								},
+								{
+									"Type": "NodeText"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220918174910-ohmzxc6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220918174910-ohmzxc6",
+						"updated": "20220918174924"
+					},
+					"Children": [
+						{
+							"ID": "20220918174910-hy2s8ux",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220918174910-hy2s8ux",
+								"updated": "20220918174924"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "inline-memo",
+									"TextMarkInlineMemoContent": "This is a memo.",
+									"TextMarkTextContent": "Заметка"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604224724-l3um9ci",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604224724-l3um9ci",
+						"updated": "20220521234603"
+					},
+					"Children": [
+						{
+							"ID": "20210604224728-szerlgd",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224728-szerlgd",
+								"updated": "20220521234603"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color1); background-color: var(--b3-font-background1);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 1"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color1); background-color: var(--b3-font-background1);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color2); background-color: var(--b3-font-background2);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 2"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color2); background-color: var(--b3-font-background2);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "  "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color3); background-color: var(--b3-font-background3);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 3"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color3); background-color: var(--b3-font-background3);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color4); background-color: var(--b3-font-background4);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 4"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color4); background-color: var(--b3-font-background4);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color5); background-color: var(--b3-font-background5);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 5"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color5); background-color: var(--b3-font-background5);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color6); background-color: var(--b3-font-background6);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 6"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color6); background-color: var(--b3-font-background6);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color7); background-color: var(--b3-font-background7);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 7"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color7); background-color: var(--b3-font-background7);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color8); background-color: var(--b3-font-background8);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 8"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color8); background-color: var(--b3-font-background8);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color9); background-color: var(--b3-font-background9);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 9"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color9); background-color: var(--b3-font-background9);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color10); background-color: var(--b3-font-background10);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 10"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color10); background-color: var(--b3-font-background10);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color11); background-color: var(--b3-font-background11);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 11"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color11); background-color: var(--b3-font-background11);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color12); background-color: var(--b3-font-background12);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 12"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color12); background-color: var(--b3-font-background12);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "color: var(--b3-font-color13); background-color: var(--b3-font-background13);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Цвет 13"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"color: var(--b3-font-color13); background-color: var(--b3-font-background13);\"}"
+								}
+							]
+						},
+						{
+							"ID": "20210604224728-oc5q6j3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224728-oc5q6j3",
+								"updated": "20220115192946"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "-webkit-text-stroke: 0.2px var(--b3-theme-on-background); -webkit-text-fill-color: transparent;"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Стиль 1"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"-webkit-text-stroke: 0.2px var(--b3-theme-on-background); -webkit-text-fill-color: transparent;\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " "
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "text-shadow: 1px 1px var(--b3-border-color), 2px 2px var(--b3-border-color), 3px 3px var(--b3-border-color), 4px 4px var(--b3-border-color);"
+									},
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Стиль 2"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"text-shadow: 1px 1px var(--b3-border-color), 2px 2px var(--b3-border-color), 3px 3px var(--b3-border-color), 4px 4px var(--b3-border-color);\"}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604224956-kucic6k",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604224956-kucic6k",
+						"updated": "20220115193741"
+					},
+					"Children": [
+						{
+							"ID": "20210604224956-izvd90v",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604224956-izvd90v",
+								"updated": "20220115193741"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Вызовите поиск эмодзи, введя "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ":"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " и букву 😄 😆 😵 😭 😰 😅 😢 😤 😍 😌👍 👎 💯 👏 🔔 🎁 ❓ 💣 ❤️ ☕️ 🌀 🙇 💋 🙏 💢"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210604225457-1nv8p2o",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210604225457-1nv8p2o",
+				"updated": "20210604225504"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Суперблок"
+				}
+			]
+		},
+		{
+			"ID": "20210604235938-bc803sv",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20210604235938-bc803sv",
+				"updated": "20210612222558"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20210604235929-kes9bv7",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20210604235929-kes9bv7",
+						"updated": "20210612222556"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20210604235911-eesy93t",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604235911-eesy93t",
+								"style": "color: var(--b3-card-error-color);background-color: var(--b3-card-error-background);",
+								"updated": "20210604235915"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Абзац 1"
+								}
+							]
+						},
+						{
+							"ID": "20210604235917-wmta0df",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604235917-wmta0df",
+								"style": "color: var(--b3-card-warning-color); background-color: var(--b3-card-warning-background); text-align: center;",
+								"updated": "20210612222556"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Абзац 2 по центру"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"ID": "20210604235934-qm8a8ig",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20210604235934-qm8a8ig",
+						"updated": "20210612222558"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20210604235918-1h741hp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604235918-1h741hp",
+								"style": "color: var(--b3-card-info-color);background-color: var(--b3-card-info-background);",
+								"updated": "20210604235921"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Абзац 3"
+								}
+							]
+						},
+						{
+							"ID": "20210604235918-hkljhq6",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604235918-hkljhq6",
+								"style": "color: var(--b3-card-success-color); background-color: var(--b3-card-success-background); text-align: right;",
+								"updated": "20210612222558"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Абзац 4 справа"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20210604225457-n51d6eo",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210604225457-n51d6eo",
+				"updated": "20220312123239"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Блок встраивания"
+				}
+			]
+		},
+		{
+			"ID": "20210604225655-rheoj2p",
+			"Type": "NodeBlockQueryEmbed",
+			"Properties": {
+				"id": "20210604225655-rheoj2p",
+				"updated": "20210604225655"
+			},
+			"Children": [
+				{
+					"Type": "NodeOpenBrace"
+				},
+				{
+					"Type": "NodeOpenBrace"
+				},
+				{
+					"Type": "NodeBlockQueryEmbedScript",
+					"Data": "select * from blocks where id='20210428222033-lo06109'"
+				},
+				{
+					"Type": "NodeCloseBrace"
+				},
+				{
+					"Type": "NodeCloseBrace"
+				}
+			]
+		},
+		{
+			"ID": "20210604225720-8djqp9x",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210604225720-8djqp9x",
+				"updated": "20220312123245"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Блок заголовка"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-e923ppe",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-e923ppe",
+				"updated": "20210415200926"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Нумерованный, маркированный списки и список задач"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-km1ru9e",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210104091509-km1ru9e",
+				"updated": "20210415200927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Маркированный список"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-y11ghjp",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20210104091509-y11ghjp",
+				"updated": "20210604230004"
+			},
+			"Children": [
+				{
+					"ID": "20210604225923-vw6y0sg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604225923-vw6y0sg"
+					},
+					"Children": [
+						{
+							"ID": "20210604225923-w4cak4m",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604225923-w4cak4m"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Java"
+								}
+							]
+						},
+						{
+							"ID": "20210604225929-07h9253",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20210604225929-07h9253"
+							},
+							"Children": [
+								{
+									"ID": "20210604225928-wgnkjxc",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210604225928-wgnkjxc"
+									},
+									"Children": [
+										{
+											"ID": "20210604225928-h4h0r7q",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210604225928-h4h0r7q",
+												"updated": "20210604225931"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Spring"
+												}
+											]
+										},
+										{
+											"ID": "20210604225940-63ic6y0",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20210604225940-63ic6y0"
+											},
+											"Children": [
+												{
+													"ID": "20210604225932-mbgoxuq",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20210604225932-mbgoxuq"
+													},
+													"Children": [
+														{
+															"ID": "20210604225932-q9k1jwu",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20210604225932-q9k1jwu",
+																"updated": "20210604225933"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "IoC"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20210604225934-j63r7c5",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20210604225934-j63r7c5"
+													},
+													"Children": [
+														{
+															"ID": "20210604225934-5cx7pz6",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20210604225934-5cx7pz6",
+																"updated": "20210604225936"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "AOP"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604225936-be4pkay",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"fold": "1",
+						"id": "20210604225936-be4pkay"
+					},
+					"Children": [
+						{
+							"ID": "20210604225936-npak9di",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604225936-npak9di"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Go"
+								}
+							]
+						},
+						{
+							"ID": "20210604225948-6gfwdev",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20210604225948-6gfwdev"
+							},
+							"Children": [
+								{
+									"ID": "20210604225948-7xcdsvm",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210604225948-7xcdsvm"
+									},
+									"Children": [
+										{
+											"ID": "20210604225948-ginvy6f",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210604225948-ginvy6f",
+												"updated": "20210604225950"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "gofmt"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210604225950-0rnsxeu",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210604225950-0rnsxeu"
+									},
+									"Children": [
+										{
+											"ID": "20210604225950-6qagvgo",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210604225950-6qagvgo",
+												"updated": "20210604225953"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Wide"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604225953-16q6acg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"fold": "1",
+						"id": "20210604225953-16q6acg",
+						"updated": "20210604230004"
+					},
+					"Children": [
+						{
+							"ID": "20210604225953-fdj7ms0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604225953-fdj7ms0"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Node.js"
+								}
+							]
+						},
+						{
+							"ID": "20210604230002-27hz6bw",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20210604230002-27hz6bw",
+								"updated": "20210604230004"
+							},
+							"Children": [
+								{
+									"ID": "20210604230001-6tk5i1i",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210604230001-6tk5i1i",
+										"updated": "20210604230004"
+									},
+									"Children": [
+										{
+											"ID": "20210604230001-yhfrwhw",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210604230001-yhfrwhw",
+												"updated": "20210604230004"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "KoaExpress"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210604230005-hdrj9qa",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20210604230005-hdrj9qa"
+									},
+									"Children": [
+										{
+											"ID": "20210604230005-4h8ivn1",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210604230005-4h8ivn1"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Express"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-x0fasmz",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210104091509-x0fasmz",
+				"updated": "20210415200930"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Нумерованный список"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-28w52sy",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20210104091509-28w52sy",
+				"updated": "20210104091509"
+			},
+			"Children": [
+				{
+					"ID": "20210104091509-gsh602j",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20210104091509-gsh602j"
+					},
+					"Children": [
+						{
+							"ID": "20210104091509-knryfww",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091509-knryfww"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Node.js"
+								}
+							]
+						},
+						{
+							"ID": "20210104091509-hnmfhb0",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20210104091509-hnmfhb0"
+							},
+							"Children": [
+								{
+									"ID": "20210104091509-kb90fzm",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20210104091509-kb90fzm"
+									},
+									"Children": [
+										{
+											"ID": "20210201203340-94a6jdy",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210201203340-94a6jdy"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Express"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091509-xfo6fhm",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "Mi4=",
+										"Num": 2
+									},
+									"Properties": {
+										"id": "20210104091509-xfo6fhm"
+									},
+									"Children": [
+										{
+											"ID": "20210201203340-o4gtuyf",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210201203340-o4gtuyf"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Koa"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091509-ue8ocly",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "My4=",
+										"Num": 3
+									},
+									"Properties": {
+										"id": "20210104091509-ue8ocly"
+									},
+									"Children": [
+										{
+											"ID": "20210201203340-kgpjwqy",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210201203340-kgpjwqy"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Sails"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091509-qq5zjpe",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"fold": "1",
+						"id": "20210104091509-qq5zjpe"
+					},
+					"Children": [
+						{
+							"ID": "20210104091509-5z7yoqz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091509-5z7yoqz"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Go"
+								}
+							]
+						},
+						{
+							"ID": "20210104091509-70eow05",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20210104091509-70eow05"
+							},
+							"Children": [
+								{
+									"ID": "20210104091509-ut1vd5q",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20210104091509-ut1vd5q"
+									},
+									"Children": [
+										{
+											"ID": "20210201203340-m2p1qn3",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210201203340-m2p1qn3"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "gofmt"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091509-09hsrfg",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "Mi4=",
+										"Num": 2
+									},
+									"Properties": {
+										"id": "20210104091509-09hsrfg"
+									},
+									"Children": [
+										{
+											"ID": "20210201203340-iip684v",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210201203340-iip684v"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Wide"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210104091509-7s41ffa",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"fold": "1",
+						"id": "20210104091509-7s41ffa"
+					},
+					"Children": [
+						{
+							"ID": "20210104091509-23qqxei",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210104091509-23qqxei"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Java"
+								}
+							]
+						},
+						{
+							"ID": "20210104091509-4gdjllr",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20210104091509-4gdjllr"
+							},
+							"Children": [
+								{
+									"ID": "20210104091509-y5fhhf3",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20210104091509-y5fhhf3"
+									},
+									"Children": [
+										{
+											"ID": "20210201203340-zpy3ew3",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210201203340-zpy3ew3"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Latke"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20210104091509-ahcclhu",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "Mi4=",
+										"Num": 2
+									},
+									"Properties": {
+										"id": "20210104091509-ahcclhu"
+									},
+									"Children": [
+										{
+											"ID": "20210201203340-i0h8pts",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20210201203340-i0h8pts"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "IDEA"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-8krfyk8",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210104091509-8krfyk8",
+				"updated": "20210415200936"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Список задач"
+				}
+			]
+		},
+		{
+			"ID": "20210604230103-flwd7ux",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 3
+			},
+			"Properties": {
+				"id": "20210604230103-flwd7ux",
+				"updated": "20210604230105"
+			},
+			"Children": [
+				{
+					"ID": "20210604230106-7g01lvl",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 3,
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604230106-7g01lvl"
+					},
+					"Children": [
+						{
+							"Type": "NodeTaskListItemMarker",
+							"TaskListItemChecked": true
+						},
+						{
+							"ID": "20210604230106-1r8l2o9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604230106-1r8l2o9",
+								"updated": "20210604230115"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выпустить SiYuan"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210604230135-kda7r9l",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 3,
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20210604230135-kda7r9l"
+					},
+					"Children": [
+						{
+							"Type": "NodeTaskListItemMarker"
+						},
+						{
+							"ID": "20210604230135-iigpa79",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210604230135-iigpa79",
+								"updated": "20210604230136"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Записаться к стоматологу"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210604230145-0pf5hzh",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210604230145-0pf5hzh",
+				"updated": "20251209212851"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Цитата"
+				}
+			]
+		},
+		{
+			"ID": "20210604230152-xdur6d5",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20210604230152-xdur6d5",
+				"updated": "20251209212850"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": ">"
+				},
+				{
+					"ID": "20210604230153-jimrqzy",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20210604230153-jimrqzy",
+						"updated": "20210604230216"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Обратите внимание: это не ссылка на блок контента, а блочная цитата (Blockquote)."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20251209212851-8alxa79",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20251209212851-8alxa79",
+				"updated": "20251211094305"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Блок выноски"
+				}
+			]
+		},
+		{
+			"ID": "20251211094305-z81is4w",
+			"Type": "NodeCallout",
+			"Properties": {
+				"id": "20251211094305-z81is4w",
+				"updated": "20251211094305"
+			},
+			"CalloutType": "NOTE",
+			"CalloutTitle": "Note",
+			"CalloutIcon": "✏️",
+			"Children": [
+				{
+					"ID": "20251211094305-fjhtlio",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20251211094305-fjhtlio",
+						"updated": "20251211094305"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Выделяет информацию, на которую пользователю стоит обратить внимание даже при беглом чтении."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20251211094305-0tpcw0r",
+			"Type": "NodeCallout",
+			"Properties": {
+				"id": "20251211094305-0tpcw0r",
+				"updated": "20251211094305"
+			},
+			"CalloutType": "TIP",
+			"CalloutTitle": "Tip",
+			"CalloutIcon": "💡",
+			"Children": [
+				{
+					"ID": "20251211094305-pp9rl9p",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20251211094305-pp9rl9p",
+						"updated": "20251211094305"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Необязательная информация, помогающая пользователю добиться большего."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20251211094305-odmv4xp",
+			"Type": "NodeCallout",
+			"Properties": {
+				"id": "20251211094305-odmv4xp",
+				"updated": "20251211094305"
+			},
+			"CalloutType": "IMPORTANT",
+			"CalloutTitle": "Important",
+			"CalloutIcon": "❗",
+			"Children": [
+				{
+					"ID": "20251211094305-izvsag6",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20251211094305-izvsag6",
+						"updated": "20251211094305"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Ключевая информация, необходимая пользователю для успеха."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20251211094305-3n7mdd2",
+			"Type": "NodeCallout",
+			"Properties": {
+				"id": "20251211094305-3n7mdd2",
+				"updated": "20251211094305"
+			},
+			"CalloutType": "WARNING",
+			"CalloutTitle": "Warning",
+			"CalloutIcon": "⚠️",
+			"Children": [
+				{
+					"ID": "20251211094305-asusl4k",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20251211094305-asusl4k",
+						"updated": "20251211094305"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Критически важное содержимое, требующее немедленного внимания из-за возможных рисков."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20251211094305-6xembcb",
+			"Type": "NodeCallout",
+			"Properties": {
+				"id": "20251211094305-6xembcb",
+				"updated": "20251211094305"
+			},
+			"CalloutType": "CAUTION",
+			"CalloutTitle": "Caution",
+			"CalloutIcon": "🚨",
+			"Children": [
+				{
+					"ID": "20251211094305-e2cpfhc",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20251211094305-e2cpfhc",
+						"updated": "20251211094305"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Возможные негативные последствия действия."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-97yavkb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-97yavkb",
+				"updated": "20210415200916"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Блок кода"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-ga0hab5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091509-ga0hab5"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если после ``` указать название языка, включится подсветка синтаксиса, например:"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-3ugqkeu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210104091509-3ugqkeu",
+				"updated": "20210415200922"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Демонстрация подсветки кода Go"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-2m1n4ot",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"CodeBlockFenceChar": 96,
+			"CodeBlockFenceLen": 3,
+			"CodeBlockOpenFence": "YGBg",
+			"CodeBlockInfo": "Z28=",
+			"CodeBlockCloseFence": "YGBg",
+			"Properties": {
+				"id": "20210104091509-2m1n4ot"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "Z28="
+				},
+				{
+					"ID": "20220307092214-0fmkp9q",
+					"Type": "NodeCodeBlockCode",
+					"Data": "package main\n\nimport \"fmt\"\n\nfunc main() {\nfmt.Println(\"Hello, World\")\n}\n",
+					"Properties": {
+						"id": "20220307092214-0fmkp9q"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-8yseuad",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20210104091509-8yseuad",
+				"updated": "20260616224215"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Демонстрация подсветки Java"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-sx4itus",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"CodeBlockFenceChar": 96,
+			"CodeBlockFenceLen": 3,
+			"CodeBlockOpenFence": "YGBg",
+			"CodeBlockInfo": "amF2YQ==",
+			"CodeBlockCloseFence": "YGBg",
+			"Properties": {
+				"id": "20210104091509-sx4itus"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"ID": "20220307092214-11m2ant",
+					"Type": "NodeCodeBlockCode",
+					"Data": "public class HelloWorld {\n\n    public static void main(String[] args) {\n        System.out.println(\"Hello World!\");\n    }\n\n}\n",
+					"Properties": {
+						"id": "20220307092214-11m2ant"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-fofl42z",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20210104091509-fofl42z",
+				"updated": "20260616221442"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": "> "
+				},
+				{
+					"ID": "20210104091509-7xikvi9",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20210104091509-7xikvi9",
+						"updated": "20210104091509"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Подсказка: поддерживаются следующие названия языков: "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": "ruby"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​, "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": "python"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​, "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": "js"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​, "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": "html"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​, "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": "erb"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​, "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": "css"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​, "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": "coffee"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​, "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": "bash"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​, "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": "json"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​, "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": "yml"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​, "
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "code",
+							"TextMarkTextContent": " xml"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​ ..."
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260616221442-4qnpljy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260616221442-4qnpljy",
+				"updated": "20260616224215"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Кроме того, язык блока кода поддерживает "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "siyuan-template"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ и "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "template"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ — они эквивалентны. Их использование включает подсветку синтаксиса "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20201204184532-682s1du",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "шаблонов SiYuan"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". При экспорте такой блок кода экспортируется не как блок кода, а преобразуется в обычный текст абзаца."
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-b14hkk1",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-b14hkk1",
+				"updated": "20210415200941"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Таблица"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-0fzv45s",
+			"Type": "NodeTable",
+			"TableAligns": [
+				0,
+				0
+			],
+			"Properties": {
+				"id": "20210104091509-0fzv45s",
+				"updated": "20210104091509"
+			},
+			"Children": [
+				{
+					"Type": "NodeTableHead",
+					"Data": "thead",
+					"Children": [
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "заголовок 1"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "th",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "заголовок 2"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ячейка 1"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ячейка 2"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ячейка 3"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ячейка 4"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ячейка 5"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ячейка 6"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220312004745-vq7xtdv",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220312004745-vq7xtdv",
+				"updated": "20220312122833"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Блок HTML"
+				}
+			]
+		},
+		{
+			"ID": "20220312004751-iretje3",
+			"Type": "NodeHTMLBlock",
+			"Data": "<div>\n<ruby>\n你<rt>nǐ</rt>\n　好<rt>　hǎo</rt>\n　世<rt>　shì</rt>\n　界<rt>　jiè</rt>\n</ruby><br>\nHello World\n</div>",
+			"Properties": {
+				"id": "20220312004751-iretje3",
+				"updated": "20220828102624"
+			}
+		},
+		{
+			"ID": "20220312122714-iyz74ry",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220312122714-iyz74ry",
+				"updated": "20240427231204"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Подробнее см. "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20240427231112-tzczar8",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "Заметки о блоках HTML"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210604230313-lhw7z11",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210604230313-lhw7z11",
+				"updated": "20220312004843"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Горизонтальная линия"
+				}
+			]
+		},
+		{
+			"ID": "20210604230332-uu056ih",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20210604230332-uu056ih",
+				"updated": "20210604230332"
+			}
+		},
+		{
+			"ID": "20210104091509-v6x2j5y",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-v6x2j5y",
+				"updated": "20210415200947"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Математическая формула"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-65i44x7",
+			"Type": "NodeMathBlock",
+			"Properties": {
+				"id": "20210104091509-65i44x7",
+				"updated": "20230328091244"
+			},
+			"Children": [
+				{
+					"Type": "NodeMathBlockOpenMarker"
+				},
+				{
+					"Type": "NodeMathBlockContent",
+					"Data": "\\frac{1}{\n  \\Bigl(\\sqrt{\\phi \\sqrt{5}}-\\phi\\Bigr) e^{\n  \\frac25 \\pi}} = 1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {\n    1+\\frac{e^{-6\\pi}}\n    {1+\\frac{e^{-8\\pi}}{1+\\cdots}}\n  }\n}"
+				},
+				{
+					"Type": "NodeMathBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20210604230350-ii1lrog",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210604230350-ii1lrog",
+				"updated": "20210608004924"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "IFrame"
+				}
+			]
+		},
+		{
+			"ID": "20220909095329-rzswr4z",
+			"Type": "NodeIFrame",
+			"Data": "<iframe src=\"https://player.bilibili.com/player.html?bvid=BV1ov41187qM&amp;page=1&amp;high_quality=1&amp;as_wide=1&amp;allowfullscreen=true&amp;aid=247401039&amp;cid=319662466&amp;autoplay=0\" data-src=\"//player.bilibili.com/player.html?aid=247401039&amp;bvid=BV1ov41187qM&amp;cid=319662466&amp;page=1\" scrolling=\"no\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"width: 981px; height: 440px;\" sandbox=\"allow-top-navigation-by-user-activation allow-same-origin allow-forms allow-scripts allow-popups\"></iframe>",
+			"Properties": {
+				"id": "20220909095329-rzswr4z",
+				"updated": "20220909095329"
+			}
+		},
+		{
+			"ID": "20210608121322-4v5tvct",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210608121322-4v5tvct",
+				"updated": "20210608121326"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Видео"
+				}
+			]
+		},
+		{
+			"ID": "20220909095340-b21q5ug",
+			"Type": "NodeVideo",
+			"Data": "<video controls=\"controls\" src=\"assets/formatting_elements-20210607225733-o1keasx.mp4\" data-src=\"assets/formatting_elements-20210607213508-daqmspm-20210608113914-q11ou4j.mp4\" style=\"width: 640px; height: 327px;\"></video>",
+			"Properties": {
+				"id": "20220909095340-b21q5ug",
+				"updated": "20220909095340"
+			}
+		},
+		{
+			"ID": "20210608121327-5sd7i9s",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210608121327-5sd7i9s",
+				"updated": "20210608121331"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Аудио"
+				}
+			]
+		},
+		{
+			"ID": "20210608121458-nnshv9k",
+			"Type": "NodeAudio",
+			"Data": "<audio controls=\"controls\" src=\"assets/record1623077643753-20210607225403-7cg1jkq.wav\" data-src=\"assets/record1623077643753-20210607225403-7cg1jkq-20210608121458-mc4mcvz.wav\"></audio>",
+			"Properties": {
+				"id": "20210608121458-nnshv9k",
+				"updated": "20210608121458"
+			}
+		},
+		{
+			"ID": "20210104091509-egw4jd6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-egw4jd6",
+				"updated": "20211213122625"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ментальная карта"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-xj2xlq9",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"CodeBlockFenceChar": 96,
+			"CodeBlockFenceLen": 3,
+			"CodeBlockOpenFence": "YGBg",
+			"CodeBlockInfo": "bWluZG1hcA==",
+			"CodeBlockCloseFence": "YGBg",
+			"Properties": {
+				"id": "20210104091509-xj2xlq9"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "bWluZG1hcA=="
+				},
+				{
+					"ID": "20220307092214-hg1eev0",
+					"Type": "NodeCodeBlockCode",
+					"Data": "- Tutorial\n- Grammar guidance\n  - General content\n  - Mention users\n  - Emoji\n    - Some emoji examples\n  - Heading-Heading 3\n    - Heading 4\n      - Heading 5\n        - Heading 6\n  - Picture\n  - Code block\n    - Normal\n    - Syntax highlighting support\n      - Demonstrate Go code highlighting\n      - Demo Java highlighting\n  - Ordered, disordered, task list\n    - Unordered list\n    - Ordered list\n    - task list\n  - Form\n  - Hide details\n  - Paragraph\n  - Link reference\n  - Mathematical formula\n  - Mind Map\n  - Flow chart\n  - Timing diagram\n  - Gantt chart\n  - Chart\n  - Staff\n  - Graphviz\n  - Multimedia\n  - Footnote\n  - Shortcuts\n",
+					"Properties": {
+						"id": "20220307092214-hg1eev0"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				}
+			]
+		},
+		{
+			"ID": "20211213122548-drd30o6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211213122548-drd30o6",
+				"updated": "20211213122621"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ментальная карта отрисовывается из синтаксиса списков Markdown."
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-wweszj6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-wweszj6",
+				"updated": "20210415200955"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Блок-схема"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-jxpgiwi",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"CodeBlockFenceChar": 96,
+			"CodeBlockFenceLen": 3,
+			"CodeBlockOpenFence": "YGBg",
+			"CodeBlockInfo": "bWVybWFpZA==",
+			"CodeBlockCloseFence": "YGBg",
+			"Properties": {
+				"id": "20210104091509-jxpgiwi"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "bWVybWFpZA=="
+				},
+				{
+					"ID": "20220307092214-g9urozb",
+					"Type": "NodeCodeBlockCode",
+					"Data": "graph TB\n    c1-->a2\n    subgraph one\n    a1-->a2\n    end\n    subgraph two\n    b1-->b2\n    end\n    subgraph three\n    c1-->c2\n    end\n",
+					"Properties": {
+						"id": "20220307092214-g9urozb"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				}
+			]
+		},
+		{
+			"ID": "20211213121738-top6lb2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211213121738-top6lb2",
+				"updated": "20211213121840"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://mermaid.js.org/",
+					"TextMarkTextContent": "Mermaid"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-tp5b58h",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-tp5b58h",
+				"updated": "20210415200957"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Диаграмма последовательности"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-u044w0r",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"CodeBlockFenceChar": 96,
+			"CodeBlockFenceLen": 3,
+			"CodeBlockOpenFence": "YGBg",
+			"CodeBlockInfo": "bWVybWFpZA==",
+			"CodeBlockCloseFence": "YGBg",
+			"Properties": {
+				"id": "20210104091509-u044w0r"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "bWVybWFpZA=="
+				},
+				{
+					"ID": "20220307092214-581proe",
+					"Type": "NodeCodeBlockCode",
+					"Data": "sequenceDiagram\n    Alice->>John: Hello John, how are you?\n    loop Every minute\n        John-->>Alice: Great!\n    end\n",
+					"Properties": {
+						"id": "20220307092214-581proe"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				}
+			]
+		},
+		{
+			"ID": "20211213121843-p1suytz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211213121843-p1suytz",
+				"updated": "20211213121844"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://mermaid.js.org/",
+					"TextMarkTextContent": "Mermaid"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-jpqvbmi",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-jpqvbmi",
+				"updated": "20210415200959"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Диаграмма Ганта"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-zq95xt6",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20210104091509-zq95xt6",
+				"updated": "20210104091509"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "bWVybWFpZA=="
+				},
+				{
+					"ID": "20220307092214-3tdn27r",
+					"Type": "NodeCodeBlockCode",
+					"Data": "gantt\n    title A Gantt Diagram\n    dateFormat YYYY-MM-DD\n    section Section\n    A task :a1, 2019-01-01, 30d\n    Another task :after a1, 20d\n    section Another\n    Task in sec :2019-01-12, 12d\n    another task: 24d",
+					"Properties": {
+						"id": "20220307092214-3tdn27r"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20211213121846-fnso8mj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211213121846-fnso8mj",
+				"updated": "20211213121847"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://mermaid.js.org/",
+					"TextMarkTextContent": "Mermaid"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-w1e54my",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20211221131201-w1e54my",
+				"updated": "20211221131239"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Диаграмма классов"
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-5cm0ss7",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20211221131201-5cm0ss7",
+				"updated": "20211221130538"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "bWVybWFpZA=="
+				},
+				{
+					"ID": "20220307092214-7dmn731",
+					"Type": "NodeCodeBlockCode",
+					"Data": "classDiagram\nClass01 &lt;|-- AveryLongClass : Cool\nClass03 *-- Class04\nClass05 o-- Class06\nClass07 .. Class08\nClass09 --&gt; C2 : Where am i?\nClass09 --* C3\nClass09 --|&gt; Class07\nClass07 : equals()\nClass07 : Object[] elementData\nClass01 : size()\nClass01 : int chimp\nClass01 : int gorilla\nClass08 &lt;--&gt; C2: Cool label",
+					"Properties": {
+						"id": "20220307092214-7dmn731"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-hlo2cqq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211221131201-hlo2cqq",
+				"updated": "20211221131207"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://mermaid.js.org/",
+					"TextMarkTextContent": "Mermaid"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-qrn59rl",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20211221131201-qrn59rl",
+				"updated": "20211221131331"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Диаграмма пользовательского пути"
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-hhyrgs5",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20211221131201-hhyrgs5",
+				"updated": "20211221130820"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "bWVybWFpZA=="
+				},
+				{
+					"ID": "20220307092214-koqz5xr",
+					"Type": "NodeCodeBlockCode",
+					"Data": "journey\n    title My working day\n    section Go to work\n      Make tea: 5: Me\n      Go upstairs: 3: Me\n      Do work: 1: Me, Cat\n    section Go home\n      Go downstairs: 5: Me\n      Sit down: 5: Me",
+					"Properties": {
+						"id": "20220307092214-koqz5xr"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-mwgpde7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211221131201-mwgpde7",
+				"updated": "20211221131210"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://mermaid.js.org/",
+					"TextMarkTextContent": "Mermaid"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-os970zx",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20211221131201-os970zx",
+				"updated": "20211221131304"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Git-граф"
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-fw1zwzj",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20211221131201-fw1zwzj",
+				"updated": "20220602101151"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "bWVybWFpZA=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "    gitGraph\n       commit\n       commit\n       branch develop\n       commit\n       commit\n       commit\n       checkout main\n       commit\n       commit"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-phlpkjz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211221131201-phlpkjz",
+				"updated": "20211221131215"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://mermaid.js.org/",
+					"TextMarkTextContent": "Mermaid"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-812x1kq",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20211221131201-812x1kq",
+				"updated": "20211221131318"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Диаграмма «сущность — связь»"
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-13god1y",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20211221131201-13god1y",
+				"updated": "20211221130710"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "bWVybWFpZA=="
+				},
+				{
+					"ID": "20220307092214-kau5j4a",
+					"Type": "NodeCodeBlockCode",
+					"Data": "erDiagram\n    CUSTOMER ||--o{ ORDER : places\n    ORDER ||--|{ LINE-ITEM : contains\n    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses",
+					"Properties": {
+						"id": "20220307092214-kau5j4a"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20211221131201-3jgixrn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211221131201-3jgixrn",
+				"updated": "20211221131218"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://mermaid.js.org/",
+					"TextMarkTextContent": "Mermaid"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-t2lztys",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-t2lztys",
+				"updated": "20210415201002"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "График"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-e6xkglx",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20210104091509-e6xkglx",
+				"updated": "20220820214308"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "ZWNoYXJ0cw=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "{\n  &quot;title&quot;: { &quot;text&quot;: &quot;Latest 30 days&quot; },\n  &quot;backgroundColor&quot;: &quot;transparent&quot;,\n  &quot;tooltip&quot;: { &quot;trigger&quot;: &quot;axis&quot;, &quot;axisPointer&quot;: { &quot;lineStyle&quot;: { &quot;width&quot;: 0 } } },\n  &quot;legend&quot;: { &quot;data&quot;: [&quot;Articles&quot;, &quot;Users&quot;, &quot;Replies&quot;] },\n  &quot;xAxis&quot;: [{\n      &quot;type&quot;: &quot;category&quot;,\n      &quot;boundaryGap&quot;: false,\n      &quot;data&quot;: [&quot;2019-05-08&quot;,&quot;2019-05-09&quot;,&quot;2019-05-10&quot;,&quot;2019-05-11&quot;,&quot;2019-05-12&quot;,&quot;2019-05-13&quot;,&quot;2019-05-14&quot;,&quot;2019-05-15&quot;,&quot;2019-05-16&quot;,&quot;2019-05-17&quot;,&quot;2019-05-18&quot;,&quot;2019-05-19&quot;,&quot;2019-05-20&quot;,&quot;2019-05-21&quot;,&quot;2019-05-22&quot;,&quot;2019-05-23&quot;,&quot;2019-05-24&quot;,&quot;2019-05-25&quot;,&quot;2019-05-26&quot;,&quot;2019-05-27&quot;,&quot;2019-05-28&quot;,&quot;2019-05-29&quot;,&quot;2019-05-30&quot;,&quot;2019-05-31&quot;,&quot;2019-06-01&quot;,&quot;2019-06-02&quot;,&quot;2019-06-03&quot;,&quot;2019-06-04&quot;,&quot;2019-06-05&quot;,&quot;2019-06-06&quot;,&quot;2019-06-07&quot;],\n      &quot;axisTick&quot;: { &quot;show&quot;: false },\n      &quot;axisLine&quot;: { &quot;show&quot;: false }\n  }],\n  &quot;yAxis&quot;: [{ &quot;type&quot;: &quot;value&quot;, &quot;axisTick&quot;: { &quot;show&quot;: false }, &quot;axisLine&quot;: { &quot;show&quot;: false }, &quot;splitLine&quot;: { &quot;lineStyle&quot;: { &quot;color&quot;: &quot;rgba(0, 0, 0, .38)&quot;, &quot;type&quot;: &quot;dashed&quot; } } }],\n  &quot;series&quot;: [\n    {\n      &quot;name&quot;: &quot;Articles&quot;, &quot;type&quot;: &quot;line&quot;, &quot;smooth&quot;: true, &quot;itemStyle&quot;: { &quot;color&quot;: &quot;#d23f31&quot; }, &quot;areaStyle&quot;: { &quot;normal&quot;: {} }, &quot;z&quot;: 3,\n      &quot;data&quot;: [&quot;18&quot;,&quot;14&quot;,&quot;22&quot;,&quot;9&quot;,&quot;7&quot;,&quot;18&quot;,&quot;10&quot;,&quot;12&quot;,&quot;13&quot;,&quot;16&quot;,&quot;6&quot;,&quot;9&quot;,&quot;15&quot;,&quot;15&quot;,&quot;12&quot;,&quot;15&quot;,&quot;8&quot;,&quot;14&quot;,&quot;9&quot;,&quot;10&quot;,&quot;29&quot;,&quot;22&quot;,&quot;14&quot;,&quot;22&quot;,&quot;9&quot;,&quot;10&quot;,&quot;15&quot;,&quot;9&quot;,&quot;9&quot;,&quot;15&quot;,&quot;0&quot;]\n    },\n    {\n      &quot;name&quot;: &quot;Users&quot;, &quot;type&quot;: &quot;line&quot;, &quot;smooth&quot;: true, &quot;itemStyle&quot;: { &quot;color&quot;: &quot;#f1e05a&quot; }, &quot;areaStyle&quot;: { &quot;normal&quot;: {} }, &quot;z&quot;: 2,\n      &quot;data&quot;: [&quot;31&quot;,&quot;33&quot;,&quot;30&quot;,&quot;23&quot;,&quot;16&quot;,&quot;29&quot;,&quot;23&quot;,&quot;37&quot;,&quot;41&quot;,&quot;29&quot;,&quot;16&quot;,&quot;13&quot;,&quot;39&quot;,&quot;23&quot;,&quot;38&quot;,&quot;136&quot;,&quot;89&quot;,&quot;35&quot;,&quot;22&quot;,&quot;50&quot;,&quot;57&quot;,&quot;47&quot;,&quot;36&quot;,&quot;59&quot;,&quot;14&quot;,&quot;23&quot;,&quot;46&quot;,&quot;44&quot;,&quot;51&quot;,&quot;43&quot;,&quot;0&quot;]\n    },\n    {\n      &quot;name&quot;: &quot;Replies&quot;, &quot;type&quot;: &quot;line&quot;, &quot;smooth&quot;: true, &quot;itemStyle&quot;: { &quot;color&quot;: &quot;#4285f4&quot; }, &quot;areaStyle&quot;: { &quot;normal&quot;: {} }, &quot;z&quot;: 1,\n      &quot;data&quot;: [&quot;35&quot;,&quot;42&quot;,&quot;73&quot;,&quot;15&quot;,&quot;43&quot;,&quot;58&quot;,&quot;55&quot;,&quot;35&quot;,&quot;46&quot;,&quot;87&quot;,&quot;36&quot;,&quot;15&quot;,&quot;44&quot;,&quot;76&quot;,&quot;130&quot;,&quot;73&quot;,&quot;50&quot;,&quot;20&quot;,&quot;21&quot;,&quot;54&quot;,&quot;48&quot;,&quot;73&quot;,&quot;60&quot;,&quot;89&quot;,&quot;26&quot;,&quot;27&quot;,&quot;70&quot;,&quot;63&quot;,&quot;55&quot;,&quot;37&quot;,&quot;0&quot;]\n    }\n  ]\n}"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221225013111-5l6g79i",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221225013111-5l6g79i",
+				"updated": "20221225013144"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Его можно задать в трёх форматах:"
+				}
+			]
+		},
+		{
+			"ID": "20221225013111-5sp9e7n",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221225013111-5sp9e7n",
+				"updated": "20221225103242"
+			},
+			"Children": [
+				{
+					"ID": "20221225013111-7yblqiw",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221225013111-7yblqiw",
+						"updated": "20221225103242"
+					},
+					"Children": [
+						{
+							"ID": "20221225013111-zyccowv",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221225013111-zyccowv",
+								"updated": "20221225013111"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "JSON"
+								}
+							]
+						},
+						{
+							"ID": "20221225103239-c6ejw60",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221225103239-c6ejw60",
+								"updated": "20221225103242"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "anNvbg=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "{\n    \"propName\": \"propValue\"\n}\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221225013111-i2s723q",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221225013111-i2s723q",
+						"updated": "20221225013111"
+					},
+					"Children": [
+						{
+							"ID": "20221225013111-uufv43v",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221225013111-uufv43v",
+								"updated": "20221225013111"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Объект JavaScript"
+								}
+							]
+						},
+						{
+							"ID": "20221225103231-26ujkit",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221225103231-26ujkit",
+								"updated": "20221225103236"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "amF2YXNjcmlwdA=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "{\n    propName: 'propValue',\n}\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221225013111-x385yhp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221225013111-x385yhp",
+						"updated": "20221225013408"
+					},
+					"Children": [
+						{
+							"ID": "20221225013111-n3il85y",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221225013111-n3il85y",
+								"updated": "20221225013408"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Немедленно вызываемое функциональное выражение (IIFE), возвращающее объект JavaScript"
+								}
+							]
+						},
+						{
+							"ID": "20221225103222-nicayuh",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221225103222-nicayuh",
+								"updated": "20221225103227"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "amF2YXNjcmlwdA=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "(() => {\n    const option = {};\n    option.propName = `propValue`;\n    return option;\n})()\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221105164926-do374zr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221105164926-do374zr",
+				"updated": "20221225013054"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Конкретный синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://echarts.apache.org/zh/index.html",
+					"TextMarkTextContent": "ECharts"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-vkyp4zb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-vkyp4zb",
+				"updated": "20210415201006"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Нотный стан"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-ckrr6n7",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20210104091509-ckrr6n7",
+				"updated": "20240429100032"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "YWJj"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "%%params {tablature: [{instrument: &quot;violin&quot;}]}\nX: 24\nT: Clouds Thicken\nC: Paul Rosen\nS: Copyright 2005, Paul Rosen\nM: 6/8\nL: 1/8\nQ: 3/8=116\nR: Creepy Jig\nK: Em\n|:&quot;Em&quot;EEE E2G|&quot;C7&quot;_B2A G2F|&quot;Em&quot;EEE E2G|\\\n&quot;C7&quot;_B2A &quot;B7&quot;=B3|&quot;Em&quot;EEE E2G|\n&quot;C7&quot;_B2A G2F|&quot;Em&quot;GFE &quot;D (Bm7)&quot;F2D|\\\n1&quot;Em&quot;E3-E3:|2&quot;Em&quot;E3-E2B|:&quot;Em&quot;e2e gfe|\n&quot;G&quot;g2ab3|&quot;Em&quot;gfeg2e|&quot;D&quot;fedB2A|&quot;Em&quot;e2e gfe|\\\n&quot;G&quot;g2ab3|&quot;Em&quot;gfe&quot;D&quot;f2d|&quot;Em&quot;e3-e3:|"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20240429100035-bxdgwhr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20240429100035-bxdgwhr",
+				"updated": "20240429100058"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Можно добавить "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "%%params JSON"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ в первой строке, чтобы использовать "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "JSON"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ как параметр "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "renderAbc options"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		},
+		{
+			"ID": "20211213121948-g1wbypc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211213121948-g1wbypc",
+				"updated": "20230820185102"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в abcjs (репозиторий GitHub: paulrosen/abcjs)."
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-wo4xegx",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-wo4xegx",
+				"updated": "20210415201008"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Graphviz"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-bbgs2j5",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20210104091509-bbgs2j5",
+				"updated": "20210104091509"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "Z3JhcGh2aXo="
+				},
+				{
+					"ID": "20220307092214-8uthvr6",
+					"Type": "NodeCodeBlockCode",
+					"Data": "digraph finite_state_machine {\n     rankdir=LR;\n     size=\"8,5\"\n     node [shape = doublecircle]; S;\n     node [shape = point ]; qi\n\n     node [shape = circle];\n     qi -> S;\n     S -> q1 [label = \"a\" ];\n     S -> S [label = \"a\" ];\n     q1 -> S [label = \"a\" ];\n     q1 -> q2 [label = \"ddb\" ];\n     q2 -> q1 [label = \"b\" ];\n     q2 -> q2 [label = \"b\" ];\n}",
+					"Properties": {
+						"id": "20220307092214-8uthvr6"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20211213122050-tnogeaz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211213122050-tnogeaz",
+				"updated": "20211213122120"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://graphviz.org",
+					"TextMarkTextContent": "Graphviz"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-xmn96eb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210104091509-xmn96eb",
+				"updated": "20251203220553"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Flowchart"
+				}
+			]
+		},
+		{
+			"ID": "20210104091509-mbcoqoc",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"CodeBlockFenceChar": 96,
+			"CodeBlockFenceLen": 3,
+			"CodeBlockOpenFence": "YGBg",
+			"CodeBlockInfo": "Zmxvd2NoYXJ0",
+			"CodeBlockCloseFence": "YGBg",
+			"Properties": {
+				"id": "20210104091509-mbcoqoc"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "Zmxvd2NoYXJ0"
+				},
+				{
+					"ID": "20220307092214-fv408qx",
+					"Type": "NodeCodeBlockCode",
+					"Data": "st=>start: Start\nop=>operation: Your Operation\ncond=>condition: Yes or No?\ne=>end\n\nst->op->cond\ncond(yes)->e\ncond(no)->op\n",
+					"Properties": {
+						"id": "20220307092214-fv408qx"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				}
+			]
+		},
+		{
+			"ID": "20211213122144-furc5f1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211213122144-furc5f1",
+				"updated": "20251203220553"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://flowchart.js.org/",
+					"TextMarkTextContent": "flowchart.js"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210201203412-3s9prpq",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210201203412-3s9prpq",
+				"updated": "20210415201012"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "PlantUML"
+				}
+			]
+		},
+		{
+			"ID": "20210201203424-ee1bki8",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"CodeBlockFenceChar": 96,
+			"CodeBlockFenceLen": 3,
+			"CodeBlockOpenFence": "YGBg",
+			"CodeBlockInfo": "cGxhbnR1bWw=",
+			"CodeBlockCloseFence": "YGBg",
+			"Properties": {
+				"id": "20210201203424-ee1bki8"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "cGxhbnR1bWw="
+				},
+				{
+					"ID": "20220307092214-uhfpe32",
+					"Type": "NodeCodeBlockCode",
+					"Data": "@startuml component\nactor client\nnode app\ndatabase db\ndb -> app\napp -> client\n@enduml\n",
+					"Properties": {
+						"id": "20220307092214-uhfpe32"
+					}
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```",
+					"CodeBlockFenceLen": 3
+				}
+			]
+		},
+		{
+			"ID": "20211213122348-mn2sfzn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20211213122348-mn2sfzn",
+				"updated": "20211213122415"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Синтаксис см. в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://plantuml.com",
+					"TextMarkTextContent": "PlantUML"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		}
+	]
+}

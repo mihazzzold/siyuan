@@ -1,0 +1,1277 @@
+{
+	"ID": "20200924100744-dsuftlg",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20200924100744-dsuftlg",
+		"title": "Ресурсы",
+		"type": "doc",
+		"updated": "20250115152723"
+	},
+	"Children": [
+		{
+			"ID": "20210503095708-wnl1qcz",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210503095708-wnl1qcz",
+				"updated": "20210503095731"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20210503095710-woqmgzt",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210503095710-woqmgzt",
+				"updated": "20220711121739"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вложения, вставленные через редактор, считаются файлами ресурсов и по умолчанию помещаются в папку "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace/data/assets/"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20201210194734-7scmjp6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20201210194734-7scmjp6",
+				"updated": "20250115152723"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Вставка изображения или файла"
+				}
+			]
+		},
+		{
+			"ID": "20220824172815-21x8u8x",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220824172815-21x8u8x",
+				"updated": "20220905215835"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В редакторе можно напрямую вставить скопированное изображение или файл из системного буфера обмена (на Linux не поддерживается) либо вставить изображение или файл перетаскиванием в редактор. При вставке есть два варианта:"
+				}
+			]
+		},
+		{
+			"ID": "20220824172815-rd5wool",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220824172815-rd5wool",
+				"updated": "20250115152723"
+			},
+			"Children": [
+				{
+					"ID": "20220824172815-v49ng2e",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220824172815-v49ng2e",
+						"updated": "20250115152714"
+					},
+					"Children": [
+						{
+							"ID": "20220824172815-epxbr7l",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220824172815-epxbr7l",
+								"updated": "20250115152714"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Скопировать как ресурс и вставить: изображение или файл копируется как файл ресурса и вставляется, сочетание клавиш "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Ctrl"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​+"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "V"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220824172815-xi68uep",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220824172815-xi68uep",
+						"updated": "20250115152723"
+					},
+					"Children": [
+						{
+							"ID": "20220824172815-jw56k9g",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220824172815-jw56k9g",
+								"updated": "20250115152723"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Использовать абсолютный путь "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "file://"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ и ссылку: изображение или файл вставляется гиперссылкой с локальным абсолютным путём, сочетание клавиш "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Ctrl"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​+"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Shift"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​+"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "V"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​, либо перетащите, удерживая "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Alt"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220824172815-pewa537",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220824172815-pewa537",
+				"updated": "20220824172910"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Для изображений: если при вёрстке указан заголовок изображения, он отрисуется под изображением как подпись."
+				}
+			]
+		},
+		{
+			"ID": "20210104091430-h34jim7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210104091430-h34jim7",
+				"updated": "20220824172752"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Properties": {
+						"parent-style": "display: block;",
+						"style": "display: block;"
+					},
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "siyuan-128.png"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/siyuan-128-20210604092437-7iqzf90.png"
+						},
+						{
+							"Type": "NodeLinkSpace"
+						},
+						{
+							"Type": "NodeLinkTitle",
+							"Data": "When one drinks water, one must not forget where it comes from"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"display: block;\" parent-style=\"display: block;\"}"
+				}
+			]
+		},
+		{
+			"ID": "20230505084028-07plswn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230505084028-07plswn",
+				"updated": "20230505084035"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​: вставляемые изображения не сжимаются, все изображения и файлы сохраняются в исходном виде.\n"
+				}
+			]
+		},
+		{
+			"ID": "20210115224203-k1yu3wx",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20210115224203-k1yu3wx",
+				"updated": "20241027164345"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "## "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Очистка неиспользуемых ресурсов"
+				}
+			]
+		},
+		{
+			"ID": "20220920003905-hl5o9pd",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220920003905-hl5o9pd",
+				"updated": "20220920003954"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "«Ссылкой» считается ссылка на файл ресурса через гиперссылку, вставленное изображение или атрибут "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "src"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " HTML-тега (например, "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "&lt;img&gt;"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ", "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "&lt;iframe&gt;"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "). Возможны два случая:"
+				}
+			]
+		},
+		{
+			"ID": "20210115224203-wfxyk3x",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1,
+				"Tight": true,
+				"Start": 1,
+				"Delimiter": 46,
+				"Padding": 3,
+				"Marker": "MQ==",
+				"Num": 1
+			},
+			"Properties": {
+				"id": "20210115224203-wfxyk3x",
+				"updated": "20241027164345"
+			},
+			"Children": [
+				{
+					"ID": "20210115224203-kyh577b",
+					"Type": "NodeListItem",
+					"Data": "1",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 1,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "MQ==",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20210115224203-kyh577b",
+						"updated": "20241027164342"
+					},
+					"Children": [
+						{
+							"ID": "20210204172630-2t3346l",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210204172630-2t3346l",
+								"updated": "20241027164342"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Ссылка на конкретный файл ресурса, например изображение или файл"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20210115224203-bodo7u4",
+					"Type": "NodeListItem",
+					"Data": "2",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 2,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "Mg==",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20210115224203-bodo7u4",
+						"updated": "20241027164345"
+					},
+					"Children": [
+						{
+							"ID": "20210204172630-fyauc0d",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210204172630-fyauc0d",
+								"updated": "20241027164345"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Ссылка на папку ресурсов (подпапку внутри assets) должна оканчиваться на "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "/"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​, например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "[foo](assets/bar/)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​. Если папка ресурсов упомянута, все файлы внутри неё считаются используемыми независимо от того, упомянуты ли они по отдельности"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20210115224203-8h82ucm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210115224203-8h82ucm",
+				"updated": "20210512160530"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "В "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Ресурсы"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " можно одним щелчком очистить неиспользуемые ресурсы. Если нужно вернуть ошибочно удалённые файлы, используйте "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20210104091559-4r2f9xf",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "Откат"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		},
+		{
+			"ID": "20210130103832-2xjsx01",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20210130103832-2xjsx01",
+				"updated": "20210130103832"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​: ресурсы с абсолютными путями (локальными или сетевыми) в расчёт очистки не включаются."
+				}
+			]
+		},
+		{
+			"ID": "20230604120616-1tept2h",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230604120616-1tept2h",
+				"updated": "20230604120623"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Список отсутствующих ресурсов"
+				}
+			]
+		},
+		{
+			"ID": "20230604120616-y06izel",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230604120616-y06izel",
+				"updated": "20230604120637"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Отсутствующие ресурсы можно посмотреть в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Ресурсы"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​; скопировав путь, ссылки на них можно найти глобальным поиском."
+				}
+			]
+		},
+		{
+			"ID": "20230604120616-r24kcd1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230604120616-r24kcd1",
+				"updated": "20230604120806"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​: для поиска путей ресурсов нужно включить "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Настройки"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Поиск"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Индекс"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​ - "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "kbd",
+					"TextMarkTextContent": "Путь ресурса"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​."
+				}
+			]
+		},
+		{
+			"ID": "20220503122349-ie63hc8",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220503122349-ie63hc8",
+				"updated": "20241024163243"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ресурсы уровня блокнота"
+				}
+			]
+		},
+		{
+			"ID": "20220503122349-vjeasp0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220503122349-vjeasp0",
+				"updated": "20220503122433"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Если нужно по умолчанию размещать вставляемые ресурсы в папке assets на одном уровне с документом, сначала вручную создайте папку с именем assets — тогда SiYuan будет предпочтительно сохранять ресурсы в неё."
+				}
+			]
+		},
+		{
+			"ID": "20220503122349-vbtk1gp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220503122349-vbtk1gp",
+				"updated": "20220503122459"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Рекомендуется по возможности не использовать ресурсы уровня блокнота — у этого есть побочные эффекты:"
+				}
+			]
+		},
+		{
+			"ID": "20220503122349-uqo72lh",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220503122349-uqo72lh",
+				"updated": "20241024163243"
+			},
+			"Children": [
+				{
+					"ID": "20220503122349-f5828i9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220503122349-f5828i9",
+						"updated": "20241024163243"
+					},
+					"Children": [
+						{
+							"ID": "20220503122349-pgsr8b7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220503122349-pgsr8b7",
+								"updated": "20241024163243"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "При удалении документа ресурсы, на которые он ссылается, массово копируются в глобальные assets, чтобы межблокнотные ссылки на ресурсы продолжали работать"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220503122349-1gbgdxf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220503122349-1gbgdxf",
+						"updated": "20220503122525"
+					},
+					"Children": [
+						{
+							"ID": "20220503122349-xhfnxk9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220503122349-xhfnxk9",
+								"updated": "20220503122525"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Просмотр истории ресурсов уровня блокнота в истории данных не поддерживается"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220715092756-jyv7k05",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220715092756-jyv7k05",
+						"updated": "20220715105117"
+					},
+					"Children": [
+						{
+							"ID": "20220715092756-fa3m99t",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220715092756-fa3m99t",
+								"updated": "20220715105117"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Поиск через "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "/Assets"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " не поддерживается"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220715105056-m6bw4f1",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220715105056-m6bw4f1",
+						"updated": "20220715105100"
+					},
+					"Children": [
+						{
+							"ID": "20220715105056-zrhuqt8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220715105056-zrhuqt8",
+								"updated": "20220715105100"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Переименование не поддерживается"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230117003636-83a0c2k",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230117003636-83a0c2k",
+				"updated": "20230117003636"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "OCR-извлечение текста из изображений"
+				}
+			]
+		},
+		{
+			"ID": "20230117003636-cflmjis",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230117003636-cflmjis",
+				"updated": "20230820185510"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Эта функция поддерживается только на настольной версии, и сначала нужно вручную установить программу "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "em",
+					"TextMarkTextContent": "Tesseract OCR"
+				},
+				{
+					"Type": "NodeText",
+					"Data": ". "
+				}
+			]
+		},
+		{
+			"ID": "20230202231728-bqq3hld",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230202231728-bqq3hld",
+				"updated": "20230801231949"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "Примечание"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​:"
+				}
+			]
+		},
+		{
+			"ID": "20230202231731-jie0l9v",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230202231731-jie0l9v",
+				"updated": "20231110112758"
+			},
+			"Children": [
+				{
+					"ID": "20230202231732-oushp5b",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230202231732-oushp5b",
+						"updated": "20231110112758"
+					},
+					"Children": [
+						{
+							"ID": "20230202231732-v9mbjmn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230202231732-v9mbjmn",
+								"updated": "20231110112758"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "При установке Tesseract OCR отметьте нужные языковые пакеты и добавьте путь к каталогу установленного Tesseract-OCR в переменную окружения "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "PATH"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​, чтобы SiYuan мог напрямую вызывать команду "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "tesseract"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ для OCR-извлечения текста из изображений. Если установка прошла нормально, в журнале загрузки ядра можно найти "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "tesseract-ocr enabled"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​; чтобы отключить OCR, задайте переменную окружения "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "SIYUAN\\_TESSERACT\\_ENABLED=false"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230202231800-w11nre1",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230202231800-w11nre1",
+						"updated": "20230211103154"
+					},
+					"Children": [
+						{
+							"ID": "20230202231800-odmbnyo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230202231800-odmbnyo",
+								"updated": "20230211103154"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "SiYuan не включает все установленные языковые пакеты: слишком много пакетов замедляет OCR вплоть до тайм-аута с пустым результатом и потребляет слишком много системных ресурсов, поэтому по умолчанию включаются максимум "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "eng"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​, "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "chi*"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​, "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "fra"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​, "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "spa"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​, "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "deu"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​, "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "rus"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​ и "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "osd"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​; если нужна более точная поддержка языка, укажите языковые пакеты через переменную окружения "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "SIYUAN_TESSERACT_LANGS"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​, например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "SIYUAN_TESSERACT_LANGS=chi_sim+eng"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230211102830-adevu4x",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230211102830-adevu4x"
+					},
+					"Children": [
+						{
+							"ID": "20230211102830-g071jqu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230211102830-g071jqu",
+								"updated": "20230211102832"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Поддерживаются только изображения в форматах png и jpg"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230211102834-8emuoun",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230211102834-8emuoun",
+						"updated": "20230211102928"
+					},
+					"Children": [
+						{
+							"ID": "20230211102834-iuop2d5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230211102834-iuop2d5",
+								"updated": "20230211102928"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "По умолчанию обрабатываются только изображения меньше 2 МБ. Для настройки задайте переменную окружения "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "SIYUAN_TESSERACT_MAX_SIZE"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​, значение в байтах, например: "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "SIYUAN_TESSERACT_MAX_SIZE=4000000"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​​ поднимет предел до 4 МБ"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230117003636-1v3tngv",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230117003636-1v3tngv",
+				"updated": "20230117003636"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "OCR-извлечение текста из изображений выполняется автоматически в фоне; сейчас поддерживаются только изображения PNG и JPG. Извлечённый текст используется в поиске, позволяя находить изображения по текстовым ключевым словам."
+				}
+			]
+		},
+		{
+			"ID": "20230414202934-5gu7dh1",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230414202934-5gu7dh1",
+				"updated": "20230414202934"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ручная корректировка результатов OCR"
+				}
+			]
+		},
+		{
+			"ID": "20230414203027-3o3ffqv",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230414203027-3o3ffqv",
+				"updated": "20230414203027"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Результаты OCR сохраняются в "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "workspace/data/assets/ocr-texts.json"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​; скорректировать их можно так:"
+				}
+			]
+		},
+		{
+			"ID": "20230414203027-oe11g4x",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230414203027-oe11g4x",
+				"updated": "20230414203046"
+			},
+			"Children": [
+				{
+					"ID": "20230414203027-2qxvt2g",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230414203027-2qxvt2g",
+						"updated": "20230414203036"
+					},
+					"Children": [
+						{
+							"ID": "20230414203027-13tf58e",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230414203027-13tf58e",
+								"updated": "20230414203036"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выйдя из SiYuan, измените файл в файловой системе (следите за корректностью формата JSON)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230414203027-e2mstgp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230414203027-e2mstgp",
+						"updated": "20230414203046"
+					},
+					"Children": [
+						{
+							"ID": "20230414203027-ngmgy1i",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230414203027-ngmgy1i",
+								"updated": "20230414203046"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Или выберите "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "OCR"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в меню элемента изображения в редакторе"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230414203027-h6b8swm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230414203027-h6b8swm",
+				"updated": "20230414203027"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "После корректировки нужно вручную перестроить индекс."
+				}
+			]
+		}
+	]
+}

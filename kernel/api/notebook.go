@@ -278,6 +278,7 @@ func openNotebook(c *gin.Context) {
 					"20211226090932-5lcq56f": "20211226115423-d5z1joq",
 					"20210808180117-6v0mkxr": "20200923234011-ieuun1p",
 					"20240530133126-axarxgx": "20240530101000-4qitucx",
+					"20260709120000-rusguid": "20200923234011-mbkxkg5",
 				}
 				startID = guideStartID[notebook]
 				if treenode.ExistBlockTree(startID) {

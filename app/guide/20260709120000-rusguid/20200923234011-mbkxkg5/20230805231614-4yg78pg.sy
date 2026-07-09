@@ -1,0 +1,123 @@
+{
+	"ID": "20230805231614-4yg78pg",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f451",
+		"id": "20230805231614-4yg78pg",
+		"title": "Привилегии подписчика",
+		"type": "doc",
+		"updated": "20230805231924"
+	},
+	"Children": [
+		{
+			"ID": "20230805231739-f0j8ys2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230805231739-f0j8ys2",
+				"updated": "20230805231739"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Привилегии подписчика делятся на две части:"
+				}
+			]
+		},
+		{
+			"ID": "20230805231739-0oohhs6",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230805231739-0oohhs6",
+				"updated": "20230805231859"
+			},
+			"Children": [
+				{
+					"ID": "20230805231739-igrias6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230805231739-igrias6",
+						"updated": "20230805231805"
+					},
+					"Children": [
+						{
+							"ID": "20230805231739-m4a3hyq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230805231739-m4a3hyq",
+								"updated": "20230805231805"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Годовая подписка — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20210808180303-ho0xabp",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Облачные сервисы"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230805231739-aellipf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230805231739-aellipf",
+						"updated": "20230805231859"
+					},
+					"Children": [
+						{
+							"ID": "20230805231739-y24uqd9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230805231739-y24uqd9",
+								"updated": "20230805231859"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Разовая покупка — "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20230805231816-tp79xoc",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Функциональные возможности"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230805231739-j2t16m0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230805231739-j2t16m0",
+				"updated": "20230805231924"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Эти две части приобретаются отдельно, при этом годовая подписка включает функции разовой покупки, то есть в период подписки доступны все функциональные возможности."
+				}
+			]
+		}
+	]
+}

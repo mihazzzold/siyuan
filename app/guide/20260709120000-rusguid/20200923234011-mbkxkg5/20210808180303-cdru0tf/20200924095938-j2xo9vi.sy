@@ -1,0 +1,1620 @@
+{
+	"ID": "20200924095938-j2xo9vi",
+	"Spec": "2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20200924095938-j2xo9vi",
+		"title": "Темы",
+		"type": "doc",
+		"updated": "20260614110310"
+	},
+	"Children": [
+		{
+			"ID": "20230418092908-m2cu5ih",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230418092908-m2cu5ih",
+				"updated": "20230418092916"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Обзор"
+				}
+			]
+		},
+		{
+			"ID": "20230418093102-dmg123d",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230418093102-dmg123d",
+				"updated": "20230418093102"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Настроить тему можно двумя способами:"
+				}
+			]
+		},
+		{
+			"ID": "20230418093102-xpv8g5z",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230418093102-xpv8g5z",
+				"updated": "20230418093111"
+			},
+			"Children": [
+				{
+					"ID": "20230418093102-qaloicd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230418093102-qaloicd",
+						"updated": "20230418093111"
+					},
+					"Children": [
+						{
+							"ID": "20230418093102-qpv1wi9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230418093102-qpv1wi9",
+								"updated": "20230418093111"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Сниппет кода"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230418093102-yl95zqf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230418093102-yl95zqf",
+						"updated": "20230418093102"
+					},
+					"Children": [
+						{
+							"ID": "20230418093102-he87hbf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230418093102-he87hbf",
+								"updated": "20230418093102"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Пакет темы"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220806105232-lql0h8x",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220806105232-lql0h8x",
+				"updated": "20260614110310"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сниппет кода"
+				}
+			]
+		},
+		{
+			"ID": "20230417141558-tlu3bzu",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230417141558-tlu3bzu",
+				"updated": "20230417141811"
+			},
+			"Children": [
+				{
+					"ID": "20230417141558-285dgy5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230417141558-285dgy5",
+						"updated": "20230417141558"
+					},
+					"Children": [
+						{
+							"ID": "20230417141558-dtzshn8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230417141558-dtzshn8",
+								"updated": "20230417141653"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Перейдите в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​, нажмите "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Сниппет кода"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ и выберите вкладку CSS"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230417141705-ok1eoib",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230417141705-ok1eoib",
+						"updated": "20230417141708"
+					},
+					"Children": [
+						{
+							"ID": "20230417141705-ajvb56i",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230417141705-ajvb56i",
+								"updated": "20230417141708"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Введите название"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230417141558-2pfakgw",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230417141558-2pfakgw",
+						"updated": "20230417141811"
+					},
+					"Children": [
+						{
+							"ID": "20230417141558-ciq33sl",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230417141558-ciq33sl",
+								"updated": "20230417141811"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Ориентируясь на тему и переменные в theme.css, напишите и вставьте код сниппета по образцу ниже"
+								}
+							]
+						},
+						{
+							"ID": "20230417141558-f99f0z2",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20230417141558-f99f0z2",
+								"updated": "20230417141558"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "Y3Nz"
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "html[data-light-theme=\"daylight\"][data-theme-mode=\"light\"] {\n    --b3-theme-primary: red;\n}\n\nhtml[data-light-theme=\"daylight\"][data-theme-mode=\"dark\"] {\n    --b3-theme-primary: blue;\n}\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230417141558-ek9c2mq",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230417141558-ek9c2mq",
+						"updated": "20230417141722"
+					},
+					"Children": [
+						{
+							"ID": "20230417141558-vcty0mx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230417141558-vcty0mx",
+								"updated": "20230417141722"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Включите этот сниппет"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230417141558-ndfpxcw",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20230417141558-ndfpxcw",
+						"updated": "20230417141747"
+					},
+					"Children": [
+						{
+							"ID": "20230417141558-1yuaeiw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230417141558-1yuaeiw",
+								"updated": "20230417141747"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Нажмите кнопку «Подтвердить»"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614110310-oguab33",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614110310-oguab33",
+				"updated": "20260614110310"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Сниппеты кода бывают двух типов — CSS и JS:"
+				}
+			]
+		},
+		{
+			"ID": "20260614110310-mt08nvu",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260614110310-mt08nvu",
+				"updated": "20260614110310"
+			},
+			"Children": [
+				{
+					"ID": "20260614110310-z4jp7ku",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614110310-z4jp7ku",
+						"updated": "20260614110310"
+					},
+					"Children": [
+						{
+							"ID": "20260614110310-2xmif7h",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614110310-2xmif7h",
+								"updated": "20260614110310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "CSS-сниппеты"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": переопределяют стили темы — изменение цветовых переменных, настройка отступов макета и т. д. При написании ориентируйтесь на CSS-переменные темы и theme.css"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614110310-q4b4czf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614110310-q4b4czf",
+						"updated": "20260614110310"
+					},
+					"Children": [
+						{
+							"ID": "20260614110310-qjr192b",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614110310-qjr192b",
+								"updated": "20260614110310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "JS-сниппеты"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": расширяют или изменяют поведение приложения. Код выполняется при запуске приложения — настройка горячих клавиш, изменение элементов интерфейса, добавление функций и т. д."
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20260614110310-f9id8gg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20260614110310-f9id8gg",
+				"updated": "20260614110310"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Управление сниппетами:"
+				}
+			]
+		},
+		{
+			"ID": "20260614110310-oq7cxzo",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20260614110310-oq7cxzo",
+				"updated": "20260614110310"
+			},
+			"Children": [
+				{
+					"ID": "20260614110310-rtxdypv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614110310-rtxdypv",
+						"updated": "20260614110310"
+					},
+					"Children": [
+						{
+							"ID": "20260614110310-u39gz6o",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614110310-u39gz6o",
+								"updated": "20260614110310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Добавить сниппет"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": нажмите кнопку «плюс» на соответствующей вкладке, чтобы добавить новый сниппет"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614110310-foz5t2u",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614110310-foz5t2u",
+						"updated": "20260614110310"
+					},
+					"Children": [
+						{
+							"ID": "20260614110310-nvlv8gl",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614110310-nvlv8gl",
+								"updated": "20260614110310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Изменить/удалить"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": редактируйте содержимое напрямую или удаляйте сниппет целиком в панели сниппетов"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614110310-iyprby0",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614110310-iyprby0",
+						"updated": "20260614110310"
+					},
+					"Children": [
+						{
+							"ID": "20260614110310-dtxd73e",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614110310-dtxd73e",
+								"updated": "20260614110310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Отдельное включение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": каждый сниппет можно включать и отключать отдельно"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614110310-571lwfz",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614110310-571lwfz",
+						"updated": "20260614110310"
+					},
+					"Children": [
+						{
+							"ID": "20260614110310-dfj5s9c",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614110310-dfj5s9c",
+								"updated": "20260614110310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Глобальное включение"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": вверху вкладок есть глобальные переключатели CSS и JS. При отключении все сниппеты этого типа перестают действовать"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20260614110310-8a9a0f3",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20260614110310-8a9a0f3",
+						"updated": "20260614110310"
+					},
+					"Children": [
+						{
+							"ID": "20260614110310-bchzvj4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20260614110310-bchzvj4",
+								"updated": "20260614110310"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Поиск"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ": поддерживается поиск по имени или содержимому сниппета"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20201225174048-nb703zw",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20201225174048-nb703zw",
+				"updated": "20230418093157"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Пакет темы"
+				}
+			]
+		},
+		{
+			"ID": "20230418093432-j6qjjyy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230418093432-j6qjjyy",
+				"updated": "20230418093502"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Пакеты тем можно скачать из маркетплейса сообщества или установить вручную."
+				}
+			]
+		},
+		{
+			"ID": "20201225221416-ku8kbqc",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20201225221416-ku8kbqc",
+				"updated": "20230418085213"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Маркетплейс сообщества"
+				}
+			]
+		},
+		{
+			"ID": "20201225221416-i97ln5m",
+			"Type": "NodeList",
+			"ListData": {
+				"Tight": true,
+				"BulletChar": 42,
+				"Padding": 2,
+				"Marker": "Kg==",
+				"Num": -1
+			},
+			"Properties": {
+				"id": "20201225221416-i97ln5m",
+				"updated": "20230418094552"
+			},
+			"Children": [
+				{
+					"ID": "20201225221416-ayuikp2",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20201225221416-ayuikp2",
+						"updated": "20230418094552"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-9pr47z7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-9pr47z7",
+								"updated": "20230418094552"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "В "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Маркетплейс"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Темы"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ просматривайте темы от разработчиков сообщества онлайн"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225221416-olnhljj",
+					"Type": "NodeListItem",
+					"Data": "*",
+					"ListData": {
+						"Tight": true,
+						"BulletChar": 42,
+						"Padding": 2,
+						"Marker": "Kg==",
+						"Num": -1
+					},
+					"Properties": {
+						"id": "20201225221416-olnhljj"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-i6nsnez",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-i6nsnez"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Выберите нужную тему для онлайн-установки или обновления"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20201225221416-ev1fzmz",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20201225221416-ev1fzmz",
+				"updated": "20230418093526"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Ручная установка"
+				}
+			]
+		},
+		{
+			"ID": "20201225221416-lql3dno",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1,
+				"Tight": true,
+				"Start": 1,
+				"Delimiter": 46,
+				"Padding": 3,
+				"Marker": "MQ==",
+				"Num": 1
+			},
+			"Properties": {
+				"id": "20201225221416-lql3dno"
+			},
+			"Children": [
+				{
+					"ID": "20201225221416-hqj23z3",
+					"Type": "NodeListItem",
+					"Data": "1",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 1,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "MQ==",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20201225221416-hqj23z3"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-8o3keka",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-8o3keka"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Получите тему и распакуйте её"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225221416-uzi62rd",
+					"Type": "NodeListItem",
+					"Data": "2",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 2,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "Mg==",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20201225221416-uzi62rd"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-t794vzf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-t794vzf",
+								"updated": "20210512161438"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Темы"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Открыть папку тем"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225221416-br0vzy4",
+					"Type": "NodeListItem",
+					"Data": "3",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 3,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "Mw==",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20201225221416-br0vzy4"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-lk7snjt",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-lk7snjt"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Скопируйте тему в эту папку"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225221416-6djtu5p",
+					"Type": "NodeListItem",
+					"Data": "4",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 4,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "NA==",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20201225221416-6djtu5p"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-dvl4l1q",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-dvl4l1q",
+								"updated": "20210512161506"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Перезапустите и выберите нужную тему в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Темы"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20201225174048-o9rah5y",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20201225174048-o9rah5y",
+				"updated": "20230418094804"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Разработка"
+				}
+			]
+		},
+		{
+			"ID": "20201225174048-f29jzry",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20201225174048-f29jzry"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "### "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Шаги"
+				}
+			]
+		},
+		{
+			"ID": "20201225174048-xrz2ex6",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1,
+				"Start": 1,
+				"Delimiter": 46,
+				"Padding": 3,
+				"Marker": "MQ==",
+				"Num": 1
+			},
+			"Properties": {
+				"id": "20201225174048-xrz2ex6",
+				"updated": "20230821210921"
+			},
+			"Children": [
+				{
+					"ID": "20201225174048-74rjtdl",
+					"Type": "NodeListItem",
+					"Data": "1",
+					"ListData": {
+						"Typ": 1,
+						"Start": 1,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "MQ==",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20201225174048-74rjtdl"
+					},
+					"Children": [
+						{
+							"ID": "20201225174048-jslube2",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20201225174048-jslube2"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Придумайте своей теме хорошее имя, например "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "alice"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225174048-956b6na",
+					"Type": "NodeListItem",
+					"Data": "2",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 2,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "Mg==",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20201225174048-956b6na"
+					},
+					"Children": [
+						{
+							"ID": "20201225174048-3gri3ol",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20201225174048-3gri3ol",
+								"updated": "20210512161558"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Темы"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Открыть папку тем"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225174048-q9dxhv6",
+					"Type": "NodeListItem",
+					"Data": "3",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 3,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "Mw==",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20201225174048-q9dxhv6",
+						"updated": "20230821210921"
+					},
+					"Children": [
+						{
+							"ID": "20201225174048-lot6okw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20201225174048-lot6okw",
+								"updated": "20230821210921"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Создайте новую папку "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "alice"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в открывшейся папке и создайте файлы "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "theme.css"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ и "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "theme.json"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​ в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "alice"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​; конкретные примеры см. в репозитории GitHub: siyuan-note/theme-sample\n"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225174048-nz7z1s0",
+					"Type": "NodeListItem",
+					"Data": "4",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 4,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "NA==",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20201225174048-nz7z1s0"
+					},
+					"Children": [
+						{
+							"ID": "20201225174048-gjq5pit",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20201225174048-gjq5pit"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Откройте файл "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "theme.css"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " и начните свой путь программирования"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225174048-ua4mkpt",
+					"Type": "NodeListItem",
+					"Data": "5",
+					"ListData": {
+						"Typ": 1,
+						"Tight": true,
+						"Start": 5,
+						"Delimiter": 46,
+						"Padding": 3,
+						"Marker": "NQ==",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20201225174048-ua4mkpt"
+					},
+					"Children": [
+						{
+							"ID": "20201225174048-vopivpw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20201225174048-vopivpw",
+								"updated": "20210512161645"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Перезапустите и выберите установленную тему в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Настройки"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Внешний вид"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " - "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "Темы"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20201225174048-x42h8ee",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20201225174048-x42h8ee"
+			},
+			"Children": [
+				{
+					"Type": "NodeHeadingC8hMarker",
+					"Data": "### "
+				},
+				{
+					"Type": "NodeText",
+					"Data": "Написание кода"
+				}
+			]
+		},
+		{
+			"ID": "20201225174048-i209ep3",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20201225174048-i209ep3",
+				"updated": "20210318104313"
+			},
+			"Children": [
+				{
+					"ID": "20201225174048-tc6bm20",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20201225174048-tc6bm20"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-rtyaqca",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-rtyaqca"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Освойте основы "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+									"TextMarkTextContent": "CSS"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225174048-ik2d8ry",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20201225174048-ik2d8ry"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-vvqubma",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-vvqubma",
+								"updated": "20210318104316"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Измените цветовую схему в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ":root{...}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ". ⚠️ Встроенные официальные переменные удалять нельзя"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225174048-va7epfk",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20201225174048-va7epfk"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-vywwx8e",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-vywwx8e",
+								"updated": "20210512172253"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Продолжайте изменения по шагам 1-4 на рисунке\n"
+								},
+								{
+									"Type": "NodeImage",
+									"Data": "span",
+									"Children": [
+										{
+											"Type": "NodeBang"
+										},
+										{
+											"Type": "NodeOpenBracket"
+										},
+										{
+											"Type": "NodeLinkText",
+											"Data": "custom-theme1.png"
+										},
+										{
+											"Type": "NodeCloseBracket"
+										},
+										{
+											"Type": "NodeOpenParen"
+										},
+										{
+											"Type": "NodeLinkDest",
+											"Data": "assets/custom-theme1-20210512172253-eqdgnkd.png"
+										},
+										{
+											"Type": "NodeCloseParen"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225174048-i4xo06k",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20201225174048-i4xo06k"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-hpjel5d",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-hpjel5d"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Скопируйте изменённое содержимое в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "theme.css"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " и сохраните"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20201225174048-83c67j6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20201225174048-83c67j6"
+					},
+					"Children": [
+						{
+							"ID": "20210131162108-ncvt3ul",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20210131162108-ncvt3ul",
+								"updated": "20210512172321"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Отметьте "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Disable cache"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " в "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Network"
+								},
+								{
+									"Type": "NodeText",
+									"Data": " и запустите "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "window.location.reload()"
+								},
+								{
+									"Type": "NodeText",
+									"Data": ", чтобы увидеть итоговый результат\n"
+								},
+								{
+									"Type": "NodeImage",
+									"Data": "span",
+									"Children": [
+										{
+											"Type": "NodeBang"
+										},
+										{
+											"Type": "NodeOpenBracket"
+										},
+										{
+											"Type": "NodeLinkText",
+											"Data": "custom-theme2.png"
+										},
+										{
+											"Type": "NodeCloseBracket"
+										},
+										{
+											"Type": "NodeOpenParen"
+										},
+										{
+											"Type": "NodeLinkDest",
+											"Data": "assets/custom-theme2-20210512172321-1qkspzd.png"
+										},
+										{
+											"Type": "NodeCloseParen"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20201225222754-nd4tc4m",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20201225222754-nd4tc4m",
+				"updated": "20230418085639"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Публикация в маркетплейсе тем"
+				}
+			]
+		},
+		{
+			"ID": "20221114173346-pqg576q",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221114173346-pqg576q",
+				"updated": "20230820184056"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "См. "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://b3log.org/siyuan/en/community.html",
+					"TextMarkTextContent": "репозиторий маркетплейса сообщества"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "."
+				}
+			]
+		}
+	]
+}
