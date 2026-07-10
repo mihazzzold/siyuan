@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "同時套用於子文件",
+  "publishAccessCopyLink": "複製公開連結",
   "mcpStatusConnected": "已連接",
   "mcpStatusConnecting": "連接中",
   "mcpStatusFailed": "連接失敗",

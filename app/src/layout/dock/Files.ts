@@ -223,8 +223,9 @@ export class Files extends Model {
                         event.preventDefault();
                         event.stopPropagation();
                         const rect = target.getBoundingClientRect();
-                        openPublishAccessDialog(target.parentElement.getAttribute("data-node-id") ||
-                            target.parentElement.parentElement.getAttribute("data-url"), {
+                        const publishNodeId = target.parentElement.getAttribute("data-node-id");
+                        openPublishAccessDialog(publishNodeId ||
+                            target.parentElement.parentElement.getAttribute("data-url"), Boolean(publishNodeId), {
                             x: rect.left,
                             y: rect.bottom,
                             h: rect.height,
@@ -236,6 +237,7 @@ export class Files extends Model {
                                 visible: access.visible,
                                 password: access.password,
                                 disable: access.disable,
+                                selfOnly: access.selfOnly,
                             });
                         });
                         break;

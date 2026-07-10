@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "Alt belgelere de uygula",
+  "publishAccessCopyLink": "Genel bağlantıyı kopyala",
   "mcpStatusConnected": "Bağlandı",
   "mcpStatusConnecting": "Bağlanıyor",
   "mcpStatusFailed": "Bağlantı başarısız",

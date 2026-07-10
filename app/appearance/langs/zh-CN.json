@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "同时应用于子文档",
+  "publishAccessCopyLink": "复制公开链接",
   "mcpStatusConnected": "已连接",
   "mcpStatusConnecting": "连接中",
   "mcpStatusFailed": "连接失败",

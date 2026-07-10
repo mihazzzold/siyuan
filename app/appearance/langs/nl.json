@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "Ook toepassen op onderliggende documenten",
+  "publishAccessCopyLink": "Openbare link kopiëren",
   "mcpStatusConnected": "Verbonden",
   "mcpStatusConnecting": "Verbinding maken",
   "mcpStatusFailed": "Verbinding mislukt",

@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "החל גם על מסמכי משנה",
+  "publishAccessCopyLink": "העתק קישור ציבורי",
   "mcpStatusConnected": "מחובר",
   "mcpStatusConnecting": "מתחבר",
   "mcpStatusFailed": "חיבור נכשל",

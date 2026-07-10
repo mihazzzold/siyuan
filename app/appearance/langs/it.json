@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "Applica anche ai documenti figli",
+  "publishAccessCopyLink": "Copia link pubblico",
   "mcpStatusConnected": "Connesso",
   "mcpStatusConnecting": "Connessione in corso",
   "mcpStatusFailed": "Connessione fallita",

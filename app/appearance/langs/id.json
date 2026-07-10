@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "Terapkan juga ke dokumen turunan",
+  "publishAccessCopyLink": "Salin tautan publik",
   "mcpStatusConnected": "Terhubung",
   "mcpStatusConnecting": "Menghubungkan",
   "mcpStatusFailed": "Koneksi gagal",

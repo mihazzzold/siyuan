@@ -17,9 +17,10 @@
 package conf
 
 type Publish struct {
-	Enable bool       `json:"enable"` // 是否启用发布服务
-	Port   uint16     `json:"port"`   // 发布服务端口
-	Auth   *BasicAuth `json:"auth"`   // Basic 认证
+	Enable      bool       `json:"enable"`      // 是否启用发布服务
+	Port        uint16     `json:"port"`        // 发布服务端口
+	Auth        *BasicAuth `json:"auth"`        // Basic 认证
+	DefaultDeny bool       `json:"defaultDeny"` // 默认拒绝访问：仅显式设置了访问规则的文档才对外可见
 }
 
 type BasicAuth struct {

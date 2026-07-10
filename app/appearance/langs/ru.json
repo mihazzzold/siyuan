@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "Распространить на дочерние документы",
+  "publishAccessCopyLink": "Скопировать публичную ссылку",
   "mcpStatusConnected": "Подключено",
   "mcpStatusConnecting": "Подключение",
   "mcpStatusFailed": "Ошибка подключения",

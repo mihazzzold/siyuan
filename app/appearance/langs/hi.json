@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "चाइल्ड दस्तावेज़ों पर भी लागू करें",
+  "publishAccessCopyLink": "सार्वजनिक लिंक कॉपी करें",
   "mcpStatusConnected": "जुड़ा हुआ",
   "mcpStatusConnecting": "कनेक्ट हो रहा है",
   "mcpStatusFailed": "कनेक्शन विफल",

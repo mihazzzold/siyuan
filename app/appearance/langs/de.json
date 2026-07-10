@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "Auch auf Unterdokumente anwenden",
+  "publishAccessCopyLink": "Öffentlichen Link kopieren",
   "mcpStatusConnected": "Verbunden",
   "mcpStatusConnecting": "Verbindung wird hergestellt",
   "mcpStatusFailed": "Verbindung fehlgeschlagen",

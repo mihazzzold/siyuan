@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "Zastosuj również do dokumentów podrzędnych",
+  "publishAccessCopyLink": "Kopiuj link publiczny",
   "mcpStatusConnected": "Połączono",
   "mcpStatusConnecting": "Łączenie",
   "mcpStatusFailed": "Połączenie nie powiodło się",

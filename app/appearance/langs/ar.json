@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "تطبيق أيضًا على المستندات الفرعية",
+  "publishAccessCopyLink": "نسخ الرابط العام",
   "mcpStatusConnected": "متصل",
   "mcpStatusConnecting": "جارِ الاتصال",
   "mcpStatusFailed": "فشل الاتصال",

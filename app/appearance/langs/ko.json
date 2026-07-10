@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "하위 문서에도 적용",
+  "publishAccessCopyLink": "공개 링크 복사",
   "mcpStatusConnected": "연결됨",
   "mcpStatusConnecting": "연결 중",
   "mcpStatusFailed": "연결 실패",

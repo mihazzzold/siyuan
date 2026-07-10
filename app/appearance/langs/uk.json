@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "Застосувати також до дочірніх документів",
+  "publishAccessCopyLink": "Скопіювати публічне посилання",
   "mcpStatusConnected": "Підключено",
   "mcpStatusConnecting": "Підключення",
   "mcpStatusFailed": "Помилка підключення",

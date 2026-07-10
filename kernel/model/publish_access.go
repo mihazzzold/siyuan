@@ -45,6 +45,7 @@ type PublishAccessItem struct {
 	Visible  bool   `json:"visible"`  // 是否发布可见
 	Password string `json:"password"` // 密码，为空字符串时表示无密码
 	Disable  bool   `json:"disable"`  // 是否禁止发布
+	SelfOnly bool   `json:"selfOnly"` // 规则仅作用于本文档，不继承给子文档
 }
 
 type PublishAccess []*PublishAccessItem
@@ -123,26 +124,6 @@ func SetPublishAccess(inputPublishAccess PublishAccess) (err error) {
 	return
 }
 
-func GetInvisiblePublishAccess(inputPublishAccess PublishAccess) (outputPublishAccess PublishAccess) {
-	outputPublishAccess = PublishAccess{}
-	for _, item := range inputPublishAccess {
-		if !item.Visible {
-			outputPublishAccess = append(outputPublishAccess, item)
-		}
-	}
-	return
-}
-
-func GetDisablePublishAccess(inputPublishAccess PublishAccess) (outputPublishAccess PublishAccess) {
-	outputPublishAccess = PublishAccess{}
-	for _, item := range inputPublishAccess {
-		if item.Disable {
-			outputPublishAccess = append(outputPublishAccess, item)
-		}
-	}
-	return
-}
-
 func PurgePublishAccess() {
 	publishAccess := GetPublishAccess()
 	IDs := []string{}
@@ -179,50 +160,75 @@ func PurgePublishAccess() {
 	return
 }
 
-func CheckPathAccessableByPublishIgnore(box string, path string, publishIgnore PublishAccess) bool {
-	for _, item := range publishIgnore {
-		if item.ID == box || strings.Contains(path, item.ID) {
-			return false
+// PublishVerdict 某文档路径的发布访问裁决结果
+type PublishVerdict struct {
+	Visible    bool   // 是否在目录树、搜索等列表中可见
+	Disable    bool   // 是否禁止访问内容
+	PasswordID string // 提供密码规则的文档 ID
+	Password   string // 访问密码，为空表示无需密码
+}
+
+// ResolvePublishAccess 从文档自身向祖先方向查找最近的显式规则并以其为准；
+// SelfOnly 规则只作用于规则所在文档本身；没有任何规则时按 Publish.DefaultDeny 决定默认裁决
+func ResolvePublishAccess(box string, blockPath string, publishAccess PublishAccess) (verdict PublishVerdict) {
+	byID := make(map[string]*PublishAccessItem, len(publishAccess))
+	for _, item := range publishAccess {
+		byID[item.ID] = item
+	}
+
+	self := true
+	currentPath := blockPath
+	for currentPath != "/" && currentPath != "." && currentPath != "" {
+		currentID := strings.TrimSuffix(path.Base(currentPath), ".sy")
+		if item, ok := byID[currentID]; ok && (self || !item.SelfOnly) {
+			return PublishVerdict{
+				Visible:    item.Visible && !item.Disable,
+				Disable:    item.Disable,
+				PasswordID: item.ID,
+				Password:   item.Password,
+			}
+		}
+		self = false
+		currentPath = path.Dir(currentPath)
+	}
+	if item, ok := byID[box]; ok && !item.SelfOnly {
+		return PublishVerdict{
+			Visible:    item.Visible && !item.Disable,
+			Disable:    item.Disable,
+			PasswordID: item.ID,
+			Password:   item.Password,
 		}
 	}
-	return true
+
+	if Conf.Publish.DefaultDeny {
+		return PublishVerdict{Visible: false, Disable: true}
+	}
+	return PublishVerdict{Visible: true, Disable: false}
+}
+
+// CheckPathEnabledByPublishAccess 内容是否允许访问（禁止访问轴）
+func CheckPathEnabledByPublishAccess(box string, blockPath string, publishAccess PublishAccess) bool {
+	return !ResolvePublishAccess(box, blockPath, publishAccess).Disable
+}
+
+// CheckPathVisibleByPublishAccess 是否在列表（目录树、搜索、图谱等）中可见
+func CheckPathVisibleByPublishAccess(box string, blockPath string, publishAccess PublishAccess) bool {
+	verdict := ResolvePublishAccess(box, blockPath, publishAccess)
+	return verdict.Visible && !verdict.Disable
 }
 
 func GetPathPasswordByPublishAccess(box string, blockPath string, publishAccess PublishAccess) (passwordID string, password string) {
-	currentPath := blockPath
-	password = ""
-	passwordID = ""
-	for currentPath != "/" && password == "" {
-		currentID := strings.TrimSuffix(path.Base(currentPath), ".sy")
-		for _, accessItem := range publishAccess {
-			if accessItem.ID == currentID {
-				password = accessItem.Password
-				passwordID = accessItem.ID
-				break
-			}
-		}
-		currentPath = path.Dir(currentPath)
-	}
-	if password == "" {
-		for _, accessItem := range publishAccess {
-			if accessItem.ID == box {
-				password = accessItem.Password
-				passwordID = accessItem.ID
-				break
-			}
-		}
-	}
-	return
+	verdict := ResolvePublishAccess(box, blockPath, publishAccess)
+	return verdict.PasswordID, verdict.Password
 }
 
 func CheckBlockIdAccessableByPublishAccess(c *gin.Context, publishAccess PublishAccess, blockID string) bool {
-	publishIgnore := GetDisablePublishAccess(publishAccess)
 	bt := treenode.GetBlockTree(blockID)
 	if bt == nil {
 		return false
 	}
-	passwordID, password := GetPathPasswordByPublishAccess(bt.BoxID, bt.Path, publishAccess)
-	return CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) && (password == "" || CheckPublishAuthCookie(c, passwordID, password))
+	verdict := ResolvePublishAccess(bt.BoxID, bt.Path, publishAccess)
+	return !verdict.Disable && (verdict.Password == "" || CheckPublishAuthCookie(c, verdict.PasswordID, verdict.Password))
 }
 
 func SetPublishAuthCookie(c *gin.Context, ID string, password string) {
@@ -266,14 +272,12 @@ func CheckAbsPathAccessableByPublishAccess(c *gin.Context, absPath string, publi
 			box := pathParts[0]
 			blockPath := "/" + strings.Join(pathParts[1:], "/")
 			passwordID, password := GetPathPasswordByPublishAccess(box, blockPath, publishAccess)
-			publishIgnore := GetDisablePublishAccess(publishAccess)
-			return CheckPathAccessableByPublishIgnore(box, blockPath, publishIgnore) && (password == "" || CheckPublishAuthCookie(c, passwordID, password))
+			return CheckPathEnabledByPublishAccess(box, blockPath, publishAccess) && (password == "" || CheckPublishAuthCookie(c, passwordID, password))
 		} else if pathParts[0] == "assets" {
-			publishIgnore := GetDisablePublishAccess(publishAccess)
 			bts := treenode.GetBlockTreesByType("d")
 			for _, bt := range bts {
 				passwordID, password := GetPathPasswordByPublishAccess(bt.BoxID, bt.Path, publishAccess)
-				if CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) && (password == "" || CheckPublishAuthCookie(c, passwordID, password)) {
+				if CheckPathEnabledByPublishAccess(bt.BoxID, bt.Path, publishAccess) && (password == "" || CheckPublishAuthCookie(c, passwordID, password)) {
 					assets, _ := DocAssets(bt.ID, false)
 					for _, assetPath := range assets {
 						if assetPath == relPath {
@@ -290,7 +294,6 @@ func CheckAbsPathAccessableByPublishAccess(c *gin.Context, absPath string, publi
 
 func FilterViewByPublishAccess(c *gin.Context, publishAccess PublishAccess, viewable av.Viewable) (ret av.Viewable) {
 	ret = viewable
-	publishIgnore := GetDisablePublishAccess(publishAccess)
 
 	switch ret.GetType() {
 	case av.LayoutTypeTable:
@@ -309,7 +312,7 @@ func FilterViewByPublishAccess(c *gin.Context, publishAccess PublishAccess, view
 			}
 			if bt != nil {
 				// 不显示禁止文档
-				if !CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) {
+				if !CheckPathEnabledByPublishAccess(bt.BoxID, bt.Path, publishAccess) {
 					row = nil
 				}
 			}
@@ -346,7 +349,7 @@ func FilterViewByPublishAccess(c *gin.Context, publishAccess PublishAccess, view
 				}
 
 				// 不显示禁止文档
-				if !CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) {
+				if !CheckPathEnabledByPublishAccess(bt.BoxID, bt.Path, publishAccess) {
 					card = nil
 				}
 			}
@@ -383,7 +386,7 @@ func FilterViewByPublishAccess(c *gin.Context, publishAccess PublishAccess, view
 				}
 
 				// 不显示禁止文档
-				if !CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) {
+				if !CheckPathEnabledByPublishAccess(bt.BoxID, bt.Path, publishAccess) {
 					card = nil
 				}
 			}
@@ -403,14 +406,13 @@ func FilterViewByPublishAccess(c *gin.Context, publishAccess PublishAccess, view
 }
 
 func FilterBlockAttributeViewKeysByPublishAccess(c *gin.Context, publishAccess PublishAccess, blockAttributeViewKeys []*BlockAttributeViewKeys) (ret []*BlockAttributeViewKeys) {
-	publishIgnore := GetDisablePublishAccess(publishAccess)
 	ret = []*BlockAttributeViewKeys{}
 	for _, blockAttributeViewKey := range blockAttributeViewKeys {
 		accessable := false
 		bts := treenode.GetBlockTrees(blockAttributeViewKey.BlockIDs)
 		for _, bt := range bts {
 			passwordID, password := GetPathPasswordByPublishAccess(bt.BoxID, bt.Path, publishAccess)
-			if (password == "" || CheckPublishAuthCookie(c, passwordID, password)) && CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) {
+			if (password == "" || CheckPublishAuthCookie(c, passwordID, password)) && CheckPathEnabledByPublishAccess(bt.BoxID, bt.Path, publishAccess) {
 				accessable = true
 				break
 			}
@@ -428,7 +430,6 @@ func FilterBlockInfoByPublishAccess(c *gin.Context, publishAccess PublishAccess,
 		return
 	}
 
-	publishIgnore := GetDisablePublishAccess(publishAccess)
 	filteredAttrViews := []*AttrView{}
 	avIDs := []string{}
 	for _, attrView := range info.AttrViews {
@@ -438,7 +439,7 @@ func FilterBlockInfoByPublishAccess(c *gin.Context, publishAccess PublishAccess,
 			avBlocks := treenode.GetBlockTrees(avBlockIDs)
 			for _, avBlock := range avBlocks {
 				passwordID, password := GetPathPasswordByPublishAccess(avBlock.BoxID, avBlock.Path, publishAccess)
-				if (password == "" || CheckPublishAuthCookie(c, passwordID, password)) && CheckPathAccessableByPublishIgnore(avBlock.BoxID, avBlock.Path, publishIgnore) {
+				if (password == "" || CheckPublishAuthCookie(c, passwordID, password)) && CheckPathEnabledByPublishAccess(avBlock.BoxID, avBlock.Path, publishAccess) {
 					avBlocksAccessable = true
 					break
 				}
@@ -455,7 +456,7 @@ func FilterBlockInfoByPublishAccess(c *gin.Context, publishAccess PublishAccess,
 	bt := treenode.GetBlockTree(info.RootID)
 	if bt != nil {
 		passwordID, password := GetPathPasswordByPublishAccess(bt.BoxID, bt.Path, publishAccess)
-		if (password != "" && !CheckPublishAuthCookie(c, passwordID, password)) || !CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) {
+		if (password != "" && !CheckPublishAuthCookie(c, passwordID, password)) || !CheckPathEnabledByPublishAccess(bt.BoxID, bt.Path, publishAccess) {
 			ret.IAL["name"] = ""
 			ret.IAL["alias"] = ""
 			ret.IAL["memo"] = ""
@@ -499,8 +500,7 @@ func FilterContentByPublishAccess(c *gin.Context, publishAccess PublishAccess, b
 	if docPath != "/" {
 		ID = strings.TrimSuffix(path.Base(docPath), ".sy")
 	}
-	publishIgnore := GetDisablePublishAccess(publishAccess)
-	if !CheckPathAccessableByPublishIgnore(box, docPath, publishIgnore) {
+	if !CheckPathEnabledByPublishAccess(box, docPath, publishAccess) {
 		if onlyIcon {
 			forbiddenHTML := `<div class="protyle-password protyle-password--alert" data-node-id="%s">
 	<span class="protyle-password__logo">🚫</span>
@@ -530,8 +530,6 @@ func FilterPathsByPublishAccess(c *gin.Context, publishAccess PublishAccess, pat
 	ret = []*Path{}
 	IDs := []string{}
 
-	publishIgnore := GetInvisiblePublishAccess(publishAccess)
-
 	IDtoPathIndexMap := make(map[string]int)
 	for i, path := range paths {
 		IDs = append(IDs, path.ID)
@@ -545,7 +543,7 @@ func FilterPathsByPublishAccess(c *gin.Context, publishAccess PublishAccess, pat
 		pathIndex := IDtoPathIndexMap[bt.ID]
 		path := paths[pathIndex]
 		passwordID, password := GetPathPasswordByPublishAccess(bt.BoxID, bt.Path, publishAccess)
-		if CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) && (password == "" || CheckPublishAuthCookie(c, passwordID, password)) {
+		if CheckPathVisibleByPublishAccess(bt.BoxID, bt.Path, publishAccess) && (password == "" || CheckPublishAuthCookie(c, passwordID, password)) {
 			ret = append(ret, path)
 		}
 	}
@@ -555,28 +553,26 @@ func FilterPathsByPublishAccess(c *gin.Context, publishAccess PublishAccess, pat
 func FilterBlocksByPublishAccess(c *gin.Context, publishAccess PublishAccess, blocks []*Block) (ret []*Block) {
 	ret = []*Block{}
 
-	publishIgnore := GetInvisiblePublishAccess(publishAccess)
-
 	for _, block := range blocks {
 		passwordID, password := GetPathPasswordByPublishAccess(block.Box, block.Path, publishAccess)
-		if CheckPathAccessableByPublishIgnore(block.Box, block.Path, publishIgnore) && (c == nil || password == "" || CheckPublishAuthCookie(c, passwordID, password)) {
+		if CheckPathVisibleByPublishAccess(block.Box, block.Path, publishAccess) && (c == nil || password == "" || CheckPublishAuthCookie(c, passwordID, password)) {
 			ret = append(ret, block)
 		}
 	}
 	return
 }
 
-func FilterBlockTreesByPublishIgnore(publishIgnore PublishAccess, bts map[string]*treenode.BlockTree) (ret map[string]*treenode.BlockTree) {
+func FilterBlockTreesByPublishAccess(publishAccess PublishAccess, bts map[string]*treenode.BlockTree) (ret map[string]*treenode.BlockTree) {
 	ret = map[string]*treenode.BlockTree{}
 	for id, bt := range bts {
-		if CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) {
+		if CheckPathVisibleByPublishAccess(bt.BoxID, bt.Path, publishAccess) {
 			ret[id] = bt
 		}
 	}
 	return
 }
 
-func FilterRefDefsByPublishIgnore(publishIgnore PublishAccess, refDefs []*RefDefs) (retRefDefs []*RefDefs, originalRefBlockIDs map[string]string) {
+func FilterRefDefsByPublishAccess(publishAccess PublishAccess, refDefs []*RefDefs) (retRefDefs []*RefDefs, originalRefBlockIDs map[string]string) {
 	retRefDefs = []*RefDefs{}
 	IDs := []string{}
 	for _, refDef := range refDefs {
@@ -585,7 +581,7 @@ func FilterRefDefsByPublishIgnore(publishIgnore PublishAccess, refDefs []*RefDef
 	}
 	IDs = gulu.Str.RemoveDuplicatedElem(IDs)
 	bts := treenode.GetBlockTrees(IDs)
-	bts = FilterBlockTreesByPublishIgnore(publishIgnore, bts)
+	bts = FilterBlockTreesByPublishAccess(publishAccess, bts)
 	visibles := make(map[string]bool)
 	for _, ID := range IDs {
 		visibles[ID] = false
@@ -612,17 +608,17 @@ func FilterRefDefsByPublishIgnore(publishIgnore PublishAccess, refDefs []*RefDef
 	return
 }
 
-func FilterConfByPublishIgnore(publishIgnore PublishAccess, appConf *AppConf) (ret *AppConf) {
+func FilterConfByPublishAccess(publishAccess PublishAccess, appConf *AppConf) (ret *AppConf) {
 	ret = appConf
 	if appConf == nil {
 		return
 	}
 
-	appConf.UILayout = FilterUILayoutByPublishIgnore(publishIgnore, appConf.UILayout)
+	appConf.UILayout = FilterUILayoutByPublishAccess(publishAccess, appConf.UILayout)
 	return
 }
 
-func FilterUILayoutByPublishIgnore(publishIgnore PublishAccess, uiLayout *conf.UILayout) (ret *conf.UILayout) {
+func FilterUILayoutByPublishAccess(publishAccess PublishAccess, uiLayout *conf.UILayout) (ret *conf.UILayout) {
 	ret = uiLayout
 	if uiLayout == nil {
 		return
@@ -632,12 +628,12 @@ func FilterUILayoutByPublishIgnore(publishIgnore PublishAccess, uiLayout *conf.U
 	if !ok {
 		return
 	}
-	layout = filterLayoutItemByPublishIgnore(publishIgnore, layout)
+	layout = filterLayoutItemByPublishAccess(publishAccess, layout)
 	(*ret)["layout"] = layout
 	return
 }
 
-func filterLayoutItemByPublishIgnore(publishIgnore PublishAccess, item map[string]any) (ret map[string]any) {
+func filterLayoutItemByPublishAccess(publishAccess PublishAccess, item map[string]any) (ret map[string]any) {
 	ret = item
 	if item == nil {
 		return
@@ -666,7 +662,7 @@ func filterLayoutItemByPublishIgnore(publishIgnore PublishAccess, item map[strin
 		if bt == nil {
 			return
 		}
-		if !CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) {
+		if !CheckPathVisibleByPublishAccess(bt.BoxID, bt.Path, publishAccess) {
 			ret = nil
 		}
 	} else {
@@ -685,7 +681,7 @@ func filterLayoutItemByPublishIgnore(publishIgnore PublishAccess, item map[strin
 			if child == nil {
 				return
 			}
-			child = filterLayoutItemByPublishIgnore(publishIgnore, child)
+			child = filterLayoutItemByPublishAccess(publishAccess, child)
 			if child != nil {
 				newChildren = append(newChildren, child)
 			} else {
@@ -729,12 +725,12 @@ func filterLayoutItemByPublishIgnore(publishIgnore PublishAccess, item map[strin
 	return
 }
 
-func FilterGraphByPublishIgnore(publishIgnore PublishAccess, nodes []*GraphNode, links []*GraphLink) (retNodes []*GraphNode, retLinks []*GraphLink) {
+func FilterGraphByPublishAccess(publishAccess PublishAccess, nodes []*GraphNode, links []*GraphLink) (retNodes []*GraphNode, retLinks []*GraphLink) {
 	retNodes = []*GraphNode{}
 	retLinks = []*GraphLink{}
 	ignoreNodeIDs := []string{}
 	for _, node := range nodes {
-		if CheckPathAccessableByPublishIgnore(node.Box, node.Path, publishIgnore) {
+		if CheckPathVisibleByPublishAccess(node.Box, node.Path, publishAccess) {
 			retNodes = append(retNodes, node)
 		} else {
 			ignoreNodeIDs = append(ignoreNodeIDs, node.ID)
@@ -755,11 +751,11 @@ func FilterGraphByPublishIgnore(publishIgnore PublishAccess, nodes []*GraphNode,
 	return
 }
 
-func FilterTagsByPublishIgnore(publishIgnore PublishAccess, tags *Tags) (ret *Tags) {
+func FilterTagsByPublishAccess(publishAccess PublishAccess, tags *Tags) (ret *Tags) {
 	spans := sql.QueryTagSpans("")
 	labelCounts := make(map[string]int)
 	for _, span := range spans {
-		if CheckPathAccessableByPublishIgnore(span.Box, span.Path, publishIgnore) {
+		if CheckPathVisibleByPublishAccess(span.Box, span.Path, publishAccess) {
 			label := util.UnescapeHTML(span.Content)
 			labelCounts[label] += 1
 		}
@@ -793,7 +789,6 @@ func reassignTagCounts(tag *Tag, counts map[string]int) (ret *Tag) {
 
 func FilterLocalStorageByPublishAccess(publishAccess PublishAccess, localStorage map[string]any) (ret map[string]any) {
 	ret = localStorage
-	publishIgnore := GetInvisiblePublishAccess(publishAccess)
 	// 清空搜索历史记录
 	searchKeysItem := ret["local-searchkeys"]
 	if searchKeysItem != nil {
@@ -819,7 +814,7 @@ func FilterLocalStorageByPublishAccess(publishAccess PublishAccess, localStorage
 				id := idItem.(string)
 				bt := treenode.GetBlockTree(id)
 				if bt != nil {
-					if !CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) {
+					if !CheckPathVisibleByPublishAccess(bt.BoxID, bt.Path, publishAccess) {
 						docInfo["id"] = ""
 					}
 				}
@@ -830,12 +825,11 @@ func FilterLocalStorageByPublishAccess(publishAccess PublishAccess, localStorage
 }
 
 func FilterAssetContentByPublishAccess(c *gin.Context, publishAccess PublishAccess, assetContent []*AssetContent) (ret []*AssetContent) {
-	publishIgnore := GetInvisiblePublishAccess(publishAccess)
 	validAssets := []string{}
 	bts := treenode.GetBlockTreesByType("d")
 	for _, bt := range bts {
 		passwordID, password := GetPathPasswordByPublishAccess(bt.BoxID, bt.Path, publishAccess)
-		if CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) && (password == "" || CheckPublishAuthCookie(c, passwordID, password)) {
+		if CheckPathVisibleByPublishAccess(bt.BoxID, bt.Path, publishAccess) && (password == "" || CheckPublishAuthCookie(c, passwordID, password)) {
 			assets, err := DocAssets(bt.ID, false)
 			if err == nil {
 				validAssets = append(validAssets, assets...)
@@ -859,12 +853,11 @@ func FilterAssetContentByPublishAccess(c *gin.Context, publishAccess PublishAcce
 
 func FilterRecentDocsByPublishAccess(c *gin.Context, publishAccess PublishAccess, recentDocs []*RecentDoc) (ret []*RecentDoc) {
 	ret = []*RecentDoc{}
-	publishIgnore := GetInvisiblePublishAccess(publishAccess)
 	for _, recentDoc := range recentDocs {
 		bt := treenode.GetBlockTree(recentDoc.RootID)
 		if bt != nil {
 			passwordID, password := GetPathPasswordByPublishAccess(bt.BoxID, bt.Path, publishAccess)
-			if CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) && (passwordID == "" || CheckPublishAuthCookie(c, passwordID, password)) {
+			if CheckPathVisibleByPublishAccess(bt.BoxID, bt.Path, publishAccess) && (passwordID == "" || CheckPublishAuthCookie(c, passwordID, password)) {
 				ret = append(ret, recentDoc)
 			}
 		}
@@ -874,7 +867,6 @@ func FilterRecentDocsByPublishAccess(c *gin.Context, publishAccess PublishAccess
 
 func FilterCriteriaByPublishAccess(c *gin.Context, publishAccess PublishAccess, criteria []*Criterion) (ret []*Criterion) {
 	ret = []*Criterion{}
-	publishIgnore := GetInvisiblePublishAccess(publishAccess)
 	// IDPath 元素可能是笔记本 ID、文档 ID，或 "笔记本ID/文档ID[.sy]" 路径串，这里统一解析出文档 ID
 	blockIDs := map[string]struct{}{}
 	for _, criterion := range criteria {
@@ -913,7 +905,7 @@ func FilterCriteriaByPublishAccess(c *gin.Context, publishAccess PublishAccess, 
 				break
 			}
 			passwordID, password := GetPathPasswordByPublishAccess(bt.BoxID, bt.Path, publishAccess)
-			if !CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) || (passwordID != "" && !CheckPublishAuthCookie(c, passwordID, password)) {
+			if !CheckPathVisibleByPublishAccess(bt.BoxID, bt.Path, publishAccess) || (passwordID != "" && !CheckPublishAuthCookie(c, passwordID, password)) {
 				accessible = false
 				break
 			}

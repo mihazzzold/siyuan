@@ -63,8 +63,7 @@ func getDocOutline(c *gin.Context) {
 			if password != "" && !model.CheckPublishAuthCookie(c, passwordID, password) {
 				headings = nil
 			}
-			publishIgnore := model.GetDisablePublishAccess(publishAccess)
-			if !model.CheckPathAccessableByPublishIgnore(bt.BoxID, bt.Path, publishIgnore) {
+			if !model.CheckPathEnabledByPublishAccess(bt.BoxID, bt.Path, publishAccess) {
 				headings = nil
 			}
 		}

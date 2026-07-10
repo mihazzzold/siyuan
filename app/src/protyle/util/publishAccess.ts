@@ -2,6 +2,8 @@ import {Dialog} from "../../dialog";
 import {isMobile} from "../../util/functions";
 import {setPosition} from "../../util/setPosition";
 import {fetchPost} from "../../util/fetch";
+import {showMessage} from "../../dialog/message";
+import {writeText} from "./compatibility";
 
 export const getPublishAccessOptionByLevel = (level: TPublishAccessLevel) => {
     if (level == "protected") {
@@ -66,7 +68,7 @@ export const getPublishAccessLevel = (visible: boolean, password: string, disabl
     }
 };
 
-export const openPublishAccessDialog = (id: string, position: IPosition, callback: (access: IPublishAccessItem) => void) => {
+export const openPublishAccessDialog = (id: string, isDoc: boolean, position: IPosition, callback: (access: IPublishAccessItem) => void) => {
     const dialog = new Dialog({
         disableAnimation: true,
         transparent: true,
@@ -93,6 +95,17 @@ export const openPublishAccessDialog = (id: string, position: IPosition, callbac
         <svg class="b3-form__icon-icon"><use xlink:href="#iconKey"></use></svg>
         <input class="b3-form__icon-input b3-text-field fn__block" placeholder="${window.siyuan.languages.password}">
     </div>
+    <label class="fn__flex publish-access-dialog__children-label" style="align-items: center;padding: 8px 0 0 0;">
+        <input type="checkbox" class="b3-switch publish-access-dialog__children" checked>
+        <span class="fn__space"></span>
+        <span class="ft__on-surface ft__smaller" style="text-align: left;">${window.siyuan.languages.publishAccessIncludeChildren}</span>
+    </label>
+    <div class="publish-access-dialog__share fn__none">
+        <div class="fn__hr"></div>
+        <button class="b3-button b3-button--outline fn__block publish-access-dialog__link">
+            <svg><use xlink:href="#iconLink"></use></svg>${window.siyuan.languages.publishAccessCopyLink}
+        </button>
+    </div>
 </div>`
     });
     const containerElement = dialog.element.querySelector(".b3-dialog__container") as HTMLElement;
@@ -105,9 +118,28 @@ export const openPublishAccessDialog = (id: string, position: IPosition, callbac
             if (id == item.id) {
                 setPublishAccessLevelInDialog(dialog.element, getPublishAccessLevel(item.visible, item.password, item.disable));
                 (dialog.element.querySelector(".b3-text-field") as HTMLInputElement).value = item.password;
+                (dialog.element.querySelector(".publish-access-dialog__children") as HTMLInputElement).checked = !item.selfOnly;
                 return true;
             }
         });
+    });
+    // 由网关提供当前登录名，用于拼接对外分享链接；非网关部署时该接口不存在，不显示复制按钮
+    fetch("/gw/whoami").then((whoamiResponse) => {
+        if (!whoamiResponse.ok) {
+            return null;
+        }
+        return whoamiResponse.json();
+    }).then((whoami) => {
+        if (!whoami || !whoami.user) {
+            return;
+        }
+        dialog.element.querySelector(".publish-access-dialog__share").classList.remove("fn__none");
+        dialog.element.querySelector(".publish-access-dialog__link").addEventListener("click", () => {
+            writeText(`${window.location.origin}/@${whoami.user}${isDoc ? "/" + id : ""}`);
+            showMessage(window.siyuan.languages.copied);
+        });
+    }).catch(() => {
+        // 网关不可用时忽略
     });
 
     dialog.element.querySelectorAll(".block__icon").forEach((element: HTMLElement) => {
@@ -118,6 +150,7 @@ export const openPublishAccessDialog = (id: string, position: IPosition, callbac
     dialog.element.querySelector(".b3-button").addEventListener("click", () => {
         const element = dialog.element.querySelector(".block__icon.block__icon--active");
         const password = (dialog.element.querySelector("input.b3-text-field") as HTMLInputElement).value.trim();
+        const selfOnly = !(dialog.element.querySelector(".publish-access-dialog__children") as HTMLInputElement).checked;
         let accessOption = getPublishAccessOptionByLevel(element.getAttribute("data-level") as TPublishAccessLevel);
         accessOption = getPublishAccessOptionByLevel(getPublishAccessLevel(accessOption.visible, accessOption.hasPassword ? password : "", accessOption.disable));
         callback({
@@ -125,6 +158,7 @@ export const openPublishAccessDialog = (id: string, position: IPosition, callbac
             visible: accessOption.visible,
             password: accessOption.hasPassword ? password : "",
             disable: accessOption.disable,
+            selfOnly,
             iconHTML: accessOption.iconHTML
         });
         dialog.destroy();

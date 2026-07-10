@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "子ドキュメントにも適用",
+  "publishAccessCopyLink": "公開リンクをコピー",
   "mcpStatusConnected": "接続済み",
   "mcpStatusConnecting": "接続中",
   "mcpStatusFailed": "接続失敗",

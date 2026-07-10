@@ -1,4 +1,6 @@
 {
+  "publishAccessIncludeChildren": "นำไปใช้กับเอกสารย่อยด้วย",
+  "publishAccessCopyLink": "คัดลอกลิงก์สาธารณะ",
   "mcpStatusConnected": "เชื่อมต่อแล้ว",
   "mcpStatusConnecting": "กำลังเชื่อมต่อ",
   "mcpStatusFailed": "การเชื่อมต่อล้มเหลว",

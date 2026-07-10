@@ -1091,10 +1091,9 @@ func listDocsByPath(c *gin.Context) {
 	// 过滤掉发布不可见的文件
 	if model.IsReadOnlyRoleContext(c) {
 		publishAccess := model.GetPublishAccess()
-		publishIgnore := model.GetInvisiblePublishAccess(publishAccess)
 		tempFiles := []*model.File{}
 		for _, file := range files {
-			if model.CheckPathAccessableByPublishIgnore(notebook, file.Path, publishIgnore) {
+			if model.CheckPathVisibleByPublishAccess(notebook, file.Path, publishAccess) {
 				tempFiles = append(tempFiles, file)
 			}
 		}
@@ -1259,6 +1258,14 @@ func setPublishAccess(c *gin.Context) {
 	visible := arg["visible"].(bool)
 	password := arg["password"].(string)
 	disable := arg["disable"].(bool)
+	selfOnly := false
+	if selfOnlyArg, ok := arg["selfOnly"].(bool); ok {
+		selfOnly = selfOnlyArg
+	}
+	remove := arg["remove"] == true // 显式删除规则，恢复默认裁决
+
+	// 默认拒绝模式下「公开可见」规则是白名单条目，必须保留；默认允许模式下该规则等同默认，可删除
+	isDefault := !model.Conf.Publish.DefaultDeny && visible && len(password) == 0 && !disable && !selfOnly
 
 	foundIndex := -1
 	updated := false
@@ -1269,21 +1276,23 @@ func setPublishAccess(c *gin.Context) {
 		}
 	}
 	if foundIndex >= 0 {
-		if visible && len(password) == 0 && !disable {
+		if isDefault || remove {
 			publishAccess = append(publishAccess[:foundIndex], publishAccess[foundIndex+1:]...)
 		} else {
 			publishAccess[foundIndex].Visible = visible
 			publishAccess[foundIndex].Password = password
 			publishAccess[foundIndex].Disable = disable
+			publishAccess[foundIndex].SelfOnly = selfOnly
 		}
 		updated = true
 	} else {
-		if !visible || len(password) != 0 || disable {
+		if !isDefault && !remove {
 			publishAccess = append(publishAccess, &model.PublishAccessItem{
 				ID:       ID,
 				Visible:  visible,
 				Password: password,
 				Disable:  disable,
+				SelfOnly: selfOnly,
 			})
 			updated = true
 		}
@@ -1327,17 +1336,19 @@ func getPublishAccess(c *gin.Context) {
 			}
 		}
 		if !found {
+			// 无显式规则时返回默认裁决：默认拒绝模式下为禁止访问
 			maskedPublishAccess = append(maskedPublishAccess, &model.PublishAccessItem{
 				ID:       ID,
-				Visible:  true,
+				Visible:  !model.Conf.Publish.DefaultDeny,
 				Password: "",
-				Disable:  false,
+				Disable:  model.Conf.Publish.DefaultDeny,
 			})
 		}
 	}
 
 	ret.Data = map[string]any{
 		"publishAccess": maskedPublishAccess,
+		"defaultDeny":   model.Conf.Publish.DefaultDeny,
 	}
 }
 

@@ -1212,6 +1212,7 @@ interface IPublishAccessItem {
     visible: boolean,
     password: string,
     disable: boolean
+    selfOnly?: boolean
     iconHTML?: string
 }
 
