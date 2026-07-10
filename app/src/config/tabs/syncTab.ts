@@ -1,5 +1,4 @@
 import type {SettingTabBuilder} from "../setting/builder";
-import {registerAccountGroup} from "./accountUi";
 import {Constants} from "../../constants";
 import {fetchPost} from "../../util/fetch";
 import {confirmDialog} from "../../dialog/confirmDialog";
@@ -20,7 +19,7 @@ const registerSyncGroup = (tab: SettingTabBuilder) => {
         title: window.siyuan.languages.syncProvider,
         desc: window.siyuan.languages.syncProviderTip,
         options: [
-            {value: 0, label: "SiYuan"},
+            // 官方 SiYuan 云端（value 0，指向 fork 上游服务）暂不提供，仅保留自建 S3/WebDAV/本地
             {value: 2, label: "S3"},
             {value: 3, label: "WebDAV"},
             ...(["std", "docker"].includes(window.siyuan.config.system.container) ? [{value: 4, label: window.siyuan.languages.localFileSystem}] : []),
@@ -263,7 +262,8 @@ const mountRepoKey = (root: HTMLElement) => {
 };
 
 export const registerSyncTab = (tab: SettingTabBuilder) => {
-    registerAccountGroup(tab);
+    // 官方账号（ld246）登录/注册区块暂不启用，后续接入自建服务时再恢复
+    // registerAccountGroup(tab);
     registerSyncGroup(tab);
     registerRepoGroup(tab);
 };

@@ -270,6 +270,9 @@ func getAnnouncements() (ret []*Announcement) {
 	return
 }
 
+// forkUpdateRepo 检查更新所使用的 GitHub 仓库（owner/repo），指向本项目 fork 的发布页
+const forkUpdateRepo = "mihazzzold/siyuan"
+
 func CheckUpdate(showMsg bool) {
 	if !showMsg {
 		return
@@ -279,29 +282,37 @@ func CheckUpdate(showMsg bool) {
 		return
 	}
 
-	result, err := util.GetRhyResult(context.TODO(), showMsg)
+	// 从 fork 的 GitHub Releases 检查最新版本，而非官方云端接口
+	var release struct {
+		TagName string `json:"tag_name"`
+		HTMLURL string `json:"html_url"`
+	}
+	apiURL := "https://api.github.com/repos/" + forkUpdateRepo + "/releases/latest"
+	resp, err := req.C().R().
+		SetHeader("User-Agent", "SiYuan/"+util.Ver).
+		SetHeader("Accept", "application/vnd.github+json").
+		SetSuccessResult(&release).
+		Get(apiURL)
 	if err != nil {
+		logging.LogWarnf("check update from [%s] failed: %s", apiURL, err)
+		return
+	}
+	if !resp.IsSuccessState() || "" == release.TagName {
+		// fork 尚未发布任何版本或请求失败时静默处理，避免误报
 		return
 	}
 
-	ver := result["ver"].(string)
-	releaseLang := result["release"].(string)
-	if releaseLangArg := result["release_"+Conf.Lang]; nil != releaseLangArg {
-		releaseLang = releaseLangArg.(string)
-	} else if releaseLangArg := result["release_"+util.LangToLegacy(Conf.Lang)]; nil != releaseLangArg {
-		// 兼容云端 JSON 数据中历史下划线 key（release_zh_CN 等）
-		releaseLang = releaseLangArg.(string)
+	latestVer := strings.TrimPrefix(release.TagName, "v")
+	releaseURL := release.HTMLURL
+	if "" == releaseURL {
+		releaseURL = "https://github.com/" + forkUpdateRepo + "/releases"
 	}
 
-	if isVersionUpToDate(ver) {
+	if isVersionUpToDate(latestVer) {
 		util.PushUpdateMsg("update-notify", Conf.Language(10), 3000)
 	} else {
-		util.PushUpdateMsg("update-notify", fmt.Sprintf(Conf.Language(9), "<a href=\""+releaseLang+"\">"+releaseLang+"</a>"), 15000)
+		util.PushUpdateMsg("update-notify", fmt.Sprintf(Conf.Language(9), "<a href=\""+releaseURL+"\">"+releaseURL+"</a>"), 15000)
 	}
-	go func() {
-		defer logging.Recover()
-		checkDownloadInstallPkg()
-	}()
 }
 
 func isVersionUpToDate(releaseVer string) bool {

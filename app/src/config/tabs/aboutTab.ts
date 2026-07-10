@@ -96,6 +96,8 @@ const registerAboutInfoGroup = (tab: SettingTabBuilder) => {
             <span class="config-about__motto">${motto}</span>
         </div>
         <div class='fn__hr'></div>
+        <div class="b3-label__text">🔱 Форк: <a href="https://github.com/mihazzzold/siyuan" target="_blank">github.com/mihazzzold/siyuan</a> • на основе <a href="https://github.com/siyuan-note/siyuan" target="_blank">SiYuan</a> (AGPL-3.0)</div>
+        <div class='fn__hr'></div>
         ${window.siyuan.languages.about1}${window.siyuan.config.system.container === "harmony" ? ` • ${window.siyuan.languages.feedback} 845765@qq.com` : ""}
     </div>
     <div class="fn__space"></div>
