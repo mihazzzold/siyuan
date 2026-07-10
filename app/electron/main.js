@@ -235,7 +235,7 @@ const hotKey2Electron = (key) => {
  */
 const resolveAppLanguage = (languageTags) => {
     if (!languageTags || languageTags.length === 0) {
-        return "en";
+        return "ru";
     }
 
     const tag = languageTags[0].toLowerCase();
@@ -277,7 +277,7 @@ const resolveAppLanguage = (languageTags) => {
         "uk": "uk",
     };
 
-    return languageMapping[language] || "en";
+    return languageMapping[language] || "ru";
 };
 
 const exitApp = (port, errorWindowId) => {

@@ -2,7 +2,9 @@ themes/*/custom.css
 themes/*
 !themes/daylight/
 !themes/midnight/
+!themes/Asri/
 
 icons/*
 !icons/litheness/
 !icons/index.html
+!icons/QYL-Icons-Colorful/

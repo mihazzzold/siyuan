@@ -25,11 +25,11 @@
 </p>
 
 <p align="center">
-<a href="README.md">English</a>
+<a href="README.en.md">English</a>
 | <a href="README.zh-CN.md">中文</a>
 | <b>日本語</b>
 | <a href="README.tr.md">Türkçe</a>
-| <a href="README.ru.md">Русский</a>
+| <a href="README.md">Русский</a>
 </p>
 
 ---

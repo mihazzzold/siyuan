@@ -1,7 +1,7 @@
 <p align="center">
 <img alt="SiYuan" src="https://b3log.org/images/brand/siyuan-128.png">
 <br>
-<em>Refactor your thinking</em>
+<em>Рефакторинг мышления</em>
 <br><br>
 <a title="Build Status" target="_blank" href="https://github.com/siyuan-note/siyuan/actions/workflows/cd.yml"><img src="https://img.shields.io/github/actions/workflow/status/siyuan-note/siyuan/cd.yml?style=flat-square"></a>
 <a title="Releases" target="_blank" href="https://github.com/siyuan-note/siyuan/releases"><img src="https://img.shields.io/github/release/siyuan-note/siyuan.svg?style=flat-square&color=9CF"></a>
@@ -25,114 +25,113 @@
 </p>
 
 <p align="center">
-<b>English</b>
+<b>Русский</b>
+| <a href="README.en.md">English</a>
 | <a href="README.zh-CN.md">中文</a>
 | <a href="README.ja.md">日本語</a>
 | <a href="README.tr.md">Türkçe</a>
-| <a href="README.ru.md">Русский</a>
 </p>
 
 ---
 
-## Table of Contents
+## Содержание
 
-- [💡 Introduction](#-introduction)
-- [🔮 Features](#-features)
-- [🏗️ Architecture and Ecosystem](#-architecture-and-ecosystem)
-- [🌟 Star History](#-star-history)
-- [🗺️ Roadmap](#️-roadmap)
-- [🚀 Download Setup](#-download-setup)
-  - [App Market](#app-market)
-  - [Installation Package](#installation-package)
-  - [Package Manager](#package-manager)
-  - [Docker Hosting](#docker-hosting)
-  - [Unraid Hosting](#unraid-hosting)
-  - [TrueNAS Hosting](#truenas-hosting)
-  - [Insider Preview](#insider-preview)
-- [⌨️ Command-line Interface](#-command-line-interface)
-- [🏘️ Community](#️-community)
-- [🛠️ Development Guide](#️-development-guide)
-- [❓ FAQ](#-faq)
-  - [How does SiYuan store data?](#how-does-siyuan-store-data)
-  - [Does it support data synchronization through a third-party sync disk?](#does-it-support-data-synchronization-through-a-third-party-sync-disk)
-  - [Is SiYuan open source?](#is-siyuan-open-source)
-  - [How to upgrade to a new version?](#how-to-upgrade-to-a-new-version)
-  - [What if some blocks (such as paragraph blocks in list items) cannot find the block icon?](#what-if-some-blocks-such-as-paragraph-blocks-in-list-items-cannot-find-the-block-icon)
-  - [What should I do if the data repo key is lost?](#what-should-i-do-if-the-data-repo-key-is-lost)
-  - [Do I need to pay for it?](#do-i-need-to-pay-for-it)
-- [🙏 Acknowledgement](#-acknowledgement)
-  - [Contributors](#contributors)
+- [💡 Введение](#-введение)
+- [🔮 Возможности](#-возможности)
+- [🏗️ Архитектура и экосистема](#️-архитектура-и-экосистема)
+- [🌟 История звёзд](#-история-звёзд)
+- [🗺️ Дорожная карта](#️-дорожная-карта)
+- [🚀 Загрузка и установка](#-загрузка-и-установка)
+  - [Магазины приложений](#магазины-приложений)
+  - [Установочный пакет](#установочный-пакет)
+  - [Пакетный менеджер](#пакетный-менеджер)
+  - [Размещение в Docker](#размещение-в-docker)
+  - [Размещение в Unraid](#размещение-в-unraid)
+  - [Размещение в TrueNAS](#размещение-в-truenas)
+  - [Предварительные сборки (Insider Preview)](#предварительные-сборки-insider-preview)
+- [⌨️ Интерфейс командной строки](#️-интерфейс-командной-строки)
+- [🏘️ Сообщество](#️-сообщество)
+- [🛠️ Руководство по разработке](#️-руководство-по-разработке)
+- [❓ Часто задаваемые вопросы](#-часто-задаваемые-вопросы)
+  - [Как SiYuan хранит данные?](#как-siyuan-хранит-данные)
+  - [Поддерживается ли синхронизация данных через сторонние облачные диски?](#поддерживается-ли-синхронизация-данных-через-сторонние-облачные-диски)
+  - [SiYuan — открытое ПО?](#siyuan--открытое-по)
+  - [Как обновиться до новой версии?](#как-обновиться-до-новой-версии)
+  - [Что делать, если у некоторых блоков (например, абзацев внутри элементов списка) нет значка блока?](#что-делать-если-у-некоторых-блоков-например-абзацев-внутри-элементов-списка-нет-значка-блока)
+  - [Что делать, если потерян ключ репозитория данных?](#что-делать-если-потерян-ключ-репозитория-данных)
+  - [Нужно ли платить за использование?](#нужно-ли-платить-за-использование)
+- [🙏 Благодарности](#-благодарности)
+  - [Участники](#участники)
 
 ---
 
-## 💡 Introduction
+## 💡 Введение
 
-SiYuan is a privacy-first personal knowledge management system, supporting fine-grained block-level reference and Markdown
-WYSIWYG.
+SiYuan — это система управления личными знаниями, ориентированная на приватность, с поддержкой детальных ссылок на уровне блоков и Markdown WYSIWYG.
 
-Welcome to [SiYuan English Discussion Forum](https://liuyun.io) to learn more.
+Добро пожаловать на [форум SiYuan](https://liuyun.io), где можно узнать больше.
 
-Online user guide: [English](https://siyuan-en.b3log.org/)
+Онлайн-руководство пользователя: [English](https://siyuan-en.b3log.org/)
 
 ![feature0.png](https://b3logfile.com/file/2025/11/feature0-GfbhEqf.png)
 
 ![feature51.png](https://b3logfile.com/file/2025/11/feature5-1-7DJSfEP.png)
 
-## 🔮 Features
+## 🔮 Возможности
 
-Most features are free, even for commercial use.
+Большинство функций бесплатны, в том числе для коммерческого использования.
 
-- Content block
-  - Block-level reference and two-way links
-  - Custom attributes
-  - SQL query embed
-  - Protocol `siyuan://`
-- Editor
-  - Block-style
+- Блоки контента
+  - Ссылки на уровне блоков и двунаправленные связи
+  - Пользовательские атрибуты
+  - Встраивание SQL-запросов
+  - Протокол `siyuan://`
+- Редактор
+  - Блочный стиль
   - Markdown WYSIWYG
-  - List outline
-  - Block zoom-in
-  - Million-word large document editing
-  - Mathematical formulas, charts, flowcharts, Gantt charts, timing charts, staves, etc.
-  - Web clipping
-  - PDF Annotation link
-- Export
-  - Block ref and embed
-  - Standard Markdown with assets
-  - PDF, Word and HTML
-  - Copy to WeChat MP, Zhihu and Yuque
-- Database
-  - Table view
-- Flashcard spaced repetition
-- AI writing and Q/A chat via OpenAI API
-- Tesseract OCR 
-- Multi-tab, drag and drop to split screen
-- Template snippet
-- JavaScript/CSS snippet
-- Android/iOS/HarmonyOS App
-- Docker deployment
+  - Структура списков (outline)
+  - Фокусировка на блоке (zoom-in)
+  - Редактирование больших документов на миллион слов
+  - Математические формулы, диаграммы, блок-схемы, диаграммы Ганта, временные диаграммы, нотные станы и т. д.
+  - Веб-клиппер
+  - Связь с аннотациями PDF
+- Экспорт
+  - Ссылки на блоки и встраивание
+  - Стандартный Markdown вместе с ресурсами
+  - PDF, Word и HTML
+  - Копирование в WeChat MP, Zhihu и Yuque
+- База данных
+  - Табличное представление
+- Флеш-карточки с интервальным повторением
+- Написание текстов с ИИ и чат вопрос-ответ через OpenAI API
+- Tesseract OCR
+- Многовкладочный интерфейс, разделение экрана перетаскиванием
+- Шаблоны-сниппеты
+- Сниппеты JavaScript/CSS
+- Приложения для Android/iOS/HarmonyOS
+- Развёртывание в Docker
 - [API](https://github.com/siyuan-note/siyuan/blob/master/docs/API.md)
-- Community marketplace
+- Маркетплейс сообщества
 
-Some features are only available to paid members, for more details please refer to [Pricing](https://b3log.org/siyuan/en/pricing.html).
+Некоторые функции доступны только платным подписчикам, подробнее см. [Цены](https://b3log.org/siyuan/en/pricing.html).
 
-## 🏗️ Architecture and Ecosystem
+## 🏗️ Архитектура и экосистема
 
 ![SiYuan Arch](https://b3logfile.com/file/2023/05/SiYuan_Arch-Sgu8vXT.png "SiYuan Arch")
 
-| Project                                                  | Description           | Forks                                                                           | Stars                                                                                | 
-|----------------------------------------------------------|-----------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [lute](https://github.com/88250/lute)                    | Editor engine         | ![GitHub forks](https://img.shields.io/github/forks/88250/lute)                 | ![GitHub Repo stars](https://img.shields.io/github/stars/88250/lute)                 |
-| [chrome](https://github.com/siyuan-note/siyuan-chrome)   | Chrome/Edge extension | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-chrome)  | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-chrome)  |
-| [bazaar](https://github.com/siyuan-note/bazaar)          | Community marketplace | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/bazaar)         | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/bazaar)         |
-| [dejavu](https://github.com/siyuan-note/dejavu)          | Data repo             | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/dejavu)         | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/dejavu)         |
-| [petal](https://github.com/siyuan-note/petal)            | Plugin API            | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/petal)          | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/petal)          |
-| [android](https://github.com/siyuan-note/siyuan-android) | Android App           | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-android) | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-android) |
-| [ios](https://github.com/siyuan-note/siyuan-ios)         | iOS App               | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-ios)     | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-ios)     |
-| [harmony](https://github.com/siyuan-note/siyuan-harmony) | HarmonyOS App         | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-harmony) | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-harmony) |
-| [riff](https://github.com/siyuan-note/riff)              | Spaced repetition     | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/riff)           | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/riff)           |
+| Проект                                                   | Описание                  | Форки                                                                           | Звёзды                                                                               | 
+|----------------------------------------------------------|---------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [lute](https://github.com/88250/lute)                    | Движок редактора          | ![GitHub forks](https://img.shields.io/github/forks/88250/lute)                 | ![GitHub Repo stars](https://img.shields.io/github/stars/88250/lute)                 |
+| [chrome](https://github.com/siyuan-note/siyuan-chrome)   | Расширение Chrome/Edge    | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-chrome)  | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-chrome)  |
+| [bazaar](https://github.com/siyuan-note/bazaar)          | Маркетплейс сообщества    | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/bazaar)         | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/bazaar)         |
+| [dejavu](https://github.com/siyuan-note/dejavu)          | Репозиторий данных        | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/dejavu)         | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/dejavu)         |
+| [petal](https://github.com/siyuan-note/petal)            | API плагинов              | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/petal)          | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/petal)          |
+| [android](https://github.com/siyuan-note/siyuan-android) | Приложение Android        | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-android) | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-android) |
+| [ios](https://github.com/siyuan-note/siyuan-ios)         | Приложение iOS            | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-ios)     | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-ios)     |
+| [harmony](https://github.com/siyuan-note/siyuan-harmony) | Приложение HarmonyOS      | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-harmony) | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-harmony) |
+| [riff](https://github.com/siyuan-note/riff)              | Интервальное повторение   | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/riff)           | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/riff)           |
 
-## 🌟 Star History
+## 🌟 История звёзд
 
 <a href="https://star-history.com/#siyuan-note/siyuan&Date">
  <picture>
@@ -142,33 +141,33 @@ Some features are only available to paid members, for more details please refer 
  </picture>
 </a>
 
-## 🗺️ Roadmap
+## 🗺️ Дорожная карта
 
-- [SiYuan development plan and progress](https://github.com/orgs/siyuan-note/projects/1)
-- [SiYuan changelog](CHANGELOG.md)
+- [План развития и прогресс SiYuan](https://github.com/orgs/siyuan-note/projects/1)
+- [Журнал изменений SiYuan](CHANGELOG.md)
 
-## 🚀 Download Setup
+## 🚀 Загрузка и установка
 
-It is recommended to give priority to installing through the application market on desktop and mobile, so that you can upgrade the version with one click in the future.
+На настольных и мобильных устройствах рекомендуется в первую очередь устанавливать приложение через магазин приложений — так в будущем можно будет обновлять версию в один клик.
 
-### App Market
+### Магазины приложений
 
-Mobile:
+Мобильные:
 
 - [App Store](https://apps.apple.com/us/app/siyuan/id1583226508)
 - [Google Play](https://play.google.com/store/apps/details?id=org.b3log.siyuan)
 - [F-Droid](https://f-droid.org/packages/org.b3log.siyuan)
 
-Desktop:
+Настольные:
 
 - [Microsoft Store](https://apps.microsoft.com/detail/9p7hpmxp73k4)
 
-### Installation Package
+### Установочный пакет
 
 - [B3log](https://b3log.org/siyuan/en/download.html)
 - [GitHub](https://github.com/siyuan-note/siyuan/releases)
 
-### Package Manager
+### Пакетный менеджер
 
 #### `siyuan`
 
@@ -178,39 +177,39 @@ Desktop:
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/siyuan-note.svg)](https://repology.org/project/siyuan-note/versions)
 
-### Docker Hosting
+### Размещение в Docker
 
 <details>
-<summary>Docker Deployment</summary>
+<summary>Развёртывание в Docker</summary>
 
-#### Overview
+#### Обзор
 
-The easiest way to serve SiYuan on a server is to deploy it through Docker.
+Самый простой способ развернуть SiYuan на сервере — через Docker.
 
-- Image name `b3log/siyuan`
-- [Image URL](https://hub.docker.com/r/b3log/siyuan)
+- Имя образа: `b3log/siyuan`
+- [Страница образа](https://hub.docker.com/r/b3log/siyuan)
 
-#### File structure
+#### Структура файлов
 
-The overall program is located under `/opt/siyuan/`, which is basically the structure under the resources folder of the Electron installation package:
+Программа целиком расположена в `/opt/siyuan/` — по сути это структура папки resources установочного пакета Electron:
 
-- appearance: icon, theme, languages
-- guide: user guide document
-- stage: interface and static resources
-- kernel: kernel program
+- appearance: значки, темы, языки
+- guide: документы руководства пользователя
+- stage: интерфейс и статические ресурсы
+- kernel: программа ядра
 
-#### Entrypoint
+#### Точка входа
 
-The entry point is set when building the Docker image: `ENTRYPOINT ["/opt/siyuan/entrypoint.sh"]`. This script allows changing the `PUID` and `PGID` of the user that will run inside the container. This is especially relevant to solve permission issues when mounting directories from the host. The `PUID` (User ID) and `PGID` (Group ID) can be passed as environment variables, making it easier to ensure correct permissions when accessing host-mounted directories.
+Точка входа задаётся при сборке Docker-образа: `ENTRYPOINT ["/opt/siyuan/entrypoint.sh"]`. Этот скрипт позволяет изменить `PUID` и `PGID` пользователя, от имени которого будет работать процесс внутри контейнера. Это особенно важно для решения проблем с правами доступа при монтировании каталогов с хоста. `PUID` (ID пользователя) и `PGID` (ID группы) можно передать как переменные окружения, что упрощает обеспечение корректных прав при доступе к смонтированным каталогам хоста.
 
-Use the following parameters when running the container with `docker run b3log/siyuan`:
+Используйте следующие параметры при запуске контейнера командой `docker run b3log/siyuan`:
 
-> **Note:** Since v3.7.0, the `serve` subcommand must be passed explicitly (e.g. `docker run b3log/siyuan serve --workspace=...`). Run `docker run --rm b3log/siyuan serve --help` to see all serving options.
+> **Примечание:** Начиная с v3.7.0 подкоманду `serve` нужно передавать явно (например, `docker run b3log/siyuan serve --workspace=...`). Выполните `docker run --rm b3log/siyuan serve --help`, чтобы увидеть все параметры запуска.
 
-- `--workspace`: Specifies the workspace folder path, mounted to the container via `-v` on the host
-- `--accessAuthCode`: Specifies the lock screen password
+- `--workspace`: путь к папке рабочего пространства, монтируется в контейнер через `-v` на хосте
+- `--accessAuthCode`: пароль экрана блокировки
 
-More parameters can be found using `--help`. Here’s an example of a startup command with the new environment variables:
+Дополнительные параметры можно узнать с помощью `--help`. Вот пример команды запуска с новыми переменными окружения:
 
 ```bash
 docker run -d \
@@ -223,18 +222,18 @@ docker run -d \
   --accessAuthCode=xxx
 ```
 
-- `PUID`: Custom user ID (optional, defaults to `1000` if not provided)
-- `PGID`: Custom group ID (optional, defaults to `1000` if not provided)
-- `workspace_dir_host`: The workspace folder path on the host
-- `workspace_dir_container`: The path of the workspace folder in the container, as specified in `--workspace`
-  - Alternatively, it's possible to set the path via the `SIYUAN_WORKSPACE_PATH` env variable. The commandline will always have the priority, if both are set
-- `accessAuthCode`: Lock screen password (please **be sure to modify**, otherwise anyone can access your data)
-  - Alternatively, it's possible to set the lock screen password via the `SIYUAN_ACCESS_AUTH_CODE` env variable. The commandline will always have the priority, if both are set
-  - To disable the lock screen password set the env variable `SIYUAN_ACCESS_AUTH_CODE_BYPASS=true`
-- `SIYUAN_LANG`: Interface language (optional, defaults to `en` if unset in Docker). Accepts BCP 47 tags like `zh-CN`/`zh-TW`/`en`/`ja`/`pt-BR`; legacy underscore values like `zh_CN`/`en_US` are also accepted for backward compatibility. Omit it if you want the language chosen in **Settings** to persist across restarts; if set, it is applied on every startup and overrides the saved setting
-  - Alternatively, use the `--lang` command-line parameter. If both are set, the command-line takes priority
+- `PUID`: пользовательский ID (необязательно, по умолчанию `1000`)
+- `PGID`: ID группы (необязательно, по умолчанию `1000`)
+- `workspace_dir_host`: путь к папке рабочего пространства на хосте
+- `workspace_dir_container`: путь к папке рабочего пространства в контейнере, указанный в `--workspace`
+  - Альтернативно путь можно задать через переменную окружения `SIYUAN_WORKSPACE_PATH`. Если заданы обе, приоритет всегда у командной строки
+- `accessAuthCode`: пароль экрана блокировки (обязательно **измените его**, иначе любой сможет получить доступ к вашим данным)
+  - Альтернативно пароль экрана блокировки можно задать через переменную окружения `SIYUAN_ACCESS_AUTH_CODE`. Если заданы обе, приоритет всегда у командной строки
+  - Чтобы отключить пароль экрана блокировки, установите переменную окружения `SIYUAN_ACCESS_AUTH_CODE_BYPASS=true`
+- `SIYUAN_LANG`: язык интерфейса (необязательно, в Docker по умолчанию `en`, если не задан). Принимает теги BCP 47, такие как `zh-CN`/`zh-TW`/`en`/`ja`/`pt-BR`; устаревшие значения с подчёркиванием вроде `zh_CN`/`en_US` также принимаются для обратной совместимости. Не задавайте эту переменную, если хотите, чтобы язык, выбранный в **Настройках**, сохранялся между перезапусками; если она задана, то применяется при каждом запуске и переопределяет сохранённую настройку
+  - Альтернативно используйте параметр командной строки `--lang`. Если заданы оба, приоритет у командной строки
 
-To simplify things, it is recommended to configure the workspace folder path to be consistent on the host and container, such as having both `workspace_dir_host` and `workspace_dir_container` configured as `/siyuan/workspace`. The corresponding startup command would be:
+Для простоты рекомендуется настроить одинаковый путь к папке рабочего пространства на хосте и в контейнере, например задать и `workspace_dir_host`, и `workspace_dir_container` как `/siyuan/workspace`. Соответствующая команда запуска:
 
 ```bash
 docker run -d \
@@ -249,7 +248,7 @@ docker run -d \
 
 #### Docker Compose
 
-For users running SiYuan with Docker Compose, the environment variables `PUID` and `PGID` can be passed to customize the user and group IDs. Here's an example of a Docker Compose configuration:
+Пользователи, запускающие SiYuan через Docker Compose, могут передавать переменные окружения `PUID` и `PGID` для настройки ID пользователя и группы. Пример конфигурации Docker Compose:
 
 ```yaml
 version: "3.9"
@@ -263,56 +262,56 @@ services:
       - /siyuan/workspace:/siyuan/workspace
     restart: unless-stopped
     environment:
-      - TZ=${YOUR_TIME_ZONE}    # A list of time zone identifiers can be found at https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-      - PUID=${YOUR_USER_PUID}  # Customize user ID
-      - PGID=${YOUR_USER_PGID}  # Customize group ID
+      - TZ=${YOUR_TIME_ZONE}    # Список идентификаторов часовых поясов: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+      - PUID=${YOUR_USER_PUID}  # Пользовательский ID
+      - PGID=${YOUR_USER_PGID}  # ID группы
 ```
 
-In this setup:
+В этой конфигурации:
 
-- `PUID` and `PGID` are set dynamically and passed to the container
-- If these variables are not provided, the default `1000` will be used
+- `PUID` и `PGID` задаются динамически и передаются в контейнер
+- Если эти переменные не указаны, используется значение по умолчанию `1000`
 
-By specifying `PUID` and `PGID` in the environment, you avoid the need to explicitly set the `user` directive (`user: '1000:1000'`) in the compose file. The container will dynamically adjust the user and group based on these environment variables at startup.
+Указывая `PUID` и `PGID` в переменных окружения, вы избавляетесь от необходимости явно задавать директиву `user` (`user: '1000:1000'`) в compose-файле. Контейнер динамически настроит пользователя и группу на основе этих переменных при запуске.
 
-#### User Permissions
+#### Права пользователя
 
-In the image, the `entrypoint.sh` script ensures the creation of the `siyuan` user and group with the specified `PUID` and `PGID`. Therefore, when the host creates a workspace folder, pay attention to setting the user and group ownership of the folder to match the `PUID` and `PGID` you plan to use. For example:
+В образе скрипт `entrypoint.sh` обеспечивает создание пользователя и группы `siyuan` с указанными `PUID` и `PGID`. Поэтому при создании папки рабочего пространства на хосте обратите внимание на то, чтобы владелец и группа папки соответствовали `PUID` и `PGID`, которые вы планируете использовать. Например:
 
 ```bash
 chown -R 1001:1002 /siyuan/workspace
 ```
 
-If you use custom `PUID` and `PGID` values, the entrypoint script will ensure that the correct user and group are created inside the container, and ownership of mounted volumes will be adjusted accordingly. There’s no need to manually pass `-u` in `docker run` or `docker-compose` as the environment variables will handle the customization.
+Если вы используете собственные значения `PUID` и `PGID`, скрипт точки входа обеспечит создание правильного пользователя и группы внутри контейнера, а владелец смонтированных томов будет соответствующим образом скорректирован. Нет необходимости вручную передавать `-u` в `docker run` или `docker-compose` — переменные окружения выполнят настройку.
 
-#### Hidden port
+#### Скрытие порта
 
-Use an NGINX reverse proxy to hide port 6806. Please note:
+Используйте обратный прокси NGINX, чтобы скрыть порт 6806. Обратите внимание:
 
-- Configure the WebSocket reverse proxy for `/ws`
+- Настройте обратное проксирование WebSocket для `/ws`
 
-#### Note
+#### Примечания
 
-- Be sure to confirm the correctness of the mounted volume, otherwise the data will be lost after the container is deleted
-- Do not use URL rewriting for redirection, otherwise there may be problems with authentication, it is recommended to configure a reverse proxy
-- If you encounter permission issues, verify that the `PUID` and `PGID` environment variables match the ownership of the mounted directories on your host system
+- Обязательно проверьте корректность смонтированного тома, иначе данные будут потеряны после удаления контейнера
+- Не используйте переписывание URL (URL rewriting) для перенаправления, иначе могут возникнуть проблемы с аутентификацией; рекомендуется настроить обратный прокси
+- При проблемах с правами доступа убедитесь, что переменные окружения `PUID` и `PGID` соответствуют владельцу смонтированных каталогов на хосте
 
-#### Limitations
+#### Ограничения
 
-- Does not support desktop and mobile application connections, only supports use on browsers
-- Export to PDF, HTML and Word formats is not supported
-- Import Markdown file is not supported
+- Не поддерживается подключение настольных и мобильных приложений, работа возможна только через браузер
+- Не поддерживается экспорт в форматы PDF, HTML и Word
+- Не поддерживается импорт Markdown-файлов
 
 </details>
 
-### Unraid Hosting
+### Размещение в Unraid
 
 <details>
-<summary>Unraid Deployment</summary>
+<summary>Развёртывание в Unraid</summary>
 
-Note: First run `chown -R 1000:1000 /mnt/user/appdata/siyuan` in the terminal
+Примечание: сначала выполните в терминале `chown -R 1000:1000 /mnt/user/appdata/siyuan`
 
-Template reference:
+Шаблон для справки:
 
 ```
 Web UI: 6806
@@ -321,17 +320,17 @@ Container Path: /home/siyuan
 Host path: /mnt/user/appdata/siyuan
 PUID: 1000
 PGID: 1000
-Publish parameters: serve --accessAuthCode=******(Lock screen password)
+Publish parameters: serve --accessAuthCode=******(пароль экрана блокировки)
 ```
 
 </details>
 
-### TrueNAS Hosting
+### Размещение в TrueNAS
 
 <details>
-<summary>TrueNAS Deployment</summary>
+<summary>Развёртывание в TrueNAS</summary>
 
-Note: First, run the commands below in the TrueNAS Shell. Please update `Pool_1/Apps_Data/siyuan` to match your dataset path.
+Примечание: сначала выполните приведённые ниже команды в TrueNAS Shell. Замените `Pool_1/Apps_Data/siyuan` на путь к вашему датасету.
 
 ```shell
 zfs create Pool_1/Apps_Data/siyuan
@@ -339,9 +338,9 @@ chown -R 1001:1002 /mnt/Pool_1/Apps_Data/siyuan
 chmod 755 /mnt/Pool_1/Apps_Data/siyuan
 ```
 
-Navigate to Apps - DiscoverApps - More Options (on top right, besides Custom App) - Install via YAML
+Перейдите в Apps - DiscoverApps - More Options (сверху справа, рядом с Custom App) - Install via YAML
 
-Template reference:
+Шаблон для справки:
 
 ```yaml
 services:
@@ -352,60 +351,60 @@ services:
     ports:
       - 6806:6806
     volumes:
-      - /mnt/Pool_1/Apps_Data/siyuan:/siyuan/workspace  # Adjust to your dataset path 
+      - /mnt/Pool_1/Apps_Data/siyuan:/siyuan/workspace  # Замените на путь к вашему датасету
     restart: unless-stopped
     environment:
-      - TZ=America/New_York  # Replace with your timezone if needed
+      - TZ=America/New_York  # При необходимости замените на свой часовой пояс
       - PUID=1001
       - PGID=1002
 ```
 
 </details>
 
-### Insider Preview
+### Предварительные сборки (Insider Preview)
 
-We release insider preview before major updates, please visit [https://github.com/siyuan-note/insider](https://github.com/siyuan-note/insider).
+Перед крупными обновлениями мы выпускаем предварительные сборки, см. [https://github.com/siyuan-note/insider](https://github.com/siyuan-note/insider).
 
-## ⌨️ Command-line Interface
+## ⌨️ Интерфейс командной строки
 
-The built-in CLI provides direct access to workspace data — no running server required.
+Встроенный CLI предоставляет прямой доступ к данным рабочего пространства — запущенный сервер не требуется.
 
-### Quick Start
+### Быстрый старт
 
 ```bash
-# List all notebooks
+# Список всех блокнотов
 siyuan notebook list -w ~/SiYuan
 
-# Full-text search with JSON output
+# Полнотекстовый поиск с выводом в JSON
 siyuan search "keyword" -w ~/SiYuan -f json
 
-# Export a document as Markdown
+# Экспорт документа в Markdown
 siyuan export md --id <block-id> -w ~/SiYuan
 ```
 
-### Available Commands
+### Доступные команды
 
-| Category | Commands |
+| Категория | Команды |
 |----------|----------|
-| Notebooks & Documents | `notebook`, `document`, `dailynote` — CRUD and daily notes |
-| Content | `block`, `attr`, `outline` — block read/write, attributes, outline |
-| Metadata | `tag`, `bookmark`, `template` — tags, bookmarks, template snippets |
-| Queries | `search`, `sql` — full-text and SQL queries |
-| References | `ref` — backlinks and mentions |
-| Import/Export | `export`, `import`, `inbox` — Markdown, HTML, preview, Word, .sy.zip, Data, cloud inbox |
-| Data Management | `repo`, `history`, `sync` — snapshots, versions, cloud sync |
-| Utilities | `asset`, `file` — resources and file system |
-| Database | `database` — attribute view management |
-| Server | `serve` — start the kernel HTTP server |
-| Workspace & System | `workspace`, `system` — list, inspect, system info |
+| Блокноты и документы | `notebook`, `document`, `dailynote` — CRUD и ежедневные заметки |
+| Контент | `block`, `attr`, `outline` — чтение/запись блоков, атрибуты, структура |
+| Метаданные | `tag`, `bookmark`, `template` — теги, закладки, шаблоны-сниппеты |
+| Запросы | `search`, `sql` — полнотекстовый поиск и SQL-запросы |
+| Ссылки | `ref` — обратные ссылки и упоминания |
+| Импорт/экспорт | `export`, `import`, `inbox` — Markdown, HTML, предпросмотр, Word, .sy.zip, Data, облачный инбокс |
+| Управление данными | `repo`, `history`, `sync` — снимки, версии, облачная синхронизация |
+| Утилиты | `asset`, `file` — ресурсы и файловая система |
+| База данных | `database` — управление attribute view |
+| Сервер | `serve` — запуск HTTP-сервера ядра |
+| Рабочее пространство и система | `workspace`, `system` — список, просмотр, информация о системе |
 
-Run `siyuan --help` for the full command tree. Use `-f json` (default is `-f table`) for script-friendly output. Most mutating commands also support `--dry-run` to preview changes without applying them.
+Выполните `siyuan --help`, чтобы увидеть полное дерево команд. Используйте `-f json` (по умолчанию `-f table`) для вывода, удобного для скриптов. Большинство изменяющих команд также поддерживают `--dry-run` — предпросмотр изменений без их применения.
 
-### Setup
+### Настройка
 
-The CLI binary is `SiYuan-Kernel` under `<install>/resources/kernel`.
-Windows installer adds it to PATH automatically.
-On macOS/Linux, create a symlink manually:
+Бинарный файл CLI — `SiYuan-Kernel` в `<install>/resources/kernel`.
+Установщик для Windows добавляет его в PATH автоматически.
+На macOS/Linux создайте символическую ссылку вручную:
 
 ```bash
 # macOS
@@ -415,93 +414,93 @@ ln -s /Applications/SiYuan.app/Contents/Resources/kernel/SiYuan-Kernel /usr/loca
 ln -s /path/to/SiYuan/resources/kernel/SiYuan-Kernel /usr/local/bin/siyuan
 ```
 
-## 🏘️ Community
+## 🏘️ Сообщество
 
-- [English Discussion Forum](https://liuyun.io)
-- [User community summary](https://liuyun.io/article/1687779743723)
+- [Форум обсуждений (англ.)](https://liuyun.io)
+- [Сводка сообществ пользователей](https://liuyun.io/article/1687779743723)
 - [Awesome SiYuan](https://github.com/siyuan-note/awesome)
 
-## 🛠️ Development Guide
+## 🛠️ Руководство по разработке
 
-See [Development Guide](https://github.com/siyuan-note/siyuan/blob/master/.github/CONTRIBUTING.md).
+См. [Руководство по разработке](https://github.com/siyuan-note/siyuan/blob/master/.github/CONTRIBUTING.md).
 
-## ❓ FAQ
+## ❓ Часто задаваемые вопросы
 
-### How does SiYuan store data?
+### Как SiYuan хранит данные?
 
-The data is saved in the workspace data folder:
+Данные сохраняются в папке data рабочего пространства:
 
-- `assets` is used to save all inserted assets
-- `emojis` is used to save emoji images
-- `snippets` is used to save code snippets
-- `storage` is used to save query conditions, layouts and flashcards, etc.
-- `templates` is used to save template snippets
-- `widgets` is used to save widgets
-- `plugins` is used to save plugins
-- `public` is used to save public data
-- The rest of the folders are the notebook folders created by the user, files with the suffix of `.sy` in the notebook folder are used to save the document data, and the data format is JSON
+- `assets` — все вставленные ресурсы
+- `emojis` — изображения эмодзи
+- `snippets` — сниппеты кода
+- `storage` — условия запросов, раскладки, флеш-карточки и т. д.
+- `templates` — шаблоны-сниппеты
+- `widgets` — виджеты
+- `plugins` — плагины
+- `public` — публичные данные
+- Остальные папки — это блокноты, созданные пользователем; файлы с расширением `.sy` в папке блокнота хранят данные документов, формат данных — JSON
 
-### Does it support data synchronization through a third-party sync disk?
+### Поддерживается ли синхронизация данных через сторонние облачные диски?
 
-Data synchronization through third-party synchronization disks is not supported, otherwise data may be corrupted.
+Синхронизация данных через сторонние облачные диски не поддерживается, иначе данные могут быть повреждены.
 
-Although it does not support third-party sync disks, it supports connecting with third-party cloud storage (Members' privileges).
+Хотя сторонние диски синхронизации не поддерживаются, поддерживается подключение к стороннему облачному хранилищу (привилегия подписчиков).
 
-In addition, you can also consider manually exporting and importing data to achieve data synchronization:
+Кроме того, можно рассмотреть ручной экспорт и импорт данных для синхронизации:
 
-- Desktop: <kbd>Settings</kbd> - <kbd>Export</kbd> - <kbd>Export Data</kbd> / <kbd>Import Data</kbd>
-- Mobile: <kbd>Right column</kbd> - <kbd>About</kbd> - <kbd>Export Data</kbd> / <kbd>Import Data</kbd>
+- Настольная версия: <kbd>Настройки</kbd> - <kbd>Экспорт</kbd> - <kbd>Экспорт данных</kbd> / <kbd>Импорт данных</kbd>
+- Мобильная версия: <kbd>Правая панель</kbd> - <kbd>О программе</kbd> - <kbd>Экспорт данных</kbd> / <kbd>Импорт данных</kbd>
 
-### Is SiYuan open source?
+### SiYuan — открытое ПО?
 
-SiYuan is completely open source, and contributions are welcome:
+SiYuan полностью открыт, вклад приветствуется:
 
-- [User Interface and Kernel](https://github.com/siyuan-note/siyuan)
+- [Пользовательский интерфейс и ядро](https://github.com/siyuan-note/siyuan)
 - [Android](https://github.com/siyuan-note/siyuan-android)
 - [iOS](https://github.com/siyuan-note/siyuan-ios)
 - [HarmonyOS](https://github.com/siyuan-note/siyuan-harmony)
-- [Chrome Clipping Extension](https://github.com/siyuan-note/siyuan-chrome)
+- [Расширение-клиппер для Chrome](https://github.com/siyuan-note/siyuan-chrome)
 
-For more details, please refer to [Development Guide](https://github.com/siyuan-note/siyuan/blob/master/.github/CONTRIBUTING.md).
+Подробнее см. [Руководство по разработке](https://github.com/siyuan-note/siyuan/blob/master/.github/CONTRIBUTING.md).
 
-### How to upgrade to a new version?
+### Как обновиться до новой версии?
 
-- If installed via app store, please update via app store
-- If it is installed through the installation package on the desktop, you can enable the option of <kbd>Settings</kbd> - <kbd>About</kbd> - <kbd>Automatically download update installation package</kbd>, so that SiYuan will automatically download the latest version of the installation package and prompt to install
-- If it is installed by manual installation package, please download the installation package again to install
+- Если приложение установлено через магазин приложений, обновляйте его через магазин
+- Если оно установлено через установочный пакет на настольном компьютере, можно включить опцию <kbd>Настройки</kbd> - <kbd>О программе</kbd> - <kbd>Автоматически загружать установочный пакет обновления</kbd> — тогда SiYuan будет автоматически скачивать последнюю версию установочного пакета и предлагать установку
+- Если оно установлено вручную из установочного пакета, скачайте установочный пакет заново и установите
 
-You can <kbd>Check update</kbd> in <kbd>Settings</kbd> - <kbd>About</kbd> - <kbd>Current Version</kbd>, or pay attention to [Official Download](https://b3log.org/siyuan/en/download.html) or [GitHub Releases](https://github.com/siyuan-note/siyuan/releases) to get the new version.
+Проверить обновления можно в <kbd>Настройки</kbd> - <kbd>О программе</kbd> - <kbd>Текущая версия</kbd> - <kbd>Проверить обновление</kbd>, либо следите за [официальной страницей загрузки](https://b3log.org/siyuan/en/download.html) или [GitHub Releases](https://github.com/siyuan-note/siyuan/releases), чтобы получать новые версии.
 
-### What if some blocks (such as paragraph blocks in list items) cannot find the block icon?
+### Что делать, если у некоторых блоков (например, абзацев внутри элементов списка) нет значка блока?
 
-The block icon is omitted for the first sub-block under the list item. You can move the cursor into this block and trigger its block menu with <kbd>Ctrl+/</kbd> .
+Значок блока не отображается у первого дочернего блока внутри элемента списка. Можно поместить курсор в этот блок и вызвать его меню сочетанием <kbd>Ctrl+/</kbd>.
 
-### What should I do if the data repo key is lost?
+### Что делать, если потерян ключ репозитория данных?
 
-- If the data repo key is correctly initialized on multiple devices previously, the key is the same on all devices and can be retrieved in <kbd>Settings</kbd> - <kbd>About</kbd> - <kbd>Data repo key</kbd> - <kbd>Copy key string</kbd>
-- If it has not been configured correctly before (for example, the keys on multiple devices are inconsistent) or all devices are unavailable and the key string cannot be obtained, you can reset the key by following the steps below:
+- Если ключ репозитория данных ранее был корректно инициализирован на нескольких устройствах, он одинаков на всех устройствах, и его можно получить в <kbd>Настройки</kbd> - <kbd>О программе</kbd> - <kbd>Ключ репозитория данных</kbd> - <kbd>Скопировать строку ключа</kbd>
+- Если он не был настроен корректно (например, ключи на разных устройствах различаются) или все устройства недоступны и строку ключа получить невозможно, ключ можно сбросить следующим образом:
 
-  1. Manually back up the data, you can use <kbd>Export Data</kbd> or directly copy the <kbd>workspace/data/</kbd> folder on the file system
-  2. <kbd>Settings</kbd> - <kbd>About</kbd> - <kbd>Data repo key</kbd> - <kbd>Reset data repo</kbd>
-  3. Reinitialize the data repo key. After initializing the key on one device, other devices import the key
-  4. The cloud uses the new synchronization directory, the old synchronization directory is no longer available and can be deleted
-  5. The existing cloud snapshots are no longer available and can be deleted
+  1. Вручную сделайте резервную копию данных: используйте <kbd>Экспорт данных</kbd> или просто скопируйте папку <kbd>workspace/data/</kbd> в файловой системе
+  2. <kbd>Настройки</kbd> - <kbd>О программе</kbd> - <kbd>Ключ репозитория данных</kbd> - <kbd>Сбросить репозиторий данных</kbd>
+  3. Заново инициализируйте ключ репозитория данных. После инициализации ключа на одном устройстве импортируйте его на остальных
+  4. Облако использует новый каталог синхронизации, старый каталог синхронизации больше недоступен и может быть удалён
+  5. Существующие облачные снимки больше недоступны и могут быть удалены
 
-### Do I need to pay for it?
+### Нужно ли платить за использование?
 
-Most features are free, even for commercial use.
+Большинство функций бесплатны, в том числе для коммерческого использования.
 
-Member's privileges can only be used after payment, please refer to [Pricing](https://b3log.org/siyuan/en/pricing.html).
+Привилегии подписчика доступны только после оплаты, подробнее см. [Цены](https://b3log.org/siyuan/en/pricing.html).
 
-## 🙏 Acknowledgement
+## 🙏 Благодарности
 
-The birth of SiYuan is inseparable from many open source projects and contributors. Please refer to the project source code kernel/go.mod, app/package.json and project homepage.
+Появление SiYuan было бы невозможно без множества проектов с открытым исходным кодом и их участников. См. исходный код проекта: kernel/go.mod, app/package.json и домашние страницы проектов.
 
-The growth of SiYuan is inseparable from user feedback and promotion. Thank you, everyone, for your help with SiYuan ❤️
+Рост SiYuan неотделим от отзывов и поддержки пользователей. Спасибо всем за помощь SiYuan ❤️
 
-### Contributors
+### Участники
 
-Welcome to join us and contribute code to SiYuan together.
+Присоединяйтесь к нам и вносите свой вклад в код SiYuan вместе с нами.
 
 <a href="https://github.com/siyuan-note/siyuan/graphs/contributors">
    <img src="https://contrib.rocks/image?repo=siyuan-note/siyuan" />

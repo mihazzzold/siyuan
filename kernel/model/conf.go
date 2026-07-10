@@ -165,11 +165,11 @@ func InitConf() {
 		// DetectAll 返回按优先级排序的系统语言 Tag 列表（如 en-US、en）
 		deviceLangTags, detectErr := locale.DetectAll()
 		if detectErr != nil {
-			logging.LogDebugf("check device locale failed [%s], using default language [en]", detectErr)
-			util.Lang = "en"
+			logging.LogDebugf("check device locale failed [%s], using default language [ru]", detectErr)
+			util.Lang = "ru"
 		} else if len(deviceLangTags) == 0 {
-			logging.LogDebugf("device locale list is empty, using default language [en]")
-			util.Lang = "en"
+			logging.LogDebugf("device locale list is empty, using default language [ru]")
+			util.Lang = "ru"
 		} else {
 			// siYuanLangNames 与 bcp47Tags 按相同顺序排列，Match 返回的 matchIndex 即对应 siYuanLangNames 中的语言名
 			siYuanLangNames := make([]string, 0, len(util.Langs))
@@ -183,11 +183,11 @@ func InitConf() {
 				siYuanLangNames = append(siYuanLangNames, langName)
 				bcp47Tags = append(bcp47Tags, bcp47Tag)
 			}
-			util.Lang = "en"
+			util.Lang = "ru"
 			if len(bcp47Tags) > 0 {
 				matcher := language.NewMatcher(bcp47Tags)
 				_, matchIndex, confidence := matcher.Match(deviceLangTags...)
-				// 系统语言与 SiYuan 支持列表不存在有效匹配时 confidence 为 No，保持默认 en
+				// 系统语言与 SiYuan 支持列表不存在有效匹配时 confidence 为 No，保持默认 ru
 				if confidence != language.No {
 					util.Lang = siYuanLangNames[matchIndex]
 				}
