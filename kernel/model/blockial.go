@@ -199,6 +199,12 @@ func SetBlockAttrs(id string, nameValues map[string]string) (err error) {
 	}
 
 	err = setNodeAttrs(node, tree, nameValues)
+	if nil == err {
+		// 文档图标变化后，重建其所有祖先文档的子文档结构目录，使目录中的图标同步更新
+		if _, ok := nameValues["icon"]; ok && node.ID == tree.Root.ID {
+			rebuildParentChildStructure(tree.Box, tree.Path)
+		}
+	}
 	return
 }
 

@@ -1397,6 +1397,13 @@ func MoveDocs(fromPaths []string, toBoxID, toPath string, callback any) (err err
 		if err != nil {
 			return
 		}
+		// 重建源父文档的子文档结构目录（子文档被移走）
+		rebuildParentChildStructure(fromBox.ID, fromPath)
+	}
+	// 重建目标父文档及其祖先的子文档结构目录（接收了移入的子文档）
+	if "/" != toPath {
+		rebuildChildStructure(toBoxID, path.Base(strings.TrimSuffix(toPath, ".sy")))
+		rebuildParentChildStructure(toBoxID, toPath)
 	}
 	cache.ClearDocsIAL()
 	IncSync()
@@ -1578,6 +1585,9 @@ func RemoveDoc(boxID, p string) {
 	IncSync()
 
 	refreshParentDocInfo(tree)
+
+	// 删除子文档后重建父文档的子文档结构目录
+	rebuildParentChildStructure(boxID, p)
 }
 
 func RemoveDocs(paths []string) {
@@ -1906,48 +1916,192 @@ func createDoc(boxID, p, title, dom string, titleEmpty bool) (tree *parse.Tree, 
 	PerformTransactions(&[]*Transaction{transaction})
 	FlushTxQueue()
 
-	// 在父文档顶部插入指向新建子文档的动态引用，构建子文档结构目录
-	insertChildDocRefToParent(p, id, title)
+	// 在父文档顶部维护一个可折叠的子文档结构目录（带图标的嵌套列表）
+	rebuildParentChildStructure(boxID, p)
 	return
 }
 
-// insertChildDocRefToParent 若新建的是某个文档的子文档，则在父文档顶部插入一个指向子文档的动态块引用。
-// 引用采用动态锚文本，子文档改名后引用文本随之更新，从而在父文档中形成子文档结构目录。
-func insertChildDocRefToParent(childPath, childID, childTitle string) {
+// childStructureAttr 标记父文档顶部自动维护的子文档结构目录列表块
+const childStructureAttr = "custom-child-structure"
+
+// rebuildParentChildStructure 沿文档路径向上重建所有祖先文档的子文档结构目录。
+// 因为新增/删除/移动一个后代文档会改变其所有祖先文档的子树，所以需要逐级向上重建，
+// 使每个祖先文档都能展示包含该后代在内的完整嵌套结构。
+func rebuildParentChildStructure(boxID, childPath string) {
+	cur := childPath
+	for {
+		folder := path.Dir(cur)
+		if "/" == folder {
+			return // 到达笔记本根
+		}
+		parentID := path.Base(folder)
+		if !ast.IsNodeIDPattern(parentID) {
+			return
+		}
+		rebuildChildStructure(boxID, parentID)
+		cur = folder + ".sy"
+	}
+}
+
+// rebuildChildStructure 在父文档顶部重建可折叠的子文档结构目录：
+// 遍历父文档下的所有后代文档，生成带图标的嵌套列表（动态引用，随子文档改名自动更新），
+// 通过 custom-child-structure 属性标记该列表，每次先移除旧列表再插入新列表，避免重复。
+func rebuildChildStructure(boxID, parentID string) {
 	// 仅在未显式关闭时启用（默认开启，兼容既有工作空间的旧配置）
 	if nil != Conf.FileTree.CreateChildDocRefInParent && !*Conf.FileTree.CreateChildDocRefInParent {
 		return
 	}
 
-	folder := path.Dir(childPath)
-	if "/" == folder {
-		return // 顶层文档没有父文档
-	}
-	parentID := path.Base(folder)
-	if !ast.IsNodeIDPattern(parentID) {
-		return
-	}
 	parentBt := treenode.GetBlockTree(parentID)
 	if nil == parentBt || "d" != parentBt.Type {
 		return
 	}
-
-	// 构造一个仅包含动态块引用的段落
-	luteEngine := util.NewLute()
-	p := treenode.NewParagraph("")
-	ref := &ast.Node{
-		Type:                    ast.NodeTextMark,
-		TextMarkType:            "block-ref",
-		TextMarkBlockRefID:      childID,
-		TextMarkBlockRefSubtype: "d",
-		TextMarkTextContent:     childTitle,
+	parentTree, err := LoadTreeByBlockID(parentID)
+	if nil != err || nil == parentTree {
+		return
 	}
-	p.AppendChild(ref)
-	dom := luteEngine.RenderNodeBlockDOM(p)
 
-	transaction := &Transaction{DoOperations: []*Operation{{Action: "prependInsert", ParentID: parentID, Data: dom}}}
-	PerformTransactions(&[]*Transaction{transaction})
+	// 移除旧的结构目录块
+	var olds []*ast.Node
+	for c := parentTree.Root.FirstChild; nil != c; c = c.Next {
+		if "1" == c.IALAttr(childStructureAttr) {
+			olds = append(olds, c)
+		}
+	}
+	for _, n := range olds {
+		n.Unlink()
+	}
+
+	// 事务队列与 SQL 索引队列相互独立，这里先刷新 SQL 索引，确保刚创建的子文档已可被查询到
+	sql.FlushQueue()
+
+	if md := buildChildStructureMarkdown(boxID, parentBt.Path); "" != md {
+		luteEngine := util.NewLute()
+		subTree := luteEngine.BlockDOM2Tree(luteEngine.Md2BlockDOM(md, false))
+		if listNode := subTree.Root.FirstChild; nil != listNode {
+			// 所有块引用改为动态锚文本，子文档改名后自动更新
+			ast.Walk(listNode, func(n *ast.Node, entering bool) ast.WalkStatus {
+				if entering && ast.NodeTextMark == n.Type && n.IsTextMarkType("block-ref") {
+					treenode.SetDynamicBlockRefText(n, n.TextMarkTextContent)
+				}
+				return ast.WalkContinue
+			})
+			listNode.Unlink()
+			listNode.SetIALAttr(childStructureAttr, "1")
+			if nil == parentTree.Root.FirstChild {
+				parentTree.Root.AppendChild(listNode)
+			} else {
+				parentTree.Root.FirstChild.InsertBefore(listNode)
+			}
+		}
+	}
+
+	// 文档至少需要一个内容块
+	if nil == parentTree.Root.FirstChild {
+		parentTree.Root.AppendChild(treenode.NewParagraph(""))
+	}
+
+	if err = indexWriteTreeUpsertQueue(parentTree); nil != err {
+		return
+	}
 	FlushTxQueue()
+
+	// 事务广播会排除发起会话，这里强制让所有打开父文档的客户端（含发起方）重新载入
+	util.PushReloadDoc(parentID)
+}
+
+// buildChildStructureMarkdown 生成父文档下所有后代文档的嵌套 Markdown 列表（带图标 + 块引用）
+func buildChildStructureMarkdown(boxID, parentPath string) string {
+	childPrefix := strings.TrimSuffix(parentPath, ".sy") + "/"
+	blocks := sql.QueryRootBlockByCondition("box = '"+boxID+"' AND path LIKE '"+childPrefix+"%'", 4096)
+	if 1 > len(blocks) {
+		return ""
+	}
+
+	// 按直接父文档 ID 分组；SQL 索引在删除时为异步更新，这里以块树（同步更新）为准过滤掉已删除文档
+	childrenOf := map[string][]*sql.Block{}
+	for _, b := range blocks {
+		if nil == treenode.GetBlockTree(b.ID) {
+			continue
+		}
+		immParentID := path.Base(path.Dir(strings.TrimSuffix(b.Path, ".sy")))
+		childrenOf[immParentID] = append(childrenOf[immParentID], b)
+	}
+	for pid := range childrenOf {
+		items := childrenOf[pid]
+		sort.SliceStable(items, func(i, j int) bool {
+			if items[i].Sort != items[j].Sort {
+				return items[i].Sort < items[j].Sort
+			}
+			return items[i].HPath < items[j].HPath
+		})
+	}
+
+	parentID := path.Base(strings.TrimSuffix(parentPath, ".sy"))
+	var sb strings.Builder
+	var render func(pid string, depth int)
+	render = func(pid string, depth int) {
+		if 32 < depth {
+			return
+		}
+		for _, b := range childrenOf[pid] {
+			title := path.Base(b.HPath)
+			if "" == title || "." == title || "/" == title {
+				title = Conf.Language(16)
+			}
+			sb.WriteString(strings.Repeat("  ", depth))
+			sb.WriteString("* ")
+			sb.WriteString(docIconEmoji(b.IAL))
+			sb.WriteString(" ")
+			sb.WriteString(blockRefMarkdown(b.ID, title))
+			sb.WriteString("\n")
+			render(b.ID, depth+1)
+		}
+	}
+	render(parentID, 0)
+	return sb.String()
+}
+
+// blockRefMarkdown 生成一个块引用 Markdown，按标题内容选择引号避免语法冲突
+func blockRefMarkdown(id, title string) string {
+	title = strings.ReplaceAll(title, "\n", " ")
+	if strings.Contains(title, "'") {
+		title = strings.ReplaceAll(title, "\"", "'")
+		return "((" + id + " \"" + title + "\"))"
+	}
+	return "((" + id + " '" + title + "'))"
+}
+
+// docIconEmoji 从文档 IAL 中取出图标并转为 Emoji 字符；自定义图片图标或无图标时回退为默认页面图标
+func docIconEmoji(ial string) string {
+	code := ialAttrValue(ial, "icon")
+	if "" == code || strings.ContainsAny(code, "./") {
+		return "📄"
+	}
+	var sb strings.Builder
+	for _, part := range strings.Split(code, "-") {
+		n, parseErr := strconv.ParseInt(part, 16, 32)
+		if nil != parseErr {
+			return "📄"
+		}
+		sb.WriteRune(rune(n))
+	}
+	return sb.String()
+}
+
+// ialAttrValue 从 IAL 字符串（形如 {: icon="1f4d4" id="..."}）中提取指定属性值
+func ialAttrValue(ial, name string) string {
+	key := name + "=\""
+	i := strings.Index(ial, key)
+	if 0 > i {
+		return ""
+	}
+	rest := ial[i+len(key):]
+	j := strings.Index(rest, "\"")
+	if 0 > j {
+		return ""
+	}
+	return rest[:j]
 }
 
 func normalizeDocTitle(title string) string {

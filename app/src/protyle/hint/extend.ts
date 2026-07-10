@@ -72,7 +72,7 @@ export const hintSlash = (key: string, protyle: IProtyle) => {
         value: Constants.ZWSP + 4,
         html: `<div class="b3-list-item__first"><svg class="b3-list-item__graphic"><use xlink:href="#iconFile"></use></svg><span class="b3-list-item__text">${window.siyuan.languages.newFileRef}</span></div>`,
     }, {
-        filter: [window.siyuan.languages.newSubDocRef, "create sub doc with reference", "新建子文档并引用", "xinjianziwendangbingyinyong", "xjzwdbyy"],
+        filter: [window.siyuan.languages.newSubDocRef, "create sub doc with reference", "新建子文档并引用", "xinjianziwendangbingyinyong", "xjzwdbyy", "page", "страница", "стр", "подстраница"],
         id: "newSubDocRef",
         value: Constants.ZWSP + 6,
         html: `<div class="b3-list-item__first"><svg class="b3-list-item__graphic"><use xlink:href="#iconFile"></use></svg><span class="b3-list-item__text">${window.siyuan.languages.newSubDocRef}</span></div>`,
