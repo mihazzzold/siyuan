@@ -70,9 +70,15 @@ func main() {
 		log.Fatalf("load store: %v", err)
 	}
 
+	kernels := newKernelManager(kernelBin, dataDir, lang)
+	kernels.s3 = loadS3Config() // 内置 S3（MinIO）自动同步，未配置端点时为 nil
+	if nil != kernels.s3 {
+		log.Printf("built-in S3 sync enabled, endpoint [%s]", kernels.s3.kernelEndpoint)
+	}
+
 	gw := &Gateway{
 		store:        store,
-		kernels:      newKernelManager(kernelBin, dataDir, lang),
+		kernels:      kernels,
 		inviteCode:   inviteCode,
 		secureCookie: "true" == env("GATEWAY_SECURE_COOKIE", "false"),
 	}
@@ -147,6 +153,10 @@ func (gw *Gateway) proxyTo(w http.ResponseWriter, r *http.Request, port int, u *
 		http.Error(w, "Не удалось запустить рабочее пространство, попробуйте обновить страницу", http.StatusBadGateway)
 		return
 	}
+	// 网关令牌仅用于在此路由到用户内核；内核以 localhost 放行（bypass），
+	// 若把该令牌透传给内核，其 CheckAuth 会因与内核自身 API Token 不匹配而返回 401，故这里剥离
+	r.Header.Del("Authorization")
+	r.Header.Del("X-Siyuan-Token")
 	target := &url.URL{Scheme: "http", Host: fmt.Sprintf("127.0.0.1:%d", port)}
 	proxy := httputil.NewSingleHostReverseProxy(target)
 	proxy.ErrorHandler = func(w http.ResponseWriter, r *http.Request, err error) {
@@ -157,11 +167,31 @@ func (gw *Gateway) proxyTo(w http.ResponseWriter, r *http.Request, port int, u *
 }
 
 func (gw *Gateway) currentUser(r *http.Request) *User {
+	// 优先按 API 令牌鉴权（供 Claude Code 等外部工具通过 MCP/HTTP 访问）
+	if token := apiTokenFromRequest(r); "" != token {
+		if u := gw.store.UserByToken(token); nil != u {
+			return u
+		}
+	}
 	c, err := r.Cookie(sessionCookie)
 	if err != nil {
 		return nil
 	}
 	return gw.store.SessionUser(c.Value)
+}
+
+// apiTokenFromRequest 从请求头提取个人 API 令牌，支持 Authorization: Token/Bearer 与 X-Siyuan-Token
+func apiTokenFromRequest(r *http.Request) string {
+	if v := strings.TrimSpace(r.Header.Get("X-Siyuan-Token")); "" != v {
+		return v
+	}
+	auth := strings.TrimSpace(r.Header.Get("Authorization"))
+	for _, prefix := range []string{"Token ", "token ", "Bearer ", "bearer "} {
+		if strings.HasPrefix(auth, prefix) {
+			return strings.TrimSpace(strings.TrimPrefix(auth, prefix))
+		}
+	}
+	return ""
 }
 
 func (gw *Gateway) setCookie(w http.ResponseWriter, name, value string, maxAge int) {
@@ -293,5 +323,18 @@ func (gw *Gateway) handleAccount(w http.ResponseWriter, r *http.Request) {
 	if c, err := r.Cookie(shareCookie); nil == err && "" != c.Value {
 		shared = true
 	}
-	renderAccount(w, user.Name, shared)
+	renderAccount(w, user.Name, user.APIToken, gw.baseURL(r), shared)
+}
+
+// baseURL 依据请求推断对外访问地址（考虑反向代理的 X-Forwarded-Proto/Host）
+func (gw *Gateway) baseURL(r *http.Request) string {
+	scheme := "http"
+	if gw.secureCookie || "https" == r.Header.Get("X-Forwarded-Proto") {
+		scheme = "https"
+	}
+	host := r.Header.Get("X-Forwarded-Host")
+	if "" == host {
+		host = r.Host
+	}
+	return scheme + "://" + host
 }

@@ -87,7 +87,12 @@ var registerTmpl = template.Must(template.New("register").Parse(`<!DOCTYPE html>
 var accountTmpl = template.Must(template.New("account").Parse(`<!DOCTYPE html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Аккаунт — SiYuan</title><style>` + pageStyle + `</style></head>
+<title>Аккаунт — SiYuan</title><style>` + pageStyle + `
+.card { width: 620px; }
+code, pre { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 13px; }
+pre { background: light-dark(#f0f2f5, #1b1f24); padding: 10px 12px; border-radius: 8px; overflow-x: auto; white-space: pre-wrap; word-break: break-all; }
+.tok { display: inline-block; background: light-dark(#f0f2f5, #1b1f24); padding: 2px 6px; border-radius: 6px; }
+</style></head>
 <body><div class="card">
 <h1>{{.User}}</h1><p class="sub">Управление аккаунтом</p>
 <ul class="info">
@@ -97,6 +102,14 @@ var accountTmpl = template.Must(template.New("account").Parse(`<!DOCTYPE html>
 {{if .Shared}}<li>Сейчас вы просматриваете чужую публикацию — <a href="/gw/exit-share">вернуться в своё пространство</a></li>{{end}}
 <li><a href="/gw/logout">Выйти</a></li>
 </ul>
+<div class="fn__hr" style="height:1px;background:light-dark(#e0e3e8,#333);margin:20px 0"></div>
+<h1 style="font-size:18px">Интеграция с Claude Code (MCP)</h1>
+<p class="sub">Позвольте Claude Code вести документацию, бэклог и заметки прямо в вашем пространстве.</p>
+<p style="font-size:14px;margin:0 0 6px">Персональный токен доступа (храните в секрете):</p>
+<pre>{{.Token}}</pre>
+<p style="font-size:14px;margin:14px 0 6px">Добавьте MCP-сервер одной командой:</p>
+<pre>claude mcp add --transport http siyuan {{.BaseURL}}/mcp --header "Authorization: Token {{.Token}}"</pre>
+<p style="font-size:13px;opacity:.75;margin-top:10px">После этого Claude Code получит инструменты SiYuan: создание документов, добавление блоков, поиск и т.д. — и сможет записывать бэклог/инструкции/документацию в ваши заметки. MCP-адрес: <span class="tok">{{.BaseURL}}/mcp</span></p>
 </div></body></html>`))
 
 func renderLogin(w http.ResponseWriter, errMsg string, status int) {
@@ -111,7 +124,7 @@ func renderRegister(w http.ResponseWriter, errMsg string, inviteRequired bool, s
 	_ = registerTmpl.Execute(w, map[string]any{"Error": errMsg, "InviteRequired": inviteRequired})
 }
 
-func renderAccount(w http.ResponseWriter, user string, shared bool) {
+func renderAccount(w http.ResponseWriter, user, token, baseURL string, shared bool) {
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	_ = accountTmpl.Execute(w, map[string]any{"User": user, "Shared": shared})
+	_ = accountTmpl.Execute(w, map[string]any{"User": user, "Shared": shared, "Token": token, "BaseURL": baseURL})
 }

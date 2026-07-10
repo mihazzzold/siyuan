@@ -27,6 +27,7 @@ type User struct {
 	Created      time.Time `json:"created"`
 	KernelPort   int       `json:"kernelPort"`  // 内核 HTTP 端口（仅容器内可达）
 	PublishPort  int       `json:"publishPort"` // 发布服务端口（仅容器内可达）
+	APIToken     string    `json:"apiToken"`    // 个人 API 令牌，供 Claude Code 等外部工具通过 MCP/HTTP 访问本用户空间
 }
 
 // Session 登录会话
@@ -111,12 +112,17 @@ func (s *Store) Register(name, password string) (*User, error) {
 	if err != nil {
 		return nil, err
 	}
+	apiToken, err := randomToken()
+	if err != nil {
+		return nil, err
+	}
 	u := &User{
 		Name:         name,
 		PasswordHash: string(hash),
 		Created:      time.Now(),
 		KernelPort:   s.NextPort,
 		PublishPort:  s.NextPort + 1,
+		APIToken:     apiToken,
 	}
 	s.NextPort += 2
 	s.Users[name] = u
@@ -134,6 +140,15 @@ func (s *Store) Authenticate(name, password string) (*User, error) {
 	if err := bcrypt.CompareHashAndPassword([]byte(u.PasswordHash), []byte(password)); err != nil {
 		return nil, errAuthFailed
 	}
+	// 兼容旧账户：补发缺失的 API 令牌
+	if "" == u.APIToken {
+		if token, tokenErr := randomToken(); nil == tokenErr {
+			s.mu.Lock()
+			u.APIToken = token
+			_ = s.save()
+			s.mu.Unlock()
+		}
+	}
 	return u, nil
 }
 
@@ -141,6 +156,21 @@ func (s *Store) GetUser(name string) *User {
 	s.mu.Lock()
 	defer s.mu.Unlock()
 	return s.Users[name]
+}
+
+// UserByToken 按 API 令牌查找用户，供 Claude Code 等外部工具的令牌鉴权使用
+func (s *Store) UserByToken(token string) *User {
+	if "" == token {
+		return nil
+	}
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	for _, u := range s.Users {
+		if u.APIToken == token {
+			return u
+		}
+	}
+	return nil
 }
 
 // CreateSession 创建会话并持久化
