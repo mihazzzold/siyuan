@@ -4,6 +4,8 @@ services:
       context: ..
       dockerfile: gateway/Dockerfile
     container_name: siyuan-gateway
+    depends_on:
+      - minio
     ports:
       - "6810:6810"
     volumes:
@@ -16,3 +18,28 @@ services:
       # 通过 HTTPS 反向代理（nginx/caddy）对外时设为 true
       - GATEWAY_SECURE_COOKIE=${GATEWAY_SECURE_COOKIE:-false}
       - GATEWAY_LANG=ru
+      # 内置 S3（MinIO）自动同步：每个用户自动创建 bucket、初始化加密密钥并开启同步。
+      # 留空 GATEWAY_S3_ENDPOINT 可关闭该功能。
+      - GATEWAY_S3_ENDPOINT=http://minio:9000
+      - GATEWAY_S3_ACCESS_KEY=${MINIO_ROOT_USER:-siyuan}
+      - GATEWAY_S3_SECRET_KEY=${MINIO_ROOT_PASSWORD:-siyuan-minio-secret}
+      - GATEWAY_S3_REGION=us-east-1
+      # 用于按用户名确定性派生仓库加密口令，务必改成自己的随机串并妥善保管
+      - GATEWAY_S3_KEY_SECRET=${GATEWAY_S3_KEY_SECRET:-change-me-please}
+
+  minio:
+    image: minio/minio
+    container_name: siyuan-minio
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio-data:/data
+    restart: unless-stopped
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER:-siyuan}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD:-siyuan-minio-secret}
+    ports:
+      # веб-консоль MinIO (опционально); порт данных 9000 наружу не выставлен
+      - "9001:9001"
+
+volumes:
+  minio-data:

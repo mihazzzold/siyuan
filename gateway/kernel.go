@@ -28,6 +28,7 @@ type KernelManager struct {
 	lang      string
 	procs     map[string]*exec.Cmd   // 用户名 -> 内核进程
 	starting  map[string]*sync.Mutex // 用户名 -> 启动锁，防止并发重复启动
+	s3        *s3Config              // 内置 S3（MinIO）自动同步配置，nil 表示未启用
 }
 
 func newKernelManager(kernelBin, dataDir, lang string) *KernelManager {
@@ -117,6 +118,10 @@ func (m *KernelManager) start(u *User) error {
 	}
 	if err := m.ensurePublish(u); err != nil {
 		log.Printf("enable publish for [%s] failed: %v", u.Name, err)
+	}
+	// 首次启动时自动为用户开通内置 S3 同步（若已配置则跳过）
+	if err := m.ensureS3Sync(u); err != nil {
+		log.Printf("provision s3 sync for [%s] failed: %v", u.Name, err)
 	}
 	log.Printf("kernel for [%s] is ready on port %d (publish %d)", u.Name, u.KernelPort, u.PublishPort)
 	return nil
