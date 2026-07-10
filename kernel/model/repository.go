@@ -1150,10 +1150,7 @@ func DownloadCloudSnapshot(tag, id string) (err error) {
 			return
 		}
 	case conf.ProviderWebDAV, conf.ProviderS3, conf.ProviderLocal:
-		if !IsPaidUser() {
-			util.PushErrMsg(Conf.Language(214), 5000)
-			return
-		}
+		// 自建存储（S3/WebDAV/本地）在本 fork 中不要求官方付费会员
 	}
 
 	defer util.PushClearProgress()
@@ -1192,10 +1189,7 @@ func UploadCloudSnapshot(tag, id string) (err error) {
 			return
 		}
 	case conf.ProviderWebDAV, conf.ProviderS3, conf.ProviderLocal:
-		if !IsPaidUser() {
-			util.PushErrMsg(Conf.Language(214), 5000)
-			return
-		}
+		// 自建存储（S3/WebDAV/本地）在本 fork 中不要求官方付费会员
 	}
 
 	util.PushEndlessProgress(Conf.Language(116))
@@ -1233,10 +1227,7 @@ func RemoveCloudRepoTag(tag string) (err error) {
 			return
 		}
 	case conf.ProviderWebDAV, conf.ProviderS3, conf.ProviderLocal:
-		if !IsPaidUser() {
-			util.PushErrMsg(Conf.Language(214), 5000)
-			return
-		}
+		// 自建存储（S3/WebDAV/本地）在本 fork 中不要求官方付费会员
 	}
 
 	err = repo.RemoveCloudRepoTag(tag)
@@ -1265,10 +1256,7 @@ func GetCloudRepoTagSnapshots() (ret []*dejavu.Log, err error) {
 			return
 		}
 	case conf.ProviderWebDAV, conf.ProviderS3, conf.ProviderLocal:
-		if !IsPaidUser() {
-			util.PushErrMsg(Conf.Language(214), 5000)
-			return
-		}
+		// 自建存储（S3/WebDAV/本地）在本 fork 中不要求官方付费会员
 	}
 
 	logs, err := repo.GetCloudRepoTagLogs(map[string]any{eventbus.CtxPushMsg: eventbus.CtxPushMsgToStatusBar})
@@ -1301,10 +1289,7 @@ func GetCloudRepoSnapshots(page int) (ret []*dejavu.Log, pageCount, totalCount i
 			return
 		}
 	case conf.ProviderWebDAV, conf.ProviderS3, conf.ProviderLocal:
-		if !IsPaidUser() {
-			util.PushErrMsg(Conf.Language(214), 5000)
-			return
-		}
+		// 自建存储（S3/WebDAV/本地）在本 fork 中不要求官方付费会员
 	}
 
 	if 1 > page {
