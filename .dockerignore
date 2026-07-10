@@ -1,0 +1,7 @@
+.git
+.github
+**/node_modules
+app/stage/build
+gateway/gateway
+**/*.exe
+screenshots

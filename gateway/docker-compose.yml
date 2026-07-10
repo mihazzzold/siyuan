@@ -1,0 +1,18 @@
+services:
+  siyuan-gateway:
+    build:
+      context: ..
+      dockerfile: gateway/Dockerfile
+    container_name: siyuan-gateway
+    ports:
+      - "6810:6810"
+    volumes:
+      - /srv/siyuan/users:/siyuan/users
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Moscow
+      # 邀请码：设置后注册时必须输入；留空则开放注册
+      - GATEWAY_INVITE_CODE=${GATEWAY_INVITE_CODE:-}
+      # 通过 HTTPS 反向代理（nginx/caddy）对外时设为 true
+      - GATEWAY_SECURE_COOKIE=${GATEWAY_SECURE_COOKIE:-false}
+      - GATEWAY_LANG=ru
