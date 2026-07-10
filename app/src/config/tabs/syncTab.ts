@@ -261,9 +261,89 @@ const mountRepoKey = (root: HTMLElement) => {
     });
 };
 
+// registerGitBackupGroup 一键将 data/ 目录单向备份（提交并推送）到自建 Git 仓库。
+// 说明文本暂以俄语硬编码（本 fork 默认俄语），后续可迁移到 i18n。
+const registerGitBackupGroup = (tab: SettingTabBuilder) => {
+    const group = tab.group("gitBackup", "Git-бэкап");
+    group.slot({
+        key: "gitBackupMain",
+        keywords: ["git", "backup", "бэкап", "репозиторий", "токен"],
+        html: () => `<div class="b3-label config-item">
+    <div class="b3-label__text">Односторонний бэкап заметок в ваш Git-репозиторий (push). Данные шифрует Git-хостинг; используйте приватный репозиторий.</div>
+    <div class="fn__hr"></div>
+    <label class="fn__flex" style="align-items:center"><input class="b3-switch" type="checkbox" data-gb="enabled"><span class="fn__space"></span><span class="ft__on-surface">Включить Git-бэкап</span></label>
+    <div class="fn__hr"></div>
+    <input class="b3-text-field fn__block" data-gb="repoURL" placeholder="URL репозитория, напр. https://github.com/user/notes.git">
+    <div class="fn__hr"></div>
+    <input class="b3-text-field fn__block" data-gb="token" type="password" placeholder="Токен доступа (PAT). Оставьте пустым, чтобы не менять">
+    <div class="fn__hr"></div>
+    <div class="fn__flex">
+        <input class="b3-text-field fn__flex-1" data-gb="branch" placeholder="Ветка (main)">
+        <span class="fn__space"></span>
+        <input class="b3-text-field fn__flex-1" data-gb="username" placeholder="Имя автора / логин (необяз.)">
+    </div>
+    <div class="fn__hr"></div>
+    <input class="b3-text-field fn__block" data-gb="email" placeholder="E-mail автора коммита (необяз.)">
+    <div class="fn__hr"></div>
+    <label class="fn__flex" style="align-items:center"><input class="b3-switch" type="checkbox" data-gb="autoEnabled"><span class="fn__space"></span><span class="ft__on-surface">Авто-отправка каждые</span><span class="fn__space"></span><input class="b3-text-field" style="width:64px" type="number" min="5" data-gb="autoMinutes"><span class="fn__space"></span><span class="ft__on-surface">мин</span></label>
+    <div class="fn__hr"></div>
+    <div class="fn__flex">
+        <button class="b3-button b3-button--outline fn__flex-center" id="gitBackupSave"><svg><use xlink:href="#iconDownload"></use></svg>Сохранить</button>
+        <span class="fn__space"></span>
+        <button class="b3-button b3-button--outline fn__flex-center" id="gitBackupNow"><svg><use xlink:href="#iconUpload"></use></svg>Отправить в Git</button>
+    </div>
+</div>`,
+        afterMount: (root) => {
+            const val = (name: string) => root.querySelector(`[data-gb="${name}"]`) as HTMLInputElement;
+            fetchPost("/api/gitbackup/getConf", {}, (response) => {
+                const c = response.data.gitBackup;
+                val("enabled").checked = c.enabled;
+                val("repoURL").value = c.repoURL || "";
+                val("branch").value = c.branch || "main";
+                val("username").value = c.username || "";
+                val("email").value = c.email || "";
+                val("autoEnabled").checked = c.autoEnabled;
+                val("autoMinutes").value = String(c.autoMinutes || 30);
+                if (response.data.tokenSet) {
+                    val("token").placeholder = "Токен сохранён — оставьте пустым, чтобы не менять";
+                }
+            });
+            const save = (cb?: () => void) => {
+                fetchPost("/api/gitbackup/setConf", {
+                    enabled: val("enabled").checked,
+                    repoURL: val("repoURL").value.trim(),
+                    token: val("token").value,
+                    branch: val("branch").value.trim() || "main",
+                    username: val("username").value.trim(),
+                    email: val("email").value.trim(),
+                    autoEnabled: val("autoEnabled").checked,
+                    autoMinutes: parseInt(val("autoMinutes").value) || 30,
+                }, () => {
+                    val("token").value = "";
+                    if (cb) {
+                        cb();
+                    } else {
+                        showMessage("Сохранено");
+                    }
+                });
+            };
+            root.querySelector("#gitBackupSave")?.addEventListener("click", () => save());
+            root.querySelector("#gitBackupNow")?.addEventListener("click", () => {
+                // сначала сохраняем настройки, затем запускаем отправку
+                save(() => {
+                    fetchPost("/api/gitbackup/backup", {}, (response) => {
+                        showMessage(response.code === 0 ? "Отправлено в Git" : response.msg, response.code === 0 ? 3000 : 7000, response.code === 0 ? "info" : "error");
+                    });
+                });
+            });
+        },
+    });
+};
+
 export const registerSyncTab = (tab: SettingTabBuilder) => {
     // 官方账号（ld246）登录/注册区块暂不启用，后续接入自建服务时再恢复
     // registerAccountGroup(tab);
     registerSyncGroup(tab);
+    registerGitBackupGroup(tab);
     registerRepoGroup(tab);
 };
