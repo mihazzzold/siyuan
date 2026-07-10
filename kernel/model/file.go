@@ -1905,7 +1905,49 @@ func createDoc(boxID, p, title, dom string, titleEmpty bool) (tree *parse.Tree, 
 	transaction := &Transaction{DoOperations: []*Operation{{Action: "create", Data: tree}}}
 	PerformTransactions(&[]*Transaction{transaction})
 	FlushTxQueue()
+
+	// 在父文档顶部插入指向新建子文档的动态引用，构建子文档结构目录
+	insertChildDocRefToParent(p, id, title)
 	return
+}
+
+// insertChildDocRefToParent 若新建的是某个文档的子文档，则在父文档顶部插入一个指向子文档的动态块引用。
+// 引用采用动态锚文本，子文档改名后引用文本随之更新，从而在父文档中形成子文档结构目录。
+func insertChildDocRefToParent(childPath, childID, childTitle string) {
+	// 仅在未显式关闭时启用（默认开启，兼容既有工作空间的旧配置）
+	if nil != Conf.FileTree.CreateChildDocRefInParent && !*Conf.FileTree.CreateChildDocRefInParent {
+		return
+	}
+
+	folder := path.Dir(childPath)
+	if "/" == folder {
+		return // 顶层文档没有父文档
+	}
+	parentID := path.Base(folder)
+	if !ast.IsNodeIDPattern(parentID) {
+		return
+	}
+	parentBt := treenode.GetBlockTree(parentID)
+	if nil == parentBt || "d" != parentBt.Type {
+		return
+	}
+
+	// 构造一个仅包含动态块引用的段落
+	luteEngine := util.NewLute()
+	p := treenode.NewParagraph("")
+	ref := &ast.Node{
+		Type:                    ast.NodeTextMark,
+		TextMarkType:            "block-ref",
+		TextMarkBlockRefID:      childID,
+		TextMarkBlockRefSubtype: "d",
+		TextMarkTextContent:     childTitle,
+	}
+	p.AppendChild(ref)
+	dom := luteEngine.RenderNodeBlockDOM(p)
+
+	transaction := &Transaction{DoOperations: []*Operation{{Action: "prependInsert", ParentID: parentID, Data: dom}}}
+	PerformTransactions(&[]*Transaction{transaction})
+	FlushTxQueue()
 }
 
 func normalizeDocTitle(title string) string {
