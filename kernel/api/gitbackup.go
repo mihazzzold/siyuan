@@ -17,6 +17,7 @@
 package api
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/88250/gulu"
@@ -97,4 +98,32 @@ func performGitBackup(c *gin.Context) {
 	}
 
 	ret.Msg = "Отправлено в Git"
+}
+
+func checkGitBackupRemote(c *gin.Context) {
+	ret := gulu.Ret.NewResult()
+	defer c.JSON(http.StatusOK, ret)
+
+	hasBackup, err := model.GitRemoteHasBackup()
+	if err != nil {
+		ret.Code = -1
+		ret.Msg = err.Error()
+		return
+	}
+	ret.Data = map[string]any{"hasBackup": hasBackup}
+}
+
+func restoreGitBackup(c *gin.Context) {
+	ret := gulu.Ret.NewResult()
+	defer c.JSON(http.StatusOK, ret)
+
+	restored, err := model.RestoreGitBackup()
+	if err != nil {
+		ret.Code = -1
+		ret.Msg = err.Error()
+		ret.Data = map[string]any{"closeTimeout": 7000}
+		return
+	}
+	ret.Data = map[string]any{"restored": restored}
+	ret.Msg = fmt.Sprintf("Восстановлено файлов: %d", restored)
 }

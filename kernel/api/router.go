@@ -412,6 +412,8 @@ func ServeAPI(ginServer *gin.Engine) {
 	ginServer.Handle("POST", "/api/gitbackup/setConf", model.CheckAuth, model.CheckAdminRole, model.CheckReadonly, setGitBackup)
 	ginServer.Handle("POST", "/api/gitbackup/getConf", model.CheckAuth, model.CheckAdminRole, getGitBackup)
 	ginServer.Handle("POST", "/api/gitbackup/backup", model.CheckAuth, model.CheckAdminRole, model.CheckReadonly, performGitBackup)
+	ginServer.Handle("POST", "/api/gitbackup/checkRemote", model.CheckAuth, model.CheckAdminRole, checkGitBackupRemote)
+	ginServer.Handle("POST", "/api/gitbackup/restore", model.CheckAuth, model.CheckAdminRole, model.CheckReadonly, restoreGitBackup)
 	ginServer.Handle("POST", "/api/setting/refreshVirtualBlockRef", model.CheckAuth, model.CheckAdminRole, model.CheckReadonly, refreshVirtualBlockRef)
 	ginServer.Handle("POST", "/api/setting/addVirtualBlockRefInclude", model.CheckAuth, model.CheckAdminRole, model.CheckReadonly, addVirtualBlockRefInclude)
 	ginServer.Handle("POST", "/api/setting/addVirtualBlockRefExclude", model.CheckAuth, model.CheckAdminRole, model.CheckReadonly, addVirtualBlockRefExclude)

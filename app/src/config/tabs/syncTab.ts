@@ -291,7 +291,10 @@ const registerGitBackupGroup = (tab: SettingTabBuilder) => {
         <button class="b3-button b3-button--outline fn__flex-center" id="gitBackupSave"><svg><use xlink:href="#iconDownload"></use></svg>Сохранить</button>
         <span class="fn__space"></span>
         <button class="b3-button b3-button--outline fn__flex-center" id="gitBackupNow"><svg><use xlink:href="#iconUpload"></use></svg>Отправить в Git</button>
+        <span class="fn__space"></span>
+        <button class="b3-button b3-button--outline fn__flex-center" id="gitBackupRestore"><svg><use xlink:href="#iconDownload"></use></svg>Восстановить из Git</button>
     </div>
+    <div class="b3-label__text" style="margin-top:6px">Восстановление объединяет данные репозитория с текущими: отсутствующие документы добавляются, ваши локальные не перезаписываются.</div>
 </div>`,
         afterMount: (root) => {
             const val = (name: string) => root.querySelector(`[data-gb="${name}"]`) as HTMLInputElement;
@@ -327,12 +330,38 @@ const registerGitBackupGroup = (tab: SettingTabBuilder) => {
                     }
                 });
             };
-            root.querySelector("#gitBackupSave")?.addEventListener("click", () => save());
+            const doRestore = () => {
+                fetchPost("/api/gitbackup/restore", {}, (response) => {
+                    showMessage(response.code === 0 ? `Восстановлено файлов: ${response.data.restored}. Данные объединены.` : response.msg, response.code === 0 ? 5000 : 7000, response.code === 0 ? "info" : "error");
+                });
+            };
+            // После сохранения проверяем, есть ли в репозитории бэкап, и предлагаем восстановить (с объединением)
+            const promptRestoreIfRemoteHasBackup = () => {
+                fetchPost("/api/gitbackup/checkRemote", {}, (response) => {
+                    if (response.code === 0 && response.data.hasBackup) {
+                        confirmDialog("♻️ Восстановление из Git", "В репозитории найден бэкап SiYuan. Восстановить его и объединить с текущими заметками? Отсутствующие документы будут добавлены, ваши локальные — сохранены (без перезаписи).", () => {
+                            doRestore();
+                        });
+                    }
+                });
+            };
+            root.querySelector("#gitBackupSave")?.addEventListener("click", () => save(() => {
+                showMessage("Сохранено");
+                promptRestoreIfRemoteHasBackup();
+            }));
             root.querySelector("#gitBackupNow")?.addEventListener("click", () => {
                 // сначала сохраняем настройки, затем запускаем отправку
                 save(() => {
                     fetchPost("/api/gitbackup/backup", {}, (response) => {
                         showMessage(response.code === 0 ? "Отправлено в Git" : response.msg, response.code === 0 ? 3000 : 7000, response.code === 0 ? "info" : "error");
+                    });
+                });
+            });
+            root.querySelector("#gitBackupRestore")?.addEventListener("click", () => {
+                // сохраняем настройки, затем восстанавливаем с подтверждением
+                save(() => {
+                    confirmDialog("♻️ Восстановление из Git", "Восстановить данные из репозитория и объединить с текущими заметками? Отсутствующие документы будут добавлены, ваши локальные — сохранены (без перезаписи).", () => {
+                        doRestore();
                     });
                 });
             });

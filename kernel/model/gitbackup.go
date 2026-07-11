@@ -19,15 +19,21 @@ package model
 import (
 	"errors"
 	"fmt"
+	"io"
+	"os"
+	"path/filepath"
 	"strings"
 	"sync"
 	"time"
 
+	"github.com/88250/gulu"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/config"
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/object"
+	"github.com/go-git/go-git/v5/plumbing/transport"
 	gitHTTP "github.com/go-git/go-git/v5/plumbing/transport/http"
+	"github.com/go-git/go-git/v5/storage/memory"
 	"github.com/siyuan-note/logging"
 	"github.com/siyuan-note/siyuan/kernel/util"
 )
@@ -186,4 +192,141 @@ func GitBackupJob() {
 	if err := PerformGitBackup(); err != nil {
 		logging.LogWarnf("auto git backup failed: %s", err)
 	}
+}
+
+// GitRemoteHasBackup 通过 ls-remote 轻量判断配置的仓库分支是否已存在（即是否可能已有备份数据）
+func GitRemoteHasBackup() (bool, error) {
+	conf := Conf.GitBackup
+	if nil == conf || "" == strings.TrimSpace(conf.RepoURL) {
+		return false, nil
+	}
+	branch := strings.TrimSpace(conf.Branch)
+	if "" == branch {
+		branch = "main"
+	}
+	auth := &gitHTTP.BasicAuth{Username: gitAuthUsername(conf.Username), Password: conf.Token}
+	remote := git.NewRemote(memory.NewStorage(), &config.RemoteConfig{Name: "origin", URLs: []string{conf.RepoURL}})
+	refs, err := remote.List(&git.ListOptions{Auth: auth})
+	if err != nil {
+		if errors.Is(err, transport.ErrEmptyRemoteRepository) {
+			return false, nil
+		}
+		return false, err
+	}
+	target := plumbing.NewBranchReferenceName(branch)
+	for _, ref := range refs {
+		if ref.Name() == target {
+			return true, nil
+		}
+	}
+	return false, nil
+}
+
+// RestoreGitBackup 从远程仓库恢复数据，并与本地数据做并集合并（只补齐本地缺失的文件，绝不覆盖本地已有文件），
+// 恢复后触发全量重建索引。适用于重装/误删后重新接入仓库同时保留新写入内容的场景。
+func RestoreGitBackup() (restored int, err error) {
+	conf := Conf.GitBackup
+	if nil == conf || "" == strings.TrimSpace(conf.RepoURL) {
+		return 0, errors.New("Не указан адрес репозитория")
+	}
+	if !gitBackupLock.TryLock() {
+		return 0, errors.New("Резервное копирование уже выполняется")
+	}
+	defer gitBackupLock.Unlock()
+
+	branch := strings.TrimSpace(conf.Branch)
+	if "" == branch {
+		branch = "main"
+	}
+	auth := &gitHTTP.BasicAuth{Username: gitAuthUsername(conf.Username), Password: conf.Token}
+
+	tmpDir, err := os.MkdirTemp("", "siyuan-git-restore-")
+	if err != nil {
+		return 0, err
+	}
+	defer os.RemoveAll(tmpDir)
+
+	_, err = git.PlainClone(tmpDir, false, &git.CloneOptions{
+		URL:           conf.RepoURL,
+		Auth:          auth,
+		ReferenceName: plumbing.NewBranchReferenceName(branch),
+		SingleBranch:  true,
+		Depth:         1,
+	})
+	if err != nil {
+		return 0, fmt.Errorf("git clone failed: %w", err)
+	}
+
+	// 校验确实是 SiYuan 备份（存在 .sy 文件）
+	hasSy := false
+	_ = filepath.WalkDir(tmpDir, func(p string, d os.DirEntry, e error) error {
+		if nil != e {
+			return nil
+		}
+		if !d.IsDir() && strings.HasSuffix(p, ".sy") {
+			hasSy = true
+			return filepath.SkipAll
+		}
+		return nil
+	})
+	if !hasSy {
+		return 0, errors.New("В репозитории не найдено данных SiYuan (.sy)")
+	}
+
+	FlushTxQueue()
+
+	// 并集合并：仅复制本地缺失的文件，保留本地已有文件（不覆盖），从而实现合并而非覆盖
+	err = filepath.WalkDir(tmpDir, func(p string, d os.DirEntry, e error) error {
+		if nil != e {
+			return e
+		}
+		rel, relErr := filepath.Rel(tmpDir, p)
+		if nil != relErr {
+			return relErr
+		}
+		rel = filepath.ToSlash(rel)
+		if ".git" == rel || strings.HasPrefix(rel, ".git/") {
+			if d.IsDir() {
+				return filepath.SkipDir
+			}
+			return nil
+		}
+		if d.IsDir() {
+			return nil
+		}
+		dst := filepath.Join(util.DataDir, filepath.FromSlash(rel))
+		if gulu.File.IsExist(dst) {
+			return nil // 本地优先，不覆盖
+		}
+		if mkErr := os.MkdirAll(filepath.Dir(dst), 0755); nil != mkErr {
+			return mkErr
+		}
+		if cpErr := copyFile(p, dst); nil != cpErr {
+			return cpErr
+		}
+		restored++
+		return nil
+	})
+	if nil != err {
+		return restored, err
+	}
+
+	FullReindex(false)
+	logging.LogInfof("git restore merged %d files from [%s]", restored, conf.RepoURL)
+	return restored, nil
+}
+
+func copyFile(src, dst string) error {
+	in, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer in.Close()
+	out, err := os.Create(dst)
+	if err != nil {
+		return err
+	}
+	defer out.Close()
+	_, err = io.Copy(out, in)
+	return err
 }
