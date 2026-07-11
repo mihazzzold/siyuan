@@ -279,10 +279,12 @@ jobs:
           echo "tag=v${VERSION}-build.${{ github.run_number }}" >> "$GITHUB_OUTPUT"
           echo "image=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/siyuan-gateway" >> "$GITHUB_OUTPUT"
 
-      - name: Download all artifacts
+      - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
           path: dist
+          # только наши артефакты (исключаем служебный *.dockerbuild от build-push-action)
+          pattern: siyuan-*
 
       - name: List downloaded files
         run: find dist -type f | sort
