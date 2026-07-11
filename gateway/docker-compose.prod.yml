@@ -1,0 +1,46 @@
+# Продакшн-стек для Portainer / сервера: тянет готовый образ из GHCR (без локальной сборки).
+# Параметры берутся из .env (см. .env.example) или из переменных окружения Portainer.
+# Обновление: CI при пуше в master пушит образ :latest и дёргает вебхук Portainer → перезапуск.
+services:
+  siyuan-gateway:
+    image: ghcr.io/mihazzzold/siyuan-gateway:latest
+    container_name: siyuan-gateway
+    depends_on:
+      - minio
+    ports:
+      - "${GATEWAY_PORT:-6810}:6810"
+    volumes:
+      - siyuan-users:/siyuan/users
+    restart: unless-stopped
+    environment:
+      - TZ=${TZ:-Europe/Moscow}
+      - GATEWAY_LANG=ru
+      # Код приглашения: если задан — регистрация только по нему; пусто — открытая регистрация
+      - GATEWAY_INVITE_CODE=${GATEWAY_INVITE_CODE:-}
+      # true при работе за HTTPS-прокси (nginx/caddy/traefik)
+      - GATEWAY_SECURE_COOKIE=${GATEWAY_SECURE_COOKIE:-true}
+      # Встроенная S3-синхронизация (MinIO)
+      - GATEWAY_S3_ENDPOINT=http://minio:9000
+      - GATEWAY_S3_ACCESS_KEY=${MINIO_ROOT_USER:?задайте MINIO_ROOT_USER}
+      - GATEWAY_S3_SECRET_KEY=${MINIO_ROOT_PASSWORD:?задайте MINIO_ROOT_PASSWORD}
+      - GATEWAY_S3_REGION=us-east-1
+      # Секрет для детерминированного вывода ключа шифрования репозитория — ОБЯЗАТЕЛЬНО свой случайный
+      - GATEWAY_S3_KEY_SECRET=${GATEWAY_S3_KEY_SECRET:?задайте GATEWAY_S3_KEY_SECRET}
+
+  minio:
+    image: minio/minio
+    container_name: siyuan-minio
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio-data:/data
+    restart: unless-stopped
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER:?задайте MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD:?задайте MINIO_ROOT_PASSWORD}
+    ports:
+      # веб-консоль MinIO (по желанию); порт данных 9000 наружу не выставляется
+      - "${MINIO_CONSOLE_PORT:-9001}:9001"
+
+volumes:
+  siyuan-users:
+  minio-data:

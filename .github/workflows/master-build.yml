@@ -1,0 +1,259 @@
+name: Master Build (Docker + Android + Desktop)
+
+# Сборка при каждом пуше в master: Docker-образ сайта/сервера (GHCR) с автодеплоем в Portainer,
+# Android APK и десктоп (Windows/Linux). Ручной запуск — через workflow_dispatch.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: master-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ─────────────────────────────────────────────────────────────
+  # 1) Docker-образ шлюза (сайт + сервер) → GHCR + вебхук Portainer
+  # ─────────────────────────────────────────────────────────────
+  docker:
+    name: Docker image → GHCR
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Free disk space
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache: false
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: true
+          docker-images: true
+          swap-storage: true
+
+      - name: Set up Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Image name (lowercase)
+        id: img
+        run: echo "name=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/siyuan-gateway" >> "$GITHUB_OUTPUT"
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: gateway/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: |
+            ${{ steps.img.outputs.name }}:latest
+            ${{ steps.img.outputs.name }}:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Trigger Portainer redeploy (webhook)
+        env:
+          WEBHOOK: ${{ secrets.PORTAINER_WEBHOOK_URL }}
+        run: |
+          if [ -n "$WEBHOOK" ]; then
+            echo "Триггерю Portainer webhook…"
+            curl -fsSL -X POST "$WEBHOOK" && echo "OK" || echo "Вебхук вернул ошибку (проверьте URL/стек)"
+          else
+            echo "Секрет PORTAINER_WEBHOOK_URL не задан — деплой пропущен (только публикация образа)."
+          fi
+
+  # ─────────────────────────────────────────────────────────────
+  # 2) Android APK
+  # ─────────────────────────────────────────────────────────────
+  android:
+    name: Android APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: kernel/go.mod
+          cache-dependency-path: kernel/go.sum
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install pnpm + build UI
+        working-directory: app
+        run: |
+          npm install -g pnpm@$(node -e "console.log(require('./package.json').packageManager.split('@')[1])")
+          pnpm install --no-frozen-lockfile
+          pnpm run build
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Set up Android NDK
+        run: |
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKMANAGER" --licenses > /dev/null || true
+          "$SDKMANAGER" "ndk;28.2.13676358" > /dev/null
+          echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/28.2.13676358" >> "$GITHUB_ENV"
+
+      - name: Set up gomobile
+        run: |
+          go install golang.org/x/mobile/cmd/gomobile@2553ed8ce294
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+          "$(go env GOPATH)/bin/gomobile" init
+
+      - name: Build kernel.aar
+        working-directory: kernel
+        env:
+          CGO_ENABLED: 1
+          JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+        run: gomobile bind -tags fts5 -ldflags "-s -w" -v -o kernel.aar -target android/arm64 -androidapi 26 ./mobile/
+
+      - name: Pack web assets (app.zip)
+        working-directory: app
+        run: |
+          node scripts/trimChangelogs.js || true
+          zip -r app.zip appearance guide stage $([ -d changelogs ] && echo changelogs)
+
+      - name: Checkout siyuan-android
+        uses: actions/checkout@v4
+        with:
+          repository: siyuan-note/siyuan-android
+          ref: main
+          path: siyuan-android
+
+      - name: Prepare & build APK
+        working-directory: siyuan-android
+        env:
+          JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+        run: |
+          # убрать нестабильные aliyun-зеркала (падают в CI)
+          sed -i '/maven.aliyun.com/d' build.gradle
+          mkdir -p app/libs app/src/main/assets
+          cp ../kernel/kernel.aar app/libs/kernel.aar
+          cp ../app/app.zip app/src/main/assets/app.zip
+          # debug-подпись (генерируем ключ в CI — без секретов)
+          keytool -genkeypair -dname "CN=SiYuan Fork,O=mihazzzold,C=RU" \
+            -alias androiddebugkey -keypass android -storepass android \
+            -keystore app/siyuan-android.jks -keyalg RSA -keysize 2048 -validity 10000
+          cat > signings.gradle <<'EOF'
+          android {
+            signingConfigs {
+              siyuanConfig {
+                storeFile file("siyuan-android.jks")
+                storePassword "android"
+                keyAlias "androiddebugkey"
+                keyPassword "android"
+              }
+            }
+          }
+          EOF
+          chmod +x gradlew
+          ./gradlew :app:assembleGoogleplayDebug --no-daemon -x lint
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: siyuan-android-arm64
+          path: siyuan-android/app/build/outputs/apk/**/*.apk
+          if-no-files-found: error
+
+  # ─────────────────────────────────────────────────────────────
+  # 3) Десктоп (Windows + Linux) через electron-builder
+  # ─────────────────────────────────────────────────────────────
+  desktop:
+    name: Desktop ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: linux
+            os: ubuntu-latest
+            goos: linux
+            goarch: amd64
+            kernel_path: "../app/kernel-linux/SiYuan-Kernel"
+            electron_args: dist-linux
+            artifact_glob: app/build/siyuan-*-linux.*
+          - name: windows
+            os: windows-latest
+            goos: windows
+            goarch: amd64
+            kernel_path: "../app/kernel/SiYuan-Kernel.exe"
+            electron_args: dist
+            artifact_glob: app/build/siyuan-*-win.exe
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: kernel/go.mod
+          cache-dependency-path: kernel/go.sum
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: goversioninfo (windows)
+        if: matrix.goos == 'windows'
+        working-directory: kernel
+        env:
+          CGO_ENABLED: 1
+        run: |
+          go install github.com/josephspurrier/goversioninfo/cmd/goversioninfo@latest
+          & "$(go env GOPATH)\bin\goversioninfo.exe" -platform-specific=true -icon="resource\icon.ico" -manifest="resource\goversioninfo.exe.manifest"
+
+      - name: Install deps + build UI
+        working-directory: app
+        run: |
+          npm install -g pnpm@$(node -e "console.log(require('./package.json').packageManager.split('@')[1])")
+          pnpm install --no-frozen-lockfile
+          pnpm run install:electron
+          pnpm run build
+
+      - name: Clean previous kernel/build
+        working-directory: app
+        shell: bash
+        run: rm -rf build kernel kernel-* kernel-linux
+
+      - name: Build kernel
+        working-directory: kernel
+        env:
+          CGO_ENABLED: 1
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+        run: go build -tags fts5 -o "${{ matrix.kernel_path }}" -ldflags "-s -w -X github.com/siyuan-note/siyuan/kernel/util.Mode=prod"
+
+      - name: Install RPM tools (linux)
+        if: matrix.goos == 'linux'
+        run: sudo apt-get update && sudo apt-get install -y rpm
+
+      - name: Build Electron app
+        working-directory: app
+        run: pnpm run ${{ matrix.electron_args }}
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: siyuan-desktop-${{ matrix.name }}
+          path: ${{ matrix.artifact_glob }}
+          if-no-files-found: warn

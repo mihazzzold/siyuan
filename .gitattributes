@@ -7,3 +7,7 @@ app/stage/protyle/** linguist-vendored
 *.scss text eol=lf
 *.ts   text eol=lf
 *.go   text eol=lf
+
+# Shell-скрипты всегда с LF (иначе ломаются на Linux)
+*.sh text eol=lf
+gateway/install.sh text eol=lf

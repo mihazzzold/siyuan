@@ -51,3 +51,37 @@ GATEWAY_INVITE_CODE=секрет docker compose up -d --build
 - Каждое активное ядро занимает ~150–300 МБ ОЗУ; рассчитано на команду до ~20 человек.
 - Просмотр чужой публикации «занимает» вкладку браузера целиком (маршрутизация по cookie): чтобы вернуться к своим заметкам, откройте `/gw/exit-share` или страницу аккаунта.
 - Настольное/мобильное приложение SiYuan к шлюзу не подключается — как и обычный Docker-вариант, это работа через браузер. Синхронизацию с настольным клиентом каждый пользователь может настроить сам средствами SiYuan (S3/WebDAV).
+
+## 🚀 Развёртывание в продакшн
+
+**Установщик-мастер** (спросит параметры, сгенерирует секреты, поднимет стек):
+
+```bash
+cd gateway
+bash install.sh
+```
+
+Режимы: **prod** (тянет готовый образ `ghcr.io/mihazzzold/siyuan-gateway:latest` из GHCR) или **local** (сборка из исходников). Параметры сохраняются в `gateway/.env` (не коммитится; шаблон — `.env.example`).
+
+Вручную (prod):
+
+```bash
+cp .env.example .env && nano .env       # заполните секреты
+docker compose -f docker-compose.prod.yml --env-file .env up -d
+```
+
+Для внешнего доступа поставьте перед шлюзом HTTPS-прокси (nginx/caddy/traefik) на порт `GATEWAY_PORT`, проксируйте WebSocket `/ws`, и оставьте `GATEWAY_SECURE_COOKIE=true`.
+
+## 🔁 CI/CD (GitHub Actions)
+
+Workflow `.github/workflows/master-build.yml` на каждый пуш в `master`:
+
+| Джоб | Что делает |
+|---|---|
+| **docker** | Собирает образ `gateway/Dockerfile` → пушит в GHCR (`:latest` и `:<sha>`), затем дёргает вебхук Portainer |
+| **android** | gomobile `kernel.aar` + `app.zip` + сборка APK (siyuan-android) → артефакт |
+| **desktop** | electron-builder для Windows и Linux → артефакты |
+
+**Автодеплой в Portainer:** в Portainer у стека включите *Webhook*, добавьте его URL в секреты GitHub как `PORTAINER_WEBHOOK_URL`. После сборки образа CI вызовет вебхук → Portainer перетянет `:latest` и перезапустит стек. Если секрет не задан — деплой пропускается (только публикация образа).
+
+**Доступ к образу:** после первого пуша сделайте GHCR-пакет `siyuan-gateway` публичным (Packages → Package settings), либо пропишите в Portainer учётные данные реестра `ghcr.io`.

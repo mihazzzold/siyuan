@@ -1,0 +1,12 @@
+# Локальный оверрайд для запуска на Windows: именованный том вместо /srv/...
+# Запуск: docker compose -f docker-compose.yml -f docker-compose.local.yml up -d --build
+services:
+  siyuan-gateway:
+    volumes:
+      - siyuan-users:/siyuan/users
+    environment:
+      - GATEWAY_INVITE_CODE=
+      - GATEWAY_SECURE_COOKIE=false
+
+volumes:
+  siyuan-users:
