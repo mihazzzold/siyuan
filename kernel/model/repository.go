@@ -1143,15 +1143,7 @@ func DownloadCloudSnapshot(tag, id string) (err error) {
 		return
 	}
 
-	switch Conf.Sync.Provider {
-	case conf.ProviderSiYuan:
-		if !IsSubscriber() {
-			util.PushErrMsg(Conf.Language(29), 5000)
-			return
-		}
-	case conf.ProviderWebDAV, conf.ProviderS3, conf.ProviderLocal:
-		// 自建存储（S3/WebDAV/本地）在本 fork 中不要求官方付费会员
-	}
+	// 本 fork 移除了同步的官方付费会员校验（自建存储与官方云端均不再要求会员）
 
 	defer util.PushClearProgress()
 
@@ -1182,15 +1174,7 @@ func UploadCloudSnapshot(tag, id string) (err error) {
 		return
 	}
 
-	switch Conf.Sync.Provider {
-	case conf.ProviderSiYuan:
-		if !IsSubscriber() {
-			util.PushErrMsg(Conf.Language(29), 5000)
-			return
-		}
-	case conf.ProviderWebDAV, conf.ProviderS3, conf.ProviderLocal:
-		// 自建存储（S3/WebDAV/本地）在本 fork 中不要求官方付费会员
-	}
+	// 本 fork 移除了同步的官方付费会员校验（自建存储与官方云端均不再要求会员）
 
 	util.PushEndlessProgress(Conf.Language(116))
 	defer util.PushClearProgress()
@@ -1220,15 +1204,7 @@ func RemoveCloudRepoTag(tag string) (err error) {
 		return
 	}
 
-	switch Conf.Sync.Provider {
-	case conf.ProviderSiYuan:
-		if !IsSubscriber() {
-			util.PushErrMsg(Conf.Language(29), 5000)
-			return
-		}
-	case conf.ProviderWebDAV, conf.ProviderS3, conf.ProviderLocal:
-		// 自建存储（S3/WebDAV/本地）在本 fork 中不要求官方付费会员
-	}
+	// 本 fork 移除了同步的官方付费会员校验（自建存储与官方云端均不再要求会员）
 
 	err = repo.RemoveCloudRepoTag(tag)
 	if err != nil {
@@ -1249,15 +1225,7 @@ func GetCloudRepoTagSnapshots() (ret []*dejavu.Log, err error) {
 		return
 	}
 
-	switch Conf.Sync.Provider {
-	case conf.ProviderSiYuan:
-		if !IsSubscriber() {
-			util.PushErrMsg(Conf.Language(29), 5000)
-			return
-		}
-	case conf.ProviderWebDAV, conf.ProviderS3, conf.ProviderLocal:
-		// 自建存储（S3/WebDAV/本地）在本 fork 中不要求官方付费会员
-	}
+	// 本 fork 移除了同步的官方付费会员校验（自建存储与官方云端均不再要求会员）
 
 	logs, err := repo.GetCloudRepoTagLogs(map[string]any{eventbus.CtxPushMsg: eventbus.CtxPushMsgToStatusBar})
 	if err != nil {
@@ -1282,15 +1250,7 @@ func GetCloudRepoSnapshots(page int) (ret []*dejavu.Log, pageCount, totalCount i
 		return
 	}
 
-	switch Conf.Sync.Provider {
-	case conf.ProviderSiYuan:
-		if !IsSubscriber() {
-			util.PushErrMsg(Conf.Language(29), 5000)
-			return
-		}
-	case conf.ProviderWebDAV, conf.ProviderS3, conf.ProviderLocal:
-		// 自建存储（S3/WebDAV/本地）在本 fork 中不要求官方付费会员
-	}
+	// 本 fork 移除了同步的官方付费会员校验（自建存储与官方云端均不再要求会员）
 
 	if 1 > page {
 		page = 1

@@ -37,13 +37,6 @@ import (
 )
 
 func SetCloudReminder(id, content, timed string) (err error) {
-	if !IsSubscriber() {
-		if "ios" == util.Container {
-			return errors.New(Conf.Language(122))
-		}
-		return errors.New(Conf.Language(29))
-	}
-
 	var timedMills int64
 	if "0" != timed {
 		t, e := dateparse.ParseIn(timed, time.Now().Location())
@@ -70,13 +63,6 @@ func SetCloudReminder(id, content, timed string) (err error) {
 }
 
 func SetBlockReminder(id, timed string) (err error) {
-	if !IsSubscriber() {
-		if "ios" == util.Container {
-			return errors.New(Conf.Language(122))
-		}
-		return errors.New(Conf.Language(29))
-	}
-
 	var timedMills int64
 	if "0" != timed {
 		t, e := dateparse.ParseIn(timed, time.Now().Location())

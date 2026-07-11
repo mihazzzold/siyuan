@@ -1,7 +1,7 @@
 import {showMessage} from "../../dialog/message";
 import {fetchPost, fetchSyncPost} from "../../util/fetch";
 import {confirmDialog} from "../../dialog/confirmDialog";
-import {isInIOS, saveExportFile} from "../../protyle/util/compatibility";
+import {saveExportFile} from "../../protyle/util/compatibility";
 import {isPaidUser, needSubscribe} from "../../util/needSubscribe";
 import {getCloudURL} from "../util/about";
 
@@ -75,11 +75,9 @@ const isThirdPartySyncProviderDef = (def: SyncProviderDef): def is SyncThirdPart
     return "configKey" in def;
 };
 
+// В self-hosted форке платных барьеров нет — «неоплаченные» подсказки больше не показываются
 const genThirdPartyUnpaidIntro = (): string => {
-    const accountServer = getCloudURL("");
-    return `<div>
-    ${window.siyuan.languages._kernel[214].replaceAll("${accountServer}", accountServer)}
-</div>`;
+    return "";
 };
 
 const SYNC_PROVIDER_DEFS: Record<Config.ISync["provider"], SyncProviderDef> = {
@@ -87,11 +85,7 @@ const SYNC_PROVIDER_DEFS: Record<Config.ISync["provider"], SyncProviderDef> = {
         isProviderConfigAllowed: () => !needSubscribe(""),
         genIntro: () => `<div class="b3-label b3-label--inner">${window.siyuan.languages.syncOfficialProviderIntro}</div>`,
         genUnpaidIntro: () => {
-            const accountServer = getCloudURL("");
             return `<div class="b3-label b3-label--inner">
-    ${isInIOS() ? window.siyuan.languages._kernel[295] : window.siyuan.languages._kernel[29].replaceAll("${accountServer}", accountServer)}
-</div>
-<div class="b3-label b3-label--inner">
     ${window.siyuan.languages.cloudIntro1}
     <div class="b3-label__text">
         <ul class="fn__list">
@@ -199,12 +193,9 @@ const SYNC_PROVIDER_DEFS: Record<Config.ISync["provider"], SyncProviderDef> = {
 };
 
 const buildProviderConfigKeywords = (): string[] => {
-    const accountServer = getCloudURL("");
     return [
         // 官方云（provider === 0）
         window.siyuan.languages.syncOfficialProviderIntro,
-        window.siyuan.languages._kernel[29].replaceAll("${accountServer}", accountServer),
-        window.siyuan.languages._kernel[295],
         window.siyuan.languages.cloudIntro1,
         window.siyuan.languages.cloudIntro2,
         window.siyuan.languages.cloudIntro3,
@@ -216,8 +207,6 @@ const buildProviderConfigKeywords = (): string[] => {
         window.siyuan.languages.cloudIntro9,
         window.siyuan.languages.cloudIntro10,
         window.siyuan.languages.cloudIntro11,
-        // 未订阅 / 本地等提示
-        window.siyuan.languages._kernel[214].replaceAll("${accountServer}", accountServer),
         window.siyuan.languages.mobileNotSupport,
         // S3 / WebDAV / 本地第三方
         window.siyuan.languages.syncThirdPartyProviderS3Intro,

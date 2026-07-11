@@ -1,16 +1,11 @@
-import {isPaidUser, needSubscribe} from "../util/needSubscribe";
 import {showMessage} from "../dialog/message";
 import {fetchPost} from "../util/fetch";
 import {Dialog} from "../dialog";
 import {confirmDialog} from "../dialog/confirmDialog";
 import {isMobile} from "../util/functions";
 import {processSync} from "../dialog/processSystem";
-/// #if !MOBILE
-import {openSetting} from "../config";
-/// #endif
 import {App} from "../index";
 import {Constants} from "../constants";
-import {getCloudURL} from "../config/util/about";
 
 export const addCloudName = (cloudListElement: Element) => {
     const dialog = new Dialog({
@@ -156,23 +151,7 @@ export const syncGuide = (app?: App) => {
     if (app && document.querySelector("#barSync")?.classList.contains("toolbar__item--active")) {
         return;
     }
-    if (window.siyuan.config.sync.provider === 0 && needSubscribe()) {
-        /// #if !MOBILE
-        if (app) {
-            openSetting(app, "sync");
-        }
-        /// #endif
-        showMessage(window.siyuan.languages._kernel[29].replaceAll("${accountServer}", getCloudURL("")));
-        return;
-    } else if (!isPaidUser()) {
-        /// #if !MOBILE
-        if (app) {
-            openSetting(app, "sync");
-        }
-        /// #endif
-        showMessage(window.siyuan.languages._kernel[214].replaceAll("${accountServer}", getCloudURL("")));
-        return;
-    }
+    // Платные барьеры синхронизации в self-hosted форке отключены
     if (!window.siyuan.config.repo.key) {
         setKey(true);
         return;
