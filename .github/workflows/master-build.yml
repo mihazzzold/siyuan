@@ -257,3 +257,63 @@ jobs:
           name: siyuan-desktop-${{ matrix.name }}
           path: ${{ matrix.artifact_glob }}
           if-no-files-found: warn
+
+  # ─────────────────────────────────────────────────────────────
+  # 4) Релиз: собрать все артефакты и опубликовать GitHub Release
+  # ─────────────────────────────────────────────────────────────
+  release:
+    name: Publish release
+    needs: [docker, android, desktop]
+    if: success()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Determine version and image
+        id: meta
+        run: |
+          VERSION="$(jq -r .version app/package.json)"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "tag=v${VERSION}-build.${{ github.run_number }}" >> "$GITHUB_OUTPUT"
+          echo "image=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/siyuan-gateway" >> "$GITHUB_OUTPUT"
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: dist
+
+      - name: List downloaded files
+        run: find dist -type f | sort
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: SiYuan (форк mihazzzold) v${{ steps.meta.outputs.version }} · сборка ${{ github.run_number }}
+          make_latest: true
+          generate_release_notes: true
+          body: |
+            Автоматическая сборка из ветки `master` (commit ${{ github.sha }}).
+
+            ## 📦 Что внутри
+            - 🐳 **Сервер/сайт (Docker):** `${{ steps.meta.outputs.image }}:latest` и `:${{ github.sha }}`
+              ```bash
+              docker pull ${{ steps.meta.outputs.image }}:${{ github.sha }}
+              ```
+            - 🤖 **Android:** APK (arm64) — в ассетах ниже
+            - 🖥️ **Windows:** установщик `.exe`
+            - 🐧 **Linux:** AppImage / .deb / .rpm / .tar.gz
+
+            ## 🚀 Установка сервера
+            Мастер: `bash gateway/install.sh` — или `docker compose -f gateway/docker-compose.prod.yml --env-file .env up -d`.
+
+            ---
+          files: |
+            dist/**/*.apk
+            dist/**/*.exe
+            dist/**/*.AppImage
+            dist/**/*.deb
+            dist/**/*.rpm
+            dist/**/*.tar.gz
