@@ -370,8 +370,7 @@ const registerGitBackupGroup = (tab: SettingTabBuilder) => {
 };
 
 export const registerSyncTab = (tab: SettingTabBuilder) => {
-    // 官方账号（ld246）登录/注册区块暂不启用，后续接入自建服务时再恢复
-    // registerAccountGroup(tab);
+    // 官方云端账号（ld246/liuyun）—— fork 不使用，仅保留自建同步（S3/WebDAV/本地）、Git 备份与数据仓库
     registerSyncGroup(tab);
     registerGitBackupGroup(tab);
     registerRepoGroup(tab);
