@@ -116,8 +116,23 @@ for (let i = argStart; i < process.argv.length; i++) {
     writeLog("command line switch [" + arg + "]");
 }
 
+// 瘦客户端模式：已配置的远程服务器（网关）地址。为空表示本地内核模式。
+let remoteBaseURL = "";
+const remoteConfPath = path.join(confDir, "remote.json");
 try {
-    firstOpen = !fs.existsSync(path.join(confDir, "workspace.json"));
+    if (fs.existsSync(remoteConfPath)) {
+        const rc = JSON.parse(fs.readFileSync(remoteConfPath, "utf8"));
+        if (rc && "string" === typeof rc.url && "" !== rc.url) {
+            remoteBaseURL = rc.url;
+        }
+    }
+} catch (e) {
+    console.error("read remote.json failed", e);
+}
+
+try {
+    // 已配置远程服务器时同样视为已初始化，不再弹出首次启动窗口
+    firstOpen = !fs.existsSync(path.join(confDir, "workspace.json")) && "" === remoteBaseURL;
     if (!fs.existsSync(confDir)) {
         fs.mkdirSync(confDir, {mode: 0o755, recursive: true});
     }
@@ -180,6 +195,10 @@ if (!firstOpen && !getArg("--workspace")) {
 const windowNavigate = (currentWindow, windowType) => {
     currentWindow.webContents.on("will-navigate", (event) => {
         const url = event.url;
+        // 瘦客户端：网关同源内的所有跳转（登录页、鉴权、应用、导出等）都放行
+        if ("" !== remoteBaseURL && url.startsWith(remoteBaseURL)) {
+            return;
+        }
         if (url.startsWith(localServer)) {
             try {
                 const pathname = new URL(url).pathname;
@@ -516,24 +535,30 @@ const initMainWindow = () => {
     // pending（既不 resolve 也不 reject），会导致 loadURL 永不执行，主窗口卡在启动页无法显示。
     // 这里无论 setProxy 是否完成，最多等待 5 秒后强制加载主界面。
     const loadMainURL = () => {
-        currentWindow.loadURL(getServer() + "/stage/build/app/?v=" + Date.now());
+        const base = "" !== remoteBaseURL ? remoteBaseURL : getServer();
+        currentWindow.loadURL(base + "/stage/build/app/?v=" + Date.now());
     };
-    net.fetch(getServer() + "/api/system/getNetwork", {method: "POST"}).then((response) => {
-        return response.json();
-    }).then((response) => {
-        const setProxyDone = setProxy(`${response.data.proxy.scheme}://${response.data.proxy.host}:${response.data.proxy.port}`, currentWindow.webContents);
-        Promise.race([
-            Promise.resolve(setProxyDone),
-            new Promise((resolve) => setTimeout(resolve, 5000)), // setProxy 永久 pending 时的超时兜底
-        ]).then(loadMainURL).catch(() => {
-            writeLog("setProxy failed, load main UI without proxy");
+    if ("" !== remoteBaseURL) {
+        // 瘦客户端：直接加载远程 UI，跳过本地内核的代理探测
+        loadMainURL();
+    } else {
+        net.fetch(getServer() + "/api/system/getNetwork", {method: "POST"}).then((response) => {
+            return response.json();
+        }).then((response) => {
+            const setProxyDone = setProxy(`${response.data.proxy.scheme}://${response.data.proxy.host}:${response.data.proxy.port}`, currentWindow.webContents);
+            Promise.race([
+                Promise.resolve(setProxyDone),
+                new Promise((resolve) => setTimeout(resolve, 5000)), // setProxy 永久 pending 时的超时兜底
+            ]).then(loadMainURL).catch(() => {
+                writeLog("setProxy failed, load main UI without proxy");
+                loadMainURL();
+            });
+        }).catch((e) => {
+            // getNetwork 失败也要继续加载主界面，避免主窗口不加载导致卡在启动页
+            writeLog("getNetwork failed, load main UI without proxy: " + e.message);
             loadMainURL();
         });
-    }).catch((e) => {
-        // getNetwork 失败也要继续加载主界面，避免主窗口不加载导致卡在启动页
-        writeLog("getNetwork failed, load main UI without proxy: " + e.message);
-        loadMainURL();
-    });
+    }
 
     // 发起互联网服务请求时绕过安全策略 https://github.com/siyuan-note/siyuan/issues/5516
     currentWindow.webContents.session.webRequest.onBeforeSendHeaders((details, cb) => {
@@ -577,6 +602,16 @@ const initMainWindow = () => {
     });
 
     currentWindow.webContents.on("did-finish-load", () => {
+        // 瘦客户端：会话过期时网关会显示登录页（不会发送 siyuan-ready-to-show），
+        // 这里在页面加载完成后直接显示窗口，避免主窗口永久隐藏
+        if ("" !== remoteBaseURL) {
+            if (!currentWindow.isDestroyed() && !currentWindow.isVisible() && !isOpenAsHidden()) {
+                currentWindow.show();
+            }
+            if (bootWindow && !bootWindow.isDestroyed()) {
+                bootWindow.destroy();
+            }
+        }
         let siyuanOpenURL = process.argv.find((arg) => arg.startsWith("siyuan://"));
         if (siyuanOpenURL) {
             if (currentWindow.isMinimized()) {
@@ -617,6 +652,19 @@ const initMainWindow = () => {
     // 当前页面链接使用浏览器打开
     windowNavigate(currentWindow, "app");
     currentWindow.on("close", (event) => {
+        // 瘦客户端且当前不在应用页（如网关登录页）时，前端没有 siyuan-save-close 处理器，
+        // 若拦截关闭会导致窗口无法关闭，这里直接放行默认关闭
+        if ("" !== remoteBaseURL) {
+            let curURL = "";
+            try {
+                curURL = currentWindow.webContents.getURL();
+            } catch (e) {
+                curURL = "";
+            }
+            if (-1 === curURL.indexOf("/stage/build/app/")) {
+                return;
+            }
+        }
         if (currentWindow && !currentWindow.isDestroyed()) {
             currentWindow.webContents.send("siyuan-save-close", false);
         }
@@ -663,6 +711,95 @@ const showWindow = (wnd) => {
         wnd.restore();
     }
     wnd.show();
+};
+
+// 规范化用户填写的服务器地址：补全协议、去掉结尾斜杠、容错去掉 /gw/login 后缀
+const normalizeServerURL = (raw) => {
+    let u = (raw || "").trim();
+    if ("" === u) {
+        return "";
+    }
+    if (!/^https?:\/\//i.test(u)) {
+        u = "https://" + u;
+    }
+    u = u.replace(/\/+$/, "");
+    u = u.replace(/\/gw\/login\/?$/i, "");
+    return u;
+};
+
+// 瘦客户端：向网关 /gw/login 提交用户名/密码登录，成功后把会话 cookie 写入默认会话，
+// 并持久化远程地址供下次启动直接重连。返回 {ok:true} 或 {ok:false, code:"auth"|"connect"}。
+const connectRemote = async (server) => {
+    const base = normalizeServerURL(server && server.url);
+    if ("" === base) {
+        return {ok: false, code: "connect"};
+    }
+
+    const form = new URLSearchParams();
+    form.set("username", (server.username || "").trim());
+    form.set("password", server.password || "");
+    form.set("remember", "1");
+
+    let loginResp = null;
+    try {
+        loginResp = await net.fetch(base + "/gw/login", {
+            method: "POST",
+            headers: {"Content-Type": "application/x-www-form-urlencoded"},
+            body: form.toString(),
+            credentials: "include",
+            redirect: "manual",
+        });
+    } catch (e) {
+        writeLog("remote login request failed: " + e);
+        return {ok: false, code: "connect"};
+    }
+
+    // 兜底：手动把 gw_session 写入默认会话（防止 manual 重定向下 cookie 未自动落库）
+    try {
+        const rawCookie = loginResp.headers.get("set-cookie") || "";
+        const m = rawCookie.match(/gw_session=([^;,\s]+)/);
+        if (m) {
+            const parsed = new URL(base);
+            await session.defaultSession.cookies.set({
+                url: base,
+                name: "gw_session",
+                value: m[1],
+                path: "/",
+                httpOnly: true,
+                secure: "https:" === parsed.protocol,
+            });
+        }
+    } catch (e) {
+        writeLog("set remote cookie failed: " + e);
+    }
+
+    // 用 whoami 复核会话是否真正建立（成功登录才有登录名）
+    let user = "";
+    try {
+        const who = await net.fetch(base + "/gw/whoami", {method: "GET", credentials: "include"});
+        if (who.ok) {
+            const data = await who.json();
+            user = (data && data.user) || "";
+        }
+    } catch (e) {
+        writeLog("remote whoami failed: " + e);
+    }
+
+    if ("" === user) {
+        // 服务器可达但会话没建立 → 凭据错误；否则视为连接问题
+        if (loginResp && (200 === loginResp.status || 401 === loginResp.status)) {
+            return {ok: false, code: "auth"};
+        }
+        return {ok: false, code: "connect"};
+    }
+
+    remoteBaseURL = base;
+    try {
+        fs.writeFileSync(remoteConfPath, JSON.stringify({url: base, user: user}), {mode: 0o600});
+    } catch (e) {
+        writeLog("write remote.json failed: " + e);
+    }
+    return {ok: true};
 };
 
 const initKernel = (workspace, port, lang, safeMode) => {
@@ -1569,6 +1706,18 @@ app.whenReady().then(() => {
         firstOpenWindow.show();
         // 初始化启动
         ipcMain.on("siyuan-first-init", (event, data) => {
+            if ("server" === data.mode && data.server) {
+                // 瘦客户端：登录网关，成功后关闭首启窗口并加载远程 UI；失败回传错误码
+                connectRemote(data.server).then((res) => {
+                    if (res.ok) {
+                        firstOpenWindow.destroy();
+                        initMainWindow();
+                    } else {
+                        event.reply("siyuan-first-init-error", res.code);
+                    }
+                });
+                return;
+            }
             initKernel(data.workspace, "", data.lang).then((isSucc) => {
                 if (isSucc) {
                     initMainWindow();
@@ -1576,6 +1725,10 @@ app.whenReady().then(() => {
             });
             firstOpenWindow.destroy();
         });
+    } else if ("" !== remoteBaseURL && !getArg("--workspace")) {
+        // 已配置远程服务器：瘦客户端直接重连并加载远程 UI（会话过期时网关会显示登录页）
+        writeLog("remote mode, connecting to [" + remoteBaseURL + "]");
+        initMainWindow();
     } else if (hasAppCrashLog()) {
         // 上次渲染进程崩溃，弹出安全模式选择窗口
         const safeModeWindow = new BrowserWindow({

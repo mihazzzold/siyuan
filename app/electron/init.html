@@ -45,12 +45,55 @@
     </label>
     <label class="b3-label">
         <div>
-            <span data-i18n="workspace"></span>
-            <div class="b3-label__text" data-i18n="workspaceDesc"></div>
+            <span data-i18n="mode"></span>
+            <div class="b3-label__text" data-i18n="modeDesc"></div>
         </div>
         <div class="fn__flex-1"></div>
-        <button class="b3-button fn__flex-center choosePath" data-i18n="selectBtn"></button>
+        <select class="b3-select mode">
+            <option value="local" data-i18n="modeLocalOpt"></option>
+            <option value="server" data-i18n="modeServerOpt"></option>
+        </select>
     </label>
+    <div id="localBlock">
+        <label class="b3-label">
+            <div>
+                <span data-i18n="workspace"></span>
+                <div class="b3-label__text" data-i18n="workspaceDesc"></div>
+            </div>
+            <div class="fn__flex-1"></div>
+            <button class="b3-button fn__flex-center choosePath" data-i18n="selectBtn"></button>
+        </label>
+    </div>
+    <div id="serverBlock" class="fn__none">
+        <label class="b3-label">
+            <div>
+                <span data-i18n="serverAddr"></span>
+                <div class="b3-label__text" data-i18n="serverAddrDesc"></div>
+            </div>
+            <div class="fn__flex-1"></div>
+            <input class="b3-text-field serverAddr" spellcheck="false" autocapitalize="off"
+                   data-i18n-placeholder="serverAddrPlaceholder">
+        </label>
+        <label class="b3-label">
+            <div>
+                <span data-i18n="serverUser"></span>
+            </div>
+            <div class="fn__flex-1"></div>
+            <input class="b3-text-field serverUser" spellcheck="false" autocapitalize="off" autocomplete="username">
+        </label>
+        <label class="b3-label">
+            <div>
+                <span data-i18n="serverPass"></span>
+            </div>
+            <div class="fn__flex-1"></div>
+            <input class="b3-text-field serverPass" type="password" autocomplete="current-password">
+        </label>
+        <div class="b3-label" style="box-shadow: none; margin-bottom: 0;">
+            <div class="serverMsg"></div>
+            <div class="fn__flex-1"></div>
+            <button class="b3-button fn__flex-center connectServer" data-i18n="connectBtn"></button>
+        </div>
+    </div>
     <div class="fn__flex-1"></div>
     <div class="fn__flex-1 notice">
         <span data-i18n="notice"></span>
@@ -85,16 +128,74 @@
 
     initWindowChrome()
 
+    const {ipcRenderer} = require("electron")
+
+    // 本地 / 服务器 模式切换
+    const modeSelect = document.querySelector(".mode")
+    const localBlock = document.getElementById("localBlock")
+    const serverBlock = document.getElementById("serverBlock")
+    const applyMode = () => {
+        const isServer = "server" === modeSelect.value
+        serverBlock.classList.toggle("fn__none", !isServer)
+        localBlock.classList.toggle("fn__none", isServer)
+    }
+    modeSelect.addEventListener("change", applyMode)
+    applyMode()
+
+    // 本地：选择工作空间并启动本地内核
     document.querySelector(".choosePath").addEventListener("click", async () => {
-        const {ipcRenderer} = require("electron")
         const initPath = await chooseWorkspacePath(langData)
         if (null === initPath) {
             return
         }
         ipcRenderer.send("siyuan-first-init", {
+            mode: "local",
             workspace: initPath,
             lang: langSelect.value,
         })
+    })
+
+    // 服务器：向网关登录（瘦客户端）
+    const connectBtn = document.querySelector(".connectServer")
+    const serverMsg = document.querySelector(".serverMsg")
+    const showServerMsg = (text, isError) => {
+        serverMsg.textContent = text || ""
+        serverMsg.classList.toggle("error", !!isError)
+    }
+    const submitServer = () => {
+        const url = document.querySelector(".serverAddr").value.trim()
+        const username = document.querySelector(".serverUser").value.trim()
+        const password = document.querySelector(".serverPass").value
+        if ("" === url || "" === username || "" === password) {
+            showServerMsg(langData.serverErrEmpty, true)
+            return
+        }
+        connectBtn.disabled = true
+        showServerMsg(langData.serverConnecting, false)
+        ipcRenderer.send("siyuan-first-init", {
+            mode: "server",
+            server: {url, username, password},
+            lang: langSelect.value,
+        })
+    }
+    connectBtn.addEventListener("click", submitServer)
+    // 在服务器字段中按回车直接登录
+    serverBlock.querySelectorAll(".b3-text-field").forEach((input) => {
+        input.addEventListener("keydown", (event) => {
+            if ("Enter" === event.key) {
+                event.preventDefault()
+                submitServer()
+            }
+        })
+    })
+    // 主进程登录失败回传错误码
+    ipcRenderer.on("siyuan-first-init-error", (event, code) => {
+        connectBtn.disabled = false
+        const map = {
+            auth: langData.serverErrAuth,
+            connect: langData.serverErrConnect,
+        }
+        showServerMsg(map[code] || langData.serverErrConnect, true)
     })
 </script>
 </body>

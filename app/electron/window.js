@@ -654,6 +654,83 @@ const I18N_BASE = {
     },
 };;
 
+// 「连接到服务器」（瘦客户端登录）相关文案。只翻译 en/ru/zh，其余语言回退英文。
+// 通过下方合并循环补全到 I18N_BASE 各语言块，缺失键不会覆盖已有文案。
+const I18N_SERVER = {
+    "en": {
+        mode: "🔌 Startup mode",
+        modeDesc: "Store notes locally, or sign in to your self-hosted server and work with your data on any device",
+        modeLocalOpt: "Local storage",
+        modeServerOpt: "Server",
+        serverAddr: "🌐 Server address",
+        serverAddrDesc: "Address of your SiYuan server (gateway), e.g. https://notes.example.com",
+        serverAddrPlaceholder: "https://notes.example.com",
+        serverUser: "👤 Username",
+        serverPass: "🔑 Password",
+        connectBtn: "Sign in",
+        serverConnecting: "Connecting…",
+        serverErrEmpty: "⚠️ Fill in the address, username and password",
+        serverErrConnect: "⚠️ Cannot reach the server — check the address and that it is running",
+        serverErrAuth: "⚠️ Invalid username or password",
+    },
+    "ru": {
+        mode: "🔌 Режим запуска",
+        modeDesc: "Хранить заметки локально либо войти на свой сервер и работать с данными на любом устройстве",
+        modeLocalOpt: "Локальное хранилище",
+        modeServerOpt: "Сервер",
+        serverAddr: "🌐 Адрес сервера",
+        serverAddrDesc: "Адрес вашего сервера SiYuan (шлюза), например https://notes.example.com",
+        serverAddrPlaceholder: "https://notes.example.com",
+        serverUser: "👤 Логин",
+        serverPass: "🔑 Пароль",
+        connectBtn: "Войти",
+        serverConnecting: "Подключение…",
+        serverErrEmpty: "⚠️ Заполните адрес, логин и пароль",
+        serverErrConnect: "⚠️ Не удаётся подключиться к серверу — проверьте адрес и что он запущен",
+        serverErrAuth: "⚠️ Неверный логин или пароль",
+    },
+    "zh-CN": {
+        mode: "🔌 启动方式",
+        modeDesc: "在本地存储笔记，或登录到你自建的服务器，在任意设备上使用你的数据",
+        modeLocalOpt: "本地存储",
+        modeServerOpt: "服务器",
+        serverAddr: "🌐 服务器地址",
+        serverAddrDesc: "你的思源服务器（网关）地址，例如 https://notes.example.com",
+        serverAddrPlaceholder: "https://notes.example.com",
+        serverUser: "👤 用户名",
+        serverPass: "🔑 密码",
+        connectBtn: "登录",
+        serverConnecting: "连接中…",
+        serverErrEmpty: "⚠️ 请填写地址、用户名和密码",
+        serverErrConnect: "⚠️ 无法连接到服务器——请检查地址以及服务是否已启动",
+        serverErrAuth: "⚠️ 用户名或密码错误",
+    },
+    "zh-TW": {
+        mode: "🔌 啟動方式",
+        modeDesc: "在本機儲存筆記，或登入到你自建的伺服器，在任意裝置上使用你的資料",
+        modeLocalOpt: "本機儲存",
+        modeServerOpt: "伺服器",
+        serverAddr: "🌐 伺服器位址",
+        serverAddrDesc: "你的思源伺服器（閘道）位址，例如 https://notes.example.com",
+        serverAddrPlaceholder: "https://notes.example.com",
+        serverUser: "👤 使用者名稱",
+        serverPass: "🔑 密碼",
+        connectBtn: "登入",
+        serverConnecting: "連線中…",
+        serverErrEmpty: "⚠️ 請填寫位址、使用者名稱和密碼",
+        serverErrConnect: "⚠️ 無法連線到伺服器——請檢查位址以及服務是否已啟動",
+        serverErrAuth: "⚠️ 使用者名稱或密碼錯誤",
+    },
+};
+Object.keys(I18N_BASE).forEach((l) => {
+    const server = I18N_SERVER[l] || I18N_SERVER["en"];
+    Object.keys(server).forEach((k) => {
+        if (undefined === I18N_BASE[l][k]) {
+            I18N_BASE[l][k] = server[k];
+        }
+    });
+});
+
 // 当前界面语言，由各 HTML 设置
 let currentLang = decodeURIComponent(getSearch("lang"));
 
@@ -678,6 +755,13 @@ const applyLang = (lang) => {
         const key = item.getAttribute("data-i18n-href");
         if (langData[key]) {
             item.href = langData[key];
+        }
+    });
+    // 输入框 placeholder 文案
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(item => {
+        const key = item.getAttribute("data-i18n-placeholder");
+        if (langData[key]) {
+            item.placeholder = langData[key];
         }
     });
     currentLang = lang;
