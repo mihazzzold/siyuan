@@ -1600,7 +1600,7 @@
   "mobileModeTip": "Zakázať pre použitie mobilného rozloženia",
   "checkUpdate": "Skontrolovať aktualizáciu",
   "currentVer": "Aktuálna verzia",
-  "downloadLatestVer": "<a href=\"https://b3log.org/siyuan/en/download.html\", target=\"_blank\">Stiahnuť najnovšiu verziu</a>",
+  "downloadLatestVer": "<a href=\"https://github.com/mihazzzold/siyuan/releases\", target=\"_blank\">Stiahnuť najnovšiu verziu</a>",
   "themeLight": "Svetlá",
   "themeDark": "Tmavá",
   "themeOS": "Podľa systému",

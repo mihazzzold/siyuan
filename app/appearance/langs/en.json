@@ -1600,7 +1600,7 @@
   "mobileModeTip": "Use mobile interface layout when disabled",
   "checkUpdate": "Check update",
   "currentVer": "Current version",
-  "downloadLatestVer": "<a href=\"https://b3log.org/siyuan/en/download.html\", target=\"_blank\">Download the latest version</a>",
+  "downloadLatestVer": "<a href=\"https://github.com/mihazzzold/siyuan/releases\", target=\"_blank\">Download the latest version</a>",
   "themeLight": "Light",
   "themeDark": "Dark",
   "themeOS": "Follow the system",

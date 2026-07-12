@@ -1600,7 +1600,7 @@
   "mobileModeTip": "Вимкніть для використання мобільного макета",
   "checkUpdate": "Перевірити оновлення",
   "currentVer": "Поточна версія",
-  "downloadLatestVer": "<a href=\"https://b3log.org/siyuan/en/download.html\", target=\"_blank\">Завантажити останню версію</a>",
+  "downloadLatestVer": "<a href=\"https://github.com/mihazzzold/siyuan/releases\", target=\"_blank\">Завантажити останню версію</a>",
   "themeLight": "Світла",
   "themeDark": "Темна",
   "themeOS": "Як у системі",
