@@ -1,7 +1,6 @@
 import type {SettingTabBuilder} from "../setting/builder";
 import {Constants} from "../../constants";
 import {fetchPost} from "../../util/fetch";
-import {getCloudURL} from "../util/about";
 import {sendAppSetting} from "./appRuntime";
 
 const registerAboutVersionGroup = (tab: SettingTabBuilder) => {
@@ -81,9 +80,9 @@ const registerAboutInfoGroup = (tab: SettingTabBuilder) => {
             window.siyuan.languages.slogan,
             window.siyuan.languages.about1,
             window.siyuan.languages.feedback,
-            window.siyuan.languages.sponsor,
             motto,
         ],
+        // 官方云端「赞助」按钮 —— fork 不使用，已移除
         html: () => `<div class="fn__flex b3-label config-item config-wrap">
     <div class="fn__flex-1">
         <div class="config-about__logo">
@@ -100,19 +99,7 @@ const registerAboutInfoGroup = (tab: SettingTabBuilder) => {
         <div class='fn__hr'></div>
         ${window.siyuan.languages.about1}${window.siyuan.config.system.container === "harmony" ? ` • ${window.siyuan.languages.feedback} 845765@qq.com` : ""}
     </div>
-    <div class="fn__space"></div>
-    <div class="fn__flex-center fn__size200">
-        <button id="sponsorBtn" class="b3-button b3-button--pink fn__block">
-            ${Constants.SIYUAN_IMAGE_SPONSOR}
-            ${window.siyuan.languages.sponsor}
-        </button>
-    </div>
 </div>`,
-        afterMount: (root) => {
-            root.querySelector("#sponsorBtn")?.addEventListener("click", () => {
-                window.open(getCloudURL("sponsor"), "_blank");
-            });
-        },
     });
     group.slot({
         key: "accountSupport",
