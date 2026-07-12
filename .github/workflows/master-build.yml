@@ -213,6 +213,17 @@ jobs:
         with:
           node-version: 24
 
+      # Бамп версии на каждую сборку: electron-updater сравнивает version из package.json,
+      # иначе все сборки были бы 3.7.1 и обновление никогда бы не обнаружилось.
+      - name: Set build version
+        working-directory: app
+        shell: bash
+        run: |
+          BASE=$(node -e "console.log(require('./package.json').version.split('-')[0])")
+          VER="${BASE}-build.${{ github.run_number }}"
+          node -e "const f='./package.json';const p=require(f);p.version='${VER}';require('fs').writeFileSync(f, JSON.stringify(p,null,2)+'\n')"
+          echo "build version: ${VER}"
+
       - name: goversioninfo (windows)
         if: matrix.goos == 'windows'
         working-directory: kernel
@@ -255,7 +266,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: siyuan-desktop-${{ matrix.name }}
-          path: ${{ matrix.artifact_glob }}
+          # + метаданные автообновления electron-updater (latest.yml / latest-linux.yml)
+          #   и .blockmap для дифференциальных обновлений Windows
+          path: |
+            ${{ matrix.artifact_glob }}
+            app/build/latest*.yml
+            app/build/*.blockmap
           if-no-files-found: warn
 
   # ─────────────────────────────────────────────────────────────
@@ -308,6 +324,9 @@ jobs:
             - 🖥️ **Windows:** установщик `.exe`
             - 🐧 **Linux:** AppImage / .deb / .rpm / .tar.gz
 
+            🔄 **Автообновление в один клик** работает для Windows (`.exe`) и Linux **AppImage**
+            (файлы `latest*.yml` — метаданные обновления, не удаляйте их). Пакеты deb/rpm/tar.gz обновляются вручную.
+
             ## 🚀 Установка сервера
             Мастер: `bash gateway/install.sh` — или `docker compose -f gateway/docker-compose.prod.yml --env-file .env up -d`.
 
@@ -319,3 +338,5 @@ jobs:
             dist/**/*.deb
             dist/**/*.rpm
             dist/**/*.tar.gz
+            dist/**/latest*.yml
+            dist/**/*.blockmap

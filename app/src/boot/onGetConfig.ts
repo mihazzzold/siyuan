@@ -25,6 +25,7 @@ import {App} from "../index";
 import {initWindowEvent} from "./globalEvent/event";
 import {sendGlobalShortcut} from "./globalEvent/keydown";
 import {closeWindow} from "../window/closeWin";
+import {showUpdateReady} from "../dialog/updateReady";
 import {correctHotkey} from "./globalEvent/commonHotkey";
 import {recordBeforeResizeTop} from "../protyle/util/resize";
 import {processSiYuanUri} from "../util/uri";
@@ -182,6 +183,12 @@ export const initWindow = async (app: App) => {
             winOnClose(close);
         }
     });
+    if (!isWindow()) {
+        // 自动更新：主进程下载完新版本后弹出「重启以更新」提示条
+        ipcRenderer.on(Constants.SIYUAN_UPDATE_DOWNLOADED, (event, data) => {
+            showUpdateReady(data && data.version ? data.version : "");
+        });
+    }
     ipcRenderer.on(Constants.SIYUAN_SEND_WINDOWS, (e, ipcData: IWebSocketData) => {
         onWindowsMsg(ipcData, app);
     });
