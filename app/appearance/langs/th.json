@@ -1600,7 +1600,7 @@
   "mobileModeTip": "เมื่อปิดใช้งาน จะใช้เค้าโครงอินเทอร์เฟซมือถือ",
   "checkUpdate": "ตรวจสอบอัปเดต",
   "currentVer": "เวอร์ชัน",
-  "downloadLatestVer": "<a href=\"https://b3log.org/siyuan/download.html\" target=\"_blank\">ดาวน์โหลดเวอร์ชันล่าสุด</a>",
+  "downloadLatestVer": "<a href=\"https://github.com/mihazzzold/siyuan/releases\" target=\"_blank\">ดาวน์โหลดเวอร์ชันล่าสุด</a>",
   "themeLight": "สว่าง",
   "themeDark": "มืด",
   "themeOS": "ตามระบบ",

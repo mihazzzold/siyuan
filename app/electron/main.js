@@ -510,7 +510,7 @@ const initMainWindow = () => {
         writeLog("window position [x=" + x + ", y=" + y + "]");
         currentWindow.setPosition(x, y);
     }
-    currentWindow.webContents.userAgent = "SiYuan/" + appVer + " https://b3log.org/siyuan Electron " + currentWindow.webContents.userAgent;
+    currentWindow.webContents.userAgent = "SiYuan/" + appVer + " https://github.com/mihazzzold/siyuan Electron " + currentWindow.webContents.userAgent;
 
     // 加载主界面。setProxy 用超时兜底包装：Electron 在某些系统代理配置下 session.setProxy 可能永久
     // pending（既不 resolve 也不 reject），会导致 loadURL 永不执行，主窗口卡在启动页无法显示。
@@ -551,7 +551,7 @@ const initMainWindow = () => {
 
         if (-1 < details.url.toLowerCase().indexOf("youtube")) {
             // YouTube 设置 Referer https://github.com/siyuan-note/siyuan/issues/16319
-            details.requestHeaders["Referer"] = "https://b3log.org/siyuan/";
+            details.requestHeaders["Referer"] = "https://github.com/mihazzzold/siyuan/";
             cb({requestHeaders: details.requestHeaders});
             return;
         }
@@ -776,7 +776,7 @@ const initKernel = (workspace, port, lang, safeMode) => {
                             errorWindowId = showErrorWindow("初始化工作空间失败", "Failed to create workspace directory", "<div>工作空间文件夹权限不足，请查看 工作空间/temp/siyuan.log 获取详细报错信息</div><div>Insufficient permissions for the workspace folder. Please check workspace/temp/siyuan.log for detailed error information.</div>");
                             break;
                         case 26:
-                            errorWindowId = showErrorWindow("已成功避免潜在的数据损坏", "Successfully avoid potential data corruption", "<div>工作空间下的文件正在被第三方软件（比如同步网盘、杀毒软件等）打开占用，继续使用会导致数据损坏，思源内核已经安全退出。</div><div>请将工作空间移动到其他路径后再打开，停止同步盘同步工作空间，并将工作空间加入杀毒软件信任列表。如果以上步骤无法解决问题，请参考<a href=\"https://ld246.com/article/1684586140917\" target=\"_blank\">这里</a>或者<a href=\"https://ld246.com/article/1649901726096\" target=\"_blank\">发帖</a>寻求帮助。</div><div>The files in the workspace are being opened and occupied by third-party software (such as synchronized network disk, antivirus software, etc.), continuing to use it will cause data corruption, and the SiYuan Kernel is already safe shutdown.</div><div>Move the workspace to another path and open it again, stop the network disk to sync the workspace, and add the workspace to the antivirus software trust list. If the above steps do not resolve the issue, please look for help or report bugs <a href=\"https://liuyun.io/article/1686530886208\" target=\"_blank\">here</a>.</div>", "🚒");
+                            errorWindowId = showErrorWindow("已成功避免潜在的数据损坏", "Successfully avoid potential data corruption", "<div>工作空间下的文件正在被第三方软件（比如同步网盘、杀毒软件等）打开占用，继续使用会导致数据损坏，思源内核已经安全退出。</div><div>请将工作空间移动到其他路径后再打开，停止同步盘同步工作空间，并将工作空间加入杀毒软件信任列表。如果以上步骤无法解决问题，请参考<a href=\"https://github.com/mihazzzold/siyuan/issues\" target=\"_blank\">这里</a>或者<a href=\"https://github.com/mihazzzold/siyuan/issues\" target=\"_blank\">发帖</a>寻求帮助。</div><div>The files in the workspace are being opened and occupied by third-party software (such as synchronized network disk, antivirus software, etc.), continuing to use it will cause data corruption, and the SiYuan Kernel is already safe shutdown.</div><div>Move the workspace to another path and open it again, stop the network disk to sync the workspace, and add the workspace to the antivirus software trust list. If the above steps do not resolve the issue, please look for help or report bugs <a href=\"https://github.com/mihazzzold/siyuan/issues\" target=\"_blank\">here</a>.</div>", "🚒");
                             break;
                         case 0:
                             break;
@@ -941,11 +941,11 @@ app.whenReady().then(() => {
             },
         }, {
             label: lang.officialWebsite, click: () => {
-                shell.openExternal("https://b3log.org/siyuan/");
+                shell.openExternal("https://github.com/mihazzzold/siyuan/");
             },
         }, {
             label: lang.openSource, click: () => {
-                shell.openExternal("https://github.com/siyuan-note/siyuan");
+                shell.openExternal("https://github.com/mihazzzold/siyuan");
             },
         }, {
             label: lang.resetWindow, type: "checkbox", click: v => {
@@ -1335,7 +1335,7 @@ app.whenReady().then(() => {
             },
         });
         printWin.center();
-        printWin.webContents.userAgent = "SiYuan/" + appVer + " https://b3log.org/siyuan Electron " + printWin.webContents.userAgent;
+        printWin.webContents.userAgent = "SiYuan/" + appVer + " https://github.com/mihazzzold/siyuan Electron " + printWin.webContents.userAgent;
         printWin.loadURL(data);
         windowNavigate(printWin, "export");
     });
@@ -1390,7 +1390,7 @@ app.whenReady().then(() => {
             win.center();
         }
         win.setAlwaysOnTop(data.alwaysOnTop);
-        win.webContents.userAgent = "SiYuan/" + appVer + " https://b3log.org/siyuan Electron " + win.webContents.userAgent;
+        win.webContents.userAgent = "SiYuan/" + appVer + " https://github.com/mihazzzold/siyuan Electron " + win.webContents.userAgent;
         win.webContents.session.setSpellCheckerLanguages(["en-US"]);
         win.loadURL(data.url);
         windowNavigate(win, "window");

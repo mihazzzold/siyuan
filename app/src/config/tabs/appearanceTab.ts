@@ -620,7 +620,7 @@ const registerAppearancePersonalizationGroup = (tab: SettingTabBuilder) => {
 
 const mountAppearanceCodeSnippet = (root: HTMLElement) => {
     root.querySelector("#codeSnippetCommunityShare")?.addEventListener("click", () => {
-        window.open("https://ld246.com/tag/code-snippet", "_blank");
+        window.open("https://github.com/mihazzzold/siyuan", "_blank");
     });
     root.querySelector("#codeSnippet")?.addEventListener("click", () => {
         openSnippets();

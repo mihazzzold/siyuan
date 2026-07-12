@@ -1600,7 +1600,7 @@
   "mobileModeTip": "تعطيل لاستخدام تخطيط الهاتف المحمول",
   "checkUpdate": "تحقق من التحديثات",
   "currentVer": "النسخة الحالية",
-  "downloadLatestVer": "‫<a href=\"https://b3log.org/siyuan/en/download.html\", target=\"_blank\"> تنزيل أحدث إصدار</a>‬",
+  "downloadLatestVer": "‫<a href=\"https://github.com/mihazzzold/siyuan/releases\", target=\"_blank\"> تنزيل أحدث إصدار</a>‬",
   "themeLight": "فاتح",
   "themeDark": "داكن",
   "themeOS": "تابع النظام",
