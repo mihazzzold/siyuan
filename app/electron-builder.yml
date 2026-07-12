@@ -4,6 +4,12 @@ asar: false
 compression: "normal"
 copyright: "© 2020-present Yunnan Liandi Technology Co., Ltd."
 artifactName: "siyuan-${version}-${os}.${ext}"
+# Фид автообновления (electron-updater). Генерирует app-update.yml (встраивается в сборку)
+# и latest.yml (метаданные обновления). --publish=never не мешает генерации этих файлов.
+publish:
+  - provider: "github"
+    owner: "mihazzzold"
+    repo: "siyuan"
 extraMetadata:
   main: "electron/main.js"
 directories:

@@ -36,6 +36,8 @@ export abstract class Constants {
 
     public static readonly SIYUAN_CONFIG_TRAY: string = "siyuan-config-tray";
     public static readonly SIYUAN_QUIT: string = "siyuan-quit";
+    public static readonly SIYUAN_QUIT_UPDATE: string = "siyuan-quit-for-update"; // 退出并安装已下载的更新
+    public static readonly SIYUAN_UPDATE_DOWNLOADED: string = "siyuan-update-downloaded"; // 主进程通知：更新已下载完毕
     public static readonly SIYUAN_HOTKEY: string = "siyuan-hotkey";
     public static readonly SIYUAN_INIT: string = "siyuan-init";
     public static readonly SIYUAN_READY_TO_SHOW: string = "siyuan-ready-to-show";

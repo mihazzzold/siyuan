@@ -36,6 +36,7 @@ const path = require("path");
 const fs = require("fs");
 const gNet = require("net");
 const remote = require("@electron/remote/main");
+const {autoUpdater} = require("electron-updater");
 
 process.noAsar = true;
 const appDir = path.dirname(app.getAppPath());
@@ -51,6 +52,7 @@ let workspaces = []; // workspaceDir, id, browserWindow, tray, hideShortcut
 let kernelPort = 6806;
 let resetWindowStateOnRestart = false;
 let openAsHidden = false;
+let installUpdateOnQuit = false; // 收到「重启以更新」时置真：退出时执行 electron-updater 安装
 const isOpenAsHidden = function () {
     return 1 === workspaces.length && openAsHidden;
 };
@@ -342,6 +344,16 @@ const exitApp = (port, errorWindowId) => {
                     item.destroy();
                 }
             });
+        } else if (installUpdateOnQuit) {
+            // 「重启以更新」：退出后由 electron-updater 安装新版本并重新启动
+            writeLog("quit and install update");
+            try {
+                // isSilent=true 无安装向导，isForceRunAfter=true 安装后自动重启
+                autoUpdater.quitAndInstall(true, true);
+            } catch (e) {
+                writeLog("quitAndInstall failed, fallback to exit: " + e);
+                app.exit();
+            }
         } else {
             app.exit();
         }
@@ -853,7 +865,55 @@ const initKernel = (workspace, port, lang, safeMode) => {
     });
 };
 
+// 自动更新（electron-updater）：后台从 GitHub Releases 检查并下载新版本，
+// 下载完成后广播 siyuan-update-downloaded，前端弹出「重启以更新」提示条。
+const initAutoUpdater = () => {
+    if (!app.isPackaged) {
+        // 开发环境（未打包）无法使用 autoUpdater
+        writeLog("auto updater disabled: app is not packaged");
+        return;
+    }
+
+    autoUpdater.autoDownload = true;
+    autoUpdater.autoInstallOnAppQuit = false;  // 仅在用户点击「重启以更新」时安装，避免普通退出时静默替换
+    autoUpdater.allowPrerelease = true;        // 版本形如 3.7.1-build.N（预发布语义）
+    autoUpdater.logger = {
+        info: (m) => writeLog("[updater] " + m),
+        warn: (m) => writeLog("[updater][warn] " + m),
+        error: (m) => writeLog("[updater][error] " + m),
+        debug: () => {},
+    };
+
+    autoUpdater.on("error", (err) => {
+        writeLog("auto updater error: " + (err ? err.message : "unknown"));
+    });
+    autoUpdater.on("update-available", (info) => {
+        writeLog("update available: " + (info ? info.version : "?"));
+    });
+    autoUpdater.on("update-not-available", () => {
+        writeLog("no update available");
+    });
+    autoUpdater.on("update-downloaded", (info) => {
+        writeLog("update downloaded: " + (info ? info.version : "?"));
+        BrowserWindow.getAllWindows().forEach((item) => {
+            if (item && !item.isDestroyed()) {
+                item.webContents.send("siyuan-update-downloaded", {version: info ? info.version : ""});
+            }
+        });
+    });
+
+    const check = () => {
+        autoUpdater.checkForUpdates().catch((e) => {
+            writeLog("checkForUpdates failed: " + (e ? e.message : "unknown"));
+        });
+    };
+    // 启动 15 秒后首次检查，之后每 3 小时检查一次
+    setTimeout(check, 15 * 1000);
+    setInterval(check, 3 * 60 * 60 * 1000);
+};
+
 app.whenReady().then(() => {
+    initAutoUpdater();
     // Trust self-signed TLS certificates for local HTTPS server
     session.defaultSession.setCertificateVerifyProc((request, callback) => {
         if (request.hostname === "127.0.0.1" || request.hostname === "localhost") {
@@ -1280,6 +1340,11 @@ app.whenReady().then(() => {
         windowNavigate(printWin, "export");
     });
     ipcMain.on("siyuan-quit", (event, port) => {
+        exitApp(port);
+    });
+    // 「重启以更新」：置安装标记后走正常退出流程，exitApp 末尾会执行 quitAndInstall
+    ipcMain.on("siyuan-quit-for-update", (event, port) => {
+        installUpdateOnQuit = true;
         exitApp(port);
     });
     ipcMain.on("siyuan-show-window", (event) => {

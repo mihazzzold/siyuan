@@ -270,49 +270,10 @@ func getAnnouncements() (ret []*Announcement) {
 	return
 }
 
-// forkUpdateRepo 检查更新所使用的 GitHub 仓库（owner/repo），指向本项目 fork 的发布页
-const forkUpdateRepo = "mihazzzold/siyuan"
-
+// CheckUpdate 检查更新。桌面端已改用 electron-updater（一键下载并重启安装），
+// 内核不再弹出更新提示，避免与前端「重启以更新」提示条重复，因此这里为 no-op。
 func CheckUpdate(showMsg bool) {
-	if !showMsg {
-		return
-	}
-
-	if Conf.System.IsMicrosoftStore {
-		return
-	}
-
-	// 从 fork 的 GitHub Releases 检查最新版本，而非官方云端接口
-	var release struct {
-		TagName string `json:"tag_name"`
-		HTMLURL string `json:"html_url"`
-	}
-	apiURL := "https://api.github.com/repos/" + forkUpdateRepo + "/releases/latest"
-	resp, err := req.C().R().
-		SetHeader("User-Agent", "SiYuan/"+util.Ver).
-		SetHeader("Accept", "application/vnd.github+json").
-		SetSuccessResult(&release).
-		Get(apiURL)
-	if err != nil {
-		logging.LogWarnf("check update from [%s] failed: %s", apiURL, err)
-		return
-	}
-	if !resp.IsSuccessState() || "" == release.TagName {
-		// fork 尚未发布任何版本或请求失败时静默处理，避免误报
-		return
-	}
-
-	latestVer := strings.TrimPrefix(release.TagName, "v")
-	releaseURL := release.HTMLURL
-	if "" == releaseURL {
-		releaseURL = "https://github.com/" + forkUpdateRepo + "/releases"
-	}
-
-	if isVersionUpToDate(latestVer) {
-		util.PushUpdateMsg("update-notify", Conf.Language(10), 3000)
-	} else {
-		util.PushUpdateMsg("update-notify", fmt.Sprintf(Conf.Language(9), "<a href=\""+releaseURL+"\">"+releaseURL+"</a>"), 15000)
-	}
+	return
 }
 
 func isVersionUpToDate(releaseVer string) bool {
@@ -323,6 +284,10 @@ func isVersionUpToDate(releaseVer string) bool {
 var skipInstallPkgPlatformCached = -1
 
 func skipNewVerInstallPkg() bool {
+	// fork 桌面端改用 electron-updater 完成一键更新，禁用内核自带的「从官方云端下载安装包」逻辑，
+	// 否则会拉取并安装上游官方版本，覆盖本 fork。
+	return true
+
 	if skipInstallPkgPlatformCached == -1 {
 		skipInstallPkgPlatformCached = 0
 		if !gulu.OS.IsWindows() && !gulu.OS.IsDarwin() {

@@ -1684,6 +1684,8 @@
   "up": "Up",
   "update": "Update",
   "updateVersion": "⬆️ Update",
+  "updateReady": "🎉 A new version has been downloaded, restart to apply",
+  "updateRestartNow": "⬆️ Restart",
   "insertAsset": "Insert image or file",
   "uploadError": "upload error",
   "uploading": "Uploading...",

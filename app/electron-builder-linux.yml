@@ -4,6 +4,12 @@ asar: false
 compression: "normal"
 copyright: "© 2020-present Yunnan Liandi Technology Co., Ltd."
 artifactName: "siyuan-${version}-${os}.${ext}"
+# Фид автообновления (electron-updater). Только AppImage поддерживает авто-обновление;
+# deb/rpm/tar.gz обновляются вручную. Генерирует latest-linux.yml с метаданными.
+publish:
+  - provider: "github"
+    owner: "mihazzzold"
+    repo: "siyuan"
 extraMetadata:
   main: "electron/main.js"
 directories:
