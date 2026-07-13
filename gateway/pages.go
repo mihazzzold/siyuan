@@ -45,7 +45,13 @@ a { color: #3575f0; text-decoration: none; }
 .remember { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 14px; }
 .remember input { margin: 0; }
 ul.info { padding-left: 18px; font-size: 14px; }
+.agpl { position: fixed; left: 0; right: 0; bottom: 12px; text-align: center; font-size: 12px; opacity: .55; }
+.agpl a { color: inherit; }
 `
+
+// pageFooter — видимая ссылка на исходный код для соблюдения сетевой оговорки AGPL-3.0:
+// пользователи сетевого сервиса должны иметь доступ к соответствующему исходному коду.
+const pageFooter = `<div class="agpl">Powered by <a href="https://github.com/mihazzzold/siyuan" target="_blank" rel="noopener">открытым исходным кодом (AGPL-3.0)</a></div>`
 
 var loginTmpl = template.Must(template.New("login").Parse(`<!DOCTYPE html>
 <html lang="ru"><head><meta charset="utf-8">
@@ -61,7 +67,7 @@ var loginTmpl = template.Must(template.New("login").Parse(`<!DOCTYPE html>
 {{if .Error}}<div class="err">{{.Error}}</div>{{end}}
 <button type="submit">Войти</button>
 <div class="alt">Нет аккаунта? <a href="/gw/register">Зарегистрироваться</a></div>
-</form></body></html>`))
+</form>` + pageFooter + `</body></html>`))
 
 var registerTmpl = template.Must(template.New("register").Parse(`<!DOCTYPE html>
 <html lang="ru"><head><meta charset="utf-8">
@@ -82,7 +88,7 @@ var registerTmpl = template.Must(template.New("register").Parse(`<!DOCTYPE html>
 {{if .Error}}<div class="err">{{.Error}}</div>{{end}}
 <button type="submit">Создать аккаунт</button>
 <div class="alt">Уже есть аккаунт? <a href="/gw/login">Войти</a></div>
-</form></body></html>`))
+</form>` + pageFooter + `</body></html>`))
 
 var accountTmpl = template.Must(template.New("account").Parse(`<!DOCTYPE html>
 <html lang="ru"><head><meta charset="utf-8">
@@ -110,7 +116,7 @@ pre { background: light-dark(#f0f2f5, #1b1f24); padding: 10px 12px; border-radiu
 <p style="font-size:14px;margin:14px 0 6px">Добавьте MCP-сервер одной командой:</p>
 <pre>claude mcp add --transport http siyuan {{.BaseURL}}/mcp --header "Authorization: Token {{.Token}}"</pre>
 <p style="font-size:13px;opacity:.75;margin-top:10px">После этого Claude Code получит инструменты SiYuan: создание документов, добавление блоков, поиск и т.д. — и сможет записывать бэклог/инструкции/документацию в ваши заметки. MCP-адрес: <span class="tok">{{.BaseURL}}/mcp</span></p>
-</div></body></html>`))
+</div>` + pageFooter + `</body></html>`))
 
 func renderLogin(w http.ResponseWriter, errMsg string, status int) {
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
