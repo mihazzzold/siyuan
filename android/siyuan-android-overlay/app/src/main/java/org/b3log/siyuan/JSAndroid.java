@@ -1,0 +1,566 @@
+/*
+ * SiYuan - 源于思考，饮水思源
+ * Copyright (c) 2020-present, b3log.org
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+package org.b3log.siyuan;
+
+import android.Manifest;
+import android.app.AlarmManager;
+import android.app.Notification;
+import android.app.PendingIntent;
+import android.content.ClipData;
+import android.content.ClipDescription;
+import android.content.ClipboardManager;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
+import android.os.SystemClock;
+import android.provider.MediaStore;
+import android.provider.Settings;
+import android.util.Log;
+import android.webkit.JavascriptInterface;
+import android.webkit.WebView;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.AlarmManagerCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+import androidx.core.app.ShareCompat;
+import androidx.core.content.FileProvider;
+
+import com.blankj.utilcode.util.BarUtils;
+import com.blankj.utilcode.util.KeyboardUtils;
+import com.blankj.utilcode.util.StringUtils;
+import com.zackratos.ultimatebarx.ultimatebarx.java.UltimateBarX;
+
+import java.io.File;
+import java.net.URLDecoder;
+
+import mobile.Mobile;
+
+/**
+ * JavaScript 接口.
+ *
+ * @author <a href="https://88250.b3log.org">Liang Ding</a>
+ * @author <a href="https://github.com/Soltus">绛亽</a>
+ * @version 1.6.0.6, Apr 30, 2026
+ * @since 1.0.0
+ */
+public final class JSAndroid {
+    private MainActivity activity;
+
+    public JSAndroid(final MainActivity activity) {
+        this.activity = activity;
+    }
+
+    @JavascriptInterface
+    public void cancelNotification(final int id) {
+        final Intent intent = new Intent(this.activity, NotificationReceiver.class);
+        final PendingIntent pendingIntent = PendingIntent.getBroadcast(this.activity, id, intent, PendingIntent.FLAG_NO_CREATE | PendingIntent.FLAG_IMMUTABLE);
+        if (pendingIntent != null) {
+            final AlarmManager alarmManager = (AlarmManager) this.activity.getSystemService(Context.ALARM_SERVICE);
+            alarmManager.cancel(pendingIntent);
+            pendingIntent.cancel();
+        }
+
+        NotificationManagerCompat.from(this.activity).cancel(id);
+    }
+
+    @JavascriptInterface
+    public int sendNotification(final String channel, final String title, final String body, final int delayInSeconds) {
+        if (ActivityCompat.checkSelfPermission(this.activity, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+            Utils.showToast(this.activity, "请允许通知权限以接收通知 / Please allow notification permission to receive notifications");
+            final Intent intent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS);
+            intent.setData(Uri.parse("package:" + this.activity.getPackageName()));
+            this.activity.startActivity(intent);
+            return -1;
+        }
+
+        if (!NotificationReceiver.createNotificationChannel(activity, channel)) {
+            return -1;
+        }
+
+        final int ret = NotificationReceiver.getNextNotificationId();
+        if (0 < delayInSeconds) {
+            final AlarmManager alarmManager = (AlarmManager) this.activity.getSystemService(Context.ALARM_SERVICE);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !alarmManager.canScheduleExactAlarms()) {
+                Utils.showToast(this.activity, "请允许精确闹钟权限以接收定时通知（同时需要允许自启动） / Please allow exact alarm permission to receive scheduled notifications (also need to allow auto-start)");
+                final Intent intent = new Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM);
+                intent.setData(Uri.parse("package:" + this.activity.getPackageName()));
+                this.activity.startActivity(intent);
+                return -1;
+            }
+
+            final Intent intent = new Intent(this.activity, NotificationReceiver.class);
+            intent.putExtra("channel", channel);
+            intent.putExtra("id", ret);
+            intent.putExtra("title", title);
+            intent.putExtra("body", body);
+            final long triggerTime = SystemClock.elapsedRealtime() + (delayInSeconds * 1000L);
+            final PendingIntent pendingIntent = PendingIntent.getBroadcast(this.activity, ret, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+            AlarmManagerCompat.setExactAndAllowWhileIdle((AlarmManager) this.activity.getSystemService(Context.ALARM_SERVICE), AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerTime, pendingIntent);
+            return ret;
+        }
+
+        final PendingIntent resultPendingIntent = NotificationReceiver.createNotificationPendingIntent(this.activity);
+        final NotificationCompat.Builder builder = new NotificationCompat.Builder(activity, channel).
+                setVisibility(NotificationCompat.VISIBILITY_PRIVATE).
+                setPriority(NotificationCompat.PRIORITY_HIGH).
+                setSmallIcon(R.drawable.icon).
+                setContentTitle(title).
+                setContentText(body).
+                setAutoCancel(true).
+                setContentIntent(resultPendingIntent).
+                setCategory(Notification.CATEGORY_REMINDER);
+        NotificationManagerCompat.from(this.activity).notify(ret, builder.build());
+        return ret;
+    }
+
+    @JavascriptInterface
+    public void exit() {
+        this.activity.exit();
+    }
+
+    @JavascriptInterface
+    public void hideKeyboard() {
+        activity.runOnUiThread(() -> {
+            final WebView webView = activity.findViewById(R.id.webView);
+            Utils.hideKeyboardAndToolbar(webView);
+            KeyboardUtils.hideSoftInput(activity);
+        });
+    }
+
+    @JavascriptInterface
+    public void showKeyboard() {
+        activity.runOnUiThread(() -> {
+            final WebView webView = activity.findViewById(R.id.webView);
+            Utils.showKeyboardAndToolbar(webView);
+            KeyboardUtils.showSoftInput(activity);
+        });
+    }
+
+    @JavascriptInterface
+    public void setWebViewFocusable(final boolean focusable) {
+        activity.runOnUiThread(() -> {
+            final WebView webView = activity.findViewById(R.id.webView);
+            Utils.setWebViewFocusable(webView, focusable);
+        });
+    }
+
+    @JavascriptInterface
+    public String getBlockURL() {
+        String blockURL = activity.getIntent().getStringExtra("blockURL");
+        if (StringUtils.isEmpty(blockURL)) {
+            blockURL = "";
+        }
+        return blockURL;
+    }
+
+    @JavascriptInterface
+    public void setWebViewDebuggingEnabled(final boolean debuggable) {
+        activity.setWebViewDebuggable(debuggable);
+    }
+
+    @JavascriptInterface
+    public String readClipboard() {
+        final ClipboardManager clipboard = (ClipboardManager) activity.getSystemService(Context.CLIPBOARD_SERVICE);
+        final ClipData clipData = clipboard.getPrimaryClip();
+        if (null == clipData) {
+            return "";
+        }
+
+        final ClipData.Item item = clipData.getItemAt(0);
+        if (null != item.getUri()) {
+            final Uri uri = item.getUri();
+            final String url = uri.toString();
+            if (url.startsWith(serverBase() + "/assets/")) {
+                final int idx = url.indexOf("assets/");
+                final String asset = url.substring(idx);
+                String name = asset.substring(asset.lastIndexOf("/") + 1);
+                final int suffixIdx = name.lastIndexOf(".");
+                if (0 < suffixIdx) {
+                    name = name.substring(0, suffixIdx);
+                }
+                if (23 < StringUtils.length(name)) {
+                    name = name.substring(0, name.length() - 23);
+                }
+                return "![" + name + "](" + asset + ")";
+            }
+        }
+
+        final CharSequence text = item.getText();
+        if (null == text) {
+            return "";
+        }
+        return text.toString();
+    }
+
+    @JavascriptInterface
+    public String readHTMLClipboard() {
+        final ClipboardManager clipboard = (ClipboardManager) activity.getSystemService(Context.CLIPBOARD_SERVICE);
+        final ClipData clipData = clipboard.getPrimaryClip();
+        if (null == clipData) {
+            return "";
+        }
+
+        final ClipData.Item item = clipData.getItemAt(0);
+        String ret = item.getHtmlText();
+        if (null == ret) {
+            ret = "";
+        }
+        return ret;
+    }
+
+    @JavascriptInterface
+    public String readSiYuanHTMLClipboard() {
+        final ClipboardManager clipboard = (ClipboardManager) activity.getSystemService(Context.CLIPBOARD_SERVICE);
+        final ClipData clipData = clipboard.getPrimaryClip();
+        if (null == clipData) {
+            return "";
+        }
+
+        if (clipData.getDescription().hasMimeType("text/siyuan") && 2 == clipData.getItemCount()) {
+            final ClipData.Item item = clipData.getItemAt(1);
+            final CharSequence text = item.getText();
+            if (null != text) {
+                return text.toString();
+            }
+        }
+        return "";
+    }
+
+    @JavascriptInterface
+    public void writeImageClipboard(final String uri) {
+        final ClipboardManager clipboard = (ClipboardManager) activity.getSystemService(Context.CLIPBOARD_SERVICE);
+        final ClipData clip = ClipData.newUri(activity.getContentResolver(), "Copied img from SiYuan", Uri.parse(serverBase() + "/" + uri));
+        clipboard.setPrimaryClip(clip);
+    }
+
+    /** 内核/网关基址：本地模式为本地内核，瘦客户端模式为远程服务器地址。 */
+    private String serverBase() {
+        return MainActivity.remoteMode ? MainActivity.remoteBaseURL : "http://127.0.0.1:6806";
+    }
+
+    @JavascriptInterface
+    public void writeClipboard(final String content) {
+        final ClipboardManager clipboard = (ClipboardManager) activity.getSystemService(Context.CLIPBOARD_SERVICE);
+        final ClipData clip = ClipData.newPlainText("Copied text from SiYuan", content);
+        clipboard.setPrimaryClip(clip);
+    }
+
+    @JavascriptInterface
+    public void writeHTMLClipboard(final String text, final String html) {
+        final ClipboardManager clipboard = (ClipboardManager) activity.getSystemService(Context.CLIPBOARD_SERVICE);
+        final ClipData clip = ClipData.newHtmlText("Copied html from SiYuan", text, html);
+        clipboard.setPrimaryClip(clip);
+    }
+
+    @JavascriptInterface
+    public void writeSiYuanHTMLClipboard(final String text, final String html, final String siyuanHTML) {
+        final ClipboardManager clipboard = (ClipboardManager) activity.getSystemService(Context.CLIPBOARD_SERVICE);
+        final String[] mimeTypes = new String[]{ClipDescription.MIMETYPE_TEXT_PLAIN, ClipDescription.MIMETYPE_TEXT_HTML, "text/siyuan"};
+        final ClipData.Item standardItem = new ClipData.Item(text, html, null, null);
+        final ClipData.Item siyuanItem = new ClipData.Item(siyuanHTML);
+        ClipData clipData = new ClipData("Copied html from SiYuan", mimeTypes, standardItem);
+        clipData.addItem(siyuanItem);
+        clipboard.setPrimaryClip(clipData);
+    }
+
+    @JavascriptInterface
+    public void returnDesktop() {
+        final Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        activity.startActivity(intent);
+    }
+
+    @JavascriptInterface
+    public void exportByDefault(String url) {
+        Utils.openByDefaultBrowser(url, activity);
+    }
+
+    @JavascriptInterface
+    public void saveExportFile(final String url) {
+        if (StringUtils.isEmpty(url)) {
+            return;
+        }
+
+        String fileName = url.substring(url.lastIndexOf('/') + 1);
+        final int queryIdx = fileName.indexOf('?');
+        if (-1 != queryIdx) {
+            fileName = fileName.substring(0, queryIdx);
+        }
+        try {
+            fileName = URLDecoder.decode(fileName, "UTF-8");
+        } catch (final Exception e) {
+            Utils.logError("JSAndroid", "decode fileName failed", e);
+        }
+        if (StringUtils.isEmpty(fileName)) {
+            fileName = "export";
+        }
+
+        final String finalFileName = fileName;
+        new Thread(() -> {
+            if (MainActivity.remoteMode) {
+                // 瘦客户端：导出文件在服务器上，通过 HTTP 下载（带网关会话 cookie）
+                saveExportFileRemote(url, finalFileName);
+                return;
+            }
+            java.io.FileInputStream inputStream = null;
+            java.io.OutputStream outputStream = null;
+            try {
+                final String srcPath = Mobile.getExportFilePath(url);
+                if (null == srcPath || srcPath.isEmpty()) {
+                    Mobile.showMsg(Mobile.language(291), 5000);
+                    return;
+                }
+
+                final String mimeType = Mobile.getMimeTypeByExt(finalFileName);
+                inputStream = new java.io.FileInputStream(srcPath);
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                    final ContentValues values = new ContentValues();
+                    values.put(MediaStore.Downloads.DISPLAY_NAME, finalFileName);
+                    values.put(MediaStore.Downloads.MIME_TYPE, mimeType);
+                    values.put(MediaStore.Downloads.RELATIVE_PATH, Environment.DIRECTORY_DOWNLOADS);
+
+                    final Uri insertUri = activity.getContentResolver().insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI, values);
+                    if (null == insertUri) {
+                        Mobile.showMsg(Mobile.language(292), 5000);
+                        return;
+                    }
+
+                    outputStream = activity.getContentResolver().openOutputStream(insertUri);
+                    if (null == outputStream) {
+                        Mobile.showMsg(Mobile.language(293), 5000);
+                        return;
+                    }
+                } else {
+                    final File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+                    if (!downloadsDir.exists()) {
+                        downloadsDir.mkdirs();
+                    }
+                    final File outFile = new File(downloadsDir, finalFileName);
+                    outputStream = new java.io.FileOutputStream(outFile);
+                }
+
+                final byte[] buffer = new byte[65536];
+                int bytesRead;
+                while ((bytesRead = inputStream.read(buffer)) != -1) {
+                    outputStream.write(buffer, 0, bytesRead);
+                }
+                outputStream.flush();
+
+                Mobile.showMsg(Mobile.language(289), 5000);
+            } catch (final Exception e) {
+                Utils.logError("JSAndroid", "saveExportFile failed", e);
+                Mobile.showMsg(Mobile.language(290), 5000);
+            } finally {
+                try { if (null != inputStream) { inputStream.close(); } } catch (final Exception ignored) {}
+                try { if (null != outputStream) { outputStream.close(); } } catch (final Exception ignored) {}
+            }
+        }).start();
+    }
+
+    /** 瘦客户端模式下从服务器 HTTP 下载导出文件并保存到「下载」目录。 */
+    private void saveExportFileRemote(final String url, final String fileName) {
+        java.io.InputStream inputStream = null;
+        java.io.OutputStream outputStream = null;
+        java.net.HttpURLConnection conn = null;
+        try {
+            String full = url;
+            if (!full.startsWith("http://") && !full.startsWith("https://")) {
+                full = MainActivity.remoteBaseURL + "/" + full.replaceFirst("^/", "");
+            }
+            conn = (java.net.HttpURLConnection) new java.net.URL(full).openConnection();
+            final String cookie = android.webkit.CookieManager.getInstance().getCookie(MainActivity.remoteBaseURL);
+            if (null != cookie) {
+                conn.setRequestProperty("Cookie", cookie);
+            }
+            conn.setConnectTimeout(15000);
+            conn.setReadTimeout(60000);
+            conn.setInstanceFollowRedirects(true);
+            conn.connect();
+            if (conn.getResponseCode() / 100 != 2) {
+                toastRemote("⚠️ Не удалось скачать / Download failed (" + conn.getResponseCode() + ")");
+                return;
+            }
+            inputStream = conn.getInputStream();
+
+            final String ext = fileName.contains(".") ? fileName.substring(fileName.lastIndexOf('.') + 1) : "";
+            String mimeType = android.webkit.MimeTypeMap.getSingleton().getMimeTypeFromExtension(ext.toLowerCase());
+            if (null == mimeType) {
+                mimeType = "application/octet-stream";
+            }
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                final ContentValues values = new ContentValues();
+                values.put(MediaStore.Downloads.DISPLAY_NAME, fileName);
+                values.put(MediaStore.Downloads.MIME_TYPE, mimeType);
+                values.put(MediaStore.Downloads.RELATIVE_PATH, Environment.DIRECTORY_DOWNLOADS);
+                final Uri insertUri = activity.getContentResolver().insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI, values);
+                if (null == insertUri) {
+                    toastRemote("⚠️ Не удалось сохранить / Save failed");
+                    return;
+                }
+                outputStream = activity.getContentResolver().openOutputStream(insertUri);
+            } else {
+                final File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+                if (!downloadsDir.exists()) {
+                    downloadsDir.mkdirs();
+                }
+                outputStream = new java.io.FileOutputStream(new File(downloadsDir, fileName));
+            }
+            if (null == outputStream) {
+                toastRemote("⚠️ Не удалось сохранить / Save failed");
+                return;
+            }
+
+            final byte[] buffer = new byte[65536];
+            int bytesRead;
+            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                outputStream.write(buffer, 0, bytesRead);
+            }
+            outputStream.flush();
+            toastRemote("✅ Сохранено в «Загрузки» / Saved to Downloads: " + fileName);
+        } catch (final Exception e) {
+            Utils.logError("JSAndroid", "saveExportFileRemote failed", e);
+            toastRemote("⚠️ Ошибка экспорта / Export failed");
+        } finally {
+            try { if (null != inputStream) { inputStream.close(); } } catch (final Exception ignored) {}
+            try { if (null != outputStream) { outputStream.close(); } } catch (final Exception ignored) {}
+            if (null != conn) { conn.disconnect(); }
+        }
+    }
+
+    private void toastRemote(final String msg) {
+        activity.runOnUiThread(() -> Utils.showToast(activity, msg));
+    }
+
+    @JavascriptInterface
+    public void print(final String title, final String html) {
+        final String filename = title + ".pdf";
+        try {
+            Utils.print(html, filename, activity);
+        } catch (final Exception e) {
+            Utils.logError("JSAndroid", "export PDF failed", e);
+        }
+    }
+
+    @JavascriptInterface
+    public int getScreenWidthPx() {
+        return activity.getResources().getDisplayMetrics().widthPixels;
+    }
+
+    @JavascriptInterface
+    public void openExternal(String url) {
+        if (!url.startsWith("assets/")) {
+            Utils.openByDefaultBrowser(url, activity);
+            return;
+        }
+
+        if (MainActivity.remoteMode) {
+            // 瘦客户端：附件在服务器上，通过服务器 URL 打开
+            Utils.openByDefaultBrowser(serverBase() + "/" + url, activity);
+            return;
+        }
+
+        // Support opening assets through other apps on the Android https://github.com/siyuan-note/siyuan/issues/10657
+        try {
+            final String workspacePath = Mobile.getCurrentWorkspacePath();
+            final String assetAbsPath = Mobile.getAssetAbsPath(url);
+            File asset;
+            if (assetAbsPath.contains(workspacePath)) {
+                asset = new File(workspacePath, assetAbsPath.substring(workspacePath.length() + 1));
+            } else {
+                final String decodedUrl = URLDecoder.decode(url, "UTF-8");
+                asset = new File(workspacePath, "data/" + decodedUrl);
+            }
+
+            if (!asset.exists()) {
+                Log.e("js", "File does not exist: " + asset.getAbsolutePath());
+                url = "http://127.0.0.1:6806/" + url;
+                Utils.openByDefaultBrowser(url, activity);
+                return;
+            }
+
+            Log.d("js", asset.getAbsolutePath());
+            final Uri uri = FileProvider.getUriForFile(activity.getApplicationContext(), BuildConfig.APPLICATION_ID, asset);
+            final String type = Mobile.getMimeTypeByExt(asset.getAbsolutePath());
+            Intent intent = new ShareCompat.IntentBuilder(activity.getApplicationContext())
+                    .setStream(uri)
+                    .setType(type)
+                    .getIntent()
+                    .setAction(Intent.ACTION_VIEW)
+                    .setDataAndType(uri, type)
+                    .addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
+            activity.startActivity(intent);
+        } catch (Exception e) {
+            Utils.logError("JSAndroid", "openExternal failed", e);
+        }
+    }
+
+    @JavascriptInterface
+    public void openAuthURL(final String url) {
+        if (StringUtils.isEmpty(url) || url.startsWith("#")) {
+            Utils.logError("JSAndroid", "openAuthURL failed: invalid url");
+            return;
+        }
+
+        final Uri uri = Uri.parse(url);
+        final String scheme = uri.getScheme();
+        if ((!"http".equalsIgnoreCase(scheme) && !"https".equalsIgnoreCase(scheme))) {
+            Utils.logError("JSAndroid", "openAuthURL failed: only support http/https protocol, not " + scheme);
+            return;
+        }
+
+        Utils.tryOpenCustomTabs(uri, activity);
+    }
+
+    @JavascriptInterface
+    public void changeStatusBarColor(final String color, final int appearanceMode) {
+        if (Utils.isTablet(activity)) {
+            return;
+        }
+
+        activity.runOnUiThread(() -> {
+            final int colorVal = parseColor(color);
+            UltimateBarX.statusBarOnly(activity).transparent().light(appearanceMode == 0).color(colorVal).apply();
+            BarUtils.setNavBarVisibility(activity, false);
+            activity.webView.getRootView().setBackgroundColor(colorVal);
+        });
+    }
+
+    private int parseColor(String str) {
+        try {
+            str = str.trim();
+            if (9 != str.length() || '#' != str.charAt(0)) {
+                throw new IllegalArgumentException("invalid color format");
+            }
+            // 将 #RRGGBBAA 转换为 #AARRGGBB
+            str = "#" + str.substring(7, 9) + str.substring(1, 7);
+            return Color.parseColor(str);
+        } catch (final Exception e) {
+            Utils.logError("js", "parse color [" + str + "] failed", e);
+            return Color.parseColor("#212224");
+        }
+    }
+}

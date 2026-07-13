@@ -150,9 +150,8 @@ jobs:
           mkdir -p app/libs app/src/main/assets
           cp ../kernel/kernel.aar app/libs/kernel.aar
           cp ../app/app.zip app/src/main/assets/app.zip
-          # оверлей: тонкий клиент (режим локально/сервер) — заменяем MainActivity нашей версией
-          cp -f ../android/siyuan-android-overlay/app/src/main/java/org/b3log/siyuan/MainActivity.java \
-            app/src/main/java/org/b3log/siyuan/MainActivity.java
+          # оверлей: тонкий клиент (режим локально/сервер) — накладываем наши файлы поверх апстрима
+          cp -rf ../android/siyuan-android-overlay/app/. app/
           # debug-подпись (генерируем ключ в CI — без секретов)
           keytool -genkeypair -dname "CN=SiYuan Fork,O=mihazzzold,C=RU" \
             -alias androiddebugkey -keypass android -storepass android \
