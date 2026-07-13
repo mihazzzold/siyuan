@@ -136,7 +136,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: siyuan-note/siyuan-android
-          ref: main
+          # запинено под наш оверлей android/siyuan-android-overlay (v3.7.2-alpha.2)
+          ref: 9123095b83bb7da25e53dd4db42fdbf9718fc982
           path: siyuan-android
 
       - name: Prepare & build APK
@@ -149,6 +150,9 @@ jobs:
           mkdir -p app/libs app/src/main/assets
           cp ../kernel/kernel.aar app/libs/kernel.aar
           cp ../app/app.zip app/src/main/assets/app.zip
+          # оверлей: тонкий клиент (режим локально/сервер) — заменяем MainActivity нашей версией
+          cp -f ../android/siyuan-android-overlay/app/src/main/java/org/b3log/siyuan/MainActivity.java \
+            app/src/main/java/org/b3log/siyuan/MainActivity.java
           # debug-подпись (генерируем ключ в CI — без секретов)
           keytool -genkeypair -dname "CN=SiYuan Fork,O=mihazzzold,C=RU" \
             -alias androiddebugkey -keypass android -storepass android \
